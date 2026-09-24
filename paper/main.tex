@@ -39,10 +39,12 @@ Unit of analysis: (miRNA, gene). Genes carrying a conserved site for any miRNA s
 \begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_clip_permirna.pdf}
 \caption{Per-miRNA AUROC of the CNN min-score against ENCORI CLIP support. Dashed: chance.}\end{figure}
 Pooled: AUROC $0.5905$ (covariates) $\to 0.5979$ (+CNN); $\Delta=+0.0075$, CI $[0.0057,0.0093]$, permutation $p=0.048$. \textbf{Verdict: statistically real, small effect.} The discovery list is CLIP-supported above chance but the CNN is not a stand-alone oracle for non-conserved targeting; candidates are released as ranked hypotheses, not validated targets.
+\subsection{Pair-map ablation (architecture honesty)}
+The explicit complementarity pair-map branch is ablated under the identical split, seed, and epochs: full DuplexCNN Pearson $0.8121$ / Spearman $0.7928$ vs no-pair-map $0.8092$ / $0.7898$ ($\Delta r=+0.0029$, RMSE $-0.0005$) --- but at $333.5$s vs $16.3$s train time ($20\times$ cheaper without it). Verdict: the pair-map is a minor contributor for context++ prediction; the sequence towers carry nearly all signal. The branch is retained for interpretability but is no longer claimed as load-bearing.
 \section{Documented negatives}
-(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs are at/below chance --- reported per miRNA, not averaged away.
+(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation).
 \section{Falsification paths}
-miRTarBase/TarBase validated-target overlap (bulk download currently blocked; ENCORI used instead); wet-lab: luciferase reporters for the top 10 diverse pairs; ablation of the pairing map (queued).
+miRTarBase/TarBase validated-target overlap (bulk download currently blocked; ENCORI used instead); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the new 136-miRNA ENCORI panel (panel fetch complete; rerun queued).
 \begin{thebibliography}{9}
 \bibitem[Grimson et al.(2007)]{g} Grimson A, et al. MicroRNA targeting specificity in mammals: determinants beyond seed pairing. \emph{Mol Cell} 2007.
 \bibitem[Agarwal et al.(2015)]{a} Agarwal V, et al. Predicting effective microRNA target sites in mammalian mRNAs. \emph{eLife} 2015.

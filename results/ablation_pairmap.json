@@ -1,0 +1,21 @@
+{
+ "split": "held-out genes (20%), same as context_pp_benchmark.json",
+ "n_test": 15967,
+ "full_duplexcnn": {
+  "pearson": 0.8120578527450562,
+  "spearman": 0.7928363060654727,
+  "rmse": 0.07807255536317825,
+  "train_seconds": 333.5
+ },
+ "no_pairmap": {
+  "pearson": 0.8091967701911926,
+  "spearman": 0.7897579624100521,
+  "rmse": 0.07860085368156433,
+  "train_seconds": 16.3
+ },
+ "delta_full_minus_nopair": {
+  "pearson": 0.00286,
+  "spearman": 0.00308,
+  "rmse": -0.00053
+ }
+}
