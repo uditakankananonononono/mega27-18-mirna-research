@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mirtarget-score"
+version = "0.1.0"
+description = "Score miRNA->UTR target sites with DuplexCNN (context++-calibrated)"
+requires-python = ">=3.9"
+dependencies = ["numpy", "torch", "scikit-learn"]
+
+[project.scripts]
+mirtarget-score = "mirna.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

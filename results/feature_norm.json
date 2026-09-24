@@ -1,0 +1,21 @@
+{
+ "mu": [
+  8.031808853149414,
+  6.064119338989258,
+  0.43688616156578064,
+  0.6144718527793884
+ ],
+ "sd": [
+  0.7487627863883972,
+  1.24028742313385,
+  0.31791579723358154,
+  0.12015021592378616
+ ],
+ "provenance": "F[tr] over build(human_sites.tsv, max_rows=80000, seed=0), identical to DuplexCNN training normalization (train.py line 68)",
+ "features": [
+  "log_utr_len",
+  "log_dist_to_end",
+  "rel_position",
+  "local_au_30nt"
+ ]
+}
