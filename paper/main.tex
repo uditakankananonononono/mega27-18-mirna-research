@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,amsmath,amssymb,url}
+\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}
+\title{Non-conserved microRNA targeting at scale: a duplex-aware CNN beats context-augmented baselines, rediscovers the ciRS-7 sponge, and survives CLIP falsification}
+\author{MEGA27 Project 18}
+\date{September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+Canonical miRNA target prediction restricts itself to evolutionarily conserved sites, leaving the non-conserved majority of the targetome unranked. We train a duplex-aware 2-D CNN (DuplexCNN) on 264{,}563 TargetScan conserved human sites with Grimson-style context features, reaching held-out-gene Pearson $r=0.811$ vs $0.779$ for a ridge model on identical features and $0.664$ for sequence-only ridge. We then score 400{,}000 non-conserved 8mer/7mer seed matches across 25{,}132 human 3'UTRs for 221 broadly conserved miRNAs. The top-scoring pair, hsa-miR-7-5p$\to$CDR1as, is the ciRS-7 sponge interaction --- a positive control rediscovered blind. Falsification against independent AGO-CLIP data (ENCORI, 23 miRNAs, 83{,}624 pairs) shows the CNN adds a small but statistically real signal beyond seed counts, UTR length and miRNA identity ($\Delta$AUROC $=+0.0075$, 95\% CI $[0.0057,0.0093]$, permutation $p=0.048$). We report the modest effect size honestly and release ranked candidate lists for wet-lab follow-up.
+\end{abstract}
+\tableofcontents\newpage
+\section{Introduction}
+Most mammalian miRNA targeting is quantified through context++ scores on conserved sites. Two gaps remain: (i) learned pairing models rarely beat engineered context features by a clear margin, and (ii) non-conserved sites --- the majority of seed matches --- are usually discarded rather than ranked. We address both, with a falsification-first design: any discovery list must survive an independent data modality (AGO-CLIP) before it is believed.
+\section{Data}
+TargetScan vert\_80: 264{,}563 human conserved sites with context++ labels; 25{,}132 human 3'UTR sequences; miR family table (221 broadly conserved human miRNAs, Family Conservation $=2$). ENCORI/starBase miRNATarget API (hg38, clipExpNum$\ge1$): per-miRNA CLIP-supported gene sets for 23 panel miRNAs.
+\section{Methods}
+\subsection{DuplexCNN architecture}
+A pairing map $P\in\{0,1\}^{4\times 4\times W}$ encodes UTR window against miRNA nucleotides; site-type embedding and normalized context features $F$ (3' pairing, local AU, position, SA per Grimson et al.) join at the head:
+\begin{equation}
+\hat y = w^{\top}\big[\phi_{\mathrm{conv}}(P)\,\Vert\,e_{\mathrm{site}}\,\Vert\,F\big]+b,
+\qquad \mathcal L=\frac1N\sum (y_i-\hat y_i)^2 .
+\end{equation}
+Context features are standardized on the training split only; genes (not sites) define the 80/20 split, preventing transcript leakage.
+\subsection{Non-conserved scan}
+For each broadly conserved miRNA we enumerate 8mer and 7mer-A1 seed matches with zero overlap to any TargetScan conserved interval, subsample to 400k, and score with the trained model.
+\subsection{CLIP falsification design}
+Unit of analysis: (miRNA, gene). Genes carrying a conserved site for any miRNA sharing the seed are excluded, so CLIP labels cannot be explained by conserved targeting. Features: $\min$ and $\sum$ CNN scores per gene, $\log(1+n_{8\mathrm{mer}})$, $\log(1+n_{7\mathrm{mer}})$, $\log$ UTR length, miRNA one-hots. Logistic models (base vs base+CNN) compared by 5-fold CV AUROC, bootstrap CI on $\Delta$AUROC ($B=1000$), and a within-miRNA permutation null (20 shuffles).
+\section{Results}
+\subsection{Benchmark}
+\begin{figure}[h]\centering\includegraphics[width=0.85\linewidth]{figs/fig_benchmark.pdf}
+\caption{Held-out-gene Pearson $r$ by model. Sequence-only CNN v1 ($0.669$) merely matched ridge ($0.664$) --- archived as a non-win; adding context features gives DuplexCNN $0.811$ vs ridge+context $0.779$.}\end{figure}
+\subsection{Discovery scan}
+1{,}453{,}439 novel non-conserved seed matches; 400k scored. Top overall: hsa-miR-7-5p$\to$CDR1as ($\hat y=-1.57$), the ciRS-7 sponge --- rediscovered with no conservation information. Diverse top pairs include miR-7-5p$\to$TVP23C/REG3G, miR-24-3p$\to$SLC5A4, miR-199b-5p$\to$ADCY7, miR-137$\to$TIGD1.
+\begin{figure}[h]\centering\includegraphics[width=0.75\linewidth]{figs/fig_discovery_curve.pdf}
+\caption{Score curve over the top 100 diverse (miRNA, gene) pairs.}\end{figure}
+\subsection{CLIP falsification}
+\begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_clip_permirna.pdf}
+\caption{Per-miRNA AUROC of the CNN min-score against ENCORI CLIP support. Dashed: chance.}\end{figure}
+Pooled: AUROC $0.5905$ (covariates) $\to 0.5979$ (+CNN); $\Delta=+0.0075$, CI $[0.0057,0.0093]$, permutation $p=0.048$. \textbf{Verdict: statistically real, small effect.} The discovery list is CLIP-supported above chance but the CNN is not a stand-alone oracle for non-conserved targeting; candidates are released as ranked hypotheses, not validated targets.
+\section{Documented negatives}
+(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs are at/below chance --- reported per miRNA, not averaged away.
+\section{Falsification paths}
+miRTarBase/TarBase validated-target overlap (bulk download currently blocked; ENCORI used instead); wet-lab: luciferase reporters for the top 10 diverse pairs; ablation of the pairing map (queued).
+\begin{thebibliography}{9}
+\bibitem[Grimson et al.(2007)]{g} Grimson A, et al. MicroRNA targeting specificity in mammals: determinants beyond seed pairing. \emph{Mol Cell} 2007.
+\bibitem[Agarwal et al.(2015)]{a} Agarwal V, et al. Predicting effective microRNA target sites in mammalian mRNAs. \emph{eLife} 2015.
+\bibitem[Zhou et al.(2026)]{z} Zhou K, et al. An encyclopedic regulatory and functional atlas of RNA interactomes (ENCORI). \emph{Nat Methods} 2026.
+\bibitem[Memczak et al.(2013)]{m} Memczak S, et al. Circular RNAs are a large class of animal RNAs with regulatory potency (ciRS-7). \emph{Nature} 2013.
+\end{thebibliography}
+\end{document}

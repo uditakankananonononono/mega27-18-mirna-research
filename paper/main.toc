@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {section}{\numberline {2}Data}{2}{}%
+\contentsline {section}{\numberline {3}Methods}{2}{}%
+\contentsline {subsection}{\numberline {3.1}DuplexCNN architecture}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Non-conserved scan}{2}{}%
+\contentsline {subsection}{\numberline {3.3}CLIP falsification design}{2}{}%
+\contentsline {section}{\numberline {4}Results}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Benchmark}{3}{}%
+\contentsline {subsection}{\numberline {4.2}Discovery scan}{3}{}%
+\contentsline {subsection}{\numberline {4.3}CLIP falsification}{3}{}%
+\contentsline {section}{\numberline {5}Documented negatives}{3}{}%
+\contentsline {section}{\numberline {6}Falsification paths}{4}{}%
