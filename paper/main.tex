@@ -170,6 +170,31 @@ both benchmarks). Left: distributions for RNAhybrid, DuplexCNN, miRDB. Right:
 RNAhybrid vs DuplexCNN per miRNA; the CNN wins 76/80.}
 \label{fig:rnahybrid}\end{figure}
 
+\subsection{Fourth arm: alignment-based biophysics (miRanda) sits between}
+The RNAhybrid arm isolates duplex free energy; miRanda 3.3a is the other
+canonical pure-biophysics predictor class - Smith-Waterman seed-weighted
+alignment plus Vienna energy, default cutoffs, no training data and no
+conservation (\texttt{scripts/miranda\_benchmark.py};
+\texttt{results/miranda\_benchmark.json}; \texttt{results/miranda\_rows.csv};
+hermetic tests). On the identical 80-miRNA, 7{,}914-row miRTarBase benchmark,
+miRanda lands strictly between the two existing arms: pooled AUROC 0.610
+(median per-miRNA 0.624, median gene coverage 80\%) versus CNN 0.682
+(median 0.693) and RNAhybrid 0.522. The CNN wins 66/80 miRNAs against miRanda
+(Wilcoxon $p=6.0e-08$). The four-way ordering on this benchmark is now
+miRDB (0.787) $>$ DuplexCNN (0.682) $>$ miRanda (0.610) $>$ RNAhybrid (0.522)
+(Figure~\ref{fig:miranda}). The reading is consistent with the third arm:
+adding alignment shape on top of duplex energy buys real signal
+($+0.088$ pooled over RNAhybrid), but the learned sequence encoding buys
+more ($+0.073$ over miRanda), and miRDB's feature breadth buys most.
+\begin{figure}[h]\centering
+\includegraphics[width=0.95\linewidth]{figs/fig_miranda.pdf}
+\caption{Left: pooled AUROC on the committed miRTarBase rows for the four
+predictor arms (miRDB from \texttt{results/mirdb\_benchmark.json}; the other
+three on identical rows, $n=7{,}914$). Right: miRanda versus DuplexCNN per
+miRNA; orange points are miRNAs where miRanda wins.}
+\label{fig:miranda}\end{figure}
+
+
 \section{Documented negatives}
 (1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation). (5) miRDB v6.0 beats our CNN on miRTarBase rows (pooled AUROC 0.787 vs 0.685, 74/84 miRNAs, $p=2.4\times10^{-12}$). (6) On TarBase v9.0 labels the CNN loses to miRDB on 73/83 miRNAs and to the plain seed-site count per miRNA (CNN better on only 32/83, $p=0.0078$). (7) HEK293 expression alone (HPA nTPM, AUROC 0.682) beats all sequence models on CLIP labels and cuts the CNN's conditional pooled gain from $+0.0048$ to $+0.0008$.
 \section{Falsification paths}

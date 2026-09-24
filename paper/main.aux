@@ -13,24 +13,47 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Pair-map ablation (architecture honesty)}{4}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Score curve over the top 100 diverse (miRNA, gene) pairs.}}{5}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Per-miRNA feature audit: the univariate CNN signal is site-count confounding}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Biophysical sanity check: duplex MFE vs shuffled controls}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Breadth audit: the conditional CNN gain is distributed, not carried by a few miRNAs}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Per-miRNA AUROC of the negated CNN min-score against ENCORI CLIP support. Dashed: chance. Sign convention audited in the per-miRNA feature audit.}}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Expression confound: HEK293 abundance explains most of the CLIP signal (negative)}{6}{}\protected@file@percent }
+\citation{mtb}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Per-miRNA univariate AUROC: raw CNN min-score vs the best seed-count/length feature. Every one of 132 miRNAs sits below the diagonal.}}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Biophysical sanity check: duplex MFE vs shuffled controls}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Independent literature benchmark: miRTarBase 10.0}{7}{}\protected@file@percent }
+\citation{mirdb}
+\citation{mygene}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Distribution of per-miRNA conditional $\Delta $AUROC across 131 miRNAs. Dashed: zero; dotted: median ($+0.0046$). $64.9\%$ of miRNAs are positive; Wilcoxon $p=2.0\times 10^{-9}$.}}{8}{}\protected@file@percent }
+\newlabel{fig:permirna_delta}{{5}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Left: pooled AUROC of nested logistic models on CLIP labels under gene-grouped CV. HEK293 expression (HPA nTPM) alone outperforms site counts and the CNN. Right: per-miRNA $\Delta $AUROC of adding the CNN to site counts$+$expression (130 miRNAs; dotted line = median $+0.0004$).}}{8}{}\protected@file@percent }
+\newlabel{fig:exprconf}{{6}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.10}Head-to-head vs a public leader: miRDB v6.0 wins (negative)}{8}{}\protected@file@percent }
+\citation{tarbase}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces RNAcofold MFE for the 20 top candidate windows with the real miRNA vs shuffled-miRNA controls.}}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.11}Second independent benchmark: TarBase v9.0 (negative for the CNN)}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.12}Third arm: pure duplex thermodynamics (RNAhybrid) is near chance}{10}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Per-miRNA AUROC on the committed miRTarBase rows (77 miRNAs present in both benchmarks). Left: distributions for RNAhybrid, DuplexCNN, miRDB. Right: RNAhybrid vs DuplexCNN per miRNA; the CNN wins 76/80.}}{10}{}\protected@file@percent }
+\newlabel{fig:rnahybrid}{{8}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.13}Fourth arm: alignment-based biophysics (miRanda) sits between}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Left: pooled AUROC on the committed miRTarBase rows for the four predictor arms (miRDB from \texttt  {results/mirdb\_benchmark.json}; the other three on identical rows, $n=7{,}914$). Right: miRanda versus DuplexCNN per miRNA; orange points are miRNAs where miRanda wins.}}{11}{}\protected@file@percent }
+\newlabel{fig:miranda}{{9}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Documented negatives}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Falsification paths}{11}{}\protected@file@percent }
 \bibcite{g}{Grimson et al.(2007)}
 \bibcite{a}{Agarwal et al.(2015)}
 \bibcite{z}{Zhou et al.(2026)}
+\bibcite{mtb}{Huang et al.(2022)}
+\bibcite{tarbase}{Skoufos et al.(2024)}
+\bibcite{mirdb}{Chen and Wang(2020)}
+\bibcite{mygene}{Xin et al.(2016)}
 \bibcite{m}{Memczak et al.(2013)}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Per-miRNA AUROC of the negated CNN min-score against ENCORI CLIP support. Dashed: chance. Sign convention audited in the per-miRNA feature audit.}}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Documented negatives}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Falsification paths}{6}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Per-miRNA univariate AUROC: raw CNN min-score vs the best seed-count/length feature. Every one of 132 miRNAs sits below the diagonal.}}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Mathematical derivations}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Convolutional duplex scoring}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Pearson and Spearman benchmarks}{7}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces RNAcofold MFE for the 20 top candidate windows with the real miRNA vs shuffled-miRNA controls.}}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Fisher exact test for CLIP enrichment}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Odds ratio}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}AUROC as a Mann--Whitney statistic}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Bootstrap confidence interval for $\Delta $AUROC}{9}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}Permutation null}{9}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.8}Seed-match enumerator}{9}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.9}Wilcoxon signed-rank for paired per-gene comparisons}{9}{}\protected@file@percent }
-\gdef \@abspage@last{9}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Mathematical derivations}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Convolutional duplex scoring}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Pearson and Spearman benchmarks}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Fisher exact test for CLIP enrichment}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Odds ratio}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}AUROC as a Mann--Whitney statistic}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Bootstrap confidence interval for $\Delta $AUROC}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}Permutation null}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.8}Seed-match enumerator}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.9}Wilcoxon signed-rank for paired per-gene comparisons}{14}{}\protected@file@percent }
+\gdef \@abspage@last{14}

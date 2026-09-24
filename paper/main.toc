@@ -10,16 +10,23 @@
 \contentsline {subsection}{\numberline {4.3}CLIP falsification}{4}{}%
 \contentsline {subsection}{\numberline {4.4}Pair-map ablation (architecture honesty)}{4}{}%
 \contentsline {subsection}{\numberline {4.5}Per-miRNA feature audit: the univariate CNN signal is site-count confounding}{5}{}%
-\contentsline {subsection}{\numberline {4.6}Biophysical sanity check: duplex MFE vs shuffled controls}{5}{}%
-\contentsline {section}{\numberline {5}Documented negatives}{6}{}%
-\contentsline {section}{\numberline {6}Falsification paths}{6}{}%
-\contentsline {section}{\numberline {7}Mathematical derivations}{7}{}%
-\contentsline {subsection}{\numberline {7.1}Convolutional duplex scoring}{7}{}%
-\contentsline {subsection}{\numberline {7.2}Pearson and Spearman benchmarks}{7}{}%
-\contentsline {subsection}{\numberline {7.3}Fisher exact test for CLIP enrichment}{8}{}%
-\contentsline {subsection}{\numberline {7.4}Odds ratio}{8}{}%
-\contentsline {subsection}{\numberline {7.5}AUROC as a Mann--Whitney statistic}{8}{}%
-\contentsline {subsection}{\numberline {7.6}Bootstrap confidence interval for $\Delta $AUROC}{9}{}%
-\contentsline {subsection}{\numberline {7.7}Permutation null}{9}{}%
-\contentsline {subsection}{\numberline {7.8}Seed-match enumerator}{9}{}%
-\contentsline {subsection}{\numberline {7.9}Wilcoxon signed-rank for paired per-gene comparisons}{9}{}%
+\contentsline {subsection}{\numberline {4.6}Breadth audit: the conditional CNN gain is distributed, not carried by a few miRNAs}{5}{}%
+\contentsline {subsection}{\numberline {4.7}Expression confound: HEK293 abundance explains most of the CLIP signal (negative)}{6}{}%
+\contentsline {subsection}{\numberline {4.8}Biophysical sanity check: duplex MFE vs shuffled controls}{7}{}%
+\contentsline {subsection}{\numberline {4.9}Independent literature benchmark: miRTarBase 10.0}{7}{}%
+\contentsline {subsection}{\numberline {4.10}Head-to-head vs a public leader: miRDB v6.0 wins (negative)}{8}{}%
+\contentsline {subsection}{\numberline {4.11}Second independent benchmark: TarBase v9.0 (negative for the CNN)}{9}{}%
+\contentsline {subsection}{\numberline {4.12}Third arm: pure duplex thermodynamics (RNAhybrid) is near chance}{10}{}%
+\contentsline {subsection}{\numberline {4.13}Fourth arm: alignment-based biophysics (miRanda) sits between}{11}{}%
+\contentsline {section}{\numberline {5}Documented negatives}{11}{}%
+\contentsline {section}{\numberline {6}Falsification paths}{11}{}%
+\contentsline {section}{\numberline {7}Mathematical derivations}{12}{}%
+\contentsline {subsection}{\numberline {7.1}Convolutional duplex scoring}{12}{}%
+\contentsline {subsection}{\numberline {7.2}Pearson and Spearman benchmarks}{13}{}%
+\contentsline {subsection}{\numberline {7.3}Fisher exact test for CLIP enrichment}{13}{}%
+\contentsline {subsection}{\numberline {7.4}Odds ratio}{13}{}%
+\contentsline {subsection}{\numberline {7.5}AUROC as a Mann--Whitney statistic}{13}{}%
+\contentsline {subsection}{\numberline {7.6}Bootstrap confidence interval for $\Delta $AUROC}{13}{}%
+\contentsline {subsection}{\numberline {7.7}Permutation null}{14}{}%
+\contentsline {subsection}{\numberline {7.8}Seed-match enumerator}{14}{}%
+\contentsline {subsection}{\numberline {7.9}Wilcoxon signed-rank for paired per-gene comparisons}{14}{}%
