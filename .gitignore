@@ -1,0 +1,6 @@
+data/*.zip
+data/*.txt
+data/human_*.tsv
+*.log
+__pycache__/
+results/*.pt
