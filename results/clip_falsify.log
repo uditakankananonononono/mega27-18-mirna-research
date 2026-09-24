@@ -1,0 +1,40 @@
+panel present: 23 missing: ['hsa-miR-124-3p', 'hsa-miR-142-3p']
+hsa-miR-7-5p {'genes': 4736, 'clip_pos': 1002, 'clip_genes_total': 2162, 'auroc_cnn_min': 0.4911}
+hsa-let-7a-5p {'genes': 2417, 'clip_pos': 455, 'clip_genes_total': 1802, 'auroc_cnn_min': 0.5634}
+hsa-miR-21-5p {'genes': 2476, 'clip_pos': 418, 'clip_genes_total': 1098, 'auroc_cnn_min': 0.5573}
+hsa-miR-17-5p {'genes': 4897, 'clip_pos': 925, 'clip_genes_total': 2580, 'auroc_cnn_min': 0.5958}
+hsa-miR-19a-3p {'genes': 2897, 'clip_pos': 579, 'clip_genes_total': 1975, 'auroc_cnn_min': 0.571}
+hsa-miR-92a-3p {'genes': 3132, 'clip_pos': 501, 'clip_genes_total': 1648, 'auroc_cnn_min': 0.5846}
+hsa-miR-16-5p {'genes': 4013, 'clip_pos': 952, 'clip_genes_total': 2729, 'auroc_cnn_min': 0.537}
+hsa-miR-24-3p {'genes': 5994, 'clip_pos': 926, 'clip_genes_total': 1746, 'auroc_cnn_min': 0.5168}
+hsa-miR-26a-5p {'genes': 3994, 'clip_pos': 635, 'clip_genes_total': 1736, 'auroc_cnn_min': 0.5737}
+hsa-miR-27a-3p {'genes': 4391, 'clip_pos': 1000, 'clip_genes_total': 2609, 'auroc_cnn_min': 0.5452}
+hsa-miR-29a-3p {'genes': 2562, 'clip_pos': 515, 'clip_genes_total': 1868, 'auroc_cnn_min': 0.5473}
+hsa-miR-30a-5p {'genes': 3026, 'clip_pos': 514, 'clip_genes_total': 1620, 'auroc_cnn_min': 0.566}
+hsa-miR-103a-3p {'genes': 4032, 'clip_pos': 1003, 'clip_genes_total': 2778, 'auroc_cnn_min': 0.5251}
+hsa-miR-125b-5p {'genes': 4046, 'clip_pos': 590, 'clip_genes_total': 1471, 'auroc_cnn_min': 0.4684}
+hsa-miR-130a-3p {'genes': 2892, 'clip_pos': 594, 'clip_genes_total': 2244, 'auroc_cnn_min': 0.5828}
+hsa-miR-137 {'genes': 2577, 'clip_pos': 364, 'clip_genes_total': 1371, 'auroc_cnn_min': 0.522}
+hsa-miR-155-5p {'genes': 3017, 'clip_pos': 643, 'clip_genes_total': 1308, 'auroc_cnn_min': 0.565}
+hsa-miR-181a-5p {'genes': 3953, 'clip_pos': 777, 'clip_genes_total': 2058, 'auroc_cnn_min': 0.5279}
+hsa-miR-199a-5p {'genes': 3967, 'clip_pos': 621, 'clip_genes_total': 1587, 'auroc_cnn_min': 0.4917}
+hsa-miR-200c-3p {'genes': 3585, 'clip_pos': 782, 'clip_genes_total': 2022, 'auroc_cnn_min': 0.5416}
+hsa-miR-221-3p {'genes': 2808, 'clip_pos': 563, 'clip_genes_total': 1393, 'auroc_cnn_min': 0.5218}
+hsa-miR-23a-3p {'genes': 4506, 'clip_pos': 837, 'clip_genes_total': 2013, 'auroc_cnn_min': 0.5423}
+hsa-miR-1-3p {'genes': 3706, 'clip_pos': 557, 'clip_genes_total': 1505, 'auroc_cnn_min': 0.5373}
+{
+ "source": "ENCORI miRNATarget API, clipExpNum>=1, hg38",
+ "n_pairs": 83624,
+ "n_clip_pos": 15753,
+ "auroc_base": 0.5905,
+ "auroc_base_plus_cnn": 0.5979,
+ "delta_auroc_mean": 0.0075,
+ "delta_ci95": [
+  0.0057,
+  0.0093
+ ],
+ "perm_null_auroc_mean": 0.5904,
+ "perm_null_auroc_max": 0.5909,
+ "perm_p": 0.047619047619047616,
+ "verdict": "H0 rejected: CNN adds CLIP signal"
+}
