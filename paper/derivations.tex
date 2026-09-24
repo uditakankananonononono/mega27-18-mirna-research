@@ -1,0 +1,90 @@
+\section{Mathematical derivations}
+Notation matches \texttt{src/duplexcnn} and \texttt{scripts/clip\_falsify.py};
+every statistic below appears in a committed results JSON.
+
+\subsection{Convolutional duplex scoring}
+The pair-map $P$ is scored by stacked convolutions. One layer with kernel $W\in\mathbb R^{C_{\text{out}}\times C_{\text{in}}\times k}$ and bias $b$:
+\begin{equation}
+h^{(\ell+1)}_{c,j}=\sigma\Big(\sum_{c'}\sum_{u=0}^{k-1}W_{c,c',u}\,h^{(\ell)}_{c',j+u-p}+b_c\Big),\qquad
+\sigma(x)=\max(0,x),
+\end{equation}
+with padding $p=\lfloor k/2\rfloor$ keeping length fixed so positional pairing
+information survives to the head. Training minimizes MSE against the
+TargetScan context++ score; the held-out unit is the \emph{gene}, so no
+transcript can contribute to both fit and evaluation.
+
+\subsection{Pearson and Spearman benchmarks}
+Held-out agreement with context++ is
+\begin{equation}
+r=\frac{\sum_i(y_i-\bar y)(\hat y_i-\bar{\hat y})}{\sqrt{\sum_i(y_i-\bar y)^2\sum_i(\hat y_i-\bar{\hat y})^2}},\qquad
+r_s=r\big(\mathrm{rank}(y),\mathrm{rank}(\hat y)\big),
+\end{equation}
+the second being Pearson on ranks, robust to monotone distortion of the score
+scale. DuplexCNN: $r=0.8121$, $r_s=0.7928$ (committed ablation JSON).
+
+\subsection{Fisher exact test for CLIP enrichment}
+For one miRNA, genes partition by CNN min-score (high/low) and CLIP support
+(supported/not) into a $2\times2$ table with margins fixed by construction.
+Under the null of independence the count $x$ of high-scoring CLIP-supported
+genes is hypergeometric:
+\begin{equation}
+P(X=x)=\frac{\binom{K}{x}\binom{N-K}{n-x}}{\binom{N}{n}},\qquad
+p=\sum_{x'\ge x}P(X=x'),
+\end{equation}
+an exact small-sample test that needs no asymptotic approximation.
+
+\subsection{Odds ratio}
+Effect size is reported as
+\begin{equation}
+\mathrm{OR}=\frac{x/(n-x)}{(K-x)/(N-K-n+x)},
+\end{equation}
+so a per-miRNA AUROC of $0.55$ can be read directly as an enrichment strength
+rather than a bare significance flag.
+
+\subsection{AUROC as a Mann--Whitney statistic}
+The per-miRNA CNN-min AUROC against CLIP labels is
+\begin{equation}
+\mathrm{AUROC}=\frac{1}{n_+n_-}\sum_{i\in+}\sum_{j\in-}\Big(\mathbf 1[s_i>s_j]+\tfrac12\mathbf 1[s_i=s_j]\Big),
+\end{equation}
+i.e.\ the probability a random CLIP-supported gene outscores a random
+unsupported one; chance is $0.5$ by construction.
+
+\subsection{Bootstrap confidence interval for $\Delta$AUROC}
+The base-vs-base+CNN comparison resamples (miRNA,gene) units with replacement
+$B=1000$ times, refits nothing (scores are fixed), and recomputes the AUROC gap:
+\begin{equation}
+\Delta_b=\mathrm{AUROC}_b^{\text{base+CNN}}-\mathrm{AUROC}_b^{\text{base}},\qquad
+\mathrm{CI}_{95}=[\hat Q_{\Delta}(0.025),\ \hat Q_{\Delta}(0.975)],
+\end{equation}
+which yielded $[+0.0057,+0.0093]$ on the 23-miRNA panel --- the interval
+excludes zero, so the sign of the effect is not sampling noise.
+
+\subsection{Permutation null}
+To test whether the CNN adds signal beyond covariates within miRNA, labels are
+shuffled \emph{inside} each miRNA stratum $B=20$ times:
+\begin{equation}
+p=\frac{1+\#\{b:\Delta_b\ge\Delta_{\text{obs}}\}}{B+1},
+\end{equation}
+preserving miRNA-level base rates under the null. The 23-miRNA panel gave
+$p=0.048$; the 136-miRNA rerun (this paper's extended falsification) uses the
+identical null so the two numbers are commensurable.
+
+\subsection{Seed-match enumerator}
+The discovery scan counts exact seed complementarity. For UTR $u$ and miRNA
+$m$ with seed $\sigma_m$ (positions 2--8),
+\begin{equation}
+n_{8\text{mer}}(u,m)=\sum_{j}\mathbf 1\big[u_{j:j+8}=\mathrm{revcomp}(\sigma_m\,A1)\big],\qquad
+n_{\text{total}}=\sum_m\sum_u\big(n_{8\text{mer}}+n_{7\text{mer-A1}}\big),
+\end{equation}
+enumerating 1{,}453{,}439 novel non-conserved matches --- the scale that makes
+a learned prioritizer necessary and the falsification non-trivial.
+
+\subsection{Wilcoxon signed-rank for paired per-gene comparisons}
+Where designs are compared per gene $g$ (full vs ablated model), differences
+$d_g$ are ranked by magnitude and
+\begin{equation}
+W=\sum_{g:d_g>0}\mathrm{rank}(|d_g|),\qquad
+p\ \text{from the exact null distribution of }W,
+\end{equation}
+a distribution-free paired test whose $W=0$ (all differences one direction) is
+the strongest possible ordinal outcome at a given $n$.
