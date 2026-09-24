@@ -190,7 +190,7 @@ def main():
             p[b] = LogisticRegression(max_iter=3000).fit(X[a], y[a]).predict_proba(X[b])[:, 1]
         return p
 
-    pb, pf = cv_pred(base), cv_pred(np.column_stack([base, cnn]))
+    pb, pf = cv_pred(base), cv_pred(sp.hstack([base, cnn]).tocsr())
     rng = np.random.default_rng(0)
     deltas = []
     for _ in range(1000):

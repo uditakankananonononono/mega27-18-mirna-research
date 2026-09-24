@@ -1,21 +1,34 @@
 \relax 
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2}Data}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Methods}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}DuplexCNN architecture}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Non-conserved scan}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}CLIP falsification design}{2}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Held-out-gene Pearson $r$ by model. Sequence-only CNN v1 ($0.669$) merely matched ridge ($0.664$) --- archived as a non-win; adding context features gives DuplexCNN $0.811$ vs ridge+context $0.779$.}}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Benchmark}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Discovery scan}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}CLIP falsification}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Documented negatives}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Data}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methods}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}DuplexCNN architecture}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Non-conserved scan}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}CLIP falsification design}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Held-out-gene Pearson $r$ by model. Sequence-only CNN v1 ($0.669$) merely matched ridge ($0.664$) --- archived as a non-win; adding context features gives DuplexCNN $0.811$ vs ridge+context $0.779$.}}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Benchmark}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Discovery scan}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}CLIP falsification}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Pair-map ablation (architecture honesty)}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Score curve over the top 100 diverse (miRNA, gene) pairs.}}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Per-miRNA feature audit: the univariate CNN signal is site-count confounding}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Documented negatives}{5}{}\protected@file@percent }
 \bibcite{g}{Grimson et al.(2007)}
 \bibcite{a}{Agarwal et al.(2015)}
 \bibcite{z}{Zhou et al.(2026)}
 \bibcite{m}{Memczak et al.(2013)}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Score curve over the top 100 diverse (miRNA, gene) pairs.}}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Falsification paths}{4}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Per-miRNA AUROC of the CNN min-score against ENCORI CLIP support. Dashed: chance.}}{5}{}\protected@file@percent }
-\gdef \@abspage@last{5}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Per-miRNA AUROC of the negated CNN min-score against ENCORI CLIP support. Dashed: chance. Sign convention audited in the per-miRNA feature audit.}}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Falsification paths}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Mathematical derivations}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Per-miRNA univariate AUROC: raw CNN min-score vs the best seed-count/length feature. Every one of 132 miRNAs sits below the diagonal.}}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Convolutional duplex scoring}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Pearson and Spearman benchmarks}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Fisher exact test for CLIP enrichment}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Odds ratio}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}AUROC as a Mann--Whitney statistic}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Bootstrap confidence interval for $\Delta $AUROC}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}Permutation null}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.8}Seed-match enumerator}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.9}Wilcoxon signed-rank for paired per-gene comparisons}{9}{}\protected@file@percent }
+\gdef \@abspage@last{9}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.8.14)  24 SEP 2026 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.8.14)  24 SEP 2026 22:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -303,15 +303,15 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
-)
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/fig_benchmark.pdf, id=13, 346.89601pt x 195.129pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [2]
+<figs/fig_benchmark.pdf, id=16, 346.89601pt x 195.129pt>
 File: figs/fig_benchmark.pdf Graphic file (type pdf)
 <use figs/fig_benchmark.pdf>
 Package pdftex.def Info: figs/fig_benchmark.pdf  used on input line 32.
@@ -320,16 +320,16 @@ Package pdftex.def Info: figs/fig_benchmark.pdf  used on input line 32.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/fig_discovery_curve.pdf, id=14, 317.98799pt x 180.675pt>
+<figs/fig_discovery_curve.pdf, id=17, 317.98799pt x 180.675pt>
 File: figs/fig_discovery_curve.pdf Graphic file (type pdf)
 <use figs/fig_discovery_curve.pdf>
 Package pdftex.def Info: figs/fig_discovery_curve.pdf  used on input line 36.
 (pdftex.def)             Requested size: 352.31625pt x 200.19046pt.
-[2]
+[3]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/fig_clip_permirna.pdf, id=21, 375.804pt x 187.902pt>
+<figs/fig_clip_permirna.pdf, id=24, 375.804pt x 187.902pt>
 File: figs/fig_clip_permirna.pdf Graphic file (type pdf)
 <use figs/fig_clip_permirna.pdf>
 Package pdftex.def Info: figs/fig_clip_permirna.pdf  used on input line 39.
@@ -337,30 +337,55 @@ Package pdftex.def Info: figs/fig_clip_permirna.pdf  used on input line 39.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./figs/fig_benchmark.pdf>] [4 <./figs/fig_discovery_curve.pdf>] [5 <./figs/
-fig_clip_permirna.pdf>] (./main.aux) ) 
+
+Overfull \hbox (12.60936pt too wide) in paragraph at lines 41--42
+\OT1/ptm/m/n/10.95 Pooled (23-miRNA panel): AU-ROC $\OT1/ztmcm/m/n/10.95 0\OML/
+ztmcm/m/it/10.95 :\OT1/ztmcm/m/n/10.95 5905$ \OT1/ptm/m/n/10.95 (co-vari-ates) 
+$\OMS/ztmcm/m/n/10.95 ! \OT1/ztmcm/m/n/10.95 0\OML/ztmcm/m/it/10.95 :\OT1/ztmcm
+/m/n/10.95 5979$ \OT1/ptm/m/n/10.95 (+CNN); $\OT1/ztmcm/m/n/10.95 ^^A = +0\OML/
+ztmcm/m/it/10.95 :\OT1/ztmcm/m/n/10.95 0075$\OT1/ptm/m/n/10.95 , CI $\OT1/ztmcm
+/m/n/10.95 [0\OML/ztmcm/m/it/10.95 :\OT1/ztmcm/m/n/10.95 0057\OML/ztmcm/m/it/10
+.95 ; \OT1/ztmcm/m/n/10.95 0\OML/ztmcm/m/it/10.95 :\OT1/ztmcm/m/n/10.95 0093]$\
+OT1/ptm/m/n/10.95 ,
+ []
+
+[4 <./figs/fig_benchmark.pdf>]
+<figs/fig_permirna_scatter.pdf, id=64, 303.534pt x 289.08pt>
+File: figs/fig_permirna_scatter.pdf Graphic file (type pdf)
+<use figs/fig_permirna_scatter.pdf>
+Package pdftex.def Info: figs/fig_permirna_scatter.pdf  used on input line 47.
+(pdftex.def)             Requested size: 258.36668pt x 246.0632pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./figs/fig_discovery_curve.pdf>] (./derivations.tex [6 <./figs/fig_clip_per
+mirna.pdf>] [7 <./figs/fig_permirna_scatter.pdf>] [8]) [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3356 strings out of 480247
- 49910 string characters out of 5896151
+ 3383 strings out of 480247
+ 50379 string characters out of 5896151
  341084 words of memory out of 5000000
- 21246 multiletter control sequences out of 15000+600000
- 515685 words of font info for 128 fonts, out of 8000000 for 9000
+ 21259 multiletter control sequences out of 15000+600000
+ 521191 words of font info for 140 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,7n,62p,1049b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/
-dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 133405 bytes).
+ 55i,7n,62p,1289b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/
+share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsf
+s10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on main.pdf (9 pages, 178563 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 256 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

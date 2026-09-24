@@ -1,12 +1,24 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{}%
-\contentsline {section}{\numberline {2}Data}{2}{}%
-\contentsline {section}{\numberline {3}Methods}{2}{}%
-\contentsline {subsection}{\numberline {3.1}DuplexCNN architecture}{2}{}%
-\contentsline {subsection}{\numberline {3.2}Non-conserved scan}{2}{}%
-\contentsline {subsection}{\numberline {3.3}CLIP falsification design}{2}{}%
-\contentsline {section}{\numberline {4}Results}{3}{}%
-\contentsline {subsection}{\numberline {4.1}Benchmark}{3}{}%
-\contentsline {subsection}{\numberline {4.2}Discovery scan}{3}{}%
-\contentsline {subsection}{\numberline {4.3}CLIP falsification}{3}{}%
-\contentsline {section}{\numberline {5}Documented negatives}{3}{}%
-\contentsline {section}{\numberline {6}Falsification paths}{4}{}%
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Data}{3}{}%
+\contentsline {section}{\numberline {3}Methods}{3}{}%
+\contentsline {subsection}{\numberline {3.1}DuplexCNN architecture}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Non-conserved scan}{3}{}%
+\contentsline {subsection}{\numberline {3.3}CLIP falsification design}{3}{}%
+\contentsline {section}{\numberline {4}Results}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Benchmark}{4}{}%
+\contentsline {subsection}{\numberline {4.2}Discovery scan}{4}{}%
+\contentsline {subsection}{\numberline {4.3}CLIP falsification}{4}{}%
+\contentsline {subsection}{\numberline {4.4}Pair-map ablation (architecture honesty)}{4}{}%
+\contentsline {subsection}{\numberline {4.5}Per-miRNA feature audit: the univariate CNN signal is site-count confounding}{5}{}%
+\contentsline {section}{\numberline {5}Documented negatives}{5}{}%
+\contentsline {section}{\numberline {6}Falsification paths}{6}{}%
+\contentsline {section}{\numberline {7}Mathematical derivations}{6}{}%
+\contentsline {subsection}{\numberline {7.1}Convolutional duplex scoring}{7}{}%
+\contentsline {subsection}{\numberline {7.2}Pearson and Spearman benchmarks}{7}{}%
+\contentsline {subsection}{\numberline {7.3}Fisher exact test for CLIP enrichment}{7}{}%
+\contentsline {subsection}{\numberline {7.4}Odds ratio}{8}{}%
+\contentsline {subsection}{\numberline {7.5}AUROC as a Mann--Whitney statistic}{8}{}%
+\contentsline {subsection}{\numberline {7.6}Bootstrap confidence interval for $\Delta $AUROC}{8}{}%
+\contentsline {subsection}{\numberline {7.7}Permutation null}{8}{}%
+\contentsline {subsection}{\numberline {7.8}Seed-match enumerator}{9}{}%
+\contentsline {subsection}{\numberline {7.9}Wilcoxon signed-rank for paired per-gene comparisons}{9}{}%
