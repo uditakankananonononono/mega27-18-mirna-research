@@ -110,8 +110,29 @@ def main():
     net.load_state_dict(torch.load(ROOT / "results" / "duplex_cnn.pt"))
     net.eval()
 
-    rows, per_mir = [], {}
+    import gc
+    ROWS_CSV = os.environ.get("CLIP_ROWS", str(ROOT / "results" / "clip_rows_136.csv"))
+    rows, per_mir, done = [], {}, set()
+    PER_JSONL = ROWS_CSV.replace(".csv", "_perm.jsonl")
+    if os.path.exists(PER_JSONL):
+        for line in open(PER_JSONL):
+            d = json.loads(line)
+            per_mir.update(d)
+    if os.path.exists(ROWS_CSV):
+        with open(ROWS_CSV) as fh:
+            for line in fh:
+                p_ = line.rstrip("\n").split(",")
+                if p_[0] == "mirna":
+                    continue
+                rows.append((p_[0], p_[1], float(p_[2]), float(p_[3]), int(p_[4]), int(p_[5]), int(p_[6]), int(p_[7])))
+                done.add(p_[0])
+        print("resuming:", len(done), "miRNAs already done,", len(rows), "rows", flush=True)
+    rows_fh = open(ROWS_CSV, "a")
+    if os.path.getsize(ROWS_CSV) == 0:
+        rows_fh.write("mirna,gene,min,sum,n8,n7,len,label\n"); rows_fh.flush()
     for mi, seq in mirs.items():
+        if mi in done:
+            continue
         clip = encori(mi)
         excl = cons_genes.get(seq[1:8], set())
         seed8, seed7 = rc(seq[1:8]), rc(seq[1:7])
@@ -143,16 +164,24 @@ def main():
         yv = np.array([int(g in clip) for g in agg])
         for (g, a), l in zip(agg.items(), yv):
             rows.append((mi, g, a["min"], a["sum"], a["n8"], a["n7"], a["len"], int(l)))
+            rows_fh.write(f"{mi},{g},{a['min']},{a['sum']},{a['n8']},{a['n7']},{a['len']},{int(l)}\n")
+        rows_fh.flush()
         mins = np.array([a["min"] for a in agg.values()])
         per_mir[mi] = {"genes": len(agg), "clip_pos": int(yv.sum()), "clip_genes_total": len(clip),
                        "auroc_cnn_min": round(float(roc_auc_score(yv, -mins)), 4) if 0 < yv.sum() < len(yv) else None}
+        del sc, agg, clip, cands; gc.collect()
         print(mi, per_mir[mi], flush=True)
+        with open(PER_JSONL, "a") as pf_:
+            pf_.write(json.dumps({mi: per_mir[mi]}) + "\n")
 
     mir_idx = {m: k for k, m in enumerate(sorted({r[0] for r in rows}))}
     y = np.array([r[7] for r in rows])
     mids = np.array([mir_idx[r[0]] for r in rows])
-    base = np.column_stack([np.log1p([r[4] for r in rows]), np.log1p([r[5] for r in rows]),
-                            np.log([max(r[6], 1) for r in rows]), np.eye(len(mir_idx), dtype=np.float32)[mids]]).astype(np.float32)
+    import scipy.sparse as sp
+    oh = sp.csr_matrix((np.ones(len(mids), np.float32), (np.arange(len(mids)), mids)),
+                       shape=(len(mids), len(mir_idx)))
+    base = sp.hstack([np.column_stack([np.log1p([r[4] for r in rows]), np.log1p([r[5] for r in rows]),
+                                       np.log([max(r[6], 1) for r in rows])]).astype(np.float32), oh]).tocsr()
     cnn = np.column_stack([[r[2] for r in rows], [r[3] for r in rows]]).astype(np.float32)
 
     def cv_pred(X):
@@ -173,7 +202,7 @@ def main():
         for m in range(len(mir_idx)):
             ix = np.where(mids == m)[0]
             c2[ix] = cnn[rng.permutation(ix)]
-        perm.append(roc_auc_score(y, cv_pred(np.column_stack([base, c2]))))
+        perm.append(roc_auc_score(y, cv_pred(sp.hstack([base, c2]).tocsr())))
     a_f = float(roc_auc_score(y, pf))
     out = {"hypothesis": __doc__.strip(), "source": "ENCORI miRNATarget API, clipExpNum>=1, hg38",
            "n_pairs": int(len(y)), "n_clip_pos": int(y.sum()),
