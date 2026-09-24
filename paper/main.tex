@@ -74,6 +74,39 @@ above.
 Dashed: zero; dotted: median ($+0.0046$). $64.9\%$ of miRNAs are positive;
 Wilcoxon $p=2.0\times10^{-9}$.}
 \label{fig:permirna_delta}\end{figure}
+\subsection{Expression confound: HEK293 abundance explains most of the CLIP signal (negative)}
+ENCORI AGO-CLIP libraries come mostly from HEK293 cells, and a transcript that is
+abundant in HEK293 yields more CLIP reads whether or not the miRNA regulates it.
+We tested this directly with the Human Protein Atlas cell-line RNA atlas
+(\texttt{rna\_celline.tsv.zip}, HEK293 nTPM; derived table committed as
+\texttt{results/hpa\_hek293\_ntpm.tsv}). Of the 476{,}369 committed CLIP rows,
+435{,}394 matched an HPA gene symbol (1{,}891 genes unmatched and dropped).
+CLIP-positive genes are far more expressed: median $\log(1+\mathrm{nTPM})$ 2.79
+vs 1.76 for negatives (Mann--Whitney $p$ below double-precision underflow).
+Under gene-grouped 5-fold cross-validation (no gene in both train and test;
+\texttt{scripts/expression\_confound.py}, \texttt{results/expression\_confound.json},
+four hermetic tests) the pooled AUROCs are: site counts $[n_8,n_7,\mathrm{len}]$
+0.568; site counts$+$CNN 0.573; HEK293 expression alone 0.682; site
+counts$+$expression 0.694; site counts$+$expression$+$CNN 0.695
+(Figure~\ref{fig:exprconf}). Expression alone beats every sequence model we have.
+Adding expression shrinks the CNN's conditional pooled gain from $+0.0048$ to
+$+0.0008$, about a six-fold reduction. Per miRNA (130 miRNAs with $\ge50$
+positives and negatives, covariates now including expression) the gain survives
+in sign but is tiny: median $+0.0004$, IQR $[-0.0007,+0.0029]$, $60.8\%$
+positive, Wilcoxon $p=5.1\times10^{-4}$.
+\emph{Verdict:} the CNN still carries a detectable, non-zero signal beyond site
+counts and abundance, but the practical size of the CLIP ``falsification pass''
+is much smaller than the $+0.0060$ headline suggests once the dominant confound
+is controlled. Every earlier CLIP number in this paper should be read with this
+correction. The obvious next control, CLIP read depth normalized by RNA-seq in the
+same library, needs per-library data that ENCORI does not expose.
+\begin{figure}[h]\centering
+\includegraphics[width=0.95\linewidth]{figs/fig_expression_confound.pdf}
+\caption{Left: pooled AUROC of nested logistic models on CLIP labels under
+gene-grouped CV. HEK293 expression (HPA nTPM) alone outperforms site counts and
+the CNN. Right: per-miRNA $\Delta$AUROC of adding the CNN to site counts$+$expression
+(130 miRNAs; dotted line = median $+0.0004$).}
+\label{fig:exprconf}\end{figure}
 \subsection{Biophysical sanity check: duplex MFE vs shuffled controls}
 As a sequence-level pipeline validation, the 20 top diverse candidate windows ($\pm25$ nt) were cofolded with their mature miRNA (ViennaRNA RNAcofold) against 10 mononucleotide-shuffled miRNA controls each (\texttt{results/rnafold\_validation.json}). Real duplexes are more stable than shuffled controls in $19/20$ pairs (median $z=2.33$; Wilcoxon $p<10^{-4}$); the exception, miR-7-5p$\to$REG3G ($z=-0.57$), is kept in the candidate table as a flagged row. Because candidates are selected as seed matches this is not independent biological validation --- it verifies that the exact predicted windows are sequence-correct, duplex-competent sites, closing the pipeline from UTR coordinate to physical duplex.
 \begin{figure}[h]\centering
@@ -107,9 +140,9 @@ miRDB beats the CNN on 73/83 miRNAs for any-method labels (Wilcoxon $p=3.2\times
 A data-quality finding: 2{,}199 of the rows used as miRTarBase \emph{negatives} have TarBase support (2{,}063 of them from CLIP-class methods, only 7 from low-yield methods). The miRTarBase negative set is therefore contaminated by CLIP-supported interactions, which lowers every predictor's measured AUROC on that benchmark. Low-yield TarBase positives overlap miRTarBase strong-evidence positives almost fully (1{,}012 of 1{,}019), so that label class is not independent of miRTarBase; the any-method and CLIP classes are the more independent tests. Caveats: TarBase CLIP records overlap the ENCORI CLIP data used in our falsification analyses (not in CNN training), and miRDB's MirTarget was trained on CLIP and array data (leakage in its favour).
 
 \section{Documented negatives}
-(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation). (5) miRDB v6.0 beats our CNN on miRTarBase rows (pooled AUROC 0.787 vs 0.685, 74/84 miRNAs, $p=2.4\times10^{-12}$). (6) On TarBase v9.0 labels the CNN loses to miRDB on 73/83 miRNAs and to the plain seed-site count per miRNA (CNN better on only 32/83, $p=0.0078$).
+(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation). (5) miRDB v6.0 beats our CNN on miRTarBase rows (pooled AUROC 0.787 vs 0.685, 74/84 miRNAs, $p=2.4\times10^{-12}$). (6) On TarBase v9.0 labels the CNN loses to miRDB on 73/83 miRNAs and to the plain seed-site count per miRNA (CNN better on only 32/83, $p=0.0078$). (7) HEK293 expression alone (HPA nTPM, AUROC 0.682) beats all sequence models on CLIP labels and cuts the CNN's conditional pooled gain from $+0.0048$ to $+0.0008$.
 \section{Falsification paths}
-miRTarBase/TarBase validated-target overlap (bulk download currently blocked; ENCORI used instead); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); remaining: miRTarBase/TarBase overlap.
+miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); remaining: library-matched CLIP/RNA-seq normalization.
 \begin{thebibliography}{9}
 \bibitem[Grimson et al.(2007)]{g} Grimson A, et al. MicroRNA targeting specificity in mammals: determinants beyond seed pairing. \emph{Mol Cell} 2007.
 \bibitem[Agarwal et al.(2015)]{a} Agarwal V, et al. Predicting effective microRNA target sites in mammalian mRNAs. \emph{eLife} 2015.

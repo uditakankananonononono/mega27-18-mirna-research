@@ -13,7 +13,8 @@
 15. miRDB v6.0 (mirdb.org) - public-leader head-to-head, results/mirdb_benchmark.json
 16. MyGene.info batch API - RefSeq->symbol mapping for miRDB (scripts/mygene_map.py)
 17. TarBase v9.0 (DIANA) - second independent validation labels, results/tarbase_benchmark.json
-Count: 16 (17 raw entries minus pytest infrastructure). Planned: miRWalk, RNAhybrid.
+18. Human Protein Atlas cell-line RNA atlas (rna_celline.tsv.zip, HEK293 nTPM) - expression confound control, results/expression_confound.json
+Count: 17 (18 raw entries minus pytest infrastructure). Planned: miRWalk, RNAhybrid.
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -23,4 +24,5 @@ Count: 16 (17 raw entries minus pytest infrastructure). Planned: miRWalk, RNAhyb
 141. miRTarBase 10.0 hsa_MTI.csv (all human MTIs, 337,103,345 bytes) - negative exclusion set
 142. miRDB v6.0 miRDB_v6.0_prediction_result.txt.gz (bulk file, counted once) - head-to-head benchmark
 143. TarBase v9.0 Homo_sapiens_TarBase-v9.tsv.gz (bulk file, 4,724,537 records, counted once) - second validation
-Count: 143. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+144. HPA rna_celline.tsv.zip (bulk file, counted once; HEK293 subset committed as results/hpa_hek293_ntpm.tsv) - expression confound control
+Count: 144. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
