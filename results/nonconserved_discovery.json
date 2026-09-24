@@ -1,0 +1,2407 @@
+{
+ "model": "DuplexCNN+context v2 (held-out-gene pearson 0.811)",
+ "n_candidates_scored": 400000,
+ "definition": "8mer/7mer seed match, no overlap with any TargetScan conserved site",
+ "top": [
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 424,
+   "site_class": "8mer",
+   "pred_context_pp": -1.5677
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 187,
+   "site_class": "8mer",
+   "pred_context_pp": -1.5141
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 296,
+   "site_class": "8mer",
+   "pred_context_pp": -1.4749
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 1030,
+   "site_class": "7mer",
+   "pred_context_pp": -1.3648
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 445,
+   "site_class": "8mer",
+   "pred_context_pp": -1.347
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 1012,
+   "site_class": "7mer",
+   "pred_context_pp": -1.3132
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 1209,
+   "site_class": "8mer",
+   "pred_context_pp": -1.2586
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 446,
+   "site_class": "7mer",
+   "pred_context_pp": -1.2224
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 741,
+   "site_class": "7mer",
+   "pred_context_pp": -1.2117
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 921,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1759
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000519970",
+   "gene": null,
+   "utr_pos": 118,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1586
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000393897",
+   "gene": null,
+   "utr_pos": 173,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1334
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "transcript": "ENST00000266086",
+   "gene": null,
+   "utr_pos": 7,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1215
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "transcript": "ENST00000566433",
+   "gene": null,
+   "utr_pos": 23,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1162
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000329312",
+   "gene": null,
+   "utr_pos": 102,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0904
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000276692",
+   "gene": null,
+   "utr_pos": 9,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0681
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "transcript": "ENST00000408957",
+   "gene": null,
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0561
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000331162",
+   "gene": null,
+   "utr_pos": 58,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0357
+  },
+  {
+   "mirna": "hsa-miR-26b-5p",
+   "transcript": "ENST00000216517",
+   "gene": null,
+   "utr_pos": 8,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0268
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 867,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0208
+  },
+  {
+   "mirna": "hsa-miR-196b-5p",
+   "transcript": "ENST00000329913",
+   "gene": null,
+   "utr_pos": 53,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0158
+  },
+  {
+   "mirna": "hsa-miR-424-5p",
+   "transcript": "ENST00000442602",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0056
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "transcript": "ENST00000331162",
+   "gene": null,
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9979
+  },
+  {
+   "mirna": "hsa-miR-196b-5p",
+   "transcript": "ENST00000375947",
+   "gene": null,
+   "utr_pos": 17,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9975
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 939,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9958
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000433076",
+   "gene": null,
+   "utr_pos": 39,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9947
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000513556",
+   "gene": null,
+   "utr_pos": 39,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9947
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "transcript": "ENST00000339642",
+   "gene": null,
+   "utr_pos": 6,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9848
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000542433",
+   "gene": null,
+   "utr_pos": 40,
+   "site_class": "8mer",
+   "pred_context_pp": -0.983
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 188,
+   "site_class": "7mer",
+   "pred_context_pp": -0.9728
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "transcript": "ENST00000329913",
+   "gene": null,
+   "utr_pos": 53,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9717
+  },
+  {
+   "mirna": "hsa-miR-497-5p",
+   "transcript": "ENST00000525863",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9667
+  },
+  {
+   "mirna": "hsa-miR-30e-5p",
+   "transcript": "ENST00000587065",
+   "gene": null,
+   "utr_pos": 34,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9641
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000258672",
+   "gene": null,
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9596
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000471108",
+   "gene": null,
+   "utr_pos": 83,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9507
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000548514",
+   "gene": null,
+   "utr_pos": 203,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9456
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 171,
+   "site_class": "7mer",
+   "pred_context_pp": -0.9348
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 686,
+   "site_class": "7mer",
+   "pred_context_pp": -0.9324
+  },
+  {
+   "mirna": "hsa-miR-219a-5p",
+   "transcript": "ENST00000441133",
+   "gene": null,
+   "utr_pos": 73,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9293
+  },
+  {
+   "mirna": "hsa-miR-1-3p",
+   "transcript": "ENST00000344577",
+   "gene": null,
+   "utr_pos": 170,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9236
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "transcript": "ENST00000372814",
+   "gene": null,
+   "utr_pos": 97,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9171
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000256216",
+   "gene": null,
+   "utr_pos": 5,
+   "site_class": "8mer",
+   "pred_context_pp": -0.916
+  },
+  {
+   "mirna": "hsa-miR-204-5p",
+   "transcript": "ENST00000305625",
+   "gene": null,
+   "utr_pos": 5,
+   "site_class": "8mer",
+   "pred_context_pp": -0.913
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000430850",
+   "gene": null,
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9015
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "transcript": "ENST00000436771",
+   "gene": null,
+   "utr_pos": 56,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9001
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "transcript": "ENST00000463928",
+   "gene": null,
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8993
+  },
+  {
+   "mirna": "hsa-miR-135b-5p",
+   "transcript": "ENST00000367180",
+   "gene": null,
+   "utr_pos": 114,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8992
+  },
+  {
+   "mirna": "hsa-miR-6766-3p",
+   "transcript": "ENST00000397360",
+   "gene": null,
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8968
+  },
+  {
+   "mirna": "hsa-miR-153-3p",
+   "transcript": "ENST00000344330",
+   "gene": null,
+   "utr_pos": 13,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8963
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "transcript": "ENST00000391684",
+   "gene": null,
+   "utr_pos": 44,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8918
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000344577",
+   "gene": null,
+   "utr_pos": 170,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8858
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000409180",
+   "gene": null,
+   "utr_pos": 26,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8844
+  },
+  {
+   "mirna": "hsa-miR-4782-3p",
+   "transcript": "ENST00000301015",
+   "gene": null,
+   "utr_pos": 257,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8835
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "transcript": "ENST00000433535",
+   "gene": null,
+   "utr_pos": 159,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8818
+  },
+  {
+   "mirna": "hsa-miR-124-3p.1",
+   "transcript": "ENST00000335647",
+   "gene": null,
+   "utr_pos": 26,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8807
+  },
+  {
+   "mirna": "hsa-miR-363-3p",
+   "transcript": "ENST00000368894",
+   "gene": null,
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.88
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "transcript": "ENST00000378553",
+   "gene": null,
+   "utr_pos": 14,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8797
+  },
+  {
+   "mirna": "hsa-miR-15a-5p",
+   "transcript": "ENST00000442602",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.878
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "transcript": "ENST00000506749",
+   "gene": null,
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8777
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "transcript": "ENST00000409180",
+   "gene": null,
+   "utr_pos": 26,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8775
+  },
+  {
+   "mirna": "hsa-miR-25-3p",
+   "transcript": "ENST00000368894",
+   "gene": null,
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8744
+  },
+  {
+   "mirna": "hsa-miR-223-3p",
+   "transcript": "ENST00000263642",
+   "gene": null,
+   "utr_pos": 80,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8743
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000575898",
+   "gene": null,
+   "utr_pos": 269,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8741
+  },
+  {
+   "mirna": "hsa-miR-15a-5p",
+   "transcript": "ENST00000370363",
+   "gene": null,
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8719
+  },
+  {
+   "mirna": "hsa-miR-30e-5p",
+   "transcript": "ENST00000520800",
+   "gene": null,
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8715
+  },
+  {
+   "mirna": "hsa-miR-182-5p",
+   "transcript": "ENST00000325636",
+   "gene": null,
+   "utr_pos": 113,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8701
+  },
+  {
+   "mirna": "hsa-miR-106a-5p",
+   "transcript": "ENST00000404190",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8689
+  },
+  {
+   "mirna": "hsa-miR-187-3p",
+   "transcript": "ENST00000401090",
+   "gene": null,
+   "utr_pos": 155,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8689
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000305784",
+   "gene": null,
+   "utr_pos": 346,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8682
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000451284",
+   "gene": null,
+   "utr_pos": 107,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8678
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000264553",
+   "gene": null,
+   "utr_pos": 97,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8677
+  },
+  {
+   "mirna": "hsa-miR-383-5p.1",
+   "transcript": "ENST00000373368",
+   "gene": null,
+   "utr_pos": 75,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8673
+  },
+  {
+   "mirna": "hsa-miR-129-2-3p",
+   "transcript": "ENST00000544180",
+   "gene": null,
+   "utr_pos": 167,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8644
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "transcript": "ENST00000575898",
+   "gene": null,
+   "utr_pos": 269,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8639
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000394531",
+   "gene": null,
+   "utr_pos": 95,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8638
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 1318,
+   "site_class": "7mer",
+   "pred_context_pp": -0.8625
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000310357",
+   "gene": null,
+   "utr_pos": 19,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8621
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000409945",
+   "gene": null,
+   "utr_pos": 348,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8609
+  },
+  {
+   "mirna": "hsa-miR-15b-5p",
+   "transcript": "ENST00000370363",
+   "gene": null,
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8603
+  },
+  {
+   "mirna": "hsa-miR-195-5p",
+   "transcript": "ENST00000420827",
+   "gene": null,
+   "utr_pos": 189,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8599
+  },
+  {
+   "mirna": "hsa-miR-199b-3p",
+   "transcript": "ENST00000409061",
+   "gene": null,
+   "utr_pos": 116,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8584
+  },
+  {
+   "mirna": "hsa-miR-497-5p",
+   "transcript": "ENST00000420827",
+   "gene": null,
+   "utr_pos": 189,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8581
+  },
+  {
+   "mirna": "hsa-miR-183-5p.2",
+   "transcript": "ENST00000368011",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8558
+  },
+  {
+   "mirna": "hsa-let-7g-5p",
+   "transcript": "ENST00000575898",
+   "gene": null,
+   "utr_pos": 269,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8544
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000374952",
+   "gene": null,
+   "utr_pos": 46,
+   "site_class": "8mer",
+   "pred_context_pp": -0.854
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "transcript": "ENST00000378832",
+   "gene": null,
+   "utr_pos": 40,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8532
+  },
+  {
+   "mirna": "hsa-miR-30e-5p",
+   "transcript": "ENST00000302040",
+   "gene": null,
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8531
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000541799",
+   "gene": null,
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8523
+  },
+  {
+   "mirna": "hsa-miR-30b-5p",
+   "transcript": "ENST00000520800",
+   "gene": null,
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8519
+  },
+  {
+   "mirna": "hsa-miR-9-5p",
+   "transcript": "ENST00000264735",
+   "gene": null,
+   "utr_pos": 6,
+   "site_class": "8mer",
+   "pred_context_pp": -0.851
+  },
+  {
+   "mirna": "hsa-miR-5195-3p",
+   "transcript": "ENST00000335934",
+   "gene": null,
+   "utr_pos": 138,
+   "site_class": "8mer",
+   "pred_context_pp": -0.849
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000567094",
+   "gene": null,
+   "utr_pos": 431,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8478
+  },
+  {
+   "mirna": "hsa-miR-17-5p",
+   "transcript": "ENST00000404190",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8463
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000367983",
+   "gene": null,
+   "utr_pos": 66,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8453
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000564406",
+   "gene": null,
+   "utr_pos": 26,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8452
+  },
+  {
+   "mirna": "hsa-miR-93-5p",
+   "transcript": "ENST00000404190",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8446
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "transcript": "ENST00000394846",
+   "gene": null,
+   "utr_pos": 276,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8439
+  },
+  {
+   "mirna": "hsa-let-7c-5p",
+   "transcript": "ENST00000541799",
+   "gene": null,
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8429
+  },
+  {
+   "mirna": "hsa-miR-124-3p.2",
+   "transcript": "ENST00000255616",
+   "gene": null,
+   "utr_pos": 126,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8427
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000506749",
+   "gene": null,
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8416
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "transcript": "ENST00000379818",
+   "gene": null,
+   "utr_pos": 71,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8412
+  },
+  {
+   "mirna": "hsa-miR-92b-3p",
+   "transcript": "ENST00000368894",
+   "gene": null,
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8397
+  },
+  {
+   "mirna": "hsa-miR-183-5p.1",
+   "transcript": "ENST00000509620",
+   "gene": null,
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8397
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000421801",
+   "gene": null,
+   "utr_pos": 101,
+   "site_class": "8mer",
+   "pred_context_pp": -0.839
+  },
+  {
+   "mirna": "hsa-miR-125a-5p",
+   "transcript": "ENST00000381984",
+   "gene": null,
+   "utr_pos": 64,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8384
+  },
+  {
+   "mirna": "hsa-miR-194-5p",
+   "transcript": "ENST00000567840",
+   "gene": null,
+   "utr_pos": 56,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8376
+  },
+  {
+   "mirna": "hsa-miR-92b-3p",
+   "transcript": "ENST00000250352",
+   "gene": null,
+   "utr_pos": 25,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8373
+  },
+  {
+   "mirna": "hsa-miR-214-5p",
+   "transcript": "ENST00000478381",
+   "gene": null,
+   "utr_pos": 72,
+   "site_class": "8mer",
+   "pred_context_pp": -0.837
+  },
+  {
+   "mirna": "hsa-let-7c-5p",
+   "transcript": "ENST00000575898",
+   "gene": null,
+   "utr_pos": 269,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8361
+  },
+  {
+   "mirna": "hsa-miR-6807-3p",
+   "transcript": "ENST00000521716",
+   "gene": null,
+   "utr_pos": 142,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8354
+  },
+  {
+   "mirna": "hsa-miR-135a-5p",
+   "transcript": "ENST00000582441",
+   "gene": null,
+   "utr_pos": 20,
+   "site_class": "8mer",
+   "pred_context_pp": -0.835
+  },
+  {
+   "mirna": "hsa-let-7e-5p",
+   "transcript": "ENST00000433535",
+   "gene": null,
+   "utr_pos": 159,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8348
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "transcript": "ENST00000350549",
+   "gene": null,
+   "utr_pos": 102,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8341
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000307637",
+   "gene": null,
+   "utr_pos": 418,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8337
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000559279",
+   "gene": null,
+   "utr_pos": 71,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8334
+  },
+  {
+   "mirna": "hsa-miR-217",
+   "transcript": "ENST00000253435",
+   "gene": null,
+   "utr_pos": 163,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8331
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000397165",
+   "gene": null,
+   "utr_pos": 103,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8327
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000356031",
+   "gene": null,
+   "utr_pos": 37,
+   "site_class": "7mer",
+   "pred_context_pp": -0.8326
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 1335,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8287
+  },
+  {
+   "mirna": "hsa-miR-183-5p.2",
+   "transcript": "ENST00000433996",
+   "gene": null,
+   "utr_pos": 28,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8271
+  },
+  {
+   "mirna": "hsa-miR-153-3p",
+   "transcript": "ENST00000375910",
+   "gene": null,
+   "utr_pos": 74,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8269
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "transcript": "ENST00000377457",
+   "gene": null,
+   "utr_pos": 417,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8254
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "transcript": "ENST00000398186",
+   "gene": null,
+   "utr_pos": 65,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8243
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "transcript": "ENST00000541799",
+   "gene": null,
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8237
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "transcript": "ENST00000551086",
+   "gene": null,
+   "utr_pos": 71,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8218
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000307632",
+   "gene": null,
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8213
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "transcript": "ENST00000377391",
+   "gene": null,
+   "utr_pos": 417,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8185
+  },
+  {
+   "mirna": "hsa-miR-30e-5p",
+   "transcript": "ENST00000518537",
+   "gene": null,
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8181
+  },
+  {
+   "mirna": "hsa-miR-425-5p",
+   "transcript": "ENST00000377169",
+   "gene": null,
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8178
+  },
+  {
+   "mirna": "hsa-miR-199b-3p",
+   "transcript": "ENST00000359904",
+   "gene": null,
+   "utr_pos": 82,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8178
+  },
+  {
+   "mirna": "hsa-miR-6088",
+   "transcript": "ENST00000389124",
+   "gene": null,
+   "utr_pos": 38,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8165
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "transcript": "ENST00000302312",
+   "gene": null,
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8162
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000356858",
+   "gene": null,
+   "utr_pos": 113,
+   "site_class": "8mer",
+   "pred_context_pp": -0.816
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000412360",
+   "gene": null,
+   "utr_pos": 228,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8135
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000325971",
+   "gene": null,
+   "utr_pos": 62,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8135
+  },
+  {
+   "mirna": "hsa-miR-18a-5p",
+   "transcript": "ENST00000380605",
+   "gene": null,
+   "utr_pos": 108,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8131
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "transcript": "ENST00000381989",
+   "gene": null,
+   "utr_pos": 161,
+   "site_class": "8mer",
+   "pred_context_pp": -0.813
+  },
+  {
+   "mirna": "hsa-miR-205-5p",
+   "transcript": "ENST00000430835",
+   "gene": null,
+   "utr_pos": 89,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8124
+  },
+  {
+   "mirna": "hsa-miR-125a-5p",
+   "transcript": "ENST00000399784",
+   "gene": null,
+   "utr_pos": 247,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8108
+  },
+  {
+   "mirna": "hsa-miR-6807-3p",
+   "transcript": "ENST00000253435",
+   "gene": null,
+   "utr_pos": 163,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8106
+  },
+  {
+   "mirna": "hsa-miR-367-3p",
+   "transcript": "ENST00000368894",
+   "gene": null,
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8102
+  },
+  {
+   "mirna": "hsa-miR-4500",
+   "transcript": "ENST00000541799",
+   "gene": null,
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8101
+  },
+  {
+   "mirna": "hsa-miR-4782-3p",
+   "transcript": "ENST00000411976",
+   "gene": null,
+   "utr_pos": 5,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8085
+  },
+  {
+   "mirna": "hsa-miR-30d-5p",
+   "transcript": "ENST00000518537",
+   "gene": null,
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8069
+  },
+  {
+   "mirna": "hsa-miR-5195-3p",
+   "transcript": "ENST00000313482",
+   "gene": null,
+   "utr_pos": 193,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8062
+  },
+  {
+   "mirna": "hsa-miR-29b-3p",
+   "transcript": "ENST00000367459",
+   "gene": null,
+   "utr_pos": 573,
+   "site_class": "8mer",
+   "pred_context_pp": -0.806
+  },
+  {
+   "mirna": "hsa-let-7i-5p",
+   "transcript": "ENST00000541799",
+   "gene": null,
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8051
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000370832",
+   "gene": null,
+   "utr_pos": 112,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8042
+  },
+  {
+   "mirna": "hsa-miR-193a-5p",
+   "transcript": "ENST00000547418",
+   "gene": null,
+   "utr_pos": 5,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8039
+  },
+  {
+   "mirna": "hsa-miR-29b-3p",
+   "transcript": "ENST00000264274",
+   "gene": null,
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8032
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000450895",
+   "gene": null,
+   "utr_pos": 482,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8024
+  },
+  {
+   "mirna": "hsa-miR-129-2-3p",
+   "transcript": "ENST00000254759",
+   "gene": null,
+   "utr_pos": 110,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8024
+  },
+  {
+   "mirna": "hsa-miR-6088",
+   "transcript": "ENST00000302581",
+   "gene": null,
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8022
+  },
+  {
+   "mirna": "hsa-miR-139-5p",
+   "transcript": "ENST00000409999",
+   "gene": null,
+   "utr_pos": 112,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8019
+  },
+  {
+   "mirna": "hsa-miR-183-5p.2",
+   "transcript": "ENST00000553796",
+   "gene": null,
+   "utr_pos": 135,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8018
+  },
+  {
+   "mirna": "hsa-miR-4319",
+   "transcript": "ENST00000378832",
+   "gene": null,
+   "utr_pos": 40,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8013
+  },
+  {
+   "mirna": "hsa-miR-27a-3p",
+   "transcript": "ENST00000260605",
+   "gene": null,
+   "utr_pos": 56,
+   "site_class": "8mer",
+   "pred_context_pp": -0.801
+  },
+  {
+   "mirna": "hsa-miR-199b-3p",
+   "transcript": "ENST00000357424",
+   "gene": null,
+   "utr_pos": 138,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7993
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000573514",
+   "gene": null,
+   "utr_pos": 81,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7992
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000537935",
+   "gene": null,
+   "utr_pos": 61,
+   "site_class": "8mer",
+   "pred_context_pp": -0.797
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000375344",
+   "gene": null,
+   "utr_pos": 917,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7969
+  },
+  {
+   "mirna": "hsa-miR-6766-3p",
+   "transcript": "ENST00000329722",
+   "gene": null,
+   "utr_pos": 60,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7967
+  },
+  {
+   "mirna": "hsa-miR-124-3p.2",
+   "transcript": "ENST00000335647",
+   "gene": null,
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7964
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000506736",
+   "gene": null,
+   "utr_pos": 65,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7962
+  },
+  {
+   "mirna": "hsa-miR-218-5p",
+   "transcript": "ENST00000424586",
+   "gene": null,
+   "utr_pos": 155,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7957
+  },
+  {
+   "mirna": "hsa-miR-449b-5p",
+   "transcript": "ENST00000303015",
+   "gene": null,
+   "utr_pos": 47,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7956
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000403208",
+   "gene": null,
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7952
+  },
+  {
+   "mirna": "hsa-miR-30c-5p",
+   "transcript": "ENST00000409145",
+   "gene": null,
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7948
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "transcript": "ENST00000450895",
+   "gene": null,
+   "utr_pos": 482,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7943
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000299709",
+   "gene": null,
+   "utr_pos": 101,
+   "site_class": "8mer",
+   "pred_context_pp": -0.794
+  },
+  {
+   "mirna": "hsa-miR-19b-3p",
+   "transcript": "ENST00000378953",
+   "gene": null,
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7936
+  },
+  {
+   "mirna": "hsa-miR-449b-5p",
+   "transcript": "ENST00000368747",
+   "gene": null,
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7933
+  },
+  {
+   "mirna": "hsa-let-7d-5p",
+   "transcript": "ENST00000571838",
+   "gene": null,
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7926
+  },
+  {
+   "mirna": "hsa-miR-183-5p.2",
+   "transcript": "ENST00000585429",
+   "gene": null,
+   "utr_pos": 111,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7921
+  },
+  {
+   "mirna": "hsa-miR-1271-5p",
+   "transcript": "ENST00000394846",
+   "gene": null,
+   "utr_pos": 276,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7916
+  },
+  {
+   "mirna": "hsa-miR-506-3p",
+   "transcript": "ENST00000335647",
+   "gene": null,
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7915
+  },
+  {
+   "mirna": "hsa-miR-455-5p",
+   "transcript": "ENST00000369310",
+   "gene": null,
+   "utr_pos": 33,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7909
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 1372,
+   "site_class": "7mer",
+   "pred_context_pp": -0.7908
+  },
+  {
+   "mirna": "hsa-miR-196b-5p",
+   "transcript": "ENST00000598951",
+   "gene": null,
+   "utr_pos": 170,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7899
+  },
+  {
+   "mirna": "hsa-miR-125a-5p",
+   "transcript": "ENST00000393392",
+   "gene": null,
+   "utr_pos": 38,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7897
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000368747",
+   "gene": null,
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7891
+  },
+  {
+   "mirna": "hsa-miR-4782-3p",
+   "transcript": "ENST00000433979",
+   "gene": null,
+   "utr_pos": 356,
+   "site_class": "8mer",
+   "pred_context_pp": -0.789
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "transcript": "ENST00000535047",
+   "gene": null,
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7888
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "transcript": "ENST00000367165",
+   "gene": null,
+   "utr_pos": 35,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7884
+  },
+  {
+   "mirna": "hsa-miR-101-3p.1",
+   "transcript": "ENST00000396039",
+   "gene": null,
+   "utr_pos": 72,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7881
+  },
+  {
+   "mirna": "hsa-miR-19b-3p",
+   "transcript": "ENST00000408901",
+   "gene": null,
+   "utr_pos": 159,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7878
+  },
+  {
+   "mirna": "hsa-let-7c-5p",
+   "transcript": "ENST00000257899",
+   "gene": null,
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7869
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000529819",
+   "gene": null,
+   "utr_pos": 109,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7866
+  },
+  {
+   "mirna": "hsa-miR-204-5p",
+   "transcript": "ENST00000579618",
+   "gene": null,
+   "utr_pos": 9,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7861
+  },
+  {
+   "mirna": "hsa-miR-34c-5p",
+   "transcript": "ENST00000378194",
+   "gene": null,
+   "utr_pos": 465,
+   "site_class": "8mer",
+   "pred_context_pp": -0.786
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "transcript": "ENST00000343150",
+   "gene": null,
+   "utr_pos": 312,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7854
+  },
+  {
+   "mirna": "hsa-miR-145-5p",
+   "transcript": "ENST00000335934",
+   "gene": null,
+   "utr_pos": 138,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7849
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000306357",
+   "gene": null,
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7847
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "transcript": "ENST00000303927",
+   "gene": null,
+   "utr_pos": 60,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7843
+  },
+  {
+   "mirna": "hsa-miR-140-3p.2",
+   "transcript": "ENST00000453034",
+   "gene": null,
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7843
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000420239",
+   "gene": null,
+   "utr_pos": 115,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7842
+  },
+  {
+   "mirna": "hsa-miR-29a-3p",
+   "transcript": "ENST00000541666",
+   "gene": null,
+   "utr_pos": 18,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7841
+  },
+  {
+   "mirna": "hsa-miR-29c-3p",
+   "transcript": "ENST00000264274",
+   "gene": null,
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7831
+  },
+  {
+   "mirna": "hsa-let-7a-5p",
+   "transcript": "ENST00000571838",
+   "gene": null,
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7831
+  },
+  {
+   "mirna": "hsa-miR-802",
+   "transcript": "ENST00000600213",
+   "gene": null,
+   "utr_pos": 35,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7825
+  },
+  {
+   "mirna": "hsa-miR-302c-3p.1",
+   "transcript": "ENST00000259870",
+   "gene": null,
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7823
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000402789",
+   "gene": null,
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7819
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000369950",
+   "gene": null,
+   "utr_pos": 748,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7818
+  },
+  {
+   "mirna": "hsa-miR-182-5p",
+   "transcript": "ENST00000367888",
+   "gene": null,
+   "utr_pos": 46,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7813
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000383163",
+   "gene": null,
+   "utr_pos": 1498,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7801
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "transcript": "ENST00000367983",
+   "gene": null,
+   "utr_pos": 67,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7798
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000425805",
+   "gene": null,
+   "utr_pos": 84,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7795
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000400564",
+   "gene": null,
+   "utr_pos": 160,
+   "site_class": "8mer",
+   "pred_context_pp": -0.779
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 1119,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7773
+  },
+  {
+   "mirna": "hsa-miR-34a-5p",
+   "transcript": "ENST00000591134",
+   "gene": null,
+   "utr_pos": 55,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7765
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000398019",
+   "gene": null,
+   "utr_pos": 537,
+   "site_class": "8mer",
+   "pred_context_pp": -0.775
+  },
+  {
+   "mirna": "hsa-miR-3666",
+   "transcript": "ENST00000326035",
+   "gene": null,
+   "utr_pos": 1,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7739
+  },
+  {
+   "mirna": "hsa-miR-520d-3p",
+   "transcript": "ENST00000259870",
+   "gene": null,
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7739
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000591134",
+   "gene": null,
+   "utr_pos": 55,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7731
+  },
+  {
+   "mirna": "hsa-miR-18b-5p",
+   "transcript": "ENST00000543727",
+   "gene": null,
+   "utr_pos": 9,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7729
+  },
+  {
+   "mirna": "hsa-let-7g-5p",
+   "transcript": "ENST00000571838",
+   "gene": null,
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7727
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000511507",
+   "gene": null,
+   "utr_pos": 234,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7724
+  },
+  {
+   "mirna": "hsa-miR-6088",
+   "transcript": "ENST00000308366",
+   "gene": null,
+   "utr_pos": 34,
+   "site_class": "8mer",
+   "pred_context_pp": -0.772
+  },
+  {
+   "mirna": "hsa-miR-129-1-3p",
+   "transcript": "ENST00000568794",
+   "gene": null,
+   "utr_pos": 49,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7709
+  },
+  {
+   "mirna": "hsa-miR-212-3p",
+   "transcript": "ENST00000248306",
+   "gene": null,
+   "utr_pos": 100,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7704
+  },
+  {
+   "mirna": "hsa-let-7d-5p",
+   "transcript": "ENST00000367749",
+   "gene": null,
+   "utr_pos": 200,
+   "site_class": "8mer",
+   "pred_context_pp": -0.77
+  },
+  {
+   "mirna": "hsa-miR-122-5p",
+   "transcript": "ENST00000542817",
+   "gene": null,
+   "utr_pos": 85,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7696
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000248935",
+   "gene": null,
+   "utr_pos": 157,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7687
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "transcript": "ENST00000547956",
+   "gene": null,
+   "utr_pos": 125,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7685
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "transcript": "ENST00000547956",
+   "gene": null,
+   "utr_pos": 125,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7684
+  },
+  {
+   "mirna": "hsa-miR-497-5p",
+   "transcript": "ENST00000471301",
+   "gene": null,
+   "utr_pos": 226,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7679
+  },
+  {
+   "mirna": "hsa-miR-15b-5p",
+   "transcript": "ENST00000420827",
+   "gene": null,
+   "utr_pos": 189,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7679
+  },
+  {
+   "mirna": "hsa-miR-520c-3p",
+   "transcript": "ENST00000548136",
+   "gene": null,
+   "utr_pos": 28,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7678
+  },
+  {
+   "mirna": "hsa-miR-449b-5p",
+   "transcript": "ENST00000535753",
+   "gene": null,
+   "utr_pos": 335,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7676
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000367749",
+   "gene": null,
+   "utr_pos": 200,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7673
+  },
+  {
+   "mirna": "hsa-miR-22-3p",
+   "transcript": "ENST00000326139",
+   "gene": null,
+   "utr_pos": 39,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7668
+  },
+  {
+   "mirna": "hsa-miR-126-3p.1",
+   "transcript": "ENST00000528193",
+   "gene": null,
+   "utr_pos": 18,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7665
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "transcript": "ENST00000331410",
+   "gene": null,
+   "utr_pos": 83,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7662
+  },
+  {
+   "mirna": "hsa-miR-155-5p",
+   "transcript": "ENST00000437310",
+   "gene": null,
+   "utr_pos": 76,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7662
+  },
+  {
+   "mirna": "hsa-miR-3129-5p",
+   "transcript": "ENST00000357424",
+   "gene": null,
+   "utr_pos": 138,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7662
+  },
+  {
+   "mirna": "hsa-miR-30b-5p",
+   "transcript": "ENST00000297205",
+   "gene": null,
+   "utr_pos": 6,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7651
+  },
+  {
+   "mirna": "hsa-let-7e-5p",
+   "transcript": "ENST00000429671",
+   "gene": null,
+   "utr_pos": 168,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7645
+  },
+  {
+   "mirna": "hsa-miR-301a-3p",
+   "transcript": "ENST00000360542",
+   "gene": null,
+   "utr_pos": 241,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7639
+  },
+  {
+   "mirna": "hsa-miR-301a-3p",
+   "transcript": "ENST00000326035",
+   "gene": null,
+   "utr_pos": 1,
+   "site_class": "8mer",
+   "pred_context_pp": -0.763
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000570135",
+   "gene": null,
+   "utr_pos": 440,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7623
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000429671",
+   "gene": null,
+   "utr_pos": 168,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7617
+  },
+  {
+   "mirna": "hsa-miR-302e",
+   "transcript": "ENST00000259870",
+   "gene": null,
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7615
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000600100",
+   "gene": null,
+   "utr_pos": 60,
+   "site_class": "8mer",
+   "pred_context_pp": -0.761
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000284440",
+   "gene": null,
+   "utr_pos": 428,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7607
+  },
+  {
+   "mirna": "hsa-miR-520c-3p",
+   "transcript": "ENST00000259870",
+   "gene": null,
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7607
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "transcript": "ENST00000330439",
+   "gene": null,
+   "utr_pos": 222,
+   "site_class": "8mer",
+   "pred_context_pp": -0.76
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "transcript": "ENST00000248306",
+   "gene": null,
+   "utr_pos": 100,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7599
+  },
+  {
+   "mirna": "hsa-miR-129-2-3p",
+   "transcript": "ENST00000369994",
+   "gene": null,
+   "utr_pos": 21,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7598
+  },
+  {
+   "mirna": "hsa-miR-519d-3p",
+   "transcript": "ENST00000391864",
+   "gene": null,
+   "utr_pos": 58,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7596
+  },
+  {
+   "mirna": "hsa-miR-135a-5p",
+   "transcript": "ENST00000382086",
+   "gene": null,
+   "utr_pos": 71,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7596
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "transcript": "ENST00000592257",
+   "gene": null,
+   "utr_pos": 4,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7595
+  },
+  {
+   "mirna": "hsa-miR-520a-3p",
+   "transcript": "ENST00000299179",
+   "gene": null,
+   "utr_pos": 79,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7595
+  },
+  {
+   "mirna": "hsa-miR-520f-3p",
+   "transcript": "ENST00000482090",
+   "gene": null,
+   "utr_pos": 42,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7594
+  },
+  {
+   "mirna": "hsa-miR-3666",
+   "transcript": "ENST00000413614",
+   "gene": null,
+   "utr_pos": 83,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7591
+  },
+  {
+   "mirna": "hsa-miR-10a-5p",
+   "transcript": "ENST00000376042",
+   "gene": null,
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7591
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 1371,
+   "site_class": "8mer",
+   "pred_context_pp": -0.759
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000583610",
+   "gene": null,
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7587
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "transcript": "ENST00000438970",
+   "gene": null,
+   "utr_pos": 7,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7584
+  },
+  {
+   "mirna": "hsa-miR-449b-5p",
+   "transcript": "ENST00000317961",
+   "gene": null,
+   "utr_pos": 108,
+   "site_class": "8mer",
+   "pred_context_pp": -0.758
+  },
+  {
+   "mirna": "hsa-miR-9-5p",
+   "transcript": "ENST00000287706",
+   "gene": null,
+   "utr_pos": 12,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7573
+  },
+  {
+   "mirna": "hsa-miR-302a-3p",
+   "transcript": "ENST00000259870",
+   "gene": null,
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7568
+  },
+  {
+   "mirna": "hsa-miR-130a-3p",
+   "transcript": "ENST00000257497",
+   "gene": null,
+   "utr_pos": 509,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7568
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "transcript": "ENST00000380534",
+   "gene": null,
+   "utr_pos": 159,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7568
+  },
+  {
+   "mirna": "hsa-miR-302c-3p.2",
+   "transcript": "ENST00000482090",
+   "gene": null,
+   "utr_pos": 42,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7562
+  },
+  {
+   "mirna": "hsa-miR-454-3p",
+   "transcript": "ENST00000326035",
+   "gene": null,
+   "utr_pos": 1,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7555
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000376923",
+   "gene": null,
+   "utr_pos": 610,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7552
+  },
+  {
+   "mirna": "hsa-let-7a-5p",
+   "transcript": "ENST00000429671",
+   "gene": null,
+   "utr_pos": 168,
+   "site_class": "8mer",
+   "pred_context_pp": -0.755
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000376376",
+   "gene": null,
+   "utr_pos": 170,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7545
+  },
+  {
+   "mirna": "hsa-miR-520a-3p",
+   "transcript": "ENST00000548136",
+   "gene": null,
+   "utr_pos": 28,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7545
+  },
+  {
+   "mirna": "hsa-miR-140-3p.2",
+   "transcript": "ENST00000348227",
+   "gene": null,
+   "utr_pos": 22,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7541
+  },
+  {
+   "mirna": "hsa-miR-191-5p",
+   "transcript": "ENST00000392844",
+   "gene": null,
+   "utr_pos": 306,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7538
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "transcript": "ENST00000257248",
+   "gene": null,
+   "utr_pos": 128,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7536
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000368707",
+   "gene": null,
+   "utr_pos": 384,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7528
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000369996",
+   "gene": null,
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.751
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000389887",
+   "gene": null,
+   "utr_pos": 46,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7504
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000442938",
+   "gene": null,
+   "utr_pos": 561,
+   "site_class": "8mer",
+   "pred_context_pp": -0.75
+  },
+  {
+   "mirna": "hsa-miR-34a-5p",
+   "transcript": "ENST00000452201",
+   "gene": null,
+   "utr_pos": 248,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7494
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000276935",
+   "gene": null,
+   "utr_pos": 674,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7493
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000372330",
+   "gene": null,
+   "utr_pos": 41,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7488
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "transcript": "ENST00000379253",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7483
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "transcript": "ENST00000264265",
+   "gene": null,
+   "utr_pos": 12,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7477
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000318129",
+   "gene": null,
+   "utr_pos": 279,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7471
+  },
+  {
+   "mirna": "hsa-miR-214-5p",
+   "transcript": "ENST00000441037",
+   "gene": null,
+   "utr_pos": 176,
+   "site_class": "8mer",
+   "pred_context_pp": -0.747
+  },
+  {
+   "mirna": "hsa-miR-195-5p",
+   "transcript": "ENST00000539839",
+   "gene": null,
+   "utr_pos": 1327,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7468
+  },
+  {
+   "mirna": "hsa-miR-5195-3p",
+   "transcript": "ENST00000313663",
+   "gene": null,
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7464
+  },
+  {
+   "mirna": "hsa-miR-129-2-3p",
+   "transcript": "ENST00000568794",
+   "gene": null,
+   "utr_pos": 49,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7462
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "transcript": "ENST00000396275",
+   "gene": null,
+   "utr_pos": 238,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7459
+  },
+  {
+   "mirna": "hsa-let-7c-5p",
+   "transcript": "ENST00000407886",
+   "gene": null,
+   "utr_pos": 167,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7454
+  },
+  {
+   "mirna": "hsa-miR-802",
+   "transcript": "ENST00000370800",
+   "gene": null,
+   "utr_pos": 60,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7454
+  },
+  {
+   "mirna": "hsa-miR-30c-5p",
+   "transcript": "ENST00000297205",
+   "gene": null,
+   "utr_pos": 6,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7452
+  },
+  {
+   "mirna": "hsa-let-7i-5p",
+   "transcript": "ENST00000257899",
+   "gene": null,
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7451
+  },
+  {
+   "mirna": "hsa-miR-124-3p.1",
+   "transcript": "ENST00000530311",
+   "gene": null,
+   "utr_pos": 68,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7447
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000308664",
+   "gene": null,
+   "utr_pos": 479,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7439
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000453384",
+   "gene": null,
+   "utr_pos": 12,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7431
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000338446",
+   "gene": null,
+   "utr_pos": 129,
+   "site_class": "8mer",
+   "pred_context_pp": -0.743
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000491306",
+   "gene": null,
+   "utr_pos": 208,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7427
+  },
+  {
+   "mirna": "hsa-miR-143-3p",
+   "transcript": "ENST00000327857",
+   "gene": null,
+   "utr_pos": 92,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7424
+  },
+  {
+   "mirna": "hsa-miR-211-5p",
+   "transcript": "ENST00000581619",
+   "gene": null,
+   "utr_pos": 50,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7413
+  },
+  {
+   "mirna": "hsa-miR-183-5p.1",
+   "transcript": "ENST00000382585",
+   "gene": null,
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7407
+  },
+  {
+   "mirna": "hsa-miR-124-3p.1",
+   "transcript": "ENST00000454608",
+   "gene": null,
+   "utr_pos": 205,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7406
+  }
+ ]
+}
