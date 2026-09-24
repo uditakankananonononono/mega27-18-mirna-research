@@ -1,0 +1,98 @@
+panel: 132 miRTarBase SE miRNAs: 447 overlap: 128
+hsa-let-7a-5p {'validated': 34, 'with_utr': 34, 'neg': 340, 'seed_match_recall': 0.7059, 'scored_pos': 24, 'scored_genes': 86, 'auroc_cnn_min': 0.5766}
+hsa-miR-1-3p {'validated': 59, 'with_utr': 59, 'neg': 590, 'seed_match_recall': 0.8305, 'scored_pos': 49, 'scored_genes': 176, 'auroc_cnn_min': 0.7463}
+hsa-miR-100-5p {'validated': 15, 'with_utr': 15, 'neg': 150, 'seed_match_recall': 0.6, 'scored_pos': 9, 'scored_genes': 14, 'auroc_cnn_min': 0.8222}
+hsa-miR-103a-3p {'validated': 14, 'with_utr': 14, 'neg': 140, 'seed_match_recall': 0.6429, 'scored_pos': 9, 'scored_genes': 34, 'auroc_cnn_min': 0.7067}
+hsa-miR-106a-5p {'validated': 26, 'with_utr': 26, 'neg': 260, 'seed_match_recall': 0.9615, 'scored_pos': 25, 'scored_genes': 103, 'auroc_cnn_min': 0.6103}
+hsa-miR-106b-5p {'validated': 26, 'with_utr': 26, 'neg': 260, 'seed_match_recall': 0.9231, 'scored_pos': 24, 'scored_genes': 115, 'auroc_cnn_min': 0.6332}
+hsa-miR-107 {'validated': 25, 'with_utr': 25, 'neg': 250, 'seed_match_recall': 0.8, 'scored_pos': 20, 'scored_genes': 70, 'auroc_cnn_min': 0.702}
+hsa-miR-10b-5p {'validated': 22, 'with_utr': 22, 'neg': 220, 'seed_match_recall': 0.6818, 'scored_pos': 15, 'scored_genes': 52, 'auroc_cnn_min': 0.8018}
+hsa-miR-122-5p {'validated': 52, 'with_utr': 52, 'neg': 520, 'seed_match_recall': 0.8269, 'scored_pos': 43, 'scored_genes': 175, 'auroc_cnn_min': 0.7197}
+hsa-miR-125b-5p {'validated': 68, 'with_utr': 68, 'neg': 680, 'seed_match_recall': 0.8529, 'scored_pos': 58, 'scored_genes': 236, 'auroc_cnn_min': 0.6628}
+hsa-miR-128-3p {'validated': 23, 'with_utr': 23, 'neg': 230, 'seed_match_recall': 0.7826, 'scored_pos': 18, 'scored_genes': 89, 'auroc_cnn_min': 0.7034}
+hsa-miR-129-5p {'validated': 10, 'with_utr': 10, 'neg': 100, 'seed_match_recall': 0.9, 'scored_pos': 9, 'scored_genes': 47, 'auroc_cnn_min': 0.4825}
+hsa-miR-130a-3p {'validated': 20, 'with_utr': 20, 'neg': 200, 'seed_match_recall': 0.8, 'scored_pos': 16, 'scored_genes': 56, 'auroc_cnn_min': 0.7375}
+hsa-miR-130b-3p {'validated': 13, 'with_utr': 13, 'neg': 130, 'seed_match_recall': 0.8462, 'scored_pos': 11, 'scored_genes': 39, 'auroc_cnn_min': 0.8084}
+hsa-miR-132-3p {'validated': 10, 'with_utr': 10, 'neg': 100, 'seed_match_recall': 1.0, 'scored_pos': 10, 'scored_genes': 28, 'auroc_cnn_min': 0.75}
+hsa-miR-133b {'validated': 27, 'with_utr': 27, 'neg': 270, 'seed_match_recall': 0.6667, 'scored_pos': 18, 'scored_genes': 58, 'auroc_cnn_min': 0.6639}
+hsa-miR-135b-5p {'validated': 11, 'with_utr': 11, 'neg': 110, 'seed_match_recall': 0.8182, 'scored_pos': 9, 'scored_genes': 29, 'auroc_cnn_min': 0.6667}
+hsa-miR-137 {'validated': 23, 'with_utr': 23, 'neg': 230, 'seed_match_recall': 1.0, 'scored_pos': 23, 'scored_genes': 63, 'auroc_cnn_min': 0.7011}
+hsa-miR-138-5p {'validated': 24, 'with_utr': 24, 'neg': 240, 'seed_match_recall': 0.9583, 'scored_pos': 23, 'scored_genes': 82, 'auroc_cnn_min': 0.7303}
+hsa-miR-140-5p {'validated': 12, 'with_utr': 12, 'neg': 120, 'seed_match_recall': 0.5833, 'scored_pos': 7, 'scored_genes': 33, 'auroc_cnn_min': 0.783}
+hsa-miR-141-3p {'validated': 42, 'with_utr': 42, 'neg': 420, 'seed_match_recall': 0.8095, 'scored_pos': 34, 'scored_genes': 148, 'auroc_cnn_min': 0.5552}
+hsa-miR-143-3p {'validated': 25, 'with_utr': 25, 'neg': 250, 'seed_match_recall': 0.8, 'scored_pos': 20, 'scored_genes': 83, 'auroc_cnn_min': 0.6206}
+hsa-miR-144-3p {'validated': 13, 'with_utr': 13, 'neg': 130, 'seed_match_recall': 0.8462, 'scored_pos': 11, 'scored_genes': 48, 'auroc_cnn_min': 0.7396}
+hsa-miR-145-5p {'validated': 101, 'with_utr': 100, 'neg': 1000, 'seed_match_recall': 0.79, 'scored_pos': 79, 'scored_genes': 345, 'auroc_cnn_min': 0.6831}
+hsa-miR-146a-5p {'validated': 27, 'with_utr': 26, 'neg': 260, 'seed_match_recall': 0.6154, 'scored_pos': 16, 'scored_genes': 76, 'auroc_cnn_min': 0.6583}
+hsa-miR-148a-3p {'validated': 24, 'with_utr': 24, 'neg': 240, 'seed_match_recall': 0.9167, 'scored_pos': 22, 'scored_genes': 77, 'auroc_cnn_min': 0.7074}
+hsa-miR-150-5p {'validated': 16, 'with_utr': 16, 'neg': 160, 'seed_match_recall': 0.875, 'scored_pos': 14, 'scored_genes': 81, 'auroc_cnn_min': 0.6429}
+hsa-miR-152-3p {'validated': 10, 'with_utr': 10, 'neg': 100, 'seed_match_recall': 0.9, 'scored_pos': 9, 'scored_genes': 33, 'auroc_cnn_min': 0.7083}
+hsa-miR-155-5p {'validated': 182, 'with_utr': 181, 'neg': 1500, 'seed_match_recall': 0.9227, 'scored_pos': 167, 'scored_genes': 419, 'auroc_cnn_min': 0.7697}
+hsa-miR-15a-5p {'validated': 33, 'with_utr': 33, 'neg': 330, 'seed_match_recall': 0.8788, 'scored_pos': 29, 'scored_genes': 102, 'auroc_cnn_min': 0.778}
+hsa-miR-15b-5p {'validated': 14, 'with_utr': 14, 'neg': 140, 'seed_match_recall': 0.8571, 'scored_pos': 12, 'scored_genes': 52, 'auroc_cnn_min': 0.7292}
+hsa-miR-16-5p {'validated': 42, 'with_utr': 42, 'neg': 420, 'seed_match_recall': 0.8571, 'scored_pos': 36, 'scored_genes': 148, 'auroc_cnn_min': 0.6766}
+hsa-miR-17-5p {'validated': 59, 'with_utr': 59, 'neg': 590, 'seed_match_recall': 0.8305, 'scored_pos': 49, 'scored_genes': 220, 'auroc_cnn_min': 0.6489}
+hsa-miR-181a-5p {'validated': 45, 'with_utr': 45, 'neg': 450, 'seed_match_recall': 0.8, 'scored_pos': 36, 'scored_genes': 158, 'auroc_cnn_min': 0.6505}
+hsa-miR-182-5p {'validated': 36, 'with_utr': 36, 'neg': 360, 'seed_match_recall': 0.8056, 'scored_pos': 29, 'scored_genes': 116, 'auroc_cnn_min': 0.7309}
+hsa-miR-185-5p {'validated': 17, 'with_utr': 17, 'neg': 170, 'seed_match_recall': 0.7647, 'scored_pos': 13, 'scored_genes': 74, 'auroc_cnn_min': 0.657}
+hsa-miR-18a-5p {'validated': 13, 'with_utr': 13, 'neg': 130, 'seed_match_recall': 0.5385, 'scored_pos': 7, 'scored_genes': 25, 'auroc_cnn_min': 0.5714}
+hsa-miR-191-5p {'validated': 16, 'with_utr': 16, 'neg': 160, 'seed_match_recall': 0.75, 'scored_pos': 12, 'scored_genes': 20, 'auroc_cnn_min': 0.75}
+hsa-miR-192-5p {'validated': 26, 'with_utr': 26, 'neg': 260, 'seed_match_recall': 0.7308, 'scored_pos': 19, 'scored_genes': 60, 'auroc_cnn_min': 0.6752}
+hsa-miR-194-5p {'validated': 15, 'with_utr': 15, 'neg': 150, 'seed_match_recall': 1.0, 'scored_pos': 15, 'scored_genes': 44, 'auroc_cnn_min': 0.6759}
+hsa-miR-195-5p {'validated': 26, 'with_utr': 26, 'neg': 260, 'seed_match_recall': 1.0, 'scored_pos': 26, 'scored_genes': 95, 'auroc_cnn_min': 0.7726}
+hsa-miR-196a-5p {'validated': 17, 'with_utr': 16, 'neg': 160, 'seed_match_recall': 0.75, 'scored_pos': 12, 'scored_genes': 30, 'auroc_cnn_min': 0.7917}
+hsa-miR-199a-5p {'validated': 32, 'with_utr': 32, 'neg': 320, 'seed_match_recall': 0.625, 'scored_pos': 20, 'scored_genes': 83, 'auroc_cnn_min': 0.719}
+hsa-miR-19a-3p {'validated': 33, 'with_utr': 33, 'neg': 330, 'seed_match_recall': 0.8182, 'scored_pos': 27, 'scored_genes': 91, 'auroc_cnn_min': 0.7159}
+hsa-miR-19b-3p {'validated': 20, 'with_utr': 20, 'neg': 200, 'seed_match_recall': 0.9, 'scored_pos': 18, 'scored_genes': 61, 'auroc_cnn_min': 0.5827}
+hsa-miR-200a-3p {'validated': 32, 'with_utr': 32, 'neg': 320, 'seed_match_recall': 0.6562, 'scored_pos': 21, 'scored_genes': 109, 'auroc_cnn_min': 0.5747}
+hsa-miR-200b-3p {'validated': 45, 'with_utr': 45, 'neg': 450, 'seed_match_recall': 0.8222, 'scored_pos': 37, 'scored_genes': 137, 'auroc_cnn_min': 0.6251}
+hsa-miR-200c-3p {'validated': 57, 'with_utr': 57, 'neg': 570, 'seed_match_recall': 0.807, 'scored_pos': 46, 'scored_genes': 178, 'auroc_cnn_min': 0.712}
+hsa-miR-204-5p {'validated': 39, 'with_utr': 39, 'neg': 390, 'seed_match_recall': 0.9231, 'scored_pos': 36, 'scored_genes': 153, 'auroc_cnn_min': 0.7559}
+hsa-miR-205-5p {'validated': 30, 'with_utr': 30, 'neg': 300, 'seed_match_recall': 0.8667, 'scored_pos': 26, 'scored_genes': 108, 'auroc_cnn_min': 0.7439}
+hsa-miR-206 {'validated': 17, 'with_utr': 17, 'neg': 170, 'seed_match_recall': 0.8824, 'scored_pos': 15, 'scored_genes': 37, 'auroc_cnn_min': 0.5939}
+hsa-miR-20a-5p {'validated': 44, 'with_utr': 44, 'neg': 440, 'seed_match_recall': 0.8636, 'scored_pos': 38, 'scored_genes': 181, 'auroc_cnn_min': 0.6625}
+hsa-miR-21-5p {'validated': 81, 'with_utr': 81, 'neg': 810, 'seed_match_recall': 0.6667, 'scored_pos': 54, 'scored_genes': 162, 'auroc_cnn_min': 0.6931}
+hsa-miR-210-3p {'validated': 41, 'with_utr': 39, 'neg': 390, 'seed_match_recall': 0.6667, 'scored_pos': 26, 'scored_genes': 47, 'auroc_cnn_min': 0.6026}
+hsa-miR-214-3p {'validated': 31, 'with_utr': 31, 'neg': 310, 'seed_match_recall': 0.8065, 'scored_pos': 25, 'scored_genes': 128, 'auroc_cnn_min': 0.6617}
+hsa-miR-218-5p {'validated': 28, 'with_utr': 28, 'neg': 280, 'seed_match_recall': 1.0, 'scored_pos': 28, 'scored_genes': 97, 'auroc_cnn_min': 0.7241}
+hsa-miR-22-3p {'validated': 28, 'with_utr': 28, 'neg': 280, 'seed_match_recall': 0.75, 'scored_pos': 21, 'scored_genes': 75, 'auroc_cnn_min': 0.7381}
+hsa-miR-221-3p {'validated': 45, 'with_utr': 45, 'neg': 450, 'seed_match_recall': 0.7556, 'scored_pos': 34, 'scored_genes': 105, 'auroc_cnn_min': 0.7465}
+hsa-miR-222-3p {'validated': 24, 'with_utr': 24, 'neg': 240, 'seed_match_recall': 0.7917, 'scored_pos': 19, 'scored_genes': 68, 'auroc_cnn_min': 0.8024}
+hsa-miR-223-3p {'validated': 28, 'with_utr': 28, 'neg': 280, 'seed_match_recall': 0.8929, 'scored_pos': 25, 'scored_genes': 71, 'auroc_cnn_min': 0.6583}
+hsa-miR-224-5p {'validated': 19, 'with_utr': 19, 'neg': 190, 'seed_match_recall': 0.8947, 'scored_pos': 17, 'scored_genes': 58, 'auroc_cnn_min': 0.6901}
+hsa-miR-23a-3p {'validated': 28, 'with_utr': 28, 'neg': 280, 'seed_match_recall': 0.9643, 'scored_pos': 27, 'scored_genes': 91, 'auroc_cnn_min': 0.7477}
+hsa-miR-24-3p {'validated': 48, 'with_utr': 47, 'neg': 470, 'seed_match_recall': 0.6596, 'scored_pos': 31, 'scored_genes': 184, 'auroc_cnn_min': 0.6243}
+hsa-miR-25-3p {'validated': 18, 'with_utr': 18, 'neg': 180, 'seed_match_recall': 0.7778, 'scored_pos': 14, 'scored_genes': 41, 'auroc_cnn_min': 0.8333}
+hsa-miR-26a-5p {'validated': 32, 'with_utr': 32, 'neg': 320, 'seed_match_recall': 0.9375, 'scored_pos': 30, 'scored_genes': 107, 'auroc_cnn_min': 0.7212}
+hsa-miR-27a-3p {'validated': 27, 'with_utr': 27, 'neg': 270, 'seed_match_recall': 0.8519, 'scored_pos': 23, 'scored_genes': 90, 'auroc_cnn_min': 0.7339}
+hsa-miR-28-5p {'validated': 10, 'with_utr': 10, 'neg': 100, 'seed_match_recall': 1.0, 'scored_pos': 10, 'scored_genes': 29, 'auroc_cnn_min': 0.6}
+hsa-miR-29a-3p {'validated': 65, 'with_utr': 65, 'neg': 650, 'seed_match_recall': 0.8154, 'scored_pos': 53, 'scored_genes': 182, 'auroc_cnn_min': 0.7312}
+hsa-miR-302a-3p {'validated': 13, 'with_utr': 13, 'neg': 130, 'seed_match_recall': 0.6923, 'scored_pos': 9, 'scored_genes': 54, 'auroc_cnn_min': 0.7926}
+hsa-miR-30a-5p {'validated': 22, 'with_utr': 22, 'neg': 220, 'seed_match_recall': 0.9545, 'scored_pos': 21, 'scored_genes': 84, 'auroc_cnn_min': 0.6682}
+hsa-miR-31-5p {'validated': 42, 'with_utr': 42, 'neg': 420, 'seed_match_recall': 0.7619, 'scored_pos': 32, 'scored_genes': 119, 'auroc_cnn_min': 0.7557}
+hsa-miR-320a {'validated': 12, 'with_utr': 12, 'neg': 120, 'seed_match_recall': 0.8333, 'scored_pos': 10, 'scored_genes': 45, 'auroc_cnn_min': 0.4971}
+hsa-miR-335-5p {'validated': 22, 'with_utr': 22, 'neg': 220, 'seed_match_recall': 0.7273, 'scored_pos': 16, 'scored_genes': 59, 'auroc_cnn_min': 0.5901}
+hsa-miR-34a-5p {'validated': 67, 'with_utr': 66, 'neg': 660, 'seed_match_recall': 0.7576, 'scored_pos': 50, 'scored_genes': 203, 'auroc_cnn_min': 0.7678}
+hsa-miR-375 {'validated': 22, 'with_utr': 22, 'neg': 220, 'seed_match_recall': 0.8182, 'scored_pos': 18, 'scored_genes': 58, 'auroc_cnn_min': 0.5764}
+hsa-miR-378a-3p {'validated': 15, 'with_utr': 15, 'neg': 150, 'seed_match_recall': 0.5333, 'scored_pos': 8, 'scored_genes': 36, 'auroc_cnn_min': 0.6384}
+hsa-miR-424-5p {'validated': 28, 'with_utr': 28, 'neg': 280, 'seed_match_recall': 0.8929, 'scored_pos': 25, 'scored_genes': 103, 'auroc_cnn_min': 0.8338}
+hsa-miR-429 {'validated': 24, 'with_utr': 24, 'neg': 240, 'seed_match_recall': 0.6667, 'scored_pos': 16, 'scored_genes': 54, 'auroc_cnn_min': 0.5905}
+hsa-miR-494-3p {'validated': 18, 'with_utr': 18, 'neg': 180, 'seed_match_recall': 1.0, 'scored_pos': 18, 'scored_genes': 65, 'auroc_cnn_min': 0.5768}
+hsa-miR-503-5p {'validated': 22, 'with_utr': 22, 'neg': 220, 'seed_match_recall': 0.8182, 'scored_pos': 18, 'scored_genes': 48, 'auroc_cnn_min': 0.637}
+hsa-miR-7-5p {'validated': 20, 'with_utr': 20, 'neg': 200, 'seed_match_recall': 0.95, 'scored_pos': 19, 'scored_genes': 69, 'auroc_cnn_min': 0.6926}
+hsa-miR-9-5p {'validated': 39, 'with_utr': 38, 'neg': 380, 'seed_match_recall': 0.8158, 'scored_pos': 31, 'scored_genes': 126, 'auroc_cnn_min': 0.5715}
+hsa-miR-92a-3p {'validated': 24, 'with_utr': 24, 'neg': 240, 'seed_match_recall': 0.75, 'scored_pos': 18, 'scored_genes': 81, 'auroc_cnn_min': 0.6755}
+hsa-miR-93-5p {'validated': 15, 'with_utr': 15, 'neg': 150, 'seed_match_recall': 0.9333, 'scored_pos': 14, 'scored_genes': 64, 'auroc_cnn_min': 0.7543}
+hsa-miR-96-5p {'validated': 17, 'with_utr': 16, 'neg': 160, 'seed_match_recall': 0.875, 'scored_pos': 14, 'scored_genes': 49, 'auroc_cnn_min': 0.6735}
+hsa-miR-98-5p {'validated': 12, 'with_utr': 12, 'neg': 120, 'seed_match_recall': 0.8333, 'scored_pos': 10, 'scored_genes': 30, 'auroc_cnn_min': 0.61}
+hsa-miR-99a-5p {'validated': 10, 'with_utr': 10, 'neg': 100, 'seed_match_recall': 0.9, 'scored_pos': 9, 'scored_genes': 16, 'auroc_cnn_min': 0.6825}
+{
+ "source": "miRTarBase 10.0 strong-evidence (reporter assay), hsa rows; negatives = no human MTI of any evidence in miRTarBase 10.0",
+ "n_mirnas_evaluated": 87,
+ "n_mirnas_skipped_minpos": 45,
+ "n_rows": 8075,
+ "n_pos": 2164,
+ "pooled_auroc_cnn_min": 0.6829,
+ "within_mirna_z_mannwhitney_p": 1.0314052209595962e-152,
+ "permutation_p_within_mirna": 0.000999000999000999
+}
