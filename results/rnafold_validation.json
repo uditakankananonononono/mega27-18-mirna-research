@@ -1,0 +1,209 @@
+{
+ "n": 20,
+ "z_median": 2.33,
+ "frac_z_gt1": 0.95,
+ "wilcoxon_p_z_gt0": 3.814697265625e-06,
+ "note": "z = (shuffled-mean - real)/shuffled-sd; positive = real duplex more stable than shuffled-miRNA controls",
+ "pairs": [
+  {
+   "mirna": "hsa-miR-7-5p",
+   "gene": "CDR1as",
+   "site_class": "8mer",
+   "pred_context_pp": -1.5677,
+   "mfe_real": -18.4,
+   "mfe_shuf_mean": -11.26,
+   "mfe_shuf_sd": 3.26,
+   "z": 2.19
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "gene": "TVP23C",
+   "site_class": "8mer",
+   "pred_context_pp": -1.1586,
+   "mfe_real": -21.1,
+   "mfe_shuf_mean": -17.22,
+   "mfe_shuf_sd": 2.17,
+   "z": 1.79
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "gene": "REG3G",
+   "site_class": "8mer",
+   "pred_context_pp": -1.1334,
+   "mfe_real": -16.9,
+   "mfe_shuf_mean": -18.2,
+   "mfe_shuf_sd": 2.29,
+   "z": -0.57
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "gene": "SLC5A4",
+   "site_class": "8mer",
+   "pred_context_pp": -1.1215,
+   "mfe_real": -16.4,
+   "mfe_shuf_mean": -9.96,
+   "mfe_shuf_sd": 1.63,
+   "z": 3.94
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "gene": "ADCY7",
+   "site_class": "8mer",
+   "pred_context_pp": -1.1162,
+   "mfe_real": -15.1,
+   "mfe_shuf_mean": -8.13,
+   "mfe_shuf_sd": 1.44,
+   "z": 4.84
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "gene": "CYLC1",
+   "site_class": "8mer",
+   "pred_context_pp": -1.0904,
+   "mfe_real": -17.3,
+   "mfe_shuf_mean": -9.62,
+   "mfe_shuf_sd": 2.1,
+   "z": 3.66
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "gene": "TATDN1",
+   "site_class": "8mer",
+   "pred_context_pp": -1.0681,
+   "mfe_real": -12.6,
+   "mfe_shuf_mean": -7.95,
+   "mfe_shuf_sd": 1.88,
+   "z": 2.47
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "gene": "TIGD1",
+   "site_class": "8mer",
+   "pred_context_pp": -1.0561,
+   "mfe_real": -12.6,
+   "mfe_shuf_mean": -6.0,
+   "mfe_shuf_sd": 2.54,
+   "z": 2.59
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "gene": "ZNF479",
+   "site_class": "8mer",
+   "pred_context_pp": -1.0357,
+   "mfe_real": -16.3,
+   "mfe_shuf_mean": -12.46,
+   "mfe_shuf_sd": 2.23,
+   "z": 1.72
+  },
+  {
+   "mirna": "hsa-miR-26b-5p",
+   "gene": "CEP128",
+   "site_class": "8mer",
+   "pred_context_pp": -1.0268,
+   "mfe_real": -11.0,
+   "mfe_shuf_mean": -4.27,
+   "mfe_shuf_sd": 1.78,
+   "z": 3.78
+  },
+  {
+   "mirna": "hsa-miR-196b-5p",
+   "gene": "GDF3",
+   "site_class": "8mer",
+   "pred_context_pp": -1.0158,
+   "mfe_real": -17.1,
+   "mfe_shuf_mean": -14.03,
+   "mfe_shuf_sd": 2.44,
+   "z": 1.26
+  },
+  {
+   "mirna": "hsa-miR-424-5p",
+   "gene": "EPHA6",
+   "site_class": "8mer",
+   "pred_context_pp": -1.0056,
+   "mfe_real": -14.3,
+   "mfe_shuf_mean": -7.12,
+   "mfe_shuf_sd": 1.95,
+   "z": 3.69
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "gene": "ZNF479",
+   "site_class": "8mer",
+   "pred_context_pp": -0.9979,
+   "mfe_real": -14.1,
+   "mfe_shuf_mean": -9.07,
+   "mfe_shuf_sd": 1.85,
+   "z": 2.72
+  },
+  {
+   "mirna": "hsa-miR-196b-5p",
+   "gene": "ZCCHC6",
+   "site_class": "8mer",
+   "pred_context_pp": -0.9975,
+   "mfe_real": -12.5,
+   "mfe_shuf_mean": -9.07,
+   "mfe_shuf_sd": 1.64,
+   "z": 2.09
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "gene": "RPP21",
+   "site_class": "8mer",
+   "pred_context_pp": -0.9947,
+   "mfe_real": -9.4,
+   "mfe_shuf_mean": -5.7,
+   "mfe_shuf_sd": 2.38,
+   "z": 1.56
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "gene": "TRIM39-RPP21",
+   "site_class": "8mer",
+   "pred_context_pp": -0.9947,
+   "mfe_real": -9.4,
+   "mfe_shuf_mean": -4.69,
+   "mfe_shuf_sd": 2.49,
+   "z": 1.89
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "gene": "ZNF254",
+   "site_class": "8mer",
+   "pred_context_pp": -0.9848,
+   "mfe_real": -14.9,
+   "mfe_shuf_mean": -8.78,
+   "mfe_shuf_sd": 1.69,
+   "z": 3.63
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "gene": "OR10G2",
+   "site_class": "8mer",
+   "pred_context_pp": -0.983,
+   "mfe_real": -21.8,
+   "mfe_shuf_mean": -16.28,
+   "mfe_shuf_sd": 3.12,
+   "z": 1.77
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "gene": "GDF3",
+   "site_class": "8mer",
+   "pred_context_pp": -0.9717,
+   "mfe_real": -17.0,
+   "mfe_shuf_mean": -13.27,
+   "mfe_shuf_sd": 1.89,
+   "z": 1.98
+  },
+  {
+   "mirna": "hsa-miR-497-5p",
+   "gene": "NLRX1",
+   "site_class": "8mer",
+   "pred_context_pp": -0.9667,
+   "mfe_real": -13.6,
+   "mfe_shuf_mean": -9.38,
+   "mfe_shuf_sd": 1.58,
+   "z": 2.68
+  }
+ ]
+}

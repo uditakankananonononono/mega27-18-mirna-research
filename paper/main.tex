@@ -47,6 +47,12 @@ To ask where the pooled $\Delta$AUROC lives, we computed univariate AUROCs per m
 \includegraphics[width=0.55\linewidth]{figs/fig_permirna_scatter.pdf}
 \caption{Per-miRNA univariate AUROC: raw CNN min-score vs the best seed-count/length feature. Every one of 132 miRNAs sits below the diagonal.}
 \end{figure}
+\subsection{Biophysical sanity check: duplex MFE vs shuffled controls}
+As a sequence-level pipeline validation, the 20 top diverse candidate windows ($\pm25$ nt) were cofolded with their mature miRNA (ViennaRNA RNAcofold) against 10 mononucleotide-shuffled miRNA controls each (\texttt{results/rnafold\_validation.json}). Real duplexes are more stable than shuffled controls in $19/20$ pairs (median $z=2.33$; Wilcoxon $p<10^{-4}$); the exception, miR-7-5p$\to$REG3G ($z=-0.57$), is kept in the candidate table as a flagged row. Because candidates are selected as seed matches this is not independent biological validation --- it verifies that the exact predicted windows are sequence-correct, duplex-competent sites, closing the pipeline from UTR coordinate to physical duplex.
+\begin{figure}[h]\centering
+\includegraphics[width=0.5\linewidth]{figs/fig_rnafold.pdf}
+\caption{RNAcofold MFE for the 20 top candidate windows with the real miRNA vs shuffled-miRNA controls.}
+\end{figure}
 \section{Documented negatives}
 (1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation).
 \section{Falsification paths}

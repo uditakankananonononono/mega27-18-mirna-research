@@ -6,7 +6,9 @@
 4. ENCORI/starBase miRNATarget API - AGO-CLIP labels (136-miRNA panel)
 5. miRBase (via TargetScan IDs)
 6. PyTorch, 7. scikit-learn, 8. NumPy, 9. pandas, 10. matplotlib, 11. pytest
-Count: 11. Planned: miRTarBase (site currently 404 - retry via browser), TarBase, miRWalk, RNAhybrid/ViennaRNA.
+12. SciPy (rank/Wilcoxon/permutation statistics in CLIP + audit analyses)
+13. ViennaRNA 2.7.2 (RNAcofold duplex-MFE validation, results/rnafold_validation.json)
+Count: 13. Planned: miRTarBase (site currently 404 - retry via browser), TarBase, miRWalk, RNAhybrid/ViennaRNA.
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
