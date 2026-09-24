@@ -2,7 +2,7 @@
  "model": "DuplexCNN+context v2 (held-out-gene pearson 0.811)",
  "n_candidates_scored": 400000,
  "definition": "8mer/7mer seed match, no overlap with any TargetScan conserved site",
- "top": [
+ "top_overall": [
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "CDR1as",
@@ -86,7 +86,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000519970",
-   "gene": null,
+   "gene": "TVP23C",
    "utr_pos": 118,
    "site_class": "8mer",
    "pred_context_pp": -1.1586
@@ -94,7 +94,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000393897",
-   "gene": null,
+   "gene": "REG3G",
    "utr_pos": 173,
    "site_class": "8mer",
    "pred_context_pp": -1.1334
@@ -102,7 +102,7 @@
   {
    "mirna": "hsa-miR-24-3p",
    "transcript": "ENST00000266086",
-   "gene": null,
+   "gene": "SLC5A4",
    "utr_pos": 7,
    "site_class": "8mer",
    "pred_context_pp": -1.1215
@@ -110,7 +110,7 @@
   {
    "mirna": "hsa-miR-199b-5p",
    "transcript": "ENST00000566433",
-   "gene": null,
+   "gene": "ADCY7",
    "utr_pos": 23,
    "site_class": "8mer",
    "pred_context_pp": -1.1162
@@ -118,7 +118,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000329312",
-   "gene": null,
+   "gene": "CYLC1",
    "utr_pos": 102,
    "site_class": "8mer",
    "pred_context_pp": -1.0904
@@ -126,7 +126,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000276692",
-   "gene": null,
+   "gene": "TATDN1",
    "utr_pos": 9,
    "site_class": "8mer",
    "pred_context_pp": -1.0681
@@ -134,7 +134,7 @@
   {
    "mirna": "hsa-miR-137",
    "transcript": "ENST00000408957",
-   "gene": null,
+   "gene": "TIGD1",
    "utr_pos": 15,
    "site_class": "8mer",
    "pred_context_pp": -1.0561
@@ -142,7 +142,7 @@
   {
    "mirna": "hsa-miR-142-3p.1",
    "transcript": "ENST00000331162",
-   "gene": null,
+   "gene": "ZNF479",
    "utr_pos": 58,
    "site_class": "8mer",
    "pred_context_pp": -1.0357
@@ -150,7 +150,7 @@
   {
    "mirna": "hsa-miR-26b-5p",
    "transcript": "ENST00000216517",
-   "gene": null,
+   "gene": "CEP128",
    "utr_pos": 8,
    "site_class": "8mer",
    "pred_context_pp": -1.0268
@@ -166,7 +166,7 @@
   {
    "mirna": "hsa-miR-196b-5p",
    "transcript": "ENST00000329913",
-   "gene": null,
+   "gene": "GDF3",
    "utr_pos": 53,
    "site_class": "8mer",
    "pred_context_pp": -1.0158
@@ -174,7 +174,7 @@
   {
    "mirna": "hsa-miR-424-5p",
    "transcript": "ENST00000442602",
-   "gene": null,
+   "gene": "EPHA6",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -1.0056
@@ -182,7 +182,7 @@
   {
    "mirna": "hsa-miR-199b-5p",
    "transcript": "ENST00000331162",
-   "gene": null,
+   "gene": "ZNF479",
    "utr_pos": 45,
    "site_class": "8mer",
    "pred_context_pp": -0.9979
@@ -190,7 +190,7 @@
   {
    "mirna": "hsa-miR-196b-5p",
    "transcript": "ENST00000375947",
-   "gene": null,
+   "gene": "ZCCHC6",
    "utr_pos": 17,
    "site_class": "8mer",
    "pred_context_pp": -0.9975
@@ -206,7 +206,7 @@
   {
    "mirna": "hsa-miR-613",
    "transcript": "ENST00000433076",
-   "gene": null,
+   "gene": "RPP21",
    "utr_pos": 39,
    "site_class": "8mer",
    "pred_context_pp": -0.9947
@@ -214,7 +214,7 @@
   {
    "mirna": "hsa-miR-613",
    "transcript": "ENST00000513556",
-   "gene": null,
+   "gene": "TRIM39-RPP21",
    "utr_pos": 39,
    "site_class": "8mer",
    "pred_context_pp": -0.9947
@@ -222,7 +222,7 @@
   {
    "mirna": "hsa-miR-199b-5p",
    "transcript": "ENST00000339642",
-   "gene": null,
+   "gene": "ZNF254",
    "utr_pos": 6,
    "site_class": "8mer",
    "pred_context_pp": -0.9848
@@ -230,7 +230,7 @@
   {
    "mirna": "hsa-miR-449a",
    "transcript": "ENST00000542433",
-   "gene": null,
+   "gene": "OR10G2",
    "utr_pos": 40,
    "site_class": "8mer",
    "pred_context_pp": -0.983
@@ -246,7 +246,7 @@
   {
    "mirna": "hsa-miR-196a-5p",
    "transcript": "ENST00000329913",
-   "gene": null,
+   "gene": "GDF3",
    "utr_pos": 53,
    "site_class": "8mer",
    "pred_context_pp": -0.9717
@@ -254,7 +254,7 @@
   {
    "mirna": "hsa-miR-497-5p",
    "transcript": "ENST00000525863",
-   "gene": null,
+   "gene": "NLRX1",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -0.9667
@@ -262,7 +262,7 @@
   {
    "mirna": "hsa-miR-30e-5p",
    "transcript": "ENST00000587065",
-   "gene": null,
+   "gene": "PDCD2L",
    "utr_pos": 34,
    "site_class": "8mer",
    "pred_context_pp": -0.9641
@@ -270,7 +270,7 @@
   {
    "mirna": "hsa-miR-103a-3p",
    "transcript": "ENST00000258672",
-   "gene": null,
+   "gene": "SETDB2",
    "utr_pos": 27,
    "site_class": "8mer",
    "pred_context_pp": -0.9596
@@ -278,7 +278,7 @@
   {
    "mirna": "hsa-miR-133a-3p.1",
    "transcript": "ENST00000471108",
-   "gene": null,
+   "gene": "GUCA1C",
    "utr_pos": 83,
    "site_class": "8mer",
    "pred_context_pp": -0.9507
@@ -286,7 +286,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000548514",
-   "gene": null,
+   "gene": "OAS3",
    "utr_pos": 203,
    "site_class": "8mer",
    "pred_context_pp": -0.9456
@@ -310,7 +310,7 @@
   {
    "mirna": "hsa-miR-219a-5p",
    "transcript": "ENST00000441133",
-   "gene": null,
+   "gene": "SOX5",
    "utr_pos": 73,
    "site_class": "8mer",
    "pred_context_pp": -0.9293
@@ -318,7 +318,7 @@
   {
    "mirna": "hsa-miR-1-3p",
    "transcript": "ENST00000344577",
-   "gene": null,
+   "gene": "LIPI",
    "utr_pos": 170,
    "site_class": "8mer",
    "pred_context_pp": -0.9236
@@ -326,7 +326,7 @@
   {
    "mirna": "hsa-miR-96-5p",
    "transcript": "ENST00000372814",
-   "gene": null,
+   "gene": "ODF2",
    "utr_pos": 97,
    "site_class": "8mer",
    "pred_context_pp": -0.9171
@@ -334,7 +334,7 @@
   {
    "mirna": "hsa-miR-142-3p.1",
    "transcript": "ENST00000256216",
-   "gene": null,
+   "gene": "HSD17B4",
    "utr_pos": 5,
    "site_class": "8mer",
    "pred_context_pp": -0.916
@@ -342,7 +342,7 @@
   {
    "mirna": "hsa-miR-204-5p",
    "transcript": "ENST00000305625",
-   "gene": null,
+   "gene": "MBD3L1",
    "utr_pos": 5,
    "site_class": "8mer",
    "pred_context_pp": -0.913
@@ -350,7 +350,7 @@
   {
    "mirna": "hsa-miR-138-5p",
    "transcript": "ENST00000430850",
-   "gene": null,
+   "gene": "AC037459.4",
    "utr_pos": 10,
    "site_class": "8mer",
    "pred_context_pp": -0.9015
@@ -358,7 +358,7 @@
   {
    "mirna": "hsa-miR-221-3p",
    "transcript": "ENST00000436771",
-   "gene": null,
+   "gene": "C8orf56",
    "utr_pos": 56,
    "site_class": "8mer",
    "pred_context_pp": -0.9001
@@ -366,7 +366,7 @@
   {
    "mirna": "hsa-miR-140-5p",
    "transcript": "ENST00000463928",
-   "gene": null,
+   "gene": "INTS6",
    "utr_pos": 27,
    "site_class": "8mer",
    "pred_context_pp": -0.8993
@@ -374,7 +374,7 @@
   {
    "mirna": "hsa-miR-135b-5p",
    "transcript": "ENST00000367180",
-   "gene": null,
+   "gene": "MDM4",
    "utr_pos": 114,
    "site_class": "8mer",
    "pred_context_pp": -0.8992
@@ -382,7 +382,7 @@
   {
    "mirna": "hsa-miR-6766-3p",
    "transcript": "ENST00000397360",
-   "gene": null,
+   "gene": "BMP8B",
    "utr_pos": 3,
    "site_class": "8mer",
    "pred_context_pp": -0.8968
@@ -390,7 +390,7 @@
   {
    "mirna": "hsa-miR-153-3p",
    "transcript": "ENST00000344330",
-   "gene": null,
+   "gene": "ICOSLG",
    "utr_pos": 13,
    "site_class": "8mer",
    "pred_context_pp": -0.8963
@@ -398,7 +398,7 @@
   {
    "mirna": "hsa-miR-140-5p",
    "transcript": "ENST00000391684",
-   "gene": null,
+   "gene": "AC120194.1",
    "utr_pos": 44,
    "site_class": "8mer",
    "pred_context_pp": -0.8918
@@ -406,7 +406,7 @@
   {
    "mirna": "hsa-miR-613",
    "transcript": "ENST00000344577",
-   "gene": null,
+   "gene": "LIPI",
    "utr_pos": 170,
    "site_class": "8mer",
    "pred_context_pp": -0.8858
@@ -414,7 +414,7 @@
   {
    "mirna": "hsa-miR-133a-3p.2",
    "transcript": "ENST00000409180",
-   "gene": null,
+   "gene": "MRPL35",
    "utr_pos": 26,
    "site_class": "8mer",
    "pred_context_pp": -0.8844
@@ -422,7 +422,7 @@
   {
    "mirna": "hsa-miR-4782-3p",
    "transcript": "ENST00000301015",
-   "gene": null,
+   "gene": "PIEZO1",
    "utr_pos": 257,
    "site_class": "8mer",
    "pred_context_pp": -0.8835
@@ -430,7 +430,7 @@
   {
    "mirna": "hsa-miR-98-5p",
    "transcript": "ENST00000433535",
-   "gene": null,
+   "gene": "RPUSD3",
    "utr_pos": 159,
    "site_class": "8mer",
    "pred_context_pp": -0.8818
@@ -438,7 +438,7 @@
   {
    "mirna": "hsa-miR-124-3p.1",
    "transcript": "ENST00000335647",
-   "gene": null,
+   "gene": "KATNA1",
    "utr_pos": 26,
    "site_class": "8mer",
    "pred_context_pp": -0.8807
@@ -446,7 +446,7 @@
   {
    "mirna": "hsa-miR-363-3p",
    "transcript": "ENST00000368894",
-   "gene": null,
+   "gene": "FAM24A",
    "utr_pos": 139,
    "site_class": "8mer",
    "pred_context_pp": -0.88
@@ -454,7 +454,7 @@
   {
    "mirna": "hsa-miR-221-3p",
    "transcript": "ENST00000378553",
-   "gene": null,
+   "gene": "DNAAF1",
    "utr_pos": 14,
    "site_class": "8mer",
    "pred_context_pp": -0.8797
@@ -462,7 +462,7 @@
   {
    "mirna": "hsa-miR-15a-5p",
    "transcript": "ENST00000442602",
-   "gene": null,
+   "gene": "EPHA6",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -0.878
@@ -470,7 +470,7 @@
   {
    "mirna": "hsa-miR-148a-3p",
    "transcript": "ENST00000506749",
-   "gene": null,
+   "gene": "UNC5C",
    "utr_pos": 15,
    "site_class": "8mer",
    "pred_context_pp": -0.8777
@@ -478,7 +478,7 @@
   {
    "mirna": "hsa-miR-133b",
    "transcript": "ENST00000409180",
-   "gene": null,
+   "gene": "MRPL35",
    "utr_pos": 26,
    "site_class": "8mer",
    "pred_context_pp": -0.8775
@@ -486,7 +486,7 @@
   {
    "mirna": "hsa-miR-25-3p",
    "transcript": "ENST00000368894",
-   "gene": null,
+   "gene": "FAM24A",
    "utr_pos": 139,
    "site_class": "8mer",
    "pred_context_pp": -0.8744
@@ -494,7 +494,7 @@
   {
    "mirna": "hsa-miR-223-3p",
    "transcript": "ENST00000263642",
-   "gene": null,
+   "gene": "IFIH1",
    "utr_pos": 80,
    "site_class": "8mer",
    "pred_context_pp": -0.8743
@@ -502,7 +502,7 @@
   {
    "mirna": "hsa-let-7b-5p",
    "transcript": "ENST00000575898",
-   "gene": null,
+   "gene": "ZNF232",
    "utr_pos": 269,
    "site_class": "8mer",
    "pred_context_pp": -0.8741
@@ -510,7 +510,7 @@
   {
    "mirna": "hsa-miR-15a-5p",
    "transcript": "ENST00000370363",
-   "gene": null,
+   "gene": "OOEP",
    "utr_pos": 43,
    "site_class": "8mer",
    "pred_context_pp": -0.8719
@@ -518,7 +518,7 @@
   {
    "mirna": "hsa-miR-30e-5p",
    "transcript": "ENST00000520800",
-   "gene": null,
+   "gene": "RP11-738G5.2",
    "utr_pos": 45,
    "site_class": "8mer",
    "pred_context_pp": -0.8715
@@ -526,7 +526,7 @@
   {
    "mirna": "hsa-miR-182-5p",
    "transcript": "ENST00000325636",
-   "gene": null,
+   "gene": "C11orf71",
    "utr_pos": 113,
    "site_class": "8mer",
    "pred_context_pp": -0.8701
@@ -534,7 +534,7 @@
   {
    "mirna": "hsa-miR-106a-5p",
    "transcript": "ENST00000404190",
-   "gene": null,
+   "gene": "LIPK",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -0.8689
@@ -542,7 +542,7 @@
   {
    "mirna": "hsa-miR-187-3p",
    "transcript": "ENST00000401090",
-   "gene": null,
+   "gene": "FHAD1",
    "utr_pos": 155,
    "site_class": "8mer",
    "pred_context_pp": -0.8689
@@ -550,7 +550,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000305784",
-   "gene": null,
+   "gene": "DTYMK",
    "utr_pos": 346,
    "site_class": "8mer",
    "pred_context_pp": -0.8682
@@ -558,7 +558,7 @@
   {
    "mirna": "hsa-miR-133a-3p.2",
    "transcript": "ENST00000451284",
-   "gene": null,
+   "gene": "LINC00692",
    "utr_pos": 107,
    "site_class": "8mer",
    "pred_context_pp": -0.8678
@@ -566,7 +566,7 @@
   {
    "mirna": "hsa-miR-133a-3p.1",
    "transcript": "ENST00000264553",
-   "gene": null,
+   "gene": "GZMM",
    "utr_pos": 97,
    "site_class": "8mer",
    "pred_context_pp": -0.8677
@@ -574,7 +574,7 @@
   {
    "mirna": "hsa-miR-383-5p.1",
    "transcript": "ENST00000373368",
-   "gene": null,
+   "gene": "SPP2",
    "utr_pos": 75,
    "site_class": "8mer",
    "pred_context_pp": -0.8673
@@ -582,7 +582,7 @@
   {
    "mirna": "hsa-miR-129-2-3p",
    "transcript": "ENST00000544180",
-   "gene": null,
+   "gene": "PYGL",
    "utr_pos": 167,
    "site_class": "8mer",
    "pred_context_pp": -0.8644
@@ -590,7 +590,7 @@
   {
    "mirna": "hsa-miR-98-5p",
    "transcript": "ENST00000575898",
-   "gene": null,
+   "gene": "ZNF232",
    "utr_pos": 269,
    "site_class": "8mer",
    "pred_context_pp": -0.8639
@@ -598,7 +598,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000394531",
-   "gene": null,
+   "gene": "BAD",
    "utr_pos": 95,
    "site_class": "8mer",
    "pred_context_pp": -0.8638
@@ -614,7 +614,7 @@
   {
    "mirna": "hsa-miR-613",
    "transcript": "ENST00000310357",
-   "gene": null,
+   "gene": "GPRC6A",
    "utr_pos": 19,
    "site_class": "8mer",
    "pred_context_pp": -0.8621
@@ -622,7 +622,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000409945",
-   "gene": null,
+   "gene": "USP40",
    "utr_pos": 348,
    "site_class": "8mer",
    "pred_context_pp": -0.8609
@@ -630,7 +630,7 @@
   {
    "mirna": "hsa-miR-15b-5p",
    "transcript": "ENST00000370363",
-   "gene": null,
+   "gene": "OOEP",
    "utr_pos": 43,
    "site_class": "8mer",
    "pred_context_pp": -0.8603
@@ -638,7 +638,7 @@
   {
    "mirna": "hsa-miR-195-5p",
    "transcript": "ENST00000420827",
-   "gene": null,
+   "gene": "UBA6",
    "utr_pos": 189,
    "site_class": "8mer",
    "pred_context_pp": -0.8599
@@ -646,7 +646,7 @@
   {
    "mirna": "hsa-miR-199b-3p",
    "transcript": "ENST00000409061",
-   "gene": null,
+   "gene": "ANKRD61",
    "utr_pos": 116,
    "site_class": "8mer",
    "pred_context_pp": -0.8584
@@ -654,7 +654,7 @@
   {
    "mirna": "hsa-miR-497-5p",
    "transcript": "ENST00000420827",
-   "gene": null,
+   "gene": "UBA6",
    "utr_pos": 189,
    "site_class": "8mer",
    "pred_context_pp": -0.8581
@@ -662,7 +662,7 @@
   {
    "mirna": "hsa-miR-183-5p.2",
    "transcript": "ENST00000368011",
-   "gene": null,
+   "gene": "KLHDC9",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -0.8558
@@ -670,7 +670,7 @@
   {
    "mirna": "hsa-let-7g-5p",
    "transcript": "ENST00000575898",
-   "gene": null,
+   "gene": "ZNF232",
    "utr_pos": 269,
    "site_class": "8mer",
    "pred_context_pp": -0.8544
@@ -678,7 +678,7 @@
   {
    "mirna": "hsa-miR-338-3p",
    "transcript": "ENST00000374952",
-   "gene": null,
+   "gene": "PAGE5",
    "utr_pos": 46,
    "site_class": "8mer",
    "pred_context_pp": -0.854
@@ -686,7 +686,7 @@
   {
    "mirna": "hsa-miR-125b-5p",
    "transcript": "ENST00000378832",
-   "gene": null,
+   "gene": "ACCSL",
    "utr_pos": 40,
    "site_class": "8mer",
    "pred_context_pp": -0.8532
@@ -694,7 +694,7 @@
   {
    "mirna": "hsa-miR-30e-5p",
    "transcript": "ENST00000302040",
-   "gene": null,
+   "gene": "OR5A2",
    "utr_pos": 0,
    "site_class": "8mer",
    "pred_context_pp": -0.8531
@@ -702,7 +702,7 @@
   {
    "mirna": "hsa-let-7b-5p",
    "transcript": "ENST00000541799",
-   "gene": null,
+   "gene": "ZBP1",
    "utr_pos": 137,
    "site_class": "8mer",
    "pred_context_pp": -0.8523
@@ -710,7 +710,7 @@
   {
    "mirna": "hsa-miR-30b-5p",
    "transcript": "ENST00000520800",
-   "gene": null,
+   "gene": "RP11-738G5.2",
    "utr_pos": 45,
    "site_class": "8mer",
    "pred_context_pp": -0.8519
@@ -718,7 +718,7 @@
   {
    "mirna": "hsa-miR-9-5p",
    "transcript": "ENST00000264735",
-   "gene": null,
+   "gene": "HRASLS",
    "utr_pos": 6,
    "site_class": "8mer",
    "pred_context_pp": -0.851
@@ -726,7 +726,7 @@
   {
    "mirna": "hsa-miR-5195-3p",
    "transcript": "ENST00000335934",
-   "gene": null,
+   "gene": "TP53I3",
    "utr_pos": 138,
    "site_class": "8mer",
    "pred_context_pp": -0.849
@@ -734,7 +734,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000567094",
-   "gene": null,
+   "gene": "SNAP23",
    "utr_pos": 431,
    "site_class": "8mer",
    "pred_context_pp": -0.8478
@@ -742,7 +742,7 @@
   {
    "mirna": "hsa-miR-17-5p",
    "transcript": "ENST00000404190",
-   "gene": null,
+   "gene": "LIPK",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -0.8463
@@ -750,7 +750,7 @@
   {
    "mirna": "hsa-miR-133a-3p.1",
    "transcript": "ENST00000367983",
-   "gene": null,
+   "gene": "NR1I3",
    "utr_pos": 66,
    "site_class": "8mer",
    "pred_context_pp": -0.8453
@@ -758,7 +758,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000564406",
-   "gene": null,
+   "gene": "DET1",
    "utr_pos": 26,
    "site_class": "8mer",
    "pred_context_pp": -0.8452
@@ -766,7 +766,7 @@
   {
    "mirna": "hsa-miR-93-5p",
    "transcript": "ENST00000404190",
-   "gene": null,
+   "gene": "LIPK",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -0.8446
@@ -774,7 +774,7 @@
   {
    "mirna": "hsa-miR-96-5p",
    "transcript": "ENST00000394846",
-   "gene": null,
+   "gene": "ZNF267",
    "utr_pos": 276,
    "site_class": "8mer",
    "pred_context_pp": -0.8439
@@ -782,7 +782,7 @@
   {
    "mirna": "hsa-let-7c-5p",
    "transcript": "ENST00000541799",
-   "gene": null,
+   "gene": "ZBP1",
    "utr_pos": 137,
    "site_class": "8mer",
    "pred_context_pp": -0.8429
@@ -790,7 +790,7 @@
   {
    "mirna": "hsa-miR-124-3p.2",
    "transcript": "ENST00000255616",
-   "gene": null,
+   "gene": "ZNF414",
    "utr_pos": 126,
    "site_class": "8mer",
    "pred_context_pp": -0.8427
@@ -798,7 +798,7 @@
   {
    "mirna": "hsa-miR-148b-3p",
    "transcript": "ENST00000506749",
-   "gene": null,
+   "gene": "UNC5C",
    "utr_pos": 15,
    "site_class": "8mer",
    "pred_context_pp": -0.8416
@@ -806,7 +806,7 @@
   {
    "mirna": "hsa-miR-24-3p",
    "transcript": "ENST00000379818",
-   "gene": null,
+   "gene": "MT1M",
    "utr_pos": 71,
    "site_class": "8mer",
    "pred_context_pp": -0.8412
@@ -814,7 +814,7 @@
   {
    "mirna": "hsa-miR-92b-3p",
    "transcript": "ENST00000368894",
-   "gene": null,
+   "gene": "FAM24A",
    "utr_pos": 139,
    "site_class": "8mer",
    "pred_context_pp": -0.8397
@@ -822,7 +822,7 @@
   {
    "mirna": "hsa-miR-183-5p.1",
    "transcript": "ENST00000509620",
-   "gene": null,
+   "gene": "OTUD4",
    "utr_pos": 27,
    "site_class": "8mer",
    "pred_context_pp": -0.8397
@@ -830,7 +830,7 @@
   {
    "mirna": "hsa-miR-338-3p",
    "transcript": "ENST00000421801",
-   "gene": null,
+   "gene": "GABARAPL1",
    "utr_pos": 101,
    "site_class": "8mer",
    "pred_context_pp": -0.839
@@ -838,7 +838,7 @@
   {
    "mirna": "hsa-miR-125a-5p",
    "transcript": "ENST00000381984",
-   "gene": null,
+   "gene": "RFX3",
    "utr_pos": 64,
    "site_class": "8mer",
    "pred_context_pp": -0.8384
@@ -846,7 +846,7 @@
   {
    "mirna": "hsa-miR-194-5p",
    "transcript": "ENST00000567840",
-   "gene": null,
+   "gene": "TTBK2",
    "utr_pos": 56,
    "site_class": "8mer",
    "pred_context_pp": -0.8376
@@ -854,7 +854,7 @@
   {
    "mirna": "hsa-miR-92b-3p",
    "transcript": "ENST00000250352",
-   "gene": null,
+   "gene": "KLK12",
    "utr_pos": 25,
    "site_class": "8mer",
    "pred_context_pp": -0.8373
@@ -862,7 +862,7 @@
   {
    "mirna": "hsa-miR-214-5p",
    "transcript": "ENST00000478381",
-   "gene": null,
+   "gene": "TIMM23B",
    "utr_pos": 72,
    "site_class": "8mer",
    "pred_context_pp": -0.837
@@ -870,7 +870,7 @@
   {
    "mirna": "hsa-let-7c-5p",
    "transcript": "ENST00000575898",
-   "gene": null,
+   "gene": "ZNF232",
    "utr_pos": 269,
    "site_class": "8mer",
    "pred_context_pp": -0.8361
@@ -878,7 +878,7 @@
   {
    "mirna": "hsa-miR-6807-3p",
    "transcript": "ENST00000521716",
-   "gene": null,
+   "gene": "DCAF13",
    "utr_pos": 142,
    "site_class": "8mer",
    "pred_context_pp": -0.8354
@@ -886,7 +886,7 @@
   {
    "mirna": "hsa-miR-135a-5p",
    "transcript": "ENST00000582441",
-   "gene": null,
+   "gene": "RP1-66C13.4",
    "utr_pos": 20,
    "site_class": "8mer",
    "pred_context_pp": -0.835
@@ -894,7 +894,7 @@
   {
    "mirna": "hsa-let-7e-5p",
    "transcript": "ENST00000433535",
-   "gene": null,
+   "gene": "RPUSD3",
    "utr_pos": 159,
    "site_class": "8mer",
    "pred_context_pp": -0.8348
@@ -902,7 +902,7 @@
   {
    "mirna": "hsa-miR-222-3p",
    "transcript": "ENST00000350549",
-   "gene": null,
+   "gene": "PRSS37",
    "utr_pos": 102,
    "site_class": "8mer",
    "pred_context_pp": -0.8341
@@ -910,7 +910,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000307637",
-   "gene": null,
+   "gene": "C3AR1",
    "utr_pos": 418,
    "site_class": "8mer",
    "pred_context_pp": -0.8337
@@ -918,7 +918,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000559279",
-   "gene": null,
+   "gene": "KIF23",
    "utr_pos": 71,
    "site_class": "8mer",
    "pred_context_pp": -0.8334
@@ -926,7 +926,7 @@
   {
    "mirna": "hsa-miR-217",
    "transcript": "ENST00000253435",
-   "gene": null,
+   "gene": "TEX101",
    "utr_pos": 163,
    "site_class": "8mer",
    "pred_context_pp": -0.8331
@@ -934,7 +934,7 @@
   {
    "mirna": "hsa-miR-142-3p.1",
    "transcript": "ENST00000397165",
-   "gene": null,
+   "gene": "ZNF682",
    "utr_pos": 103,
    "site_class": "8mer",
    "pred_context_pp": -0.8327
@@ -942,7 +942,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000356031",
-   "gene": null,
+   "gene": "SPEF2",
    "utr_pos": 37,
    "site_class": "7mer",
    "pred_context_pp": -0.8326
@@ -958,7 +958,7 @@
   {
    "mirna": "hsa-miR-183-5p.2",
    "transcript": "ENST00000433996",
-   "gene": null,
+   "gene": "NDST3",
    "utr_pos": 28,
    "site_class": "8mer",
    "pred_context_pp": -0.8271
@@ -966,7 +966,7 @@
   {
    "mirna": "hsa-miR-153-3p",
    "transcript": "ENST00000375910",
-   "gene": null,
+   "gene": "CELA2B",
    "utr_pos": 74,
    "site_class": "8mer",
    "pred_context_pp": -0.8269
@@ -974,7 +974,7 @@
   {
    "mirna": "hsa-miR-132-3p",
    "transcript": "ENST00000377457",
-   "gene": null,
+   "gene": "CBWD6",
    "utr_pos": 417,
    "site_class": "8mer",
    "pred_context_pp": -0.8254
@@ -982,7 +982,7 @@
   {
    "mirna": "hsa-miR-132-3p",
    "transcript": "ENST00000398186",
-   "gene": null,
+   "gene": "EFCAB9",
    "utr_pos": 65,
    "site_class": "8mer",
    "pred_context_pp": -0.8243
@@ -990,7 +990,7 @@
   {
    "mirna": "hsa-miR-98-5p",
    "transcript": "ENST00000541799",
-   "gene": null,
+   "gene": "ZBP1",
    "utr_pos": 137,
    "site_class": "8mer",
    "pred_context_pp": -0.8237
@@ -998,7 +998,7 @@
   {
    "mirna": "hsa-miR-196a-5p",
    "transcript": "ENST00000551086",
-   "gene": null,
+   "gene": "BICD1",
    "utr_pos": 71,
    "site_class": "8mer",
    "pred_context_pp": -0.8218
@@ -1006,7 +1006,7 @@
   {
    "mirna": "hsa-miR-338-3p",
    "transcript": "ENST00000307632",
-   "gene": null,
+   "gene": "OR52K1",
    "utr_pos": 43,
    "site_class": "8mer",
    "pred_context_pp": -0.8213
@@ -1014,7 +1014,7 @@
   {
    "mirna": "hsa-miR-132-3p",
    "transcript": "ENST00000377391",
-   "gene": null,
+   "gene": "CBWD7",
    "utr_pos": 417,
    "site_class": "8mer",
    "pred_context_pp": -0.8185
@@ -1022,7 +1022,7 @@
   {
    "mirna": "hsa-miR-30e-5p",
    "transcript": "ENST00000518537",
-   "gene": null,
+   "gene": "PCM1",
    "utr_pos": 15,
    "site_class": "8mer",
    "pred_context_pp": -0.8181
@@ -1030,7 +1030,7 @@
   {
    "mirna": "hsa-miR-425-5p",
    "transcript": "ENST00000377169",
-   "gene": null,
+   "gene": "OR2J3",
    "utr_pos": 10,
    "site_class": "8mer",
    "pred_context_pp": -0.8178
@@ -1038,7 +1038,7 @@
   {
    "mirna": "hsa-miR-199b-3p",
    "transcript": "ENST00000359904",
-   "gene": null,
+   "gene": "AMZ2",
    "utr_pos": 82,
    "site_class": "8mer",
    "pred_context_pp": -0.8178
@@ -1046,7 +1046,7 @@
   {
    "mirna": "hsa-miR-6088",
    "transcript": "ENST00000389124",
-   "gene": null,
+   "gene": "GRIK1",
    "utr_pos": 38,
    "site_class": "8mer",
    "pred_context_pp": -0.8165
@@ -1054,7 +1054,7 @@
   {
    "mirna": "hsa-miR-125b-5p",
    "transcript": "ENST00000302312",
-   "gene": null,
+   "gene": "AHSP",
    "utr_pos": 0,
    "site_class": "8mer",
    "pred_context_pp": -0.8162
@@ -1062,7 +1062,7 @@
   {
    "mirna": "hsa-miR-338-3p",
    "transcript": "ENST00000356858",
-   "gene": null,
+   "gene": "C10orf90",
    "utr_pos": 113,
    "site_class": "8mer",
    "pred_context_pp": -0.816
@@ -1070,7 +1070,7 @@
   {
    "mirna": "hsa-miR-613",
    "transcript": "ENST00000412360",
-   "gene": null,
+   "gene": "AC102948.2",
    "utr_pos": 228,
    "site_class": "8mer",
    "pred_context_pp": -0.8135
@@ -1078,7 +1078,7 @@
   {
    "mirna": "hsa-miR-142-3p.1",
    "transcript": "ENST00000325971",
-   "gene": null,
+   "gene": "CEP192",
    "utr_pos": 62,
    "site_class": "8mer",
    "pred_context_pp": -0.8135
@@ -1086,7 +1086,7 @@
   {
    "mirna": "hsa-miR-18a-5p",
    "transcript": "ENST00000380605",
-   "gene": null,
+   "gene": "CPXM1",
    "utr_pos": 108,
    "site_class": "8mer",
    "pred_context_pp": -0.8131
@@ -1094,7 +1094,7 @@
   {
    "mirna": "hsa-miR-137",
    "transcript": "ENST00000381989",
-   "gene": null,
+   "gene": "PARP4",
    "utr_pos": 161,
    "site_class": "8mer",
    "pred_context_pp": -0.813
@@ -1102,7 +1102,7 @@
   {
    "mirna": "hsa-miR-205-5p",
    "transcript": "ENST00000430835",
-   "gene": null,
+   "gene": "C6orf201",
    "utr_pos": 89,
    "site_class": "8mer",
    "pred_context_pp": -0.8124
@@ -1110,7 +1110,7 @@
   {
    "mirna": "hsa-miR-125a-5p",
    "transcript": "ENST00000399784",
-   "gene": null,
+   "gene": "MRAP",
    "utr_pos": 247,
    "site_class": "8mer",
    "pred_context_pp": -0.8108
@@ -1118,7 +1118,7 @@
   {
    "mirna": "hsa-miR-6807-3p",
    "transcript": "ENST00000253435",
-   "gene": null,
+   "gene": "TEX101",
    "utr_pos": 163,
    "site_class": "8mer",
    "pred_context_pp": -0.8106
@@ -1126,7 +1126,7 @@
   {
    "mirna": "hsa-miR-367-3p",
    "transcript": "ENST00000368894",
-   "gene": null,
+   "gene": "FAM24A",
    "utr_pos": 139,
    "site_class": "8mer",
    "pred_context_pp": -0.8102
@@ -1134,7 +1134,7 @@
   {
    "mirna": "hsa-miR-4500",
    "transcript": "ENST00000541799",
-   "gene": null,
+   "gene": "ZBP1",
    "utr_pos": 137,
    "site_class": "8mer",
    "pred_context_pp": -0.8101
@@ -1142,7 +1142,7 @@
   {
    "mirna": "hsa-miR-4782-3p",
    "transcript": "ENST00000411976",
-   "gene": null,
+   "gene": "PRRT3",
    "utr_pos": 5,
    "site_class": "8mer",
    "pred_context_pp": -0.8085
@@ -1150,7 +1150,7 @@
   {
    "mirna": "hsa-miR-30d-5p",
    "transcript": "ENST00000518537",
-   "gene": null,
+   "gene": "PCM1",
    "utr_pos": 15,
    "site_class": "8mer",
    "pred_context_pp": -0.8069
@@ -1158,7 +1158,7 @@
   {
    "mirna": "hsa-miR-5195-3p",
    "transcript": "ENST00000313482",
-   "gene": null,
+   "gene": "TP53I3",
    "utr_pos": 193,
    "site_class": "8mer",
    "pred_context_pp": -0.8062
@@ -1166,7 +1166,7 @@
   {
    "mirna": "hsa-miR-29b-3p",
    "transcript": "ENST00000367459",
-   "gene": null,
+   "gene": "RGS1",
    "utr_pos": 573,
    "site_class": "8mer",
    "pred_context_pp": -0.806
@@ -1174,7 +1174,7 @@
   {
    "mirna": "hsa-let-7i-5p",
    "transcript": "ENST00000541799",
-   "gene": null,
+   "gene": "ZBP1",
    "utr_pos": 137,
    "site_class": "8mer",
    "pred_context_pp": -0.8051
@@ -1182,7 +1182,7 @@
   {
    "mirna": "hsa-miR-133a-3p.2",
    "transcript": "ENST00000370832",
-   "gene": null,
+   "gene": "USP26",
    "utr_pos": 112,
    "site_class": "8mer",
    "pred_context_pp": -0.8042
@@ -1190,7 +1190,7 @@
   {
    "mirna": "hsa-miR-193a-5p",
    "transcript": "ENST00000547418",
-   "gene": null,
+   "gene": "RP11-552I14.1",
    "utr_pos": 5,
    "site_class": "8mer",
    "pred_context_pp": -0.8039
@@ -1198,7 +1198,7 @@
   {
    "mirna": "hsa-miR-29b-3p",
    "transcript": "ENST00000264274",
-   "gene": null,
+   "gene": "CASP8",
    "utr_pos": 0,
    "site_class": "8mer",
    "pred_context_pp": -0.8032
@@ -1206,7 +1206,7 @@
   {
    "mirna": "hsa-miR-133a-3p.2",
    "transcript": "ENST00000450895",
-   "gene": null,
+   "gene": "AP000322.53",
    "utr_pos": 482,
    "site_class": "8mer",
    "pred_context_pp": -0.8024
@@ -1214,7 +1214,7 @@
   {
    "mirna": "hsa-miR-129-2-3p",
    "transcript": "ENST00000254759",
-   "gene": null,
+   "gene": "COQ3",
    "utr_pos": 110,
    "site_class": "8mer",
    "pred_context_pp": -0.8024
@@ -1222,7 +1222,7 @@
   {
    "mirna": "hsa-miR-6088",
    "transcript": "ENST00000302581",
-   "gene": null,
+   "gene": "OR5B2",
    "utr_pos": 45,
    "site_class": "8mer",
    "pred_context_pp": -0.8022
@@ -1230,7 +1230,7 @@
   {
    "mirna": "hsa-miR-139-5p",
    "transcript": "ENST00000409999",
-   "gene": null,
+   "gene": "C5orf52",
    "utr_pos": 112,
    "site_class": "8mer",
    "pred_context_pp": -0.8019
@@ -1238,7 +1238,7 @@
   {
    "mirna": "hsa-miR-183-5p.2",
    "transcript": "ENST00000553796",
-   "gene": null,
+   "gene": "ESR2",
    "utr_pos": 135,
    "site_class": "8mer",
    "pred_context_pp": -0.8018
@@ -1246,7 +1246,7 @@
   {
    "mirna": "hsa-miR-4319",
    "transcript": "ENST00000378832",
-   "gene": null,
+   "gene": "ACCSL",
    "utr_pos": 40,
    "site_class": "8mer",
    "pred_context_pp": -0.8013
@@ -1254,7 +1254,7 @@
   {
    "mirna": "hsa-miR-27a-3p",
    "transcript": "ENST00000260605",
-   "gene": null,
+   "gene": "DYNC2LI1",
    "utr_pos": 56,
    "site_class": "8mer",
    "pred_context_pp": -0.801
@@ -1262,7 +1262,7 @@
   {
    "mirna": "hsa-miR-199b-3p",
    "transcript": "ENST00000357424",
-   "gene": null,
+   "gene": "GIP",
    "utr_pos": 138,
    "site_class": "8mer",
    "pred_context_pp": -0.7993
@@ -1270,7 +1270,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000573514",
-   "gene": null,
+   "gene": "CCDC64B",
    "utr_pos": 81,
    "site_class": "8mer",
    "pred_context_pp": -0.7992
@@ -1278,7 +1278,7 @@
   {
    "mirna": "hsa-miR-103a-3p",
    "transcript": "ENST00000537935",
-   "gene": null,
+   "gene": "OR52E8",
    "utr_pos": 61,
    "site_class": "8mer",
    "pred_context_pp": -0.797
@@ -1286,7 +1286,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000375344",
-   "gene": null,
+   "gene": "HIATL1",
    "utr_pos": 917,
    "site_class": "8mer",
    "pred_context_pp": -0.7969
@@ -1294,7 +1294,7 @@
   {
    "mirna": "hsa-miR-6766-3p",
    "transcript": "ENST00000329722",
-   "gene": null,
+   "gene": "C6orf58",
    "utr_pos": 60,
    "site_class": "8mer",
    "pred_context_pp": -0.7967
@@ -1302,7 +1302,7 @@
   {
    "mirna": "hsa-miR-124-3p.2",
    "transcript": "ENST00000335647",
-   "gene": null,
+   "gene": "KATNA1",
    "utr_pos": 27,
    "site_class": "8mer",
    "pred_context_pp": -0.7964
@@ -1310,7 +1310,7 @@
   {
    "mirna": "hsa-miR-338-3p",
    "transcript": "ENST00000506736",
-   "gene": null,
+   "gene": "TAF9",
    "utr_pos": 65,
    "site_class": "8mer",
    "pred_context_pp": -0.7962
@@ -1318,7 +1318,7 @@
   {
    "mirna": "hsa-miR-218-5p",
    "transcript": "ENST00000424586",
-   "gene": null,
+   "gene": "TYROBP",
    "utr_pos": 155,
    "site_class": "8mer",
    "pred_context_pp": -0.7957
@@ -1326,7 +1326,7 @@
   {
    "mirna": "hsa-miR-449b-5p",
    "transcript": "ENST00000303015",
-   "gene": null,
+   "gene": "KCNK9",
    "utr_pos": 47,
    "site_class": "8mer",
    "pred_context_pp": -0.7956
@@ -1334,7 +1334,7 @@
   {
    "mirna": "hsa-miR-138-5p",
    "transcript": "ENST00000403208",
-   "gene": null,
+   "gene": "SLC2A11",
    "utr_pos": 45,
    "site_class": "8mer",
    "pred_context_pp": -0.7952
@@ -1342,7 +1342,7 @@
   {
    "mirna": "hsa-miR-30c-5p",
    "transcript": "ENST00000409145",
-   "gene": null,
+   "gene": "MRPL30",
    "utr_pos": 3,
    "site_class": "8mer",
    "pred_context_pp": -0.7948
@@ -1350,7 +1350,7 @@
   {
    "mirna": "hsa-miR-133b",
    "transcript": "ENST00000450895",
-   "gene": null,
+   "gene": "AP000322.53",
    "utr_pos": 482,
    "site_class": "8mer",
    "pred_context_pp": -0.7943
@@ -1358,7 +1358,7 @@
   {
    "mirna": "hsa-miR-338-3p",
    "transcript": "ENST00000299709",
-   "gene": null,
+   "gene": "SLC38A8",
    "utr_pos": 101,
    "site_class": "8mer",
    "pred_context_pp": -0.794
@@ -1366,7 +1366,7 @@
   {
    "mirna": "hsa-miR-19b-3p",
    "transcript": "ENST00000378953",
-   "gene": null,
+   "gene": "C5orf56",
    "utr_pos": 43,
    "site_class": "8mer",
    "pred_context_pp": -0.7936
@@ -1374,7 +1374,7 @@
   {
    "mirna": "hsa-miR-449b-5p",
    "transcript": "ENST00000368747",
-   "gene": null,
+   "gene": "LELP1",
    "utr_pos": 30,
    "site_class": "8mer",
    "pred_context_pp": -0.7933
@@ -1382,7 +1382,7 @@
   {
    "mirna": "hsa-let-7d-5p",
    "transcript": "ENST00000571838",
-   "gene": null,
+   "gene": "CTC-360G5.1",
    "utr_pos": 3,
    "site_class": "8mer",
    "pred_context_pp": -0.7926
@@ -1390,7 +1390,7 @@
   {
    "mirna": "hsa-miR-183-5p.2",
    "transcript": "ENST00000585429",
-   "gene": null,
+   "gene": "JMJD6",
    "utr_pos": 111,
    "site_class": "8mer",
    "pred_context_pp": -0.7921
@@ -1398,7 +1398,7 @@
   {
    "mirna": "hsa-miR-1271-5p",
    "transcript": "ENST00000394846",
-   "gene": null,
+   "gene": "ZNF267",
    "utr_pos": 276,
    "site_class": "8mer",
    "pred_context_pp": -0.7916
@@ -1406,7 +1406,7 @@
   {
    "mirna": "hsa-miR-506-3p",
    "transcript": "ENST00000335647",
-   "gene": null,
+   "gene": "KATNA1",
    "utr_pos": 27,
    "site_class": "8mer",
    "pred_context_pp": -0.7915
@@ -1414,7 +1414,7 @@
   {
    "mirna": "hsa-miR-455-5p",
    "transcript": "ENST00000369310",
-   "gene": null,
+   "gene": "PLEKHS1",
    "utr_pos": 33,
    "site_class": "8mer",
    "pred_context_pp": -0.7909
@@ -1430,7 +1430,7 @@
   {
    "mirna": "hsa-miR-196b-5p",
    "transcript": "ENST00000598951",
-   "gene": null,
+   "gene": "PTPRC",
    "utr_pos": 170,
    "site_class": "8mer",
    "pred_context_pp": -0.7899
@@ -1438,7 +1438,7 @@
   {
    "mirna": "hsa-miR-125a-5p",
    "transcript": "ENST00000393392",
-   "gene": null,
+   "gene": "ANKRD42",
    "utr_pos": 38,
    "site_class": "8mer",
    "pred_context_pp": -0.7897
@@ -1446,7 +1446,7 @@
   {
    "mirna": "hsa-miR-449a",
    "transcript": "ENST00000368747",
-   "gene": null,
+   "gene": "LELP1",
    "utr_pos": 30,
    "site_class": "8mer",
    "pred_context_pp": -0.7891
@@ -1454,7 +1454,7 @@
   {
    "mirna": "hsa-miR-4782-3p",
    "transcript": "ENST00000433979",
-   "gene": null,
+   "gene": "PIK3C2G",
    "utr_pos": 356,
    "site_class": "8mer",
    "pred_context_pp": -0.789
@@ -1462,7 +1462,7 @@
   {
    "mirna": "hsa-miR-107",
    "transcript": "ENST00000535047",
-   "gene": null,
+   "gene": "PPFIBP1",
    "utr_pos": 10,
    "site_class": "8mer",
    "pred_context_pp": -0.7888
@@ -1470,7 +1470,7 @@
   {
    "mirna": "hsa-miR-96-5p",
    "transcript": "ENST00000367165",
-   "gene": null,
+   "gene": "CLDN20",
    "utr_pos": 35,
    "site_class": "8mer",
    "pred_context_pp": -0.7884
@@ -1478,7 +1478,7 @@
   {
    "mirna": "hsa-miR-101-3p.1",
    "transcript": "ENST00000396039",
-   "gene": null,
+   "gene": "PARD6B",
    "utr_pos": 72,
    "site_class": "8mer",
    "pred_context_pp": -0.7881
@@ -1486,7 +1486,7 @@
   {
    "mirna": "hsa-miR-19b-3p",
    "transcript": "ENST00000408901",
-   "gene": null,
+   "gene": "NGDN",
    "utr_pos": 159,
    "site_class": "8mer",
    "pred_context_pp": -0.7878
@@ -1494,7 +1494,7 @@
   {
    "mirna": "hsa-let-7c-5p",
    "transcript": "ENST00000257899",
-   "gene": null,
+   "gene": "BLOC1S1",
    "utr_pos": 30,
    "site_class": "8mer",
    "pred_context_pp": -0.7869
@@ -1502,7 +1502,7 @@
   {
    "mirna": "hsa-miR-148b-3p",
    "transcript": "ENST00000529819",
-   "gene": null,
+   "gene": "ZNF7",
    "utr_pos": 109,
    "site_class": "8mer",
    "pred_context_pp": -0.7866
@@ -1510,7 +1510,7 @@
   {
    "mirna": "hsa-miR-204-5p",
    "transcript": "ENST00000579618",
-   "gene": null,
+   "gene": "SNRPD1",
    "utr_pos": 9,
    "site_class": "8mer",
    "pred_context_pp": -0.7861
@@ -1518,7 +1518,7 @@
   {
    "mirna": "hsa-miR-34c-5p",
    "transcript": "ENST00000378194",
-   "gene": null,
+   "gene": "SPTLC3",
    "utr_pos": 465,
    "site_class": "8mer",
    "pred_context_pp": -0.786
@@ -1526,7 +1526,7 @@
   {
    "mirna": "hsa-miR-148a-3p",
    "transcript": "ENST00000343150",
-   "gene": null,
+   "gene": "CTSL",
    "utr_pos": 312,
    "site_class": "8mer",
    "pred_context_pp": -0.7854
@@ -1534,7 +1534,7 @@
   {
    "mirna": "hsa-miR-145-5p",
    "transcript": "ENST00000335934",
-   "gene": null,
+   "gene": "TP53I3",
    "utr_pos": 138,
    "site_class": "8mer",
    "pred_context_pp": -0.7849
@@ -1542,7 +1542,7 @@
   {
    "mirna": "hsa-miR-138-5p",
    "transcript": "ENST00000306357",
-   "gene": null,
+   "gene": "STX8",
    "utr_pos": 15,
    "site_class": "8mer",
    "pred_context_pp": -0.7847
@@ -1550,7 +1550,7 @@
   {
    "mirna": "hsa-miR-222-3p",
    "transcript": "ENST00000303927",
-   "gene": null,
+   "gene": "PRKCDBP",
    "utr_pos": 60,
    "site_class": "8mer",
    "pred_context_pp": -0.7843
@@ -1558,7 +1558,7 @@
   {
    "mirna": "hsa-miR-140-3p.2",
    "transcript": "ENST00000453034",
-   "gene": null,
+   "gene": "RAPH1",
    "utr_pos": 15,
    "site_class": "8mer",
    "pred_context_pp": -0.7843
@@ -1566,7 +1566,7 @@
   {
    "mirna": "hsa-miR-103a-3p",
    "transcript": "ENST00000420239",
-   "gene": null,
+   "gene": "CHD2",
    "utr_pos": 115,
    "site_class": "8mer",
    "pred_context_pp": -0.7842
@@ -1574,7 +1574,7 @@
   {
    "mirna": "hsa-miR-29a-3p",
    "transcript": "ENST00000541666",
-   "gene": null,
+   "gene": "HABP2",
    "utr_pos": 18,
    "site_class": "8mer",
    "pred_context_pp": -0.7841
@@ -1582,7 +1582,7 @@
   {
    "mirna": "hsa-miR-29c-3p",
    "transcript": "ENST00000264274",
-   "gene": null,
+   "gene": "CASP8",
    "utr_pos": 0,
    "site_class": "8mer",
    "pred_context_pp": -0.7831
@@ -1590,7 +1590,7 @@
   {
    "mirna": "hsa-let-7a-5p",
    "transcript": "ENST00000571838",
-   "gene": null,
+   "gene": "CTC-360G5.1",
    "utr_pos": 3,
    "site_class": "8mer",
    "pred_context_pp": -0.7831
@@ -1598,7 +1598,7 @@
   {
    "mirna": "hsa-miR-802",
    "transcript": "ENST00000600213",
-   "gene": null,
+   "gene": "MTRNR2L12",
    "utr_pos": 35,
    "site_class": "8mer",
    "pred_context_pp": -0.7825
@@ -1606,7 +1606,7 @@
   {
    "mirna": "hsa-miR-302c-3p.1",
    "transcript": "ENST00000259870",
-   "gene": null,
+   "gene": "C6orf15",
    "utr_pos": 145,
    "site_class": "8mer",
    "pred_context_pp": -0.7823
@@ -1614,7 +1614,7 @@
   {
    "mirna": "hsa-miR-449a",
    "transcript": "ENST00000402789",
-   "gene": null,
+   "gene": "SUV420H1",
    "utr_pos": 10,
    "site_class": "8mer",
    "pred_context_pp": -0.7819
@@ -1622,7 +1622,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000369950",
-   "gene": null,
+   "gene": "IMPG1",
    "utr_pos": 748,
    "site_class": "8mer",
    "pred_context_pp": -0.7818
@@ -1630,7 +1630,7 @@
   {
    "mirna": "hsa-miR-182-5p",
    "transcript": "ENST00000367888",
-   "gene": null,
+   "gene": "MGST3",
    "utr_pos": 46,
    "site_class": "8mer",
    "pred_context_pp": -0.7813
@@ -1638,7 +1638,7 @@
   {
    "mirna": "hsa-let-7b-5p",
    "transcript": "ENST00000383163",
-   "gene": null,
+   "gene": "PRR23A",
    "utr_pos": 1498,
    "site_class": "8mer",
    "pred_context_pp": -0.7801
@@ -1646,7 +1646,7 @@
   {
    "mirna": "hsa-miR-133b",
    "transcript": "ENST00000367983",
-   "gene": null,
+   "gene": "NR1I3",
    "utr_pos": 67,
    "site_class": "8mer",
    "pred_context_pp": -0.7798
@@ -1654,7 +1654,7 @@
   {
    "mirna": "hsa-miR-103a-3p",
    "transcript": "ENST00000425805",
-   "gene": null,
+   "gene": "TMEM131",
    "utr_pos": 84,
    "site_class": "8mer",
    "pred_context_pp": -0.7795
@@ -1662,7 +1662,7 @@
   {
    "mirna": "hsa-miR-613",
    "transcript": "ENST00000400564",
-   "gene": null,
+   "gene": "SAMSN1",
    "utr_pos": 160,
    "site_class": "8mer",
    "pred_context_pp": -0.779
@@ -1678,7 +1678,7 @@
   {
    "mirna": "hsa-miR-34a-5p",
    "transcript": "ENST00000591134",
-   "gene": null,
+   "gene": "HKR1",
    "utr_pos": 55,
    "site_class": "8mer",
    "pred_context_pp": -0.7765
@@ -1686,7 +1686,7 @@
   {
    "mirna": "hsa-miR-133a-3p.1",
    "transcript": "ENST00000398019",
-   "gene": null,
+   "gene": "SERPINB7",
    "utr_pos": 537,
    "site_class": "8mer",
    "pred_context_pp": -0.775
@@ -1694,7 +1694,7 @@
   {
    "mirna": "hsa-miR-3666",
    "transcript": "ENST00000326035",
-   "gene": null,
+   "gene": "NIM1",
    "utr_pos": 1,
    "site_class": "8mer",
    "pred_context_pp": -0.7739
@@ -1702,7 +1702,7 @@
   {
    "mirna": "hsa-miR-520d-3p",
    "transcript": "ENST00000259870",
-   "gene": null,
+   "gene": "C6orf15",
    "utr_pos": 145,
    "site_class": "8mer",
    "pred_context_pp": -0.7739
@@ -1710,7 +1710,7 @@
   {
    "mirna": "hsa-miR-449a",
    "transcript": "ENST00000591134",
-   "gene": null,
+   "gene": "HKR1",
    "utr_pos": 55,
    "site_class": "8mer",
    "pred_context_pp": -0.7731
@@ -1718,7 +1718,7 @@
   {
    "mirna": "hsa-miR-18b-5p",
    "transcript": "ENST00000543727",
-   "gene": null,
+   "gene": "TSFM",
    "utr_pos": 9,
    "site_class": "8mer",
    "pred_context_pp": -0.7729
@@ -1726,7 +1726,7 @@
   {
    "mirna": "hsa-let-7g-5p",
    "transcript": "ENST00000571838",
-   "gene": null,
+   "gene": "CTC-360G5.1",
    "utr_pos": 3,
    "site_class": "8mer",
    "pred_context_pp": -0.7727
@@ -1734,7 +1734,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000511507",
-   "gene": null,
+   "gene": "GUCY1A3",
    "utr_pos": 234,
    "site_class": "8mer",
    "pred_context_pp": -0.7724
@@ -1742,7 +1742,7 @@
   {
    "mirna": "hsa-miR-6088",
    "transcript": "ENST00000308366",
-   "gene": null,
+   "gene": "PLA2G1B",
    "utr_pos": 34,
    "site_class": "8mer",
    "pred_context_pp": -0.772
@@ -1750,7 +1750,7 @@
   {
    "mirna": "hsa-miR-129-1-3p",
    "transcript": "ENST00000568794",
-   "gene": null,
+   "gene": "COX4I1",
    "utr_pos": 49,
    "site_class": "8mer",
    "pred_context_pp": -0.7709
@@ -1758,7 +1758,7 @@
   {
    "mirna": "hsa-miR-212-3p",
    "transcript": "ENST00000248306",
-   "gene": null,
+   "gene": "METTL25",
    "utr_pos": 100,
    "site_class": "8mer",
    "pred_context_pp": -0.7704
@@ -1766,7 +1766,7 @@
   {
    "mirna": "hsa-let-7d-5p",
    "transcript": "ENST00000367749",
-   "gene": null,
+   "gene": "FMO4",
    "utr_pos": 200,
    "site_class": "8mer",
    "pred_context_pp": -0.77
@@ -1774,7 +1774,7 @@
   {
    "mirna": "hsa-miR-122-5p",
    "transcript": "ENST00000542817",
-   "gene": null,
+   "gene": "NPIPB3",
    "utr_pos": 85,
    "site_class": "8mer",
    "pred_context_pp": -0.7696
@@ -1782,7 +1782,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000248935",
-   "gene": null,
+   "gene": "GSTT1",
    "utr_pos": 157,
    "site_class": "8mer",
    "pred_context_pp": -0.7687
@@ -1790,7 +1790,7 @@
   {
    "mirna": "hsa-miR-222-3p",
    "transcript": "ENST00000547956",
-   "gene": null,
+   "gene": "CHST11",
    "utr_pos": 125,
    "site_class": "8mer",
    "pred_context_pp": -0.7685
@@ -1798,7 +1798,7 @@
   {
    "mirna": "hsa-miR-221-3p",
    "transcript": "ENST00000547956",
-   "gene": null,
+   "gene": "CHST11",
    "utr_pos": 125,
    "site_class": "8mer",
    "pred_context_pp": -0.7684
@@ -1806,7 +1806,7 @@
   {
    "mirna": "hsa-miR-497-5p",
    "transcript": "ENST00000471301",
-   "gene": null,
+   "gene": "BNC2",
    "utr_pos": 226,
    "site_class": "8mer",
    "pred_context_pp": -0.7679
@@ -1814,7 +1814,7 @@
   {
    "mirna": "hsa-miR-15b-5p",
    "transcript": "ENST00000420827",
-   "gene": null,
+   "gene": "UBA6",
    "utr_pos": 189,
    "site_class": "8mer",
    "pred_context_pp": -0.7679
@@ -1822,7 +1822,7 @@
   {
    "mirna": "hsa-miR-520c-3p",
    "transcript": "ENST00000548136",
-   "gene": null,
+   "gene": "OR9A4",
    "utr_pos": 28,
    "site_class": "8mer",
    "pred_context_pp": -0.7678
@@ -1830,7 +1830,7 @@
   {
    "mirna": "hsa-miR-449b-5p",
    "transcript": "ENST00000535753",
-   "gene": null,
+   "gene": "EPS15L1",
    "utr_pos": 335,
    "site_class": "8mer",
    "pred_context_pp": -0.7676
@@ -1838,7 +1838,7 @@
   {
    "mirna": "hsa-let-7b-5p",
    "transcript": "ENST00000367749",
-   "gene": null,
+   "gene": "FMO4",
    "utr_pos": 200,
    "site_class": "8mer",
    "pred_context_pp": -0.7673
@@ -1846,7 +1846,7 @@
   {
    "mirna": "hsa-miR-22-3p",
    "transcript": "ENST00000326139",
-   "gene": null,
+   "gene": "GHRHR",
    "utr_pos": 39,
    "site_class": "8mer",
    "pred_context_pp": -0.7668
@@ -1854,7 +1854,7 @@
   {
    "mirna": "hsa-miR-126-3p.1",
    "transcript": "ENST00000528193",
-   "gene": null,
+   "gene": "TPD52L1",
    "utr_pos": 18,
    "site_class": "8mer",
    "pred_context_pp": -0.7665
@@ -1862,7 +1862,7 @@
   {
    "mirna": "hsa-miR-137",
    "transcript": "ENST00000331410",
-   "gene": null,
+   "gene": "ZNF789",
    "utr_pos": 83,
    "site_class": "8mer",
    "pred_context_pp": -0.7662
@@ -1870,7 +1870,7 @@
   {
    "mirna": "hsa-miR-155-5p",
    "transcript": "ENST00000437310",
-   "gene": null,
+   "gene": "OR5H14",
    "utr_pos": 76,
    "site_class": "8mer",
    "pred_context_pp": -0.7662
@@ -1878,7 +1878,7 @@
   {
    "mirna": "hsa-miR-3129-5p",
    "transcript": "ENST00000357424",
-   "gene": null,
+   "gene": "GIP",
    "utr_pos": 138,
    "site_class": "8mer",
    "pred_context_pp": -0.7662
@@ -1886,7 +1886,7 @@
   {
    "mirna": "hsa-miR-30b-5p",
    "transcript": "ENST00000297205",
-   "gene": null,
+   "gene": "STEAP1",
    "utr_pos": 6,
    "site_class": "8mer",
    "pred_context_pp": -0.7651
@@ -1894,7 +1894,7 @@
   {
    "mirna": "hsa-let-7e-5p",
    "transcript": "ENST00000429671",
-   "gene": null,
+   "gene": "TSEN34",
    "utr_pos": 168,
    "site_class": "8mer",
    "pred_context_pp": -0.7645
@@ -1902,7 +1902,7 @@
   {
    "mirna": "hsa-miR-301a-3p",
    "transcript": "ENST00000360542",
-   "gene": null,
+   "gene": "KRTAP26-1",
    "utr_pos": 241,
    "site_class": "8mer",
    "pred_context_pp": -0.7639
@@ -1910,7 +1910,7 @@
   {
    "mirna": "hsa-miR-301a-3p",
    "transcript": "ENST00000326035",
-   "gene": null,
+   "gene": "NIM1",
    "utr_pos": 1,
    "site_class": "8mer",
    "pred_context_pp": -0.763
@@ -1918,7 +1918,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000570135",
-   "gene": null,
+   "gene": "RBMX",
    "utr_pos": 440,
    "site_class": "8mer",
    "pred_context_pp": -0.7623
@@ -1926,7 +1926,7 @@
   {
    "mirna": "hsa-let-7b-5p",
    "transcript": "ENST00000429671",
-   "gene": null,
+   "gene": "TSEN34",
    "utr_pos": 168,
    "site_class": "8mer",
    "pred_context_pp": -0.7617
@@ -1934,7 +1934,7 @@
   {
    "mirna": "hsa-miR-302e",
    "transcript": "ENST00000259870",
-   "gene": null,
+   "gene": "C6orf15",
    "utr_pos": 145,
    "site_class": "8mer",
    "pred_context_pp": -0.7615
@@ -1942,7 +1942,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000600100",
-   "gene": null,
+   "gene": "FAM71E1",
    "utr_pos": 60,
    "site_class": "8mer",
    "pred_context_pp": -0.761
@@ -1950,7 +1950,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000284440",
-   "gene": null,
+   "gene": "UCHL1",
    "utr_pos": 428,
    "site_class": "8mer",
    "pred_context_pp": -0.7607
@@ -1958,7 +1958,7 @@
   {
    "mirna": "hsa-miR-520c-3p",
    "transcript": "ENST00000259870",
-   "gene": null,
+   "gene": "C6orf15",
    "utr_pos": 145,
    "site_class": "8mer",
    "pred_context_pp": -0.7607
@@ -1966,7 +1966,7 @@
   {
    "mirna": "hsa-miR-24-3p",
    "transcript": "ENST00000330439",
-   "gene": null,
+   "gene": "MT1E",
    "utr_pos": 222,
    "site_class": "8mer",
    "pred_context_pp": -0.76
@@ -1974,7 +1974,7 @@
   {
    "mirna": "hsa-miR-132-3p",
    "transcript": "ENST00000248306",
-   "gene": null,
+   "gene": "METTL25",
    "utr_pos": 100,
    "site_class": "8mer",
    "pred_context_pp": -0.7599
@@ -1982,7 +1982,7 @@
   {
    "mirna": "hsa-miR-129-2-3p",
    "transcript": "ENST00000369994",
-   "gene": null,
+   "gene": "AKNAD1",
    "utr_pos": 21,
    "site_class": "8mer",
    "pred_context_pp": -0.7598
@@ -1990,7 +1990,7 @@
   {
    "mirna": "hsa-miR-519d-3p",
    "transcript": "ENST00000391864",
-   "gene": null,
+   "gene": "LIN7B",
    "utr_pos": 58,
    "site_class": "8mer",
    "pred_context_pp": -0.7596
@@ -1998,7 +1998,7 @@
   {
    "mirna": "hsa-miR-135a-5p",
    "transcript": "ENST00000382086",
-   "gene": null,
+   "gene": "RFPL3S",
    "utr_pos": 71,
    "site_class": "8mer",
    "pred_context_pp": -0.7596
@@ -2006,7 +2006,7 @@
   {
    "mirna": "hsa-miR-125b-5p",
    "transcript": "ENST00000592257",
-   "gene": null,
+   "gene": "APOC2",
    "utr_pos": 4,
    "site_class": "8mer",
    "pred_context_pp": -0.7595
@@ -2014,7 +2014,7 @@
   {
    "mirna": "hsa-miR-520a-3p",
    "transcript": "ENST00000299179",
-   "gene": null,
+   "gene": "MRPL43",
    "utr_pos": 79,
    "site_class": "8mer",
    "pred_context_pp": -0.7595
@@ -2022,7 +2022,7 @@
   {
    "mirna": "hsa-miR-520f-3p",
    "transcript": "ENST00000482090",
-   "gene": null,
+   "gene": "ZNF700",
    "utr_pos": 42,
    "site_class": "8mer",
    "pred_context_pp": -0.7594
@@ -2030,7 +2030,7 @@
   {
    "mirna": "hsa-miR-3666",
    "transcript": "ENST00000413614",
-   "gene": null,
+   "gene": "RXRB",
    "utr_pos": 83,
    "site_class": "8mer",
    "pred_context_pp": -0.7591
@@ -2038,7 +2038,7 @@
   {
    "mirna": "hsa-miR-10a-5p",
    "transcript": "ENST00000376042",
-   "gene": null,
+   "gene": "CCNB3",
    "utr_pos": 30,
    "site_class": "8mer",
    "pred_context_pp": -0.7591
@@ -2054,7 +2054,7 @@
   {
    "mirna": "hsa-miR-103a-3p",
    "transcript": "ENST00000583610",
-   "gene": null,
+   "gene": "FBXL20",
    "utr_pos": 139,
    "site_class": "8mer",
    "pred_context_pp": -0.7587
@@ -2062,7 +2062,7 @@
   {
    "mirna": "hsa-miR-107",
    "transcript": "ENST00000438970",
-   "gene": null,
+   "gene": "ZNF816",
    "utr_pos": 7,
    "site_class": "8mer",
    "pred_context_pp": -0.7584
@@ -2070,7 +2070,7 @@
   {
    "mirna": "hsa-miR-449b-5p",
    "transcript": "ENST00000317961",
-   "gene": null,
+   "gene": "KDM5D",
    "utr_pos": 108,
    "site_class": "8mer",
    "pred_context_pp": -0.758
@@ -2078,7 +2078,7 @@
   {
    "mirna": "hsa-miR-9-5p",
    "transcript": "ENST00000287706",
-   "gene": null,
+   "gene": "NTAN1",
    "utr_pos": 12,
    "site_class": "8mer",
    "pred_context_pp": -0.7573
@@ -2086,7 +2086,7 @@
   {
    "mirna": "hsa-miR-302a-3p",
    "transcript": "ENST00000259870",
-   "gene": null,
+   "gene": "C6orf15",
    "utr_pos": 145,
    "site_class": "8mer",
    "pred_context_pp": -0.7568
@@ -2094,7 +2094,7 @@
   {
    "mirna": "hsa-miR-130a-3p",
    "transcript": "ENST00000257497",
-   "gene": null,
+   "gene": "ANXA1",
    "utr_pos": 509,
    "site_class": "8mer",
    "pred_context_pp": -0.7568
@@ -2102,7 +2102,7 @@
   {
    "mirna": "hsa-miR-125b-5p",
    "transcript": "ENST00000380534",
-   "gene": null,
+   "gene": "FAM154A",
    "utr_pos": 159,
    "site_class": "8mer",
    "pred_context_pp": -0.7568
@@ -2110,7 +2110,7 @@
   {
    "mirna": "hsa-miR-302c-3p.2",
    "transcript": "ENST00000482090",
-   "gene": null,
+   "gene": "ZNF700",
    "utr_pos": 42,
    "site_class": "8mer",
    "pred_context_pp": -0.7562
@@ -2118,7 +2118,7 @@
   {
    "mirna": "hsa-miR-454-3p",
    "transcript": "ENST00000326035",
-   "gene": null,
+   "gene": "NIM1",
    "utr_pos": 1,
    "site_class": "8mer",
    "pred_context_pp": -0.7555
@@ -2126,7 +2126,7 @@
   {
    "mirna": "hsa-miR-449a",
    "transcript": "ENST00000376923",
-   "gene": null,
+   "gene": "SSX5",
    "utr_pos": 610,
    "site_class": "8mer",
    "pred_context_pp": -0.7552
@@ -2134,7 +2134,7 @@
   {
    "mirna": "hsa-let-7a-5p",
    "transcript": "ENST00000429671",
-   "gene": null,
+   "gene": "TSEN34",
    "utr_pos": 168,
    "site_class": "8mer",
    "pred_context_pp": -0.755
@@ -2142,7 +2142,7 @@
   {
    "mirna": "hsa-miR-338-3p",
    "transcript": "ENST00000376376",
-   "gene": null,
+   "gene": "PRTFDC1",
    "utr_pos": 170,
    "site_class": "8mer",
    "pred_context_pp": -0.7545
@@ -2150,7 +2150,7 @@
   {
    "mirna": "hsa-miR-520a-3p",
    "transcript": "ENST00000548136",
-   "gene": null,
+   "gene": "OR9A4",
    "utr_pos": 28,
    "site_class": "8mer",
    "pred_context_pp": -0.7545
@@ -2158,7 +2158,7 @@
   {
    "mirna": "hsa-miR-140-3p.2",
    "transcript": "ENST00000348227",
-   "gene": null,
+   "gene": "WDR54",
    "utr_pos": 22,
    "site_class": "8mer",
    "pred_context_pp": -0.7541
@@ -2166,7 +2166,7 @@
   {
    "mirna": "hsa-miR-191-5p",
    "transcript": "ENST00000392844",
-   "gene": null,
+   "gene": "ORC3",
    "utr_pos": 306,
    "site_class": "8mer",
    "pred_context_pp": -0.7538
@@ -2174,7 +2174,7 @@
   {
    "mirna": "hsa-miR-140-5p",
    "transcript": "ENST00000257248",
-   "gene": null,
+   "gene": "GIF",
    "utr_pos": 128,
    "site_class": "8mer",
    "pred_context_pp": -0.7536
@@ -2182,7 +2182,7 @@
   {
    "mirna": "hsa-miR-138-5p",
    "transcript": "ENST00000368707",
-   "gene": null,
+   "gene": "S100A2",
    "utr_pos": 384,
    "site_class": "8mer",
    "pred_context_pp": -0.7528
@@ -2190,7 +2190,7 @@
   {
    "mirna": "hsa-miR-148b-3p",
    "transcript": "ENST00000369996",
-   "gene": null,
+   "gene": "TNFRSF6B",
    "utr_pos": 43,
    "site_class": "8mer",
    "pred_context_pp": -0.751
@@ -2198,7 +2198,7 @@
   {
    "mirna": "hsa-miR-148b-3p",
    "transcript": "ENST00000389887",
-   "gene": null,
+   "gene": "GLB1L3",
    "utr_pos": 46,
    "site_class": "8mer",
    "pred_context_pp": -0.7504
@@ -2206,7 +2206,7 @@
   {
    "mirna": "hsa-miR-449a",
    "transcript": "ENST00000442938",
-   "gene": null,
+   "gene": "TMEM25",
    "utr_pos": 561,
    "site_class": "8mer",
    "pred_context_pp": -0.75
@@ -2214,7 +2214,7 @@
   {
    "mirna": "hsa-miR-34a-5p",
    "transcript": "ENST00000452201",
-   "gene": null,
+   "gene": "SMAD4",
    "utr_pos": 248,
    "site_class": "8mer",
    "pred_context_pp": -0.7494
@@ -2222,7 +2222,7 @@
   {
    "mirna": "hsa-miR-133a-3p.1",
    "transcript": "ENST00000276935",
-   "gene": null,
+   "gene": "ADAMTSL1",
    "utr_pos": 674,
    "site_class": "8mer",
    "pred_context_pp": -0.7493
@@ -2230,7 +2230,7 @@
   {
    "mirna": "hsa-miR-133a-3p.1",
    "transcript": "ENST00000372330",
-   "gene": null,
+   "gene": "MMP9",
    "utr_pos": 41,
    "site_class": "8mer",
    "pred_context_pp": -0.7488
@@ -2238,7 +2238,7 @@
   {
    "mirna": "hsa-miR-107",
    "transcript": "ENST00000379253",
-   "gene": null,
+   "gene": "SAT1",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -0.7483
@@ -2246,7 +2246,7 @@
   {
    "mirna": "hsa-miR-199b-5p",
    "transcript": "ENST00000264265",
-   "gene": null,
+   "gene": "LXN",
    "utr_pos": 12,
    "site_class": "8mer",
    "pred_context_pp": -0.7477
@@ -2254,7 +2254,7 @@
   {
    "mirna": "hsa-miR-449a",
    "transcript": "ENST00000318129",
-   "gene": null,
+   "gene": "GINS3",
    "utr_pos": 279,
    "site_class": "8mer",
    "pred_context_pp": -0.7471
@@ -2262,7 +2262,7 @@
   {
    "mirna": "hsa-miR-214-5p",
    "transcript": "ENST00000441037",
-   "gene": null,
+   "gene": "AGBL1",
    "utr_pos": 176,
    "site_class": "8mer",
    "pred_context_pp": -0.747
@@ -2270,7 +2270,7 @@
   {
    "mirna": "hsa-miR-195-5p",
    "transcript": "ENST00000539839",
-   "gene": null,
+   "gene": "FZD10",
    "utr_pos": 1327,
    "site_class": "8mer",
    "pred_context_pp": -0.7468
@@ -2278,7 +2278,7 @@
   {
    "mirna": "hsa-miR-5195-3p",
    "transcript": "ENST00000313663",
-   "gene": null,
+   "gene": "C2CD3",
    "utr_pos": 3,
    "site_class": "8mer",
    "pred_context_pp": -0.7464
@@ -2286,7 +2286,7 @@
   {
    "mirna": "hsa-miR-129-2-3p",
    "transcript": "ENST00000568794",
-   "gene": null,
+   "gene": "COX4I1",
    "utr_pos": 49,
    "site_class": "8mer",
    "pred_context_pp": -0.7462
@@ -2294,7 +2294,7 @@
   {
    "mirna": "hsa-miR-148a-3p",
    "transcript": "ENST00000396275",
-   "gene": null,
+   "gene": "MRGPRX3",
    "utr_pos": 238,
    "site_class": "8mer",
    "pred_context_pp": -0.7459
@@ -2302,7 +2302,7 @@
   {
    "mirna": "hsa-let-7c-5p",
    "transcript": "ENST00000407886",
-   "gene": null,
+   "gene": "TMEM211",
    "utr_pos": 167,
    "site_class": "8mer",
    "pred_context_pp": -0.7454
@@ -2310,7 +2310,7 @@
   {
    "mirna": "hsa-miR-802",
    "transcript": "ENST00000370800",
-   "gene": null,
+   "gene": "PHF6",
    "utr_pos": 60,
    "site_class": "8mer",
    "pred_context_pp": -0.7454
@@ -2318,7 +2318,7 @@
   {
    "mirna": "hsa-miR-30c-5p",
    "transcript": "ENST00000297205",
-   "gene": null,
+   "gene": "STEAP1",
    "utr_pos": 6,
    "site_class": "8mer",
    "pred_context_pp": -0.7452
@@ -2326,7 +2326,7 @@
   {
    "mirna": "hsa-let-7i-5p",
    "transcript": "ENST00000257899",
-   "gene": null,
+   "gene": "BLOC1S1",
    "utr_pos": 30,
    "site_class": "8mer",
    "pred_context_pp": -0.7451
@@ -2334,7 +2334,7 @@
   {
    "mirna": "hsa-miR-124-3p.1",
    "transcript": "ENST00000530311",
-   "gene": null,
+   "gene": "TRIM49D1",
    "utr_pos": 68,
    "site_class": "8mer",
    "pred_context_pp": -0.7447
@@ -2342,7 +2342,7 @@
   {
    "mirna": "hsa-miR-142-3p.1",
    "transcript": "ENST00000308664",
-   "gene": null,
+   "gene": "ATP2A2",
    "utr_pos": 479,
    "site_class": "8mer",
    "pred_context_pp": -0.7439
@@ -2350,7 +2350,7 @@
   {
    "mirna": "hsa-miR-148b-3p",
    "transcript": "ENST00000453384",
-   "gene": null,
+   "gene": "RAB34",
    "utr_pos": 12,
    "site_class": "8mer",
    "pred_context_pp": -0.7431
@@ -2358,7 +2358,7 @@
   {
    "mirna": "hsa-miR-613",
    "transcript": "ENST00000338446",
-   "gene": null,
+   "gene": "FAIM",
    "utr_pos": 129,
    "site_class": "8mer",
    "pred_context_pp": -0.743
@@ -2366,7 +2366,7 @@
   {
    "mirna": "hsa-miR-7-5p",
    "transcript": "ENST00000491306",
-   "gene": null,
+   "gene": "RPL37A",
    "utr_pos": 208,
    "site_class": "8mer",
    "pred_context_pp": -0.7427
@@ -2374,7 +2374,7 @@
   {
    "mirna": "hsa-miR-143-3p",
    "transcript": "ENST00000327857",
-   "gene": null,
+   "gene": "DEFA3",
    "utr_pos": 92,
    "site_class": "8mer",
    "pred_context_pp": -0.7424
@@ -2382,7 +2382,7 @@
   {
    "mirna": "hsa-miR-211-5p",
    "transcript": "ENST00000581619",
-   "gene": null,
+   "gene": "CLUL1",
    "utr_pos": 50,
    "site_class": "8mer",
    "pred_context_pp": -0.7413
@@ -2390,7 +2390,7 @@
   {
    "mirna": "hsa-miR-183-5p.1",
    "transcript": "ENST00000382585",
-   "gene": null,
+   "gene": "BPY2",
    "utr_pos": 2,
    "site_class": "8mer",
    "pred_context_pp": -0.7407
@@ -2398,10 +2398,2412 @@
   {
    "mirna": "hsa-miR-124-3p.1",
    "transcript": "ENST00000454608",
-   "gene": null,
+   "gene": "USP41",
    "utr_pos": 205,
    "site_class": "8mer",
    "pred_context_pp": -0.7406
+  }
+ ],
+ "top_diverse_per_pair": [
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "CDR1as",
+   "gene": "CDR1as",
+   "utr_pos": 424,
+   "site_class": "8mer",
+   "pred_context_pp": -1.5677
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000519970",
+   "gene": "TVP23C",
+   "utr_pos": 118,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1586
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000393897",
+   "gene": "REG3G",
+   "utr_pos": 173,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1334
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "transcript": "ENST00000266086",
+   "gene": "SLC5A4",
+   "utr_pos": 7,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1215
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "transcript": "ENST00000566433",
+   "gene": "ADCY7",
+   "utr_pos": 23,
+   "site_class": "8mer",
+   "pred_context_pp": -1.1162
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000329312",
+   "gene": "CYLC1",
+   "utr_pos": 102,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0904
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000276692",
+   "gene": "TATDN1",
+   "utr_pos": 9,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0681
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "transcript": "ENST00000408957",
+   "gene": "TIGD1",
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0561
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000331162",
+   "gene": "ZNF479",
+   "utr_pos": 58,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0357
+  },
+  {
+   "mirna": "hsa-miR-26b-5p",
+   "transcript": "ENST00000216517",
+   "gene": "CEP128",
+   "utr_pos": 8,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0268
+  },
+  {
+   "mirna": "hsa-miR-196b-5p",
+   "transcript": "ENST00000329913",
+   "gene": "GDF3",
+   "utr_pos": 53,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0158
+  },
+  {
+   "mirna": "hsa-miR-424-5p",
+   "transcript": "ENST00000442602",
+   "gene": "EPHA6",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -1.0056
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "transcript": "ENST00000331162",
+   "gene": "ZNF479",
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9979
+  },
+  {
+   "mirna": "hsa-miR-196b-5p",
+   "transcript": "ENST00000375947",
+   "gene": "ZCCHC6",
+   "utr_pos": 17,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9975
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000433076",
+   "gene": "RPP21",
+   "utr_pos": 39,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9947
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000513556",
+   "gene": "TRIM39-RPP21",
+   "utr_pos": 39,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9947
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "transcript": "ENST00000339642",
+   "gene": "ZNF254",
+   "utr_pos": 6,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9848
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000542433",
+   "gene": "OR10G2",
+   "utr_pos": 40,
+   "site_class": "8mer",
+   "pred_context_pp": -0.983
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "transcript": "ENST00000329913",
+   "gene": "GDF3",
+   "utr_pos": 53,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9717
+  },
+  {
+   "mirna": "hsa-miR-497-5p",
+   "transcript": "ENST00000525863",
+   "gene": "NLRX1",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9667
+  },
+  {
+   "mirna": "hsa-miR-30e-5p",
+   "transcript": "ENST00000587065",
+   "gene": "PDCD2L",
+   "utr_pos": 34,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9641
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000258672",
+   "gene": "SETDB2",
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9596
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000471108",
+   "gene": "GUCA1C",
+   "utr_pos": 83,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9507
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000548514",
+   "gene": "OAS3",
+   "utr_pos": 203,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9456
+  },
+  {
+   "mirna": "hsa-miR-219a-5p",
+   "transcript": "ENST00000441133",
+   "gene": "SOX5",
+   "utr_pos": 73,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9293
+  },
+  {
+   "mirna": "hsa-miR-1-3p",
+   "transcript": "ENST00000344577",
+   "gene": "LIPI",
+   "utr_pos": 170,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9236
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "transcript": "ENST00000372814",
+   "gene": "ODF2",
+   "utr_pos": 97,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9171
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000256216",
+   "gene": "HSD17B4",
+   "utr_pos": 5,
+   "site_class": "8mer",
+   "pred_context_pp": -0.916
+  },
+  {
+   "mirna": "hsa-miR-204-5p",
+   "transcript": "ENST00000305625",
+   "gene": "MBD3L1",
+   "utr_pos": 5,
+   "site_class": "8mer",
+   "pred_context_pp": -0.913
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000430850",
+   "gene": "AC037459.4",
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9015
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "transcript": "ENST00000436771",
+   "gene": "C8orf56",
+   "utr_pos": 56,
+   "site_class": "8mer",
+   "pred_context_pp": -0.9001
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "transcript": "ENST00000463928",
+   "gene": "INTS6",
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8993
+  },
+  {
+   "mirna": "hsa-miR-135b-5p",
+   "transcript": "ENST00000367180",
+   "gene": "MDM4",
+   "utr_pos": 114,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8992
+  },
+  {
+   "mirna": "hsa-miR-6766-3p",
+   "transcript": "ENST00000397360",
+   "gene": "BMP8B",
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8968
+  },
+  {
+   "mirna": "hsa-miR-153-3p",
+   "transcript": "ENST00000344330",
+   "gene": "ICOSLG",
+   "utr_pos": 13,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8963
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "transcript": "ENST00000391684",
+   "gene": "AC120194.1",
+   "utr_pos": 44,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8918
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000344577",
+   "gene": "LIPI",
+   "utr_pos": 170,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8858
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000409180",
+   "gene": "MRPL35",
+   "utr_pos": 26,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8844
+  },
+  {
+   "mirna": "hsa-miR-4782-3p",
+   "transcript": "ENST00000301015",
+   "gene": "PIEZO1",
+   "utr_pos": 257,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8835
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "transcript": "ENST00000433535",
+   "gene": "RPUSD3",
+   "utr_pos": 159,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8818
+  },
+  {
+   "mirna": "hsa-miR-124-3p.1",
+   "transcript": "ENST00000335647",
+   "gene": "KATNA1",
+   "utr_pos": 26,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8807
+  },
+  {
+   "mirna": "hsa-miR-363-3p",
+   "transcript": "ENST00000368894",
+   "gene": "FAM24A",
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.88
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "transcript": "ENST00000378553",
+   "gene": "DNAAF1",
+   "utr_pos": 14,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8797
+  },
+  {
+   "mirna": "hsa-miR-15a-5p",
+   "transcript": "ENST00000442602",
+   "gene": "EPHA6",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.878
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "transcript": "ENST00000506749",
+   "gene": "UNC5C",
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8777
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "transcript": "ENST00000409180",
+   "gene": "MRPL35",
+   "utr_pos": 26,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8775
+  },
+  {
+   "mirna": "hsa-miR-25-3p",
+   "transcript": "ENST00000368894",
+   "gene": "FAM24A",
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8744
+  },
+  {
+   "mirna": "hsa-miR-223-3p",
+   "transcript": "ENST00000263642",
+   "gene": "IFIH1",
+   "utr_pos": 80,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8743
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000575898",
+   "gene": "ZNF232",
+   "utr_pos": 269,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8741
+  },
+  {
+   "mirna": "hsa-miR-15a-5p",
+   "transcript": "ENST00000370363",
+   "gene": "OOEP",
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8719
+  },
+  {
+   "mirna": "hsa-miR-30e-5p",
+   "transcript": "ENST00000520800",
+   "gene": "RP11-738G5.2",
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8715
+  },
+  {
+   "mirna": "hsa-miR-182-5p",
+   "transcript": "ENST00000325636",
+   "gene": "C11orf71",
+   "utr_pos": 113,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8701
+  },
+  {
+   "mirna": "hsa-miR-106a-5p",
+   "transcript": "ENST00000404190",
+   "gene": "LIPK",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8689
+  },
+  {
+   "mirna": "hsa-miR-187-3p",
+   "transcript": "ENST00000401090",
+   "gene": "FHAD1",
+   "utr_pos": 155,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8689
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000305784",
+   "gene": "DTYMK",
+   "utr_pos": 346,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8682
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000451284",
+   "gene": "LINC00692",
+   "utr_pos": 107,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8678
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000264553",
+   "gene": "GZMM",
+   "utr_pos": 97,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8677
+  },
+  {
+   "mirna": "hsa-miR-383-5p.1",
+   "transcript": "ENST00000373368",
+   "gene": "SPP2",
+   "utr_pos": 75,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8673
+  },
+  {
+   "mirna": "hsa-miR-129-2-3p",
+   "transcript": "ENST00000544180",
+   "gene": "PYGL",
+   "utr_pos": 167,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8644
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "transcript": "ENST00000575898",
+   "gene": "ZNF232",
+   "utr_pos": 269,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8639
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000394531",
+   "gene": "BAD",
+   "utr_pos": 95,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8638
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000310357",
+   "gene": "GPRC6A",
+   "utr_pos": 19,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8621
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000409945",
+   "gene": "USP40",
+   "utr_pos": 348,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8609
+  },
+  {
+   "mirna": "hsa-miR-15b-5p",
+   "transcript": "ENST00000370363",
+   "gene": "OOEP",
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8603
+  },
+  {
+   "mirna": "hsa-miR-195-5p",
+   "transcript": "ENST00000420827",
+   "gene": "UBA6",
+   "utr_pos": 189,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8599
+  },
+  {
+   "mirna": "hsa-miR-199b-3p",
+   "transcript": "ENST00000409061",
+   "gene": "ANKRD61",
+   "utr_pos": 116,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8584
+  },
+  {
+   "mirna": "hsa-miR-497-5p",
+   "transcript": "ENST00000420827",
+   "gene": "UBA6",
+   "utr_pos": 189,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8581
+  },
+  {
+   "mirna": "hsa-miR-183-5p.2",
+   "transcript": "ENST00000368011",
+   "gene": "KLHDC9",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8558
+  },
+  {
+   "mirna": "hsa-let-7g-5p",
+   "transcript": "ENST00000575898",
+   "gene": "ZNF232",
+   "utr_pos": 269,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8544
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000374952",
+   "gene": "PAGE5",
+   "utr_pos": 46,
+   "site_class": "8mer",
+   "pred_context_pp": -0.854
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "transcript": "ENST00000378832",
+   "gene": "ACCSL",
+   "utr_pos": 40,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8532
+  },
+  {
+   "mirna": "hsa-miR-30e-5p",
+   "transcript": "ENST00000302040",
+   "gene": "OR5A2",
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8531
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000541799",
+   "gene": "ZBP1",
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8523
+  },
+  {
+   "mirna": "hsa-miR-30b-5p",
+   "transcript": "ENST00000520800",
+   "gene": "RP11-738G5.2",
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8519
+  },
+  {
+   "mirna": "hsa-miR-9-5p",
+   "transcript": "ENST00000264735",
+   "gene": "HRASLS",
+   "utr_pos": 6,
+   "site_class": "8mer",
+   "pred_context_pp": -0.851
+  },
+  {
+   "mirna": "hsa-miR-5195-3p",
+   "transcript": "ENST00000335934",
+   "gene": "TP53I3",
+   "utr_pos": 138,
+   "site_class": "8mer",
+   "pred_context_pp": -0.849
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000567094",
+   "gene": "SNAP23",
+   "utr_pos": 431,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8478
+  },
+  {
+   "mirna": "hsa-miR-17-5p",
+   "transcript": "ENST00000404190",
+   "gene": "LIPK",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8463
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000367983",
+   "gene": "NR1I3",
+   "utr_pos": 66,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8453
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000564406",
+   "gene": "DET1",
+   "utr_pos": 26,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8452
+  },
+  {
+   "mirna": "hsa-miR-93-5p",
+   "transcript": "ENST00000404190",
+   "gene": "LIPK",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8446
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "transcript": "ENST00000394846",
+   "gene": "ZNF267",
+   "utr_pos": 276,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8439
+  },
+  {
+   "mirna": "hsa-let-7c-5p",
+   "transcript": "ENST00000541799",
+   "gene": "ZBP1",
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8429
+  },
+  {
+   "mirna": "hsa-miR-124-3p.2",
+   "transcript": "ENST00000255616",
+   "gene": "ZNF414",
+   "utr_pos": 126,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8427
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000506749",
+   "gene": "UNC5C",
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8416
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "transcript": "ENST00000379818",
+   "gene": "MT1M",
+   "utr_pos": 71,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8412
+  },
+  {
+   "mirna": "hsa-miR-92b-3p",
+   "transcript": "ENST00000368894",
+   "gene": "FAM24A",
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8397
+  },
+  {
+   "mirna": "hsa-miR-183-5p.1",
+   "transcript": "ENST00000509620",
+   "gene": "OTUD4",
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8397
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000421801",
+   "gene": "GABARAPL1",
+   "utr_pos": 101,
+   "site_class": "8mer",
+   "pred_context_pp": -0.839
+  },
+  {
+   "mirna": "hsa-miR-125a-5p",
+   "transcript": "ENST00000381984",
+   "gene": "RFX3",
+   "utr_pos": 64,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8384
+  },
+  {
+   "mirna": "hsa-miR-194-5p",
+   "transcript": "ENST00000567840",
+   "gene": "TTBK2",
+   "utr_pos": 56,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8376
+  },
+  {
+   "mirna": "hsa-miR-92b-3p",
+   "transcript": "ENST00000250352",
+   "gene": "KLK12",
+   "utr_pos": 25,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8373
+  },
+  {
+   "mirna": "hsa-miR-214-5p",
+   "transcript": "ENST00000478381",
+   "gene": "TIMM23B",
+   "utr_pos": 72,
+   "site_class": "8mer",
+   "pred_context_pp": -0.837
+  },
+  {
+   "mirna": "hsa-let-7c-5p",
+   "transcript": "ENST00000575898",
+   "gene": "ZNF232",
+   "utr_pos": 269,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8361
+  },
+  {
+   "mirna": "hsa-miR-6807-3p",
+   "transcript": "ENST00000521716",
+   "gene": "DCAF13",
+   "utr_pos": 142,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8354
+  },
+  {
+   "mirna": "hsa-miR-135a-5p",
+   "transcript": "ENST00000582441",
+   "gene": "RP1-66C13.4",
+   "utr_pos": 20,
+   "site_class": "8mer",
+   "pred_context_pp": -0.835
+  },
+  {
+   "mirna": "hsa-let-7e-5p",
+   "transcript": "ENST00000433535",
+   "gene": "RPUSD3",
+   "utr_pos": 159,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8348
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "transcript": "ENST00000350549",
+   "gene": "PRSS37",
+   "utr_pos": 102,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8341
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000307637",
+   "gene": "C3AR1",
+   "utr_pos": 418,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8337
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000559279",
+   "gene": "KIF23",
+   "utr_pos": 71,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8334
+  },
+  {
+   "mirna": "hsa-miR-217",
+   "transcript": "ENST00000253435",
+   "gene": "TEX101",
+   "utr_pos": 163,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8331
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000397165",
+   "gene": "ZNF682",
+   "utr_pos": 103,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8327
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000356031",
+   "gene": "SPEF2",
+   "utr_pos": 37,
+   "site_class": "7mer",
+   "pred_context_pp": -0.8326
+  },
+  {
+   "mirna": "hsa-miR-183-5p.2",
+   "transcript": "ENST00000433996",
+   "gene": "NDST3",
+   "utr_pos": 28,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8271
+  },
+  {
+   "mirna": "hsa-miR-153-3p",
+   "transcript": "ENST00000375910",
+   "gene": "CELA2B",
+   "utr_pos": 74,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8269
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "transcript": "ENST00000377457",
+   "gene": "CBWD6",
+   "utr_pos": 417,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8254
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "transcript": "ENST00000398186",
+   "gene": "EFCAB9",
+   "utr_pos": 65,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8243
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "transcript": "ENST00000541799",
+   "gene": "ZBP1",
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8237
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "transcript": "ENST00000551086",
+   "gene": "BICD1",
+   "utr_pos": 71,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8218
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000307632",
+   "gene": "OR52K1",
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8213
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "transcript": "ENST00000377391",
+   "gene": "CBWD7",
+   "utr_pos": 417,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8185
+  },
+  {
+   "mirna": "hsa-miR-30e-5p",
+   "transcript": "ENST00000518537",
+   "gene": "PCM1",
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8181
+  },
+  {
+   "mirna": "hsa-miR-425-5p",
+   "transcript": "ENST00000377169",
+   "gene": "OR2J3",
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8178
+  },
+  {
+   "mirna": "hsa-miR-199b-3p",
+   "transcript": "ENST00000359904",
+   "gene": "AMZ2",
+   "utr_pos": 82,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8178
+  },
+  {
+   "mirna": "hsa-miR-6088",
+   "transcript": "ENST00000389124",
+   "gene": "GRIK1",
+   "utr_pos": 38,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8165
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "transcript": "ENST00000302312",
+   "gene": "AHSP",
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8162
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000356858",
+   "gene": "C10orf90",
+   "utr_pos": 113,
+   "site_class": "8mer",
+   "pred_context_pp": -0.816
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000412360",
+   "gene": "AC102948.2",
+   "utr_pos": 228,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8135
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000325971",
+   "gene": "CEP192",
+   "utr_pos": 62,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8135
+  },
+  {
+   "mirna": "hsa-miR-18a-5p",
+   "transcript": "ENST00000380605",
+   "gene": "CPXM1",
+   "utr_pos": 108,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8131
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "transcript": "ENST00000381989",
+   "gene": "PARP4",
+   "utr_pos": 161,
+   "site_class": "8mer",
+   "pred_context_pp": -0.813
+  },
+  {
+   "mirna": "hsa-miR-205-5p",
+   "transcript": "ENST00000430835",
+   "gene": "C6orf201",
+   "utr_pos": 89,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8124
+  },
+  {
+   "mirna": "hsa-miR-125a-5p",
+   "transcript": "ENST00000399784",
+   "gene": "MRAP",
+   "utr_pos": 247,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8108
+  },
+  {
+   "mirna": "hsa-miR-6807-3p",
+   "transcript": "ENST00000253435",
+   "gene": "TEX101",
+   "utr_pos": 163,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8106
+  },
+  {
+   "mirna": "hsa-miR-367-3p",
+   "transcript": "ENST00000368894",
+   "gene": "FAM24A",
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8102
+  },
+  {
+   "mirna": "hsa-miR-4500",
+   "transcript": "ENST00000541799",
+   "gene": "ZBP1",
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8101
+  },
+  {
+   "mirna": "hsa-miR-4782-3p",
+   "transcript": "ENST00000411976",
+   "gene": "PRRT3",
+   "utr_pos": 5,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8085
+  },
+  {
+   "mirna": "hsa-miR-30d-5p",
+   "transcript": "ENST00000518537",
+   "gene": "PCM1",
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8069
+  },
+  {
+   "mirna": "hsa-miR-29b-3p",
+   "transcript": "ENST00000367459",
+   "gene": "RGS1",
+   "utr_pos": 573,
+   "site_class": "8mer",
+   "pred_context_pp": -0.806
+  },
+  {
+   "mirna": "hsa-let-7i-5p",
+   "transcript": "ENST00000541799",
+   "gene": "ZBP1",
+   "utr_pos": 137,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8051
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000370832",
+   "gene": "USP26",
+   "utr_pos": 112,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8042
+  },
+  {
+   "mirna": "hsa-miR-193a-5p",
+   "transcript": "ENST00000547418",
+   "gene": "RP11-552I14.1",
+   "utr_pos": 5,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8039
+  },
+  {
+   "mirna": "hsa-miR-29b-3p",
+   "transcript": "ENST00000264274",
+   "gene": "CASP8",
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8032
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000450895",
+   "gene": "AP000322.53",
+   "utr_pos": 482,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8024
+  },
+  {
+   "mirna": "hsa-miR-129-2-3p",
+   "transcript": "ENST00000254759",
+   "gene": "COQ3",
+   "utr_pos": 110,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8024
+  },
+  {
+   "mirna": "hsa-miR-6088",
+   "transcript": "ENST00000302581",
+   "gene": "OR5B2",
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8022
+  },
+  {
+   "mirna": "hsa-miR-139-5p",
+   "transcript": "ENST00000409999",
+   "gene": "C5orf52",
+   "utr_pos": 112,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8019
+  },
+  {
+   "mirna": "hsa-miR-183-5p.2",
+   "transcript": "ENST00000553796",
+   "gene": "ESR2",
+   "utr_pos": 135,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8018
+  },
+  {
+   "mirna": "hsa-miR-4319",
+   "transcript": "ENST00000378832",
+   "gene": "ACCSL",
+   "utr_pos": 40,
+   "site_class": "8mer",
+   "pred_context_pp": -0.8013
+  },
+  {
+   "mirna": "hsa-miR-27a-3p",
+   "transcript": "ENST00000260605",
+   "gene": "DYNC2LI1",
+   "utr_pos": 56,
+   "site_class": "8mer",
+   "pred_context_pp": -0.801
+  },
+  {
+   "mirna": "hsa-miR-199b-3p",
+   "transcript": "ENST00000357424",
+   "gene": "GIP",
+   "utr_pos": 138,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7993
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000573514",
+   "gene": "CCDC64B",
+   "utr_pos": 81,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7992
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000537935",
+   "gene": "OR52E8",
+   "utr_pos": 61,
+   "site_class": "8mer",
+   "pred_context_pp": -0.797
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000375344",
+   "gene": "HIATL1",
+   "utr_pos": 917,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7969
+  },
+  {
+   "mirna": "hsa-miR-6766-3p",
+   "transcript": "ENST00000329722",
+   "gene": "C6orf58",
+   "utr_pos": 60,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7967
+  },
+  {
+   "mirna": "hsa-miR-124-3p.2",
+   "transcript": "ENST00000335647",
+   "gene": "KATNA1",
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7964
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000506736",
+   "gene": "TAF9",
+   "utr_pos": 65,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7962
+  },
+  {
+   "mirna": "hsa-miR-218-5p",
+   "transcript": "ENST00000424586",
+   "gene": "TYROBP",
+   "utr_pos": 155,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7957
+  },
+  {
+   "mirna": "hsa-miR-449b-5p",
+   "transcript": "ENST00000303015",
+   "gene": "KCNK9",
+   "utr_pos": 47,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7956
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000403208",
+   "gene": "SLC2A11",
+   "utr_pos": 45,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7952
+  },
+  {
+   "mirna": "hsa-miR-30c-5p",
+   "transcript": "ENST00000409145",
+   "gene": "MRPL30",
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7948
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "transcript": "ENST00000450895",
+   "gene": "AP000322.53",
+   "utr_pos": 482,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7943
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000299709",
+   "gene": "SLC38A8",
+   "utr_pos": 101,
+   "site_class": "8mer",
+   "pred_context_pp": -0.794
+  },
+  {
+   "mirna": "hsa-miR-19b-3p",
+   "transcript": "ENST00000378953",
+   "gene": "C5orf56",
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7936
+  },
+  {
+   "mirna": "hsa-miR-449b-5p",
+   "transcript": "ENST00000368747",
+   "gene": "LELP1",
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7933
+  },
+  {
+   "mirna": "hsa-let-7d-5p",
+   "transcript": "ENST00000571838",
+   "gene": "CTC-360G5.1",
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7926
+  },
+  {
+   "mirna": "hsa-miR-183-5p.2",
+   "transcript": "ENST00000585429",
+   "gene": "JMJD6",
+   "utr_pos": 111,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7921
+  },
+  {
+   "mirna": "hsa-miR-1271-5p",
+   "transcript": "ENST00000394846",
+   "gene": "ZNF267",
+   "utr_pos": 276,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7916
+  },
+  {
+   "mirna": "hsa-miR-506-3p",
+   "transcript": "ENST00000335647",
+   "gene": "KATNA1",
+   "utr_pos": 27,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7915
+  },
+  {
+   "mirna": "hsa-miR-455-5p",
+   "transcript": "ENST00000369310",
+   "gene": "PLEKHS1",
+   "utr_pos": 33,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7909
+  },
+  {
+   "mirna": "hsa-miR-196b-5p",
+   "transcript": "ENST00000598951",
+   "gene": "PTPRC",
+   "utr_pos": 170,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7899
+  },
+  {
+   "mirna": "hsa-miR-125a-5p",
+   "transcript": "ENST00000393392",
+   "gene": "ANKRD42",
+   "utr_pos": 38,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7897
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000368747",
+   "gene": "LELP1",
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7891
+  },
+  {
+   "mirna": "hsa-miR-4782-3p",
+   "transcript": "ENST00000433979",
+   "gene": "PIK3C2G",
+   "utr_pos": 356,
+   "site_class": "8mer",
+   "pred_context_pp": -0.789
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "transcript": "ENST00000535047",
+   "gene": "PPFIBP1",
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7888
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "transcript": "ENST00000367165",
+   "gene": "CLDN20",
+   "utr_pos": 35,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7884
+  },
+  {
+   "mirna": "hsa-miR-101-3p.1",
+   "transcript": "ENST00000396039",
+   "gene": "PARD6B",
+   "utr_pos": 72,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7881
+  },
+  {
+   "mirna": "hsa-miR-19b-3p",
+   "transcript": "ENST00000408901",
+   "gene": "NGDN",
+   "utr_pos": 159,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7878
+  },
+  {
+   "mirna": "hsa-let-7c-5p",
+   "transcript": "ENST00000257899",
+   "gene": "BLOC1S1",
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7869
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000529819",
+   "gene": "ZNF7",
+   "utr_pos": 109,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7866
+  },
+  {
+   "mirna": "hsa-miR-204-5p",
+   "transcript": "ENST00000579618",
+   "gene": "SNRPD1",
+   "utr_pos": 9,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7861
+  },
+  {
+   "mirna": "hsa-miR-34c-5p",
+   "transcript": "ENST00000378194",
+   "gene": "SPTLC3",
+   "utr_pos": 465,
+   "site_class": "8mer",
+   "pred_context_pp": -0.786
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "transcript": "ENST00000343150",
+   "gene": "CTSL",
+   "utr_pos": 312,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7854
+  },
+  {
+   "mirna": "hsa-miR-145-5p",
+   "transcript": "ENST00000335934",
+   "gene": "TP53I3",
+   "utr_pos": 138,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7849
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000306357",
+   "gene": "STX8",
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7847
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "transcript": "ENST00000303927",
+   "gene": "PRKCDBP",
+   "utr_pos": 60,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7843
+  },
+  {
+   "mirna": "hsa-miR-140-3p.2",
+   "transcript": "ENST00000453034",
+   "gene": "RAPH1",
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7843
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000420239",
+   "gene": "CHD2",
+   "utr_pos": 115,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7842
+  },
+  {
+   "mirna": "hsa-miR-29a-3p",
+   "transcript": "ENST00000541666",
+   "gene": "HABP2",
+   "utr_pos": 18,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7841
+  },
+  {
+   "mirna": "hsa-miR-29c-3p",
+   "transcript": "ENST00000264274",
+   "gene": "CASP8",
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7831
+  },
+  {
+   "mirna": "hsa-let-7a-5p",
+   "transcript": "ENST00000571838",
+   "gene": "CTC-360G5.1",
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7831
+  },
+  {
+   "mirna": "hsa-miR-802",
+   "transcript": "ENST00000600213",
+   "gene": "MTRNR2L12",
+   "utr_pos": 35,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7825
+  },
+  {
+   "mirna": "hsa-miR-302c-3p.1",
+   "transcript": "ENST00000259870",
+   "gene": "C6orf15",
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7823
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000402789",
+   "gene": "SUV420H1",
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7819
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000369950",
+   "gene": "IMPG1",
+   "utr_pos": 748,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7818
+  },
+  {
+   "mirna": "hsa-miR-182-5p",
+   "transcript": "ENST00000367888",
+   "gene": "MGST3",
+   "utr_pos": 46,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7813
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000383163",
+   "gene": "PRR23A",
+   "utr_pos": 1498,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7801
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "transcript": "ENST00000367983",
+   "gene": "NR1I3",
+   "utr_pos": 67,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7798
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000425805",
+   "gene": "TMEM131",
+   "utr_pos": 84,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7795
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000400564",
+   "gene": "SAMSN1",
+   "utr_pos": 160,
+   "site_class": "8mer",
+   "pred_context_pp": -0.779
+  },
+  {
+   "mirna": "hsa-miR-34a-5p",
+   "transcript": "ENST00000591134",
+   "gene": "HKR1",
+   "utr_pos": 55,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7765
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000398019",
+   "gene": "SERPINB7",
+   "utr_pos": 537,
+   "site_class": "8mer",
+   "pred_context_pp": -0.775
+  },
+  {
+   "mirna": "hsa-miR-3666",
+   "transcript": "ENST00000326035",
+   "gene": "NIM1",
+   "utr_pos": 1,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7739
+  },
+  {
+   "mirna": "hsa-miR-520d-3p",
+   "transcript": "ENST00000259870",
+   "gene": "C6orf15",
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7739
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000591134",
+   "gene": "HKR1",
+   "utr_pos": 55,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7731
+  },
+  {
+   "mirna": "hsa-miR-18b-5p",
+   "transcript": "ENST00000543727",
+   "gene": "TSFM",
+   "utr_pos": 9,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7729
+  },
+  {
+   "mirna": "hsa-let-7g-5p",
+   "transcript": "ENST00000571838",
+   "gene": "CTC-360G5.1",
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7727
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000511507",
+   "gene": "GUCY1A3",
+   "utr_pos": 234,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7724
+  },
+  {
+   "mirna": "hsa-miR-6088",
+   "transcript": "ENST00000308366",
+   "gene": "PLA2G1B",
+   "utr_pos": 34,
+   "site_class": "8mer",
+   "pred_context_pp": -0.772
+  },
+  {
+   "mirna": "hsa-miR-129-1-3p",
+   "transcript": "ENST00000568794",
+   "gene": "COX4I1",
+   "utr_pos": 49,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7709
+  },
+  {
+   "mirna": "hsa-miR-212-3p",
+   "transcript": "ENST00000248306",
+   "gene": "METTL25",
+   "utr_pos": 100,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7704
+  },
+  {
+   "mirna": "hsa-let-7d-5p",
+   "transcript": "ENST00000367749",
+   "gene": "FMO4",
+   "utr_pos": 200,
+   "site_class": "8mer",
+   "pred_context_pp": -0.77
+  },
+  {
+   "mirna": "hsa-miR-122-5p",
+   "transcript": "ENST00000542817",
+   "gene": "NPIPB3",
+   "utr_pos": 85,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7696
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000248935",
+   "gene": "GSTT1",
+   "utr_pos": 157,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7687
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "transcript": "ENST00000547956",
+   "gene": "CHST11",
+   "utr_pos": 125,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7685
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "transcript": "ENST00000547956",
+   "gene": "CHST11",
+   "utr_pos": 125,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7684
+  },
+  {
+   "mirna": "hsa-miR-497-5p",
+   "transcript": "ENST00000471301",
+   "gene": "BNC2",
+   "utr_pos": 226,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7679
+  },
+  {
+   "mirna": "hsa-miR-15b-5p",
+   "transcript": "ENST00000420827",
+   "gene": "UBA6",
+   "utr_pos": 189,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7679
+  },
+  {
+   "mirna": "hsa-miR-520c-3p",
+   "transcript": "ENST00000548136",
+   "gene": "OR9A4",
+   "utr_pos": 28,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7678
+  },
+  {
+   "mirna": "hsa-miR-449b-5p",
+   "transcript": "ENST00000535753",
+   "gene": "EPS15L1",
+   "utr_pos": 335,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7676
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000367749",
+   "gene": "FMO4",
+   "utr_pos": 200,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7673
+  },
+  {
+   "mirna": "hsa-miR-22-3p",
+   "transcript": "ENST00000326139",
+   "gene": "GHRHR",
+   "utr_pos": 39,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7668
+  },
+  {
+   "mirna": "hsa-miR-126-3p.1",
+   "transcript": "ENST00000528193",
+   "gene": "TPD52L1",
+   "utr_pos": 18,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7665
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "transcript": "ENST00000331410",
+   "gene": "ZNF789",
+   "utr_pos": 83,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7662
+  },
+  {
+   "mirna": "hsa-miR-155-5p",
+   "transcript": "ENST00000437310",
+   "gene": "OR5H14",
+   "utr_pos": 76,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7662
+  },
+  {
+   "mirna": "hsa-miR-3129-5p",
+   "transcript": "ENST00000357424",
+   "gene": "GIP",
+   "utr_pos": 138,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7662
+  },
+  {
+   "mirna": "hsa-miR-30b-5p",
+   "transcript": "ENST00000297205",
+   "gene": "STEAP1",
+   "utr_pos": 6,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7651
+  },
+  {
+   "mirna": "hsa-let-7e-5p",
+   "transcript": "ENST00000429671",
+   "gene": "TSEN34",
+   "utr_pos": 168,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7645
+  },
+  {
+   "mirna": "hsa-miR-301a-3p",
+   "transcript": "ENST00000360542",
+   "gene": "KRTAP26-1",
+   "utr_pos": 241,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7639
+  },
+  {
+   "mirna": "hsa-miR-301a-3p",
+   "transcript": "ENST00000326035",
+   "gene": "NIM1",
+   "utr_pos": 1,
+   "site_class": "8mer",
+   "pred_context_pp": -0.763
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000570135",
+   "gene": "RBMX",
+   "utr_pos": 440,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7623
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000429671",
+   "gene": "TSEN34",
+   "utr_pos": 168,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7617
+  },
+  {
+   "mirna": "hsa-miR-302e",
+   "transcript": "ENST00000259870",
+   "gene": "C6orf15",
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7615
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000600100",
+   "gene": "FAM71E1",
+   "utr_pos": 60,
+   "site_class": "8mer",
+   "pred_context_pp": -0.761
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000284440",
+   "gene": "UCHL1",
+   "utr_pos": 428,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7607
+  },
+  {
+   "mirna": "hsa-miR-520c-3p",
+   "transcript": "ENST00000259870",
+   "gene": "C6orf15",
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7607
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "transcript": "ENST00000330439",
+   "gene": "MT1E",
+   "utr_pos": 222,
+   "site_class": "8mer",
+   "pred_context_pp": -0.76
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "transcript": "ENST00000248306",
+   "gene": "METTL25",
+   "utr_pos": 100,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7599
+  },
+  {
+   "mirna": "hsa-miR-129-2-3p",
+   "transcript": "ENST00000369994",
+   "gene": "AKNAD1",
+   "utr_pos": 21,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7598
+  },
+  {
+   "mirna": "hsa-miR-519d-3p",
+   "transcript": "ENST00000391864",
+   "gene": "LIN7B",
+   "utr_pos": 58,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7596
+  },
+  {
+   "mirna": "hsa-miR-135a-5p",
+   "transcript": "ENST00000382086",
+   "gene": "RFPL3S",
+   "utr_pos": 71,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7596
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "transcript": "ENST00000592257",
+   "gene": "APOC2",
+   "utr_pos": 4,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7595
+  },
+  {
+   "mirna": "hsa-miR-520a-3p",
+   "transcript": "ENST00000299179",
+   "gene": "MRPL43",
+   "utr_pos": 79,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7595
+  },
+  {
+   "mirna": "hsa-miR-520f-3p",
+   "transcript": "ENST00000482090",
+   "gene": "ZNF700",
+   "utr_pos": 42,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7594
+  },
+  {
+   "mirna": "hsa-miR-3666",
+   "transcript": "ENST00000413614",
+   "gene": "RXRB",
+   "utr_pos": 83,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7591
+  },
+  {
+   "mirna": "hsa-miR-10a-5p",
+   "transcript": "ENST00000376042",
+   "gene": "CCNB3",
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7591
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "transcript": "ENST00000583610",
+   "gene": "FBXL20",
+   "utr_pos": 139,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7587
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "transcript": "ENST00000438970",
+   "gene": "ZNF816",
+   "utr_pos": 7,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7584
+  },
+  {
+   "mirna": "hsa-miR-449b-5p",
+   "transcript": "ENST00000317961",
+   "gene": "KDM5D",
+   "utr_pos": 108,
+   "site_class": "8mer",
+   "pred_context_pp": -0.758
+  },
+  {
+   "mirna": "hsa-miR-9-5p",
+   "transcript": "ENST00000287706",
+   "gene": "NTAN1",
+   "utr_pos": 12,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7573
+  },
+  {
+   "mirna": "hsa-miR-302a-3p",
+   "transcript": "ENST00000259870",
+   "gene": "C6orf15",
+   "utr_pos": 145,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7568
+  },
+  {
+   "mirna": "hsa-miR-130a-3p",
+   "transcript": "ENST00000257497",
+   "gene": "ANXA1",
+   "utr_pos": 509,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7568
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "transcript": "ENST00000380534",
+   "gene": "FAM154A",
+   "utr_pos": 159,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7568
+  },
+  {
+   "mirna": "hsa-miR-302c-3p.2",
+   "transcript": "ENST00000482090",
+   "gene": "ZNF700",
+   "utr_pos": 42,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7562
+  },
+  {
+   "mirna": "hsa-miR-454-3p",
+   "transcript": "ENST00000326035",
+   "gene": "NIM1",
+   "utr_pos": 1,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7555
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000376923",
+   "gene": "SSX5",
+   "utr_pos": 610,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7552
+  },
+  {
+   "mirna": "hsa-let-7a-5p",
+   "transcript": "ENST00000429671",
+   "gene": "TSEN34",
+   "utr_pos": 168,
+   "site_class": "8mer",
+   "pred_context_pp": -0.755
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "transcript": "ENST00000376376",
+   "gene": "PRTFDC1",
+   "utr_pos": 170,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7545
+  },
+  {
+   "mirna": "hsa-miR-520a-3p",
+   "transcript": "ENST00000548136",
+   "gene": "OR9A4",
+   "utr_pos": 28,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7545
+  },
+  {
+   "mirna": "hsa-miR-140-3p.2",
+   "transcript": "ENST00000348227",
+   "gene": "WDR54",
+   "utr_pos": 22,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7541
+  },
+  {
+   "mirna": "hsa-miR-191-5p",
+   "transcript": "ENST00000392844",
+   "gene": "ORC3",
+   "utr_pos": 306,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7538
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "transcript": "ENST00000257248",
+   "gene": "GIF",
+   "utr_pos": 128,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7536
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000368707",
+   "gene": "S100A2",
+   "utr_pos": 384,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7528
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000369996",
+   "gene": "TNFRSF6B",
+   "utr_pos": 43,
+   "site_class": "8mer",
+   "pred_context_pp": -0.751
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000389887",
+   "gene": "GLB1L3",
+   "utr_pos": 46,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7504
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000442938",
+   "gene": "TMEM25",
+   "utr_pos": 561,
+   "site_class": "8mer",
+   "pred_context_pp": -0.75
+  },
+  {
+   "mirna": "hsa-miR-34a-5p",
+   "transcript": "ENST00000452201",
+   "gene": "SMAD4",
+   "utr_pos": 248,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7494
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000276935",
+   "gene": "ADAMTSL1",
+   "utr_pos": 674,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7493
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.1",
+   "transcript": "ENST00000372330",
+   "gene": "MMP9",
+   "utr_pos": 41,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7488
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "transcript": "ENST00000379253",
+   "gene": "SAT1",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7483
+  },
+  {
+   "mirna": "hsa-miR-199b-5p",
+   "transcript": "ENST00000264265",
+   "gene": "LXN",
+   "utr_pos": 12,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7477
+  },
+  {
+   "mirna": "hsa-miR-449a",
+   "transcript": "ENST00000318129",
+   "gene": "GINS3",
+   "utr_pos": 279,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7471
+  },
+  {
+   "mirna": "hsa-miR-214-5p",
+   "transcript": "ENST00000441037",
+   "gene": "AGBL1",
+   "utr_pos": 176,
+   "site_class": "8mer",
+   "pred_context_pp": -0.747
+  },
+  {
+   "mirna": "hsa-miR-195-5p",
+   "transcript": "ENST00000539839",
+   "gene": "FZD10",
+   "utr_pos": 1327,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7468
+  },
+  {
+   "mirna": "hsa-miR-5195-3p",
+   "transcript": "ENST00000313663",
+   "gene": "C2CD3",
+   "utr_pos": 3,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7464
+  },
+  {
+   "mirna": "hsa-miR-129-2-3p",
+   "transcript": "ENST00000568794",
+   "gene": "COX4I1",
+   "utr_pos": 49,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7462
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "transcript": "ENST00000396275",
+   "gene": "MRGPRX3",
+   "utr_pos": 238,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7459
+  },
+  {
+   "mirna": "hsa-let-7c-5p",
+   "transcript": "ENST00000407886",
+   "gene": "TMEM211",
+   "utr_pos": 167,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7454
+  },
+  {
+   "mirna": "hsa-miR-802",
+   "transcript": "ENST00000370800",
+   "gene": "PHF6",
+   "utr_pos": 60,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7454
+  },
+  {
+   "mirna": "hsa-miR-30c-5p",
+   "transcript": "ENST00000297205",
+   "gene": "STEAP1",
+   "utr_pos": 6,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7452
+  },
+  {
+   "mirna": "hsa-let-7i-5p",
+   "transcript": "ENST00000257899",
+   "gene": "BLOC1S1",
+   "utr_pos": 30,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7451
+  },
+  {
+   "mirna": "hsa-miR-124-3p.1",
+   "transcript": "ENST00000530311",
+   "gene": "TRIM49D1",
+   "utr_pos": 68,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7447
+  },
+  {
+   "mirna": "hsa-miR-142-3p.1",
+   "transcript": "ENST00000308664",
+   "gene": "ATP2A2",
+   "utr_pos": 479,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7439
+  },
+  {
+   "mirna": "hsa-miR-148b-3p",
+   "transcript": "ENST00000453384",
+   "gene": "RAB34",
+   "utr_pos": 12,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7431
+  },
+  {
+   "mirna": "hsa-miR-613",
+   "transcript": "ENST00000338446",
+   "gene": "FAIM",
+   "utr_pos": 129,
+   "site_class": "8mer",
+   "pred_context_pp": -0.743
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000491306",
+   "gene": "RPL37A",
+   "utr_pos": 208,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7427
+  },
+  {
+   "mirna": "hsa-miR-143-3p",
+   "transcript": "ENST00000327857",
+   "gene": "DEFA3",
+   "utr_pos": 92,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7424
+  },
+  {
+   "mirna": "hsa-miR-211-5p",
+   "transcript": "ENST00000581619",
+   "gene": "CLUL1",
+   "utr_pos": 50,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7413
+  },
+  {
+   "mirna": "hsa-miR-183-5p.1",
+   "transcript": "ENST00000382585",
+   "gene": "BPY2",
+   "utr_pos": 2,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7407
+  },
+  {
+   "mirna": "hsa-miR-124-3p.1",
+   "transcript": "ENST00000454608",
+   "gene": "USP41",
+   "utr_pos": 205,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7406
+  },
+  {
+   "mirna": "hsa-miR-4319",
+   "transcript": "ENST00000492445",
+   "gene": "PPIL2",
+   "utr_pos": 165,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7406
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "transcript": "ENST00000305409",
+   "gene": "SCG2",
+   "utr_pos": 390,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7405
+  },
+  {
+   "mirna": "hsa-miR-34c-5p",
+   "transcript": "ENST00000402789",
+   "gene": "SUV420H1",
+   "utr_pos": 10,
+   "site_class": "8mer",
+   "pred_context_pp": -0.74
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "transcript": "ENST00000547619",
+   "gene": "NOVA1",
+   "utr_pos": 134,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7399
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "transcript": "ENST00000299130",
+   "gene": "BCCIP",
+   "utr_pos": 543,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7394
+  },
+  {
+   "mirna": "hsa-miR-29a-3p",
+   "transcript": "ENST00000338221",
+   "gene": "TMEM236",
+   "utr_pos": 172,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7393
+  },
+  {
+   "mirna": "hsa-miR-3129-5p",
+   "transcript": "ENST00000409061",
+   "gene": "ANKRD61",
+   "utr_pos": 116,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7379
+  },
+  {
+   "mirna": "hsa-let-7b-5p",
+   "transcript": "ENST00000221700",
+   "gene": "CYP4F2",
+   "utr_pos": 626,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7378
+  },
+  {
+   "mirna": "hsa-miR-140-3p.2",
+   "transcript": "ENST00000356455",
+   "gene": "UBE2C",
+   "utr_pos": 96,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7371
+  },
+  {
+   "mirna": "hsa-miR-1-3p",
+   "transcript": "ENST00000412360",
+   "gene": "AC102948.2",
+   "utr_pos": 228,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7368
+  },
+  {
+   "mirna": "hsa-miR-223-3p",
+   "transcript": "ENST00000295171",
+   "gene": "CCDC74A",
+   "utr_pos": 147,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7365
+  },
+  {
+   "mirna": "hsa-miR-204-5p",
+   "transcript": "ENST00000380473",
+   "gene": "TEX26",
+   "utr_pos": 0,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7363
+  },
+  {
+   "mirna": "hsa-miR-101-3p.1",
+   "transcript": "ENST00000382405",
+   "gene": "CBWD5",
+   "utr_pos": 151,
+   "site_class": "8mer",
+   "pred_context_pp": -0.736
+  },
+  {
+   "mirna": "hsa-miR-206",
+   "transcript": "ENST00000374325",
+   "gene": "SYT15",
+   "utr_pos": 15,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7355
+  },
+  {
+   "mirna": "hsa-miR-133a-3p.2",
+   "transcript": "ENST00000377479",
+   "gene": "SLC45A1",
+   "utr_pos": 65,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7353
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "transcript": "ENST00000493231",
+   "gene": "CLEC19A",
+   "utr_pos": 93,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7353
+  },
+  {
+   "mirna": "hsa-miR-135a-5p",
+   "transcript": "ENST00000509171",
+   "gene": "ZFYVE28",
+   "utr_pos": 134,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7352
+  },
+  {
+   "mirna": "hsa-miR-16-5p",
+   "transcript": "ENST00000216500",
+   "gene": "DHRS7",
+   "utr_pos": 288,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7348
+  },
+  {
+   "mirna": "hsa-miR-302d-3p",
+   "transcript": "ENST00000299179",
+   "gene": "MRPL43",
+   "utr_pos": 79,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7344
+  },
+  {
+   "mirna": "hsa-miR-212-3p",
+   "transcript": "ENST00000377457",
+   "gene": "CBWD6",
+   "utr_pos": 417,
+   "site_class": "8mer",
+   "pred_context_pp": -0.7344
   }
  ]
 }
