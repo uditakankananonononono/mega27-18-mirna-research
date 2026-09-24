@@ -47,6 +47,33 @@ To ask where the pooled $\Delta$AUROC lives, we computed univariate AUROCs per m
 \includegraphics[width=0.55\linewidth]{figs/fig_permirna_scatter.pdf}
 \caption{Per-miRNA univariate AUROC: raw CNN min-score vs the best seed-count/length feature. Every one of 132 miRNAs sits below the diagonal.}
 \end{figure}
+\subsection{Breadth audit: the conditional CNN gain is distributed, not carried by a few miRNAs}
+The pooled $\Delta$AUROC of $+0.0060$ could in principle be driven by a handful of
+miRNAs. We decomposed it: for each of the 131 panel miRNAs with $\ge50$ CLIP-positive
+and $\ge50$ negative genes we re-fit both logistic models (covariates
+$[n_8,n_7,\mathrm{len}]$ vs covariates$+$CNN $[\min,\mathrm{sum}]$) under 5-fold
+cross-validation within that miRNA alone and recorded the per-miRNA
+$\Delta$AUROC (\texttt{scripts/clip\_per\_mirna\_delta.py},
+\texttt{results/clip\_per\_mirna\_delta.json}, three hermetic tests). The gain is
+broad but small: median $+0.0046$, IQR $[-0.0013,+0.0155]$, $64.9\%$ of miRNAs
+positive, Wilcoxon signed-rank $p=2.0\times10^{-9}$ across miRNAs
+(Figure~\ref{fig:permirna_delta}). The largest gains are real but modest
+(hsa-miR-500a-3p $+0.084$, hsa-miR-302a-3p $+0.079$, hsa-miR-93-5p $+0.072$,
+hsa-miR-20a-5p $+0.070$; three of the five share the miR-17-family seed and all
+five have large pair counts), and the worst cases are only mildly negative (hsa-miR-615-3p $-0.014$,
+hsa-miR-652-3p $-0.014$). Two honest readings follow. First, the pooled effect
+is not an artifact of one dominant miRNA: the sign test across 131 independent
+miRNAs would be significant on its own. Second, the per-miRNA conditional gain
+is an order of magnitude smaller than the headline pooled number for most of the
+panel, so for any individual miRNA the CNN score remains a weak assistant to
+site-count features, not a replacement --- consistent with the univariate audit
+above.
+\begin{figure}[h]\centering
+\includegraphics[width=0.6\linewidth]{figs/fig_permirna_delta.pdf}
+\caption{Distribution of per-miRNA conditional $\Delta$AUROC across 131 miRNAs.
+Dashed: zero; dotted: median ($+0.0046$). $64.9\%$ of miRNAs are positive;
+Wilcoxon $p=2.0\times10^{-9}$.}
+\label{fig:permirna_delta}\end{figure}
 \subsection{Biophysical sanity check: duplex MFE vs shuffled controls}
 As a sequence-level pipeline validation, the 20 top diverse candidate windows ($\pm25$ nt) were cofolded with their mature miRNA (ViennaRNA RNAcofold) against 10 mononucleotide-shuffled miRNA controls each (\texttt{results/rnafold\_validation.json}). Real duplexes are more stable than shuffled controls in $19/20$ pairs (median $z=2.33$; Wilcoxon $p<10^{-4}$); the exception, miR-7-5p$\to$REG3G ($z=-0.57$), is kept in the candidate table as a flagged row. Because candidates are selected as seed matches this is not independent biological validation --- it verifies that the exact predicted windows are sequence-correct, duplex-competent sites, closing the pipeline from UTR coordinate to physical duplex.
 \begin{figure}[h]\centering
