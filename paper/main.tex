@@ -53,6 +53,9 @@ As a sequence-level pipeline validation, the 20 top diverse candidate windows ($
 \includegraphics[width=0.5\linewidth]{figs/fig_rnafold.pdf}
 \caption{RNAcofold MFE for the 20 top candidate windows with the real miRNA vs shuffled-miRNA controls.}
 \end{figure}
+\subsection{Independent literature benchmark: miRTarBase 10.0}
+All evaluations above use TargetScan or ENCORI labels. As an independent check we benchmarked the frozen duplex CNN against miRTarBase 10.0~\cite{mtb}: positives were strong-evidence (reporter-assay) human MTIs for the 132-miRNA panel (\texttt{miRTarBase\_SE\_R.csv}, 12{,}981 records), and negatives were genes with no human MTI of any evidence class in the full 337~MB \texttt{hsa\_MTI.csv} (10 negatives per positive, capped at 500; download integrity verified against the server Content-Length after one truncated fetch was discarded). Genes are scored by the minimum CNN score over enumerated 8mer/7mer-A1 seed windows (\texttt{results/mirtarbase\_validation.json}). On 87 miRNAs with $\geq 10$ validated positives (45 skipped), 8{,}075 rows and 2{,}164 positives, the pooled AUROC is $0.6829$; the median per-miRNA AUROC is $0.6926$ with $85/87$ miRNAs above chance (within-miRNA $z$ Mann--Whitney $p=1.0\times10^{-152}$; 1000-rep permutation $p\le 9.99\times10^{-4}$, the resolution floor). Because the CLIP audit identified seed-site count as a confound, we re-scored the identical rows with pure site count as the predictor (\texttt{results/mirtarbase\_sitecount\_control.json}): count alone reaches $0.6573$ pooled / $0.6675$ median, so most of the literature signal is seed abundance. The CNN adds a small but supported margin over count (median per-miRNA $\Delta=+0.0349$, positive for $65.5\%$ of miRNAs, Wilcoxon $p=1.2\times10^{-3}$). Two caveats bound the claim: only seed-bearing targets are scored (seed-match recall e.g. $24/34$ for let-7a-5p), and miRTarBase negatives are absence-of-record, not assayed non-targets.
+
 \section{Documented negatives}
 (1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation).
 \section{Falsification paths}
@@ -61,6 +64,7 @@ miRTarBase/TarBase validated-target overlap (bulk download currently blocked; EN
 \bibitem[Grimson et al.(2007)]{g} Grimson A, et al. MicroRNA targeting specificity in mammals: determinants beyond seed pairing. \emph{Mol Cell} 2007.
 \bibitem[Agarwal et al.(2015)]{a} Agarwal V, et al. Predicting effective microRNA target sites in mammalian mRNAs. \emph{eLife} 2015.
 \bibitem[Zhou et al.(2026)]{z} Zhou K, et al. An encyclopedic regulatory and functional atlas of RNA interactomes (ENCORI). \emph{Nat Methods} 2026.
+\bibitem[Huang et al.(2022)]{mtb} Huang HY, et al. miRTarBase update 2022: an information resource for experimentally validated miRNA--target interactions. \emph{Nucleic Acids Res} 2022.
 \bibitem[Memczak et al.(2013)]{m} Memczak S, et al. Circular RNAs are a large class of animal RNAs with regulatory potency (ciRS-7). \emph{Nature} 2013.
 \end{thebibliography}
 \input{derivations}
