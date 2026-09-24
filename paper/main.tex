@@ -59,8 +59,28 @@ All evaluations above use TargetScan or ENCORI labels. As an independent check w
 \subsection{Head-to-head vs a public leader: miRDB v6.0 wins (negative)}
 We compared the frozen duplex CNN against miRDB v6.0 (MirTarget)~\cite{mirdb} on the identical miRTarBase rows (\texttt{scripts/mirdb\_benchmark.py}, \texttt{results/mirdb\_benchmark.json}). The full miRDB prediction file (59~MB, 3{,}375{,}741 human rows) was downloaded; RefSeq accessions were mapped to gene symbols with the MyGene.info batch API~\cite{mygene} (29{,}460 of 29{,}509 mapped). A gene's miRDB score is the maximum over its transcripts; pairs absent from miRDB (which reports only scores $\geq 50$) score 0. On the 84 panel miRNAs present in miRDB (7{,}909 rows, 2{,}113 positives), miRDB reaches pooled AUROC $0.787$ vs $0.685$ for our CNN; median per-miRNA AUROC is $0.791$ vs $0.693$ (median $\Delta=+0.093$ in miRDB's favour), miRDB wins on $74/84$ miRNAs, Wilcoxon $p=2.4\times10^{-12}$. miRDB lists $68.9\%$ of positives but only $15.5\%$ of negatives. \emph{Verdict:} on literature-validated targets our model is clearly behind the public leader. One caveat favours miRDB: MirTarget was trained on external CLIP/expression data that may overlap literature-validated targets, so this is not a leakage-free comparison; but the size and consistency of the gap make it a real negative, and we make no state-of-the-art claim for target ranking.
 
+\subsection{Second independent benchmark: TarBase v9.0 (negative for the CNN)}
+To check that the miRTarBase result is not an artefact of one curation pipeline, we relabelled the \emph{same} 7{,}909 rows (84 miRNAs, identical gene universe and frozen CNN scores) using TarBase v9.0~\cite{tarbase}, the DIANA collection of experimentally supported interactions (4{,}724{,}537 human records scanned; \texttt{scripts/tarbase\_benchmark.py}, \texttt{results/tarbase\_benchmark.json}). A row is positive if the pair has at least one TarBase record in the evidence class. Three predictors are compared: our CNN, miRDB v6.0, and the plain seed-site count (8mer + 7mer-A1).
+
+\begin{center}\small
+\begin{tabular}{lrcccccc}
+\hline
+Label class & Pos. & \multicolumn{3}{c}{Pooled AUROC} & \multicolumn{3}{c}{Median per-miRNA AUROC}\\
+ & & CNN & miRDB & count & CNN & miRDB & count\\
+\hline
+Any method & 3{,}978 & 0.609 & 0.666 & 0.601 & 0.583 & 0.672 & 0.609\\
+Low-yield (reporter/WB/qPCR) & 1{,}019 & 0.661 & 0.754 & 0.643 & 0.654 & 0.766 & 0.639\\
+AGO-CLIP/chimeric & 3{,}460 & 0.591 & 0.644 & 0.581 & 0.571 & 0.668 & 0.590\\
+\hline
+\end{tabular}
+\end{center}
+
+miRDB beats the CNN on 73/83 miRNAs for any-method labels (Wilcoxon $p=3.2\times10^{-13}$), 56/69 for low-yield labels ($p=3.0\times10^{-8}$) and 73/80 for CLIP labels ($p=2.1\times10^{-12}$). Against the seed-site count the CNN wins the pooled AUROC by less than 0.02 in every class, but \emph{loses} per miRNA: it beats the count on only 32/83 miRNAs for any-method labels ($p=0.0078$) and 32/80 for CLIP labels ($p=0.013$); for low-yield labels it wins 42/69 (median 0.654 vs 0.639, $p=0.056$, not significant). \emph{Verdict:} the second database reproduces the miRDB gap and removes the small margin over site counting that the miRTarBase control showed. Our CNN adds no reliable per-miRNA value over counting seed matches on TarBase labels.
+
+A data-quality finding: 2{,}199 of the rows used as miRTarBase \emph{negatives} have TarBase support (2{,}063 of them from CLIP-class methods, only 7 from low-yield methods). The miRTarBase negative set is therefore contaminated by CLIP-supported interactions, which lowers every predictor's measured AUROC on that benchmark. Low-yield TarBase positives overlap miRTarBase strong-evidence positives almost fully (1{,}012 of 1{,}019), so that label class is not independent of miRTarBase; the any-method and CLIP classes are the more independent tests. Caveats: TarBase CLIP records overlap the ENCORI CLIP data used in our falsification analyses (not in CNN training), and miRDB's MirTarget was trained on CLIP and array data (leakage in its favour).
+
 \section{Documented negatives}
-(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation). (5) miRDB v6.0 beats our CNN on miRTarBase rows (pooled AUROC 0.787 vs 0.685, 74/84 miRNAs, $p=2.4\times10^{-12}$).
+(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation). (5) miRDB v6.0 beats our CNN on miRTarBase rows (pooled AUROC 0.787 vs 0.685, 74/84 miRNAs, $p=2.4\times10^{-12}$). (6) On TarBase v9.0 labels the CNN loses to miRDB on 73/83 miRNAs and to the plain seed-site count per miRNA (CNN better on only 32/83, $p=0.0078$).
 \section{Falsification paths}
 miRTarBase/TarBase validated-target overlap (bulk download currently blocked; ENCORI used instead); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); remaining: miRTarBase/TarBase overlap.
 \begin{thebibliography}{9}
@@ -68,6 +88,7 @@ miRTarBase/TarBase validated-target overlap (bulk download currently blocked; EN
 \bibitem[Agarwal et al.(2015)]{a} Agarwal V, et al. Predicting effective microRNA target sites in mammalian mRNAs. \emph{eLife} 2015.
 \bibitem[Zhou et al.(2026)]{z} Zhou K, et al. An encyclopedic regulatory and functional atlas of RNA interactomes (ENCORI). \emph{Nat Methods} 2026.
 \bibitem[Huang et al.(2022)]{mtb} Huang HY, et al. miRTarBase update 2022: an information resource for experimentally validated miRNA--target interactions. \emph{Nucleic Acids Res} 2022.
+\bibitem[Skoufos et al.(2024)]{tarbase} Skoufos G, et al. TarBase-v9.0 extends experimentally supported miRNA-gene interactions to cell-types and virally encoded miRNAs. \emph{Nucleic Acids Res} 2024.
 \bibitem[Chen and Wang(2020)]{mirdb} Chen Y, Wang X. miRDB: an online database for prediction of functional microRNA targets. \emph{Nucleic Acids Res} 2020.
 \bibitem[Xin et al.(2016)]{mygene} Xin J, et al. High-performance web services for querying gene and variant annotation. \emph{Genome Biol} 2016.
 \bibitem[Memczak et al.(2013)]{m} Memczak S, et al. Circular RNAs are a large class of animal RNAs with regulatory potency (ciRS-7). \emph{Nature} 2013.

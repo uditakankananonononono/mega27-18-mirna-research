@@ -12,7 +12,8 @@
 14. miRTarBase 10.0 (awi.cuhk.edu.cn) - independent literature benchmark, results/mirtarbase_validation.json
 15. miRDB v6.0 (mirdb.org) - public-leader head-to-head, results/mirdb_benchmark.json
 16. MyGene.info batch API - RefSeq->symbol mapping for miRDB (scripts/mygene_map.py)
-Count: 15 (16 raw entries minus pytest infrastructure). Planned: TarBase, miRWalk, RNAhybrid.
+17. TarBase v9.0 (DIANA) - second independent validation labels, results/tarbase_benchmark.json
+Count: 16 (17 raw entries minus pytest infrastructure). Planned: miRWalk, RNAhybrid.
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -21,4 +22,5 @@ Count: 15 (16 raw entries minus pytest infrastructure). Planned: TarBase, miRWal
 140. miRTarBase 10.0 miRTarBase_SE_R.csv (strong-evidence MTIs, 12,981 records) - positives
 141. miRTarBase 10.0 hsa_MTI.csv (all human MTIs, 337,103,345 bytes) - negative exclusion set
 142. miRDB v6.0 miRDB_v6.0_prediction_result.txt.gz (bulk file, counted once) - head-to-head benchmark
-Count: 142. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+143. TarBase v9.0 Homo_sapiens_TarBase-v9.tsv.gz (bulk file, 4,724,537 records, counted once) - second validation
+Count: 143. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
