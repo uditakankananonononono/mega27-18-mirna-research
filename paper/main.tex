@@ -85,10 +85,12 @@ CLIP-positive genes are far more expressed: median $\log(1+\mathrm{nTPM})$ 2.79
 vs 1.76 for negatives (Mann--Whitney $p$ below double-precision underflow).
 Under gene-grouped 5-fold cross-validation (no gene in both train and test;
 \texttt{scripts/expression\_confound.py}, \texttt{results/expression\_confound.json},
-four hermetic tests) the pooled AUROCs are: site counts $[n_8,n_7,\mathrm{len}]$
-0.568; site counts$+$CNN 0.573; HEK293 expression alone 0.682; site
-counts$+$expression 0.694; site counts$+$expression$+$CNN 0.695
-(Figure~\ref{fig:exprconf}). Expression alone beats every sequence model we have.
+four hermetic tests) the pooled AUROCs
+(Figure~\ref{fig:exprconf}) are: site counts $[n_8,n_7,\mathrm{len}]$ 0.568;
+site counts$+$CNN 0.573; HEK293 expression alone 0.682;
+site counts$+$expression 0.694; and
+site counts$+$expression$+$CNN 0.695.
+Expression alone beats every sequence model we have.
 Adding expression shrinks the CNN's conditional pooled gain from $+0.0048$ to
 $+0.0008$, about a six-fold reduction. Per miRNA (130 miRNAs with $\ge50$
 positives and negatives, covariates now including expression) the gain survives
@@ -138,6 +140,35 @@ AGO-CLIP/chimeric & 3{,}460 & 0.591 & 0.644 & 0.581 & 0.571 & 0.668 & 0.590\\
 miRDB beats the CNN on 73/83 miRNAs for any-method labels (Wilcoxon $p=3.2\times10^{-13}$), 56/69 for low-yield labels ($p=3.0\times10^{-8}$) and 73/80 for CLIP labels ($p=2.1\times10^{-12}$). Against the seed-site count the CNN wins the pooled AUROC by less than 0.02 in every class, but \emph{loses} per miRNA: it beats the count on only 32/83 miRNAs for any-method labels ($p=0.0078$) and 32/80 for CLIP labels ($p=0.013$); for low-yield labels it wins 42/69 (median 0.654 vs 0.639, $p=0.056$, not significant). \emph{Verdict:} the second database reproduces the miRDB gap and removes the small margin over site counting that the miRTarBase control showed. Our CNN adds no reliable per-miRNA value over counting seed matches on TarBase labels.
 
 A data-quality finding: 2{,}199 of the rows used as miRTarBase \emph{negatives} have TarBase support (2{,}063 of them from CLIP-class methods, only 7 from low-yield methods). The miRTarBase negative set is therefore contaminated by CLIP-supported interactions, which lowers every predictor's measured AUROC on that benchmark. Low-yield TarBase positives overlap miRTarBase strong-evidence positives almost fully (1{,}012 of 1{,}019), so that label class is not independent of miRTarBase; the any-method and CLIP classes are the more independent tests. Caveats: TarBase CLIP records overlap the ENCORI CLIP data used in our falsification analyses (not in CNN training), and miRDB's MirTarget was trained on CLIP and array data (leakage in its favour).
+
+\subsection{Third arm: pure duplex thermodynamics (RNAhybrid) is near chance}
+The miRDB comparison has an asymmetry: miRDB's MirTarget is a learned model with
+many features, our CNN is sequence-only. We added the cleanest possible
+biophysical arm: RNAhybrid 2.1.2 minimum-free-energy duplex prediction
+(\texttt{-s 3utr\_human}, best hit per transcript, minimum over a gene's
+transcripts; no training data, no conservation, no machine learning) on the
+same committed miRTarBase rows (script
+\texttt{rnahybrid\_benchmark.py}; \texttt{results/rnahybrid\_benchmark.json};
+\texttt{results/rnahybrid\_rows.csv}; three hermetic tests). Rows with no RNAhybrid hit are scored one step below the
+weakest observed hit. On 80 panel miRNAs (7{,}914 rows) RNAhybrid is near
+chance: median per-miRNA AUROC 0.542 (pooled 0.522) with median gene coverage
+$54\%$. The CNN wins 76/80 miRNAs (medians 0.693 vs 0.542, Wilcoxon
+$p=2.0\times10^{-14}$). Together with the miRDB arm this gives a clean
+three-way ordering on identical rows (Figure~\ref{fig:rnahybrid}): a full
+machine-learning predictor (miRDB 0.791) $>$ our sequence-only CNN (0.693)
+$>$ pure duplex thermodynamics (0.542). Two honest readings. First, the CNN's
+margin over the strongest physics-only baseline is large, so the sequence
+encoding does capture real, generalizing signal beyond hybridization energy.
+Second, the equally large gap from CNN to miRDB shows that the extra signal
+miRDB exploits (cross-species conservation, site context, CLIP-trained
+features) is worth more than our whole model: thermodynamics is not the
+bottleneck, feature breadth is.
+\begin{figure}[h]\centering
+\includegraphics[width=0.95\linewidth]{figs/fig_rnahybrid.pdf}
+\caption{Per-miRNA AUROC on the committed miRTarBase rows (77 miRNAs present in
+both benchmarks). Left: distributions for RNAhybrid, DuplexCNN, miRDB. Right:
+RNAhybrid vs DuplexCNN per miRNA; the CNN wins 76/80.}
+\label{fig:rnahybrid}\end{figure}
 
 \section{Documented negatives}
 (1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation). (5) miRDB v6.0 beats our CNN on miRTarBase rows (pooled AUROC 0.787 vs 0.685, 74/84 miRNAs, $p=2.4\times10^{-12}$). (6) On TarBase v9.0 labels the CNN loses to miRDB on 73/83 miRNAs and to the plain seed-site count per miRNA (CNN better on only 32/83, $p=0.0078$). (7) HEK293 expression alone (HPA nTPM, AUROC 0.682) beats all sequence models on CLIP labels and cuts the CNN's conditional pooled gain from $+0.0048$ to $+0.0008$.

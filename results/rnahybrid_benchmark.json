@@ -1,0 +1,655 @@
+{
+ "design": "RNAhybrid arm on the committed miRTarBase benchmark rows (third head-to-head).",
+ "tool": "RNAhybrid 2.1.2-6 (Ubuntu jammy .deb), -s 3utr_human -c -b 1",
+ "n_mirnas": 80,
+ "n_rows": 7914,
+ "pooled_auroc_rnahybrid": 0.5219531800116178,
+ "pooled_auroc_cnn": 0.6823634925120274,
+ "median_per_mirna_rnahybrid": 0.5423087159015303,
+ "median_per_mirna_cnn": 0.692852140639665,
+ "rnahybrid_wins": 4,
+ "wilcoxon_p_rnahybrid_minus_cnn": 2.0085732876088696e-14,
+ "median_coverage": 0.5426892756210024,
+ "per_mirna": [
+  {
+   "mirna": "hsa-let-7a-5p",
+   "n": 86,
+   "n_pos": 24,
+   "auroc_rnahybrid": 0.5100806451612904,
+   "auroc_cnn": 0.5766129032258065,
+   "coverage": 0.5232558139534884
+  },
+  {
+   "mirna": "hsa-miR-1-3p",
+   "n": 176,
+   "n_pos": 49,
+   "auroc_rnahybrid": 0.5595372007070544,
+   "auroc_cnn": 0.7462638598746585,
+   "coverage": 0.48863636363636365
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "n": 34,
+   "n_pos": 9,
+   "auroc_rnahybrid": 0.5511111111111111,
+   "auroc_cnn": 0.7066666666666667,
+   "coverage": 0.7058823529411765
+  },
+  {
+   "mirna": "hsa-miR-106a-5p",
+   "n": 103,
+   "n_pos": 25,
+   "auroc_rnahybrid": 0.49128205128205127,
+   "auroc_cnn": 0.6102564102564102,
+   "coverage": 0.5436893203883495
+  },
+  {
+   "mirna": "hsa-miR-106b-5p",
+   "n": 115,
+   "n_pos": 24,
+   "auroc_rnahybrid": 0.5228937728937729,
+   "auroc_cnn": 0.6332417582417582,
+   "coverage": 0.591304347826087
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "n": 70,
+   "n_pos": 20,
+   "auroc_rnahybrid": 0.544,
+   "auroc_cnn": 0.702,
+   "coverage": 0.5857142857142857
+  },
+  {
+   "mirna": "hsa-miR-10b-5p",
+   "n": 52,
+   "n_pos": 15,
+   "auroc_rnahybrid": 0.7495495495495494,
+   "auroc_cnn": 0.8018018018018018,
+   "coverage": 0.5384615384615384
+  },
+  {
+   "mirna": "hsa-miR-122-5p",
+   "n": 175,
+   "n_pos": 43,
+   "auroc_rnahybrid": 0.4802677942212826,
+   "auroc_cnn": 0.7196969696969696,
+   "coverage": 0.5542857142857143
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "n": 236,
+   "n_pos": 58,
+   "auroc_rnahybrid": 0.44493413405656723,
+   "auroc_cnn": 0.662824486633088,
+   "coverage": 0.5720338983050848
+  },
+  {
+   "mirna": "hsa-miR-128-3p",
+   "n": 89,
+   "n_pos": 18,
+   "auroc_rnahybrid": 0.4741784037558685,
+   "auroc_cnn": 0.7034428794992176,
+   "coverage": 0.550561797752809
+  },
+  {
+   "mirna": "hsa-miR-129-5p",
+   "n": 47,
+   "n_pos": 9,
+   "auroc_rnahybrid": 0.46929824561403505,
+   "auroc_cnn": 0.4824561403508772,
+   "coverage": 0.6382978723404256
+  },
+  {
+   "mirna": "hsa-miR-130a-3p",
+   "n": 56,
+   "n_pos": 16,
+   "auroc_rnahybrid": 0.521875,
+   "auroc_cnn": 0.7374999999999999,
+   "coverage": 0.6964285714285714
+  },
+  {
+   "mirna": "hsa-miR-130b-3p",
+   "n": 39,
+   "n_pos": 11,
+   "auroc_rnahybrid": 0.4188311688311689,
+   "auroc_cnn": 0.8084415584415585,
+   "coverage": 0.5641025641025641
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "n": 58,
+   "n_pos": 18,
+   "auroc_rnahybrid": 0.5416666666666666,
+   "auroc_cnn": 0.663888888888889,
+   "coverage": 0.5172413793103449
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "n": 63,
+   "n_pos": 23,
+   "auroc_rnahybrid": 0.5543478260869565,
+   "auroc_cnn": 0.7010869565217391,
+   "coverage": 0.4603174603174603
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "n": 82,
+   "n_pos": 23,
+   "auroc_rnahybrid": 0.6013264554163595,
+   "auroc_cnn": 0.7302873986735445,
+   "coverage": 0.524390243902439
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "n": 33,
+   "n_pos": 7,
+   "auroc_rnahybrid": 0.6043956043956044,
+   "auroc_cnn": 0.782967032967033,
+   "coverage": 0.5151515151515151
+  },
+  {
+   "mirna": "hsa-miR-141-3p",
+   "n": 148,
+   "n_pos": 34,
+   "auroc_rnahybrid": 0.5563725490196079,
+   "auroc_cnn": 0.5552115583075335,
+   "coverage": 0.5202702702702703
+  },
+  {
+   "mirna": "hsa-miR-143-3p",
+   "n": 83,
+   "n_pos": 20,
+   "auroc_rnahybrid": 0.5432539682539683,
+   "auroc_cnn": 0.6206349206349207,
+   "coverage": 0.5662650602409639
+  },
+  {
+   "mirna": "hsa-miR-144-3p",
+   "n": 48,
+   "n_pos": 11,
+   "auroc_rnahybrid": 0.5552825552825552,
+   "auroc_cnn": 0.7395577395577395,
+   "coverage": 0.5208333333333334
+  },
+  {
+   "mirna": "hsa-miR-145-5p",
+   "n": 345,
+   "n_pos": 79,
+   "auroc_rnahybrid": 0.49262396497573047,
+   "auroc_cnn": 0.6830684305700961,
+   "coverage": 0.4927536231884058
+  },
+  {
+   "mirna": "hsa-miR-146a-5p",
+   "n": 76,
+   "n_pos": 16,
+   "auroc_rnahybrid": 0.5375,
+   "auroc_cnn": 0.6583333333333333,
+   "coverage": 0.5131578947368421
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "n": 77,
+   "n_pos": 22,
+   "auroc_rnahybrid": 0.5950413223140496,
+   "auroc_cnn": 0.7074380165289257,
+   "coverage": 0.5714285714285714
+  },
+  {
+   "mirna": "hsa-miR-150-5p",
+   "n": 81,
+   "n_pos": 14,
+   "auroc_rnahybrid": 0.5772921108742004,
+   "auroc_cnn": 0.6428571428571429,
+   "coverage": 0.5061728395061729
+  },
+  {
+   "mirna": "hsa-miR-152-3p",
+   "n": 33,
+   "n_pos": 9,
+   "auroc_rnahybrid": 0.6365740740740741,
+   "auroc_cnn": 0.7083333333333334,
+   "coverage": 0.6363636363636364
+  },
+  {
+   "mirna": "hsa-miR-155-5p",
+   "n": 419,
+   "n_pos": 167,
+   "auroc_rnahybrid": 0.5424745746602033,
+   "auroc_cnn": 0.7697224598422203,
+   "coverage": 0.5346062052505967
+  },
+  {
+   "mirna": "hsa-miR-15a-5p",
+   "n": 102,
+   "n_pos": 29,
+   "auroc_rnahybrid": 0.5011809163911195,
+   "auroc_cnn": 0.7779877184695323,
+   "coverage": 0.6764705882352942
+  },
+  {
+   "mirna": "hsa-miR-15b-5p",
+   "n": 52,
+   "n_pos": 12,
+   "auroc_rnahybrid": 0.5958333333333333,
+   "auroc_cnn": 0.7291666666666666,
+   "coverage": 0.6153846153846154
+  },
+  {
+   "mirna": "hsa-miR-16-5p",
+   "n": 148,
+   "n_pos": 36,
+   "auroc_rnahybrid": 0.5882936507936508,
+   "auroc_cnn": 0.6765873015873015,
+   "coverage": 0.5945945945945946
+  },
+  {
+   "mirna": "hsa-miR-17-5p",
+   "n": 220,
+   "n_pos": 49,
+   "auroc_rnahybrid": 0.4607948442534909,
+   "auroc_cnn": 0.6488841150495286,
+   "coverage": 0.5181818181818182
+  },
+  {
+   "mirna": "hsa-miR-181a-5p",
+   "n": 158,
+   "n_pos": 36,
+   "auroc_rnahybrid": 0.5758196721311475,
+   "auroc_cnn": 0.6505009107468124,
+   "coverage": 0.43037974683544306
+  },
+  {
+   "mirna": "hsa-miR-182-5p",
+   "n": 116,
+   "n_pos": 29,
+   "auroc_rnahybrid": 0.5513277843836702,
+   "auroc_cnn": 0.7308759413396749,
+   "coverage": 0.5258620689655172
+  },
+  {
+   "mirna": "hsa-miR-185-5p",
+   "n": 74,
+   "n_pos": 13,
+   "auroc_rnahybrid": 0.605296343001261,
+   "auroc_cnn": 0.6569987389659522,
+   "coverage": 0.5540540540540541
+  },
+  {
+   "mirna": "hsa-miR-192-5p",
+   "n": 60,
+   "n_pos": 19,
+   "auroc_rnahybrid": 0.6328626444159179,
+   "auroc_cnn": 0.675224646983312,
+   "coverage": 0.5166666666666667
+  },
+  {
+   "mirna": "hsa-miR-194-5p",
+   "n": 44,
+   "n_pos": 15,
+   "auroc_rnahybrid": 0.5597701149425287,
+   "auroc_cnn": 0.6758620689655173,
+   "coverage": 0.5681818181818182
+  },
+  {
+   "mirna": "hsa-miR-195-5p",
+   "n": 95,
+   "n_pos": 26,
+   "auroc_rnahybrid": 0.5863991081382386,
+   "auroc_cnn": 0.7725752508361204,
+   "coverage": 0.45263157894736844
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "n": 30,
+   "n_pos": 12,
+   "auroc_rnahybrid": 0.6898148148148149,
+   "auroc_cnn": 0.7916666666666667,
+   "coverage": 0.6
+  },
+  {
+   "mirna": "hsa-miR-199a-5p",
+   "n": 83,
+   "n_pos": 20,
+   "auroc_rnahybrid": 0.503968253968254,
+   "auroc_cnn": 0.719047619047619,
+   "coverage": 0.5421686746987951
+  },
+  {
+   "mirna": "hsa-miR-19a-3p",
+   "n": 91,
+   "n_pos": 27,
+   "auroc_rnahybrid": 0.5237268518518519,
+   "auroc_cnn": 0.7158564814814814,
+   "coverage": 0.5054945054945055
+  },
+  {
+   "mirna": "hsa-miR-19b-3p",
+   "n": 61,
+   "n_pos": 18,
+   "auroc_rnahybrid": 0.5381136950904393,
+   "auroc_cnn": 0.582687338501292,
+   "coverage": 0.5081967213114754
+  },
+  {
+   "mirna": "hsa-miR-200a-3p",
+   "n": 109,
+   "n_pos": 21,
+   "auroc_rnahybrid": 0.5346320346320346,
+   "auroc_cnn": 0.5746753246753247,
+   "coverage": 0.5137614678899083
+  },
+  {
+   "mirna": "hsa-miR-200b-3p",
+   "n": 137,
+   "n_pos": 37,
+   "auroc_rnahybrid": 0.5641891891891893,
+   "auroc_cnn": 0.6251351351351351,
+   "coverage": 0.46715328467153283
+  },
+  {
+   "mirna": "hsa-miR-200c-3p",
+   "n": 178,
+   "n_pos": 46,
+   "auroc_rnahybrid": 0.5725461133069828,
+   "auroc_cnn": 0.7119565217391304,
+   "coverage": 0.5112359550561798
+  },
+  {
+   "mirna": "hsa-miR-204-5p",
+   "n": 153,
+   "n_pos": 36,
+   "auroc_rnahybrid": 0.4925213675213675,
+   "auroc_cnn": 0.7559354226020892,
+   "coverage": 0.49019607843137253
+  },
+  {
+   "mirna": "hsa-miR-205-5p",
+   "n": 108,
+   "n_pos": 26,
+   "auroc_rnahybrid": 0.6149155722326454,
+   "auroc_cnn": 0.7439024390243902,
+   "coverage": 0.5370370370370371
+  },
+  {
+   "mirna": "hsa-miR-206",
+   "n": 37,
+   "n_pos": 15,
+   "auroc_rnahybrid": 0.5833333333333333,
+   "auroc_cnn": 0.5939393939393939,
+   "coverage": 0.5675675675675675
+  },
+  {
+   "mirna": "hsa-miR-20a-5p",
+   "n": 181,
+   "n_pos": 38,
+   "auroc_rnahybrid": 0.5151821862348178,
+   "auroc_cnn": 0.6624953993375046,
+   "coverage": 0.46408839779005523
+  },
+  {
+   "mirna": "hsa-miR-21-5p",
+   "n": 162,
+   "n_pos": 54,
+   "auroc_rnahybrid": 0.5813614540466392,
+   "auroc_cnn": 0.6930727023319616,
+   "coverage": 0.5864197530864198
+  },
+  {
+   "mirna": "hsa-miR-210-3p",
+   "n": 47,
+   "n_pos": 26,
+   "auroc_rnahybrid": 0.553113553113553,
+   "auroc_cnn": 0.6025641025641025,
+   "coverage": 0.48936170212765956
+  },
+  {
+   "mirna": "hsa-miR-214-3p",
+   "n": 128,
+   "n_pos": 25,
+   "auroc_rnahybrid": 0.4819417475728156,
+   "auroc_cnn": 0.661747572815534,
+   "coverage": 0.6171875
+  },
+  {
+   "mirna": "hsa-miR-218-5p",
+   "n": 97,
+   "n_pos": 28,
+   "auroc_rnahybrid": 0.5163043478260869,
+   "auroc_cnn": 0.724120082815735,
+   "coverage": 0.5051546391752577
+  },
+  {
+   "mirna": "hsa-miR-22-3p",
+   "n": 75,
+   "n_pos": 21,
+   "auroc_rnahybrid": 0.548941798941799,
+   "auroc_cnn": 0.7380952380952381,
+   "coverage": 0.5733333333333334
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "n": 105,
+   "n_pos": 34,
+   "auroc_rnahybrid": 0.503728251864126,
+   "auroc_cnn": 0.7464788732394366,
+   "coverage": 0.4857142857142857
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "n": 68,
+   "n_pos": 19,
+   "auroc_rnahybrid": 0.5064446831364124,
+   "auroc_cnn": 0.8023630504833512,
+   "coverage": 0.5588235294117647
+  },
+  {
+   "mirna": "hsa-miR-223-3p",
+   "n": 71,
+   "n_pos": 25,
+   "auroc_rnahybrid": 0.5534782608695652,
+   "auroc_cnn": 0.6582608695652173,
+   "coverage": 0.5633802816901409
+  },
+  {
+   "mirna": "hsa-miR-224-5p",
+   "n": 58,
+   "n_pos": 17,
+   "auroc_rnahybrid": 0.6111908177905307,
+   "auroc_cnn": 0.6901004304160688,
+   "coverage": 0.7068965517241379
+  },
+  {
+   "mirna": "hsa-miR-23a-3p",
+   "n": 91,
+   "n_pos": 27,
+   "auroc_rnahybrid": 0.47771990740740744,
+   "auroc_cnn": 0.7476851851851851,
+   "coverage": 0.5494505494505495
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "n": 184,
+   "n_pos": 31,
+   "auroc_rnahybrid": 0.4791271347248577,
+   "auroc_cnn": 0.6242884250474383,
+   "coverage": 0.5760869565217391
+  },
+  {
+   "mirna": "hsa-miR-25-3p",
+   "n": 41,
+   "n_pos": 14,
+   "auroc_rnahybrid": 0.5952380952380951,
+   "auroc_cnn": 0.8333333333333334,
+   "coverage": 0.6829268292682927
+  },
+  {
+   "mirna": "hsa-miR-26a-5p",
+   "n": 107,
+   "n_pos": 30,
+   "auroc_rnahybrid": 0.49956709956709966,
+   "auroc_cnn": 0.7212121212121212,
+   "coverage": 0.5046728971962616
+  },
+  {
+   "mirna": "hsa-miR-27a-3p",
+   "n": 90,
+   "n_pos": 23,
+   "auroc_rnahybrid": 0.5249837767683322,
+   "auroc_cnn": 0.7339390006489294,
+   "coverage": 0.5333333333333333
+  },
+  {
+   "mirna": "hsa-miR-29a-3p",
+   "n": 182,
+   "n_pos": 53,
+   "auroc_rnahybrid": 0.45487787041099903,
+   "auroc_cnn": 0.7311686412169079,
+   "coverage": 0.5604395604395604
+  },
+  {
+   "mirna": "hsa-miR-302a-3p",
+   "n": 54,
+   "n_pos": 9,
+   "auroc_rnahybrid": 0.5901234567901235,
+   "auroc_cnn": 0.7925925925925926,
+   "coverage": 0.5370370370370371
+  },
+  {
+   "mirna": "hsa-miR-30a-5p",
+   "n": 84,
+   "n_pos": 21,
+   "auroc_rnahybrid": 0.6500377928949357,
+   "auroc_cnn": 0.6681783824640968,
+   "coverage": 0.5
+  },
+  {
+   "mirna": "hsa-miR-31-5p",
+   "n": 119,
+   "n_pos": 32,
+   "auroc_rnahybrid": 0.5335847701149425,
+   "auroc_cnn": 0.7557471264367815,
+   "coverage": 0.5462184873949579
+  },
+  {
+   "mirna": "hsa-miR-320a",
+   "n": 45,
+   "n_pos": 10,
+   "auroc_rnahybrid": 0.56,
+   "auroc_cnn": 0.49714285714285716,
+   "coverage": 0.5777777777777777
+  },
+  {
+   "mirna": "hsa-miR-335-5p",
+   "n": 59,
+   "n_pos": 16,
+   "auroc_rnahybrid": 0.35101744186046513,
+   "auroc_cnn": 0.5901162790697674,
+   "coverage": 0.4915254237288136
+  },
+  {
+   "mirna": "hsa-miR-34a-5p",
+   "n": 203,
+   "n_pos": 50,
+   "auroc_rnahybrid": 0.5810457516339869,
+   "auroc_cnn": 0.7678431372549019,
+   "coverage": 0.6551724137931034
+  },
+  {
+   "mirna": "hsa-miR-375",
+   "n": 58,
+   "n_pos": 18,
+   "auroc_rnahybrid": 0.32499999999999996,
+   "auroc_cnn": 0.5763888888888888,
+   "coverage": 0.5344827586206896
+  },
+  {
+   "mirna": "hsa-miR-378a-3p",
+   "n": 36,
+   "n_pos": 8,
+   "auroc_rnahybrid": 0.3660714285714286,
+   "auroc_cnn": 0.6383928571428572,
+   "coverage": 0.6111111111111112
+  },
+  {
+   "mirna": "hsa-miR-424-5p",
+   "n": 103,
+   "n_pos": 25,
+   "auroc_rnahybrid": 0.5148717948717949,
+   "auroc_cnn": 0.8338461538461538,
+   "coverage": 0.6019417475728155
+  },
+  {
+   "mirna": "hsa-miR-429",
+   "n": 54,
+   "n_pos": 16,
+   "auroc_rnahybrid": 0.6175986842105262,
+   "auroc_cnn": 0.5904605263157895,
+   "coverage": 0.4444444444444444
+  },
+  {
+   "mirna": "hsa-miR-494-3p",
+   "n": 65,
+   "n_pos": 18,
+   "auroc_rnahybrid": 0.5065011820330969,
+   "auroc_cnn": 0.5768321513002365,
+   "coverage": 0.5076923076923077
+  },
+  {
+   "mirna": "hsa-miR-503-5p",
+   "n": 48,
+   "n_pos": 18,
+   "auroc_rnahybrid": 0.6055555555555555,
+   "auroc_cnn": 0.6370370370370371,
+   "coverage": 0.5833333333333334
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "n": 69,
+   "n_pos": 19,
+   "auroc_rnahybrid": 0.5389473684210526,
+   "auroc_cnn": 0.6926315789473684,
+   "coverage": 0.4782608695652174
+  },
+  {
+   "mirna": "hsa-miR-9-5p",
+   "n": 126,
+   "n_pos": 31,
+   "auroc_rnahybrid": 0.5385398981324279,
+   "auroc_cnn": 0.5714770797962648,
+   "coverage": 0.49206349206349204
+  },
+  {
+   "mirna": "hsa-miR-92a-3p",
+   "n": 81,
+   "n_pos": 18,
+   "auroc_rnahybrid": 0.48192239858906527,
+   "auroc_cnn": 0.6754850088183422,
+   "coverage": 0.5432098765432098
+  },
+  {
+   "mirna": "hsa-miR-93-5p",
+   "n": 64,
+   "n_pos": 14,
+   "auroc_rnahybrid": 0.5421428571428571,
+   "auroc_cnn": 0.7542857142857142,
+   "coverage": 0.5625
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "n": 49,
+   "n_pos": 14,
+   "auroc_rnahybrid": 0.4530612244897959,
+   "auroc_cnn": 0.6734693877551021,
+   "coverage": 0.5510204081632653
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "n": 30,
+   "n_pos": 10,
+   "auroc_rnahybrid": 0.6125,
+   "auroc_cnn": 0.61,
+   "coverage": 0.5666666666666667
+  }
+ ]
+}

@@ -14,7 +14,8 @@
 16. MyGene.info batch API - RefSeq->symbol mapping for miRDB (scripts/mygene_map.py)
 17. TarBase v9.0 (DIANA) - second independent validation labels, results/tarbase_benchmark.json
 18. Human Protein Atlas cell-line RNA atlas (rna_celline.tsv.zip, HEK293 nTPM) - expression confound control, results/expression_confound.json
-Count: 17 (18 raw entries minus pytest infrastructure). Planned: miRWalk, RNAhybrid.
+19. RNAhybrid 2.1.2 (Debian jammy .deb, -s 3utr_human) - pure-thermodynamics benchmark arm on miRTarBase rows, results/rnahybrid_benchmark.json
+Count: 18 (19 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred), miRanda.
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
