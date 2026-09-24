@@ -1,0 +1,22 @@
+{
+ "n_sites": 80000,
+ "n_train": 64033,
+ "n_test": 15967,
+ "split": "held-out genes (20%)",
+ "site_type_mean": {
+  "pearson": 0.3548351526260376,
+  "spearman": 0.3108101779891042,
+  "rmse": 0.12356828153133392
+ },
+ "ridge_onehot": {
+  "pearson": 0.6644484216896437,
+  "spearman": 0.6729216989354866,
+  "rmse": 0.09879043672530498
+ },
+ "duplex_cnn": {
+  "pearson": 0.669306755065918,
+  "spearman": 0.6664850482950415,
+  "rmse": 0.09931158274412155
+ },
+ "cnn_train_seconds": 373.5
+}

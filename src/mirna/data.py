@@ -47,6 +47,17 @@ def utr_window(utr: str, start: int, end: int, win: int = WIN) -> str:
     return seg
 
 
+def site_features(utr: str, start: int, end: int) -> np.ndarray:
+    """Scalar site context features used by the context++ family of models:
+    log UTR length, log distance to the nearest UTR end, relative position, and
+    local AU content in +-30 nt flanks (Grimson et al. 2007)."""
+    L = len(utr)
+    d_end = min(start - 1, L - end)
+    fl = utr[max(0, start - 31):start - 1] + utr[end:end + 30]
+    au = (fl.count("A") + fl.count("U")) / max(1, len(fl))
+    return np.array([np.log1p(L), np.log1p(max(d_end, 0)), start / max(L, 1), au], dtype=np.float32)
+
+
 def build(sites_path: Path, utrs: dict, mirs: dict, max_rows: int | None = None, seed: int = 0):
     rows = []
     with open(sites_path) as fh:
@@ -63,8 +74,9 @@ def build(sites_path: Path, utrs: dict, mirs: dict, max_rows: int | None = None,
     ST = np.array([st for *_, st, s, e, c in [(r[0], r[1], r[2], r[3], r[4], r[5], r[6]) for r in rows]], dtype=np.int64)
     y = np.array([r[6] for r in rows], dtype=np.float32)
     genes = np.array([r[1] for r in rows])
+    F = np.stack([site_features(utrs[r[0]], r[4], r[5]) for r in rows])
     meta = rows
-    return U, M, ST, y, genes, meta
+    return U, M, ST, y, genes, meta, F
 
 
 def gene_split(genes: np.ndarray, frac_test: float = 0.2, seed: int = 0):

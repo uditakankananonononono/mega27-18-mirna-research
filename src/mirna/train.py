@@ -19,9 +19,10 @@ def metrics(y, p):
             "rmse": float(np.sqrt(np.mean((y - p) ** 2)))}
 
 
-def fit_cnn(U, M, ST, y, tr, epochs=6, seed=0, bs=256, lr=2e-3, log=print):
+def fit_cnn(U, M, ST, y, tr, epochs=6, seed=0, bs=256, lr=2e-3, log=print, F=None):
     torch.manual_seed(seed)
-    net = DuplexCNN()
+    net = DuplexCNN(n_feat=0 if F is None else F.shape[1])
+    Ft = None if F is None else torch.from_numpy(F)
     opt = torch.optim.Adam(net.parameters(), lr=lr)
     Ut, Mt, St, yt = map(torch.from_numpy, (U, M, ST, y))
     for ep in range(epochs):
@@ -29,18 +30,18 @@ def fit_cnn(U, M, ST, y, tr, epochs=6, seed=0, bs=256, lr=2e-3, log=print):
         net.train(); tot = 0.0
         for i in range(0, len(perm), bs):
             b = torch.from_numpy(perm[i:i + bs])
-            loss = ((net(Ut[b], Mt[b], St[b]) - yt[b]) ** 2).mean()
+            loss = ((net(Ut[b], Mt[b], St[b], None if Ft is None else Ft[b]) - yt[b]) ** 2).mean()
             opt.zero_grad(); loss.backward(); opt.step(); tot += loss.item() * len(b)
         log(f"epoch {ep} mse {tot/len(perm):.4f}")
     return net
 
 
-def predict(net, U, M, ST, idx, bs=1024):
+def predict(net, U, M, ST, idx, bs=1024, F=None):
     net.eval(); out = []
     with torch.no_grad():
         for i in range(0, len(idx), bs):
             b = torch.from_numpy(idx[i:i + bs])
-            out.append(net(torch.from_numpy(U)[b], torch.from_numpy(M)[b], torch.from_numpy(ST)[b]).numpy())
+            out.append(net(torch.from_numpy(U)[b], torch.from_numpy(M)[b], torch.from_numpy(ST)[b], None if F is None else torch.from_numpy(F)[b]).numpy())
     return np.concatenate(out)
 
 
@@ -48,7 +49,7 @@ def main(max_rows=80000, epochs=6):
     d = ROOT / "data"
     mirs = load_mirnas(d / "miR_Family_Info.txt")
     utrs = load_utrs(d / "human_utrs.tsv")
-    U, M, ST, y, genes, meta = build(d / "human_sites.tsv", utrs, mirs, max_rows=max_rows)
+    U, M, ST, y, genes, meta, F = build(d / "human_sites.tsv", utrs, mirs, max_rows=max_rows)
     ST = ST.clip(0, 3)
     tr, te = gene_split(genes)
     print("n", len(y), "train", len(tr), "test", len(te), flush=True)
@@ -61,10 +62,16 @@ def main(max_rows=80000, epochs=6):
     X = np.concatenate([U.reshape(len(y), -1), M.reshape(len(y), -1), np.eye(4)[ST]], 1)
     rg = Ridge(alpha=10.0).fit(X[tr], y[tr])
     res["ridge_onehot"] = metrics(y[te], rg.predict(X[te]))
+    mu, sd = F[tr].mean(0), F[tr].std(0) + 1e-6
+    F = ((F - mu) / sd).astype(np.float32)
+    Xf = np.concatenate([X, F], 1)
+    rg2 = Ridge(alpha=10.0).fit(Xf[tr], y[tr])
+    res["ridge_onehot_plus_context"] = metrics(y[te], rg2.predict(Xf[te]))
+    print("ridge", res["ridge_onehot"], res["ridge_onehot_plus_context"], flush=True)
     t0 = time.time()
-    net = fit_cnn(U, M, ST, y, tr, epochs=epochs, log=lambda s: print(s, flush=True))
-    p = predict(net, U, M, ST, te)
-    res["duplex_cnn"] = metrics(y[te], p)
+    net = fit_cnn(U, M, ST, y, tr, epochs=epochs, log=lambda s: print(s, flush=True), F=F)
+    p = predict(net, U, M, ST, te, F=F)
+    res["duplex_cnn_plus_context"] = metrics(y[te], p)
     res["cnn_train_seconds"] = round(time.time() - t0, 1)
     print(json.dumps(res, indent=1), flush=True)
     (ROOT / "results").mkdir(exist_ok=True)

@@ -19,7 +19,7 @@ def pair_map(u: torch.Tensor, m: torch.Tensor) -> torch.Tensor:
 
 
 class DuplexCNN(nn.Module):
-    def __init__(self, n_site_types: int = 4, width: int = 32):
+    def __init__(self, n_site_types: int = 4, width: int = 32, n_feat: int = 0):
         super().__init__()
         self.utr = nn.Sequential(nn.Conv1d(4, width, 7, padding=3), nn.ReLU(),
                                  nn.Conv1d(width, width, 5, padding=2), nn.ReLU(),
@@ -31,9 +31,12 @@ class DuplexCNN(nn.Module):
                                   nn.Conv2d(width, width, 3, padding=1), nn.ReLU(),
                                   nn.AdaptiveMaxPool2d(1))
         self.st = nn.Embedding(n_site_types, 8)
-        self.head = nn.Sequential(nn.Linear(3 * width + 8, 64), nn.ReLU(), nn.Linear(64, 1))
+        self.head = nn.Sequential(nn.Linear(3 * width + 8 + n_feat, 64), nn.ReLU(), nn.Linear(64, 1))
 
-    def forward(self, u, m, st):
-        h = torch.cat([self.utr(u).flatten(1), self.mir(m).flatten(1),
-                       self.pair(pair_map(u, m)).flatten(1), self.st(st)], 1)
+    def forward(self, u, m, st, f=None):
+        parts = [self.utr(u).flatten(1), self.mir(m).flatten(1),
+                       self.pair(pair_map(u, m)).flatten(1), self.st(st)]
+        if f is not None:
+            parts.append(f)
+        h = torch.cat(parts, 1)
         return self.head(h).squeeze(1)
