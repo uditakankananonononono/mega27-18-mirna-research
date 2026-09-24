@@ -10,7 +10,7 @@ within-miRNA permutation null matches the real CNN columns).
 Unit = (miRNA, gene). Genes with ANY TargetScan conserved site for a miRNA sharing
 the same seed are excluded, so the CLIP label cannot come from a conserved site.
 """
-import csv, json, sys, time, urllib.request
+import csv, json, os, sys, time, urllib.request
 from pathlib import Path
 import numpy as np
 import torch
@@ -29,6 +29,10 @@ PANEL = ["hsa-miR-7-5p", "hsa-let-7a-5p", "hsa-miR-21-5p", "hsa-miR-17-5p", "hsa
          "hsa-miR-29a-3p", "hsa-miR-30a-5p", "hsa-miR-103a-3p", "hsa-miR-124-3p", "hsa-miR-125b-5p",
          "hsa-miR-130a-3p", "hsa-miR-137", "hsa-miR-142-3p", "hsa-miR-155-5p", "hsa-miR-181a-5p",
          "hsa-miR-199a-5p", "hsa-miR-200c-3p", "hsa-miR-221-3p", "hsa-miR-23a-3p", "hsa-miR-1-3p"]
+if os.environ.get("CLIP_PANEL_JSON"):
+    _ext = json.load(open(os.environ["CLIP_PANEL_JSON"]))
+    PANEL = sorted(set(PANEL) | set(_ext.get("kept_new", {})))
+OUT_PATH = os.environ.get("CLIP_OUT", str(ROOT / "results" / "clip_falsification.json"))
 COMP = str.maketrans("ACGU", "UGCA")
 def rc(s): return s.translate(COMP)[::-1]
 
@@ -148,8 +152,8 @@ def main():
     y = np.array([r[7] for r in rows])
     mids = np.array([mir_idx[r[0]] for r in rows])
     base = np.column_stack([np.log1p([r[4] for r in rows]), np.log1p([r[5] for r in rows]),
-                            np.log([max(r[6], 1) for r in rows]), np.eye(len(mir_idx))[mids]])
-    cnn = np.column_stack([[r[2] for r in rows], [r[3] for r in rows]])
+                            np.log([max(r[6], 1) for r in rows]), np.eye(len(mir_idx), dtype=np.float32)[mids]]).astype(np.float32)
+    cnn = np.column_stack([[r[2] for r in rows], [r[3] for r in rows]]).astype(np.float32)
 
     def cv_pred(X):
         p = np.zeros(len(y))
@@ -181,7 +185,7 @@ def main():
            "per_mirna": per_mir}
     out["verdict"] = ("H0 rejected: CNN adds CLIP signal" if out["delta_ci95"][0] > 0 and a_f > out["perm_null_auroc_max"]
                       else "H0 NOT rejected: CNN adds no CLIP signal beyond covariates (negative kept)")
-    json.dump(out, open(ROOT / "results" / "clip_falsification.json", "w"), indent=1)
+    json.dump(out, open(OUT_PATH, "w"), indent=1)
     print(json.dumps({k: v for k, v in out.items() if k not in ("per_mirna", "hypothesis")}, indent=1))
 
 

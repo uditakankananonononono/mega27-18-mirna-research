@@ -1,0 +1,4 @@
+#please cite:
+#Keren Zhou, Junhong Huang, Shurong Liu, Wujian Zheng, Shun Liu, Yinghao Xing, Yinan Cao, Yibo Chen, Xinping Hu, Li Cai, Jie Zhou, Penghui Lin, Jiajia Xuan, Fangzhou Xie, Lahong Xu, Junhao Li, Lingling Zheng, Lianghu Qu, Jianjun Chen, Bin Li, and Jianhua Yang, An Encyclopedic Regulatory and Functional Atlas of RNA Interactomes, Nature Methods (2026).
+miRNAid	miRNAname	geneID	geneName	geneType	chromosome	narrowStart	narrowEnd	broadStart	broadEnd	strand	clipExpNum	degraExpNum	RBP	PITA	RNA22	miRmap	microT	miRanda	PicTar	TargetScan	TDMDScore	phyloP	pancancerNum	cellline/tissue
+The "miRNA" parameter haven't been set correctly! Or the input of "miRNA" parameter is not available!
