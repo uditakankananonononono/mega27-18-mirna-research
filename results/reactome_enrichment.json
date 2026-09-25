@@ -1,0 +1,971 @@
+{
+ "tool": "Reactome AnalysisService (reactome.org)",
+ "reactome_version": "97",
+ "K": 200,
+ "panel": [
+  "hsa-let-7a-5p",
+  "hsa-miR-1-3p",
+  "hsa-miR-122-5p",
+  "hsa-miR-125b-5p",
+  "hsa-miR-145-5p",
+  "hsa-miR-155-5p",
+  "hsa-miR-16-5p",
+  "hsa-miR-17-5p",
+  "hsa-miR-19a-3p",
+  "hsa-miR-200c-3p",
+  "hsa-miR-21-5p",
+  "hsa-miR-34a-5p",
+  "hsa-miR-92a-3p"
+ ],
+ "gates": {
+  "G1_cellcycle_nsig": 205,
+  "G1_top": [
+   [
+    "R-HSA-9659787",
+    "Aberrant regulation of mitotic G1/S transition in cancer due to RB1 defects",
+    2.6645352591003757e-15
+   ],
+   [
+    "R-HSA-9661069",
+    "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+    2.6645352591003757e-15
+   ],
+   [
+    "R-HSA-69206",
+    "G1/S Transition",
+    2.6645352591003757e-15
+   ]
+  ],
+  "G1_pass": false,
+  "G2_median_uniform_nsig": 0.0,
+  "G2_pass": true,
+  "G3_median_not_found": 0.3975,
+  "G3_pass": false
+ },
+ "H1_cnn_vs_uniform": {
+  "wins": 3,
+  "losses": 6,
+  "ties_excluded": true,
+  "p_one_sided": 0.91015625,
+  "verdict": "FALSIFIED"
+ },
+ "H2_cnn_vs_sitecount": {
+  "wins": 2,
+  "losses": 2,
+  "ties_excluded": true,
+  "p_one_sided": 0.6875,
+  "verdict": "FALSIFIED"
+ },
+ "H3_cnn_vs_exprmatched": {
+  "wins": 4,
+  "losses": 6,
+  "ties_excluded": true,
+  "p_one_sided": 0.828125,
+  "verdict": "FALSIFIED"
+ },
+ "per_mirna": {
+  "hsa-let-7a-5p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.385
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.43
+   },
+   "matched": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.435
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.43
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.415
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.415
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.405
+    },
+    {
+     "n_sig": 1,
+     "top": [
+      [
+       "R-HSA-8939246",
+       "RUNX1 regulates transcription of genes involved in differentiation of myeloid cells",
+       0.017739812148825806
+      ]
+     ],
+     "not_found_frac": 0.405
+    }
+   ],
+   "matched_mean": 0.0,
+   "uniform_mean": 0.3333333333333333
+  },
+  "hsa-miR-1-3p": {
+   "cnn": {
+    "n_sig": 19,
+    "top": [
+     [
+      "R-HSA-9842860",
+      "Regulation of endogenous retroelements",
+      0.0023047744325879194
+     ],
+     [
+      "R-HSA-5250924",
+      "B-WICH complex positively regulates rRNA expression",
+      0.005108753323459503
+     ],
+     [
+      "R-HSA-73772",
+      "RNA Polymerase I Promoter Escape",
+      0.005108753323459503
+     ]
+    ],
+    "not_found_frac": 0.485
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.41
+   },
+   "matched": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.415
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.375
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.445
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.405
+    },
+    {
+     "n_sig": 4,
+     "top": [
+      [
+       "R-HSA-1253288",
+       "Downregulation of ERBB4 signaling",
+       0.022014047012615112
+      ],
+      [
+       "R-HSA-9759811",
+       "Regulation of CDH11 mRNA translation by microRNAs",
+       0.022014047012615112
+      ],
+      [
+       "R-HSA-2173788",
+       "Downregulation of TGF-beta receptor signaling",
+       0.022014047012615112
+      ]
+     ],
+     "not_found_frac": 0.445
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.395
+    }
+   ],
+   "matched_mean": 0.0,
+   "uniform_mean": 1.3333333333333333
+  },
+  "hsa-miR-122-5p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.46
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.365
+   },
+   "matched": [
+    {
+     "n_sig": 1,
+     "top": [
+      [
+       "R-HSA-9022699",
+       "MECP2 regulates neuronal receptors and channels",
+       0.004135674293471725
+      ]
+     ],
+     "not_found_frac": 0.415
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.425
+    },
+    {
+     "n_sig": 1,
+     "top": [
+      [
+       "R-HSA-210747",
+       "Regulation of gene expression in early pancreatic precursor cells",
+       0.027378472307069357
+      ]
+     ],
+     "not_found_frac": 0.42
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.37
+    },
+    {
+     "n_sig": 1,
+     "top": [
+      [
+       "R-HSA-9761174",
+       "Formation of intermediate mesoderm",
+       0.02576622997940259
+      ]
+     ],
+     "not_found_frac": 0.395
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.495
+    }
+   ],
+   "matched_mean": 0.6666666666666666,
+   "uniform_mean": 0.3333333333333333
+  },
+  "hsa-miR-125b-5p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.495
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.42
+   },
+   "matched": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.39
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.4
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.455
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.415
+    },
+    {
+     "n_sig": 1,
+     "top": [
+      [
+       "R-HSA-9022707",
+       "MECP2 regulates transcription factors",
+       0.008883885232137345
+      ]
+     ],
+     "not_found_frac": 0.425
+    },
+    {
+     "n_sig": 11,
+     "top": [
+      [
+       "R-HSA-209543",
+       "p75NTR recruits signalling complexes",
+       0.024243171672469588
+      ],
+      [
+       "R-HSA-5654741",
+       "Signaling by FGFR3",
+       0.024243171672469588
+      ],
+      [
+       "R-HSA-5654732",
+       "Negative regulation of FGFR3 signaling",
+       0.024243171672469588
+      ]
+     ],
+     "not_found_frac": 0.375
+    }
+   ],
+   "matched_mean": 0.0,
+   "uniform_mean": 4.0
+  },
+  "hsa-miR-145-5p": {
+   "cnn": {
+    "n_sig": 1,
+    "top": [
+     [
+      "R-HSA-428359",
+      "Insulin-like Growth Factor-2 mRNA Binding Proteins (IGF2BPs/IMPs/VICKZs) bind RNA",
+      0.0009666875096201455
+     ]
+    ],
+    "not_found_frac": 0.43
+   },
+   "sitecount": {
+    "n_sig": 2,
+    "top": [
+     [
+      "R-HSA-428359",
+      "Insulin-like Growth Factor-2 mRNA Binding Proteins (IGF2BPs/IMPs/VICKZs) bind RNA",
+      0.0011772655410418054
+     ],
+     [
+      "R-HSA-5633008",
+      "TP53 Regulates Transcription of Cell Death Genes",
+      0.011964472273533255
+     ]
+    ],
+    "not_found_frac": 0.355
+   },
+   "matched": [
+    {
+     "n_sig": 1,
+     "top": [
+      [
+       "R-HSA-5633008",
+       "TP53 Regulates Transcription of Cell Death Genes",
+       0.019592185059106093
+      ]
+     ],
+     "not_found_frac": 0.46
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.435
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.38
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.425
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.415
+    },
+    {
+     "n_sig": 59,
+     "top": [
+      [
+       "R-HSA-5619107",
+       "Defective TPR may confer susceptibility towards thyroid papillary carcinoma (TPC)",
+       0.003627348414388387
+      ],
+      [
+       "R-HSA-1855196",
+       "IP3 and IP4 transport between cytosol and nucleus",
+       0.003627348414388387
+      ],
+      [
+       "R-HSA-1855229",
+       "IP6 and IP7 transport between cytosol and nucleus",
+       0.003627348414388387
+      ]
+     ],
+     "not_found_frac": 0.3
+    }
+   ],
+   "matched_mean": 0.3333333333333333,
+   "uniform_mean": 19.666666666666668
+  },
+  "hsa-miR-155-5p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.33
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.315
+   },
+   "matched": [
+    {
+     "n_sig": 2,
+     "top": [
+      [
+       "R-HSA-9927426",
+       "Developmental Lineage of Mammary Gland Alveolar Cells",
+       0.023421586289186558
+      ],
+      [
+       "R-HSA-9927418",
+       "Developmental Lineage of Mammary Gland Luminal Epithelial Cells",
+       0.03457337554891138
+      ]
+     ],
+     "not_found_frac": 0.42
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.365
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.39
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.355
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.435
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.335
+    }
+   ],
+   "matched_mean": 0.6666666666666666,
+   "uniform_mean": 0.0
+  },
+  "hsa-miR-16-5p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.375
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.385
+   },
+   "matched": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.405
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.39
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.44
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.385
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.39
+    },
+    {
+     "n_sig": 115,
+     "top": [
+      [
+       "R-HSA-8876493",
+       "InlA-mediated entry of Listeria monocytogenes into host cells",
+       0.00982851852977662
+      ],
+      [
+       "R-HSA-9958810",
+       "SRC activates STAT3 in a quantitative manner, through Cadherin-11 (CDH11), RAC1 and gp130 (IL6ST)",
+       0.00982851852977662
+      ],
+      [
+       "R-HSA-5684264",
+       "MAP3K8 (TPL2)-dependent MAPK1/3 activation",
+       0.00982851852977662
+      ]
+     ],
+     "not_found_frac": 0.38
+    }
+   ],
+   "matched_mean": 0.0,
+   "uniform_mean": 38.333333333333336
+  },
+  "hsa-miR-17-5p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.38
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.48
+   },
+   "matched": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.435
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.385
+    },
+    {
+     "n_sig": 5,
+     "top": [
+      [
+       "R-HSA-5617472",
+       "Activation of anterior HOX genes in hindbrain development during early embryogenesis",
+       0.02761430626316841
+      ],
+      [
+       "R-HSA-5619507",
+       "Activation of HOX genes during differentiation",
+       0.02761430626316841
+      ],
+      [
+       "R-HSA-6806003",
+       "Regulation of TP53 Expression and Degradation",
+       0.02761430626316841
+      ]
+     ],
+     "not_found_frac": 0.33
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.43
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.465
+    },
+    {
+     "n_sig": 3,
+     "top": [
+      [
+       "R-HSA-3371568",
+       "Attenuation phase",
+       0.006618146034932937
+      ],
+      [
+       "R-HSA-3371571",
+       "HSF1-dependent transactivation",
+       0.011199022341904286
+      ],
+      [
+       "R-HSA-5633008",
+       "TP53 Regulates Transcription of Cell Death Genes",
+       0.011199022341904286
+      ]
+     ],
+     "not_found_frac": 0.375
+    }
+   ],
+   "matched_mean": 1.6666666666666667,
+   "uniform_mean": 1.0
+  },
+  "hsa-miR-19a-3p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.375
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.35
+   },
+   "matched": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.35
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.35
+    },
+    {
+     "n_sig": 5,
+     "top": [
+      [
+       "R-HSA-8851708",
+       "Signaling by FGFR2 IIIa TM",
+       0.0011786302384885206
+      ],
+      [
+       "R-HSA-1839126",
+       "FGFR2 mutant receptor activation",
+       0.001307339757246062
+      ],
+      [
+       "R-HSA-5655253",
+       "Signaling by FGFR2 in disease",
+       0.005928349656774801
+      ]
+     ],
+     "not_found_frac": 0.41
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.415
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.41
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.4
+    }
+   ],
+   "matched_mean": 1.6666666666666667,
+   "uniform_mean": 0.0
+  },
+  "hsa-miR-200c-3p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.42
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.385
+   },
+   "matched": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.445
+    },
+    {
+     "n_sig": 1,
+     "top": [
+      [
+       "R-HSA-8941332",
+       "RUNX2 regulates genes involved in cell migration",
+       0.0014013870872102707
+      ]
+     ],
+     "not_found_frac": 0.43
+    },
+    {
+     "n_sig": 2,
+     "top": [
+      [
+       "R-HSA-9909648",
+       "Regulation of PD-L1(CD274) expression",
+       0.003782369661669893
+      ],
+      [
+       "R-HSA-389948",
+       "Co-inhibition by PD-1",
+       0.007900704409764536
+      ]
+     ],
+     "not_found_frac": 0.375
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.45
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.47
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.355
+    }
+   ],
+   "matched_mean": 1.0,
+   "uniform_mean": 0.0
+  },
+  "hsa-miR-21-5p": {
+   "cnn": {
+    "n_sig": 1,
+    "top": [
+     [
+      "R-HSA-5660668",
+      "CLEC7A/inflammasome pathway",
+      0.0033150288997403354
+     ]
+    ],
+    "not_found_frac": 0.43
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.37
+   },
+   "matched": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.28
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.36
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.345
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.395
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.36
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.31
+    }
+   ],
+   "matched_mean": 0.0,
+   "uniform_mean": 0.0
+  },
+  "hsa-miR-34a-5p": {
+   "cnn": {
+    "n_sig": 1,
+    "top": [
+     [
+      "R-HSA-9008059",
+      "Interleukin-37 signaling",
+      0.011682262036201818
+     ]
+    ],
+    "not_found_frac": 0.365
+   },
+   "sitecount": {
+    "n_sig": 3,
+    "top": [
+     [
+      "R-HSA-9759475",
+      "Regulation of CDH11 Expression and Function",
+      0.013615403877145993
+     ],
+     [
+      "R-HSA-9764260",
+      "Regulation of Expression and Function of Type II Classical Cadherins",
+      0.013615403877145993
+     ],
+     [
+      "R-HSA-9759811",
+      "Regulation of CDH11 mRNA translation by microRNAs",
+      0.019167015449780056
+     ]
+    ],
+    "not_found_frac": 0.36
+   },
+   "matched": [
+    {
+     "n_sig": 2,
+     "top": [
+      [
+       "R-HSA-3371511",
+       "HSF1 activation",
+       0.023769650349232174
+      ],
+      [
+       "R-HSA-3371568",
+       "Attenuation phase",
+       0.023769650349232174
+      ]
+     ],
+     "not_found_frac": 0.41
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.455
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.45
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.44
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.385
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.395
+    }
+   ],
+   "matched_mean": 0.6666666666666666,
+   "uniform_mean": 0.0
+  },
+  "hsa-miR-92a-3p": {
+   "cnn": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.385
+   },
+   "sitecount": {
+    "n_sig": 0,
+    "top": [],
+    "not_found_frac": 0.365
+   },
+   "matched": [
+    {
+     "n_sig": 4,
+     "top": [
+      [
+       "R-HSA-9759475",
+       "Regulation of CDH11 Expression and Function",
+       0.009735528743213262
+      ],
+      [
+       "R-HSA-9764260",
+       "Regulation of Expression and Function of Type II Classical Cadherins",
+       0.009735528743213262
+      ],
+      [
+       "R-HSA-9762293",
+       "Regulation of CDH11 gene transcription",
+       0.009735528743213262
+      ]
+     ],
+     "not_found_frac": 0.355
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.375
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.42
+    }
+   ],
+   "uniform": [
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.385
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.34
+    },
+    {
+     "n_sig": 0,
+     "top": [],
+     "not_found_frac": 0.385
+    }
+   ],
+   "matched_mean": 1.3333333333333333,
+   "uniform_mean": 0.0
+  }
+ },
+ "posthoc_gate_review": {
+  "note": "post-hoc review of failed gates; hypotheses verdicts left as computed but flagged as run under failed gates",
+  "G1_cellcycle_named_pathways_anywhere": [
+   "Cell Cycle, Mitotic",
+   "Cell Cycle",
+   "Cell Cycle Checkpoints",
+   "TP53 Regulates Transcription of Cell Cycle Genes",
+   "TP53 Regulates Transcription of Genes Involved in G1 Cell Cycle Arrest",
+   "PTK6 Regulates Cell Cycle",
+   "TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest"
+  ],
+  "G1_failure_reason": "top-3 list is tie-ordered at FDR 2.7e-15; the rule inspected only the top 3",
+  "G3_failure_reason": "Reactome projection does not map ~40% of queried genes (pathway coverage), so the 0.10 threshold was mis-set",
+  "verdict_status": "INCONCLUSIVE under pre-registered gates"
+ }
+}

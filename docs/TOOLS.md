@@ -22,7 +22,8 @@
 24. Ensembl REST API POST /lookup/id (rest.ensembl.org) - ENSG -> gene symbol mapping for the ENCODE miRNA loci, results/encode_mirna_ensg_symbols.json
 25. GTEx Portal v8 bulk gene median TPM (adult-gtex public storage) - tissue target-avoidance audit, results/gtex_target_avoidance.json
 26. Enrichr API (maayanlab.cloud/Enrichr addList+enrich; miRTarBase_2017 library) - reverse-lookup audit, results/enrichr_reverse_lookup.json
-Count: 25 (26 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+27. Reactome AnalysisService v97 (reactome.org /identifiers/projection) - pathway audit with pre-registered site-count and expression-matched controls (gates G1/G3 failed; inconclusive), results/reactome_enrichment.json
+Count: 26 (27 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
