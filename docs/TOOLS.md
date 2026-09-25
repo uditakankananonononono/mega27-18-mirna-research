@@ -27,7 +27,8 @@
 29. OmniPath web service (omnipathdb.org /interactions, datasets=mirnatarget) - independent non-miRTarBase curated labels, results/omnipath_independent.json
 30. UniProt REST API (rest.uniprot.org, release 2026_03; KW-0805 + reviewed human stream) - transcription-regulator enrichment audit, results/uniprot_tf_enrichment.json
 31. gnomAD v2.1.1 constraint table (LOEUF, gcp-public-data--gnomad bucket) - LoF-constraint audit, results/gnomad_constraint.json
-Count: 30 (31 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+32. ClinGen Dosage Sensitivity curation (ftp.clinicalgenome.org, 24 Sep 2026) - independent HI-gene test of the gnomAD finding, results/clingen_dosage.json
+Count: 31 (32 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -47,4 +48,5 @@ Count: 30 (31 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 301. UniProtKB reviewed human KW-0805 stream (2,375 entries, bulk query, counted once)
 302. UniProtKB reviewed human proteome gene list (20,431 entries, bulk query, counted once)
 303. gnomAD v2.1.1 lof_metrics.by_gene (bulk file, counted once)
-Count: 303. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+304. ClinGen gene curation list GRCh38 (bulk file, counted once)
+Count: 304. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
