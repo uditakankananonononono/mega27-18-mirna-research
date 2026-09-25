@@ -1,0 +1,8 @@
+\subsection{Paralog buffering (Ensembl BioMart): no paralog excess; both gates failed}
+Genes with paralogs can be buffered against dosage changes, so one explanation of the depletion is that CNN candidates have more paralogs. We counted human paralogues per gene from Ensembl BioMart (\texttt{biomart\_paralogs}, committed before running; 43 miRNAs; statistic median $\log_2(1+\text{paralogs})$). Both gates failed: 89.5\% of universe symbols were found (bar 90\%), and conserved targets did not differ from random genes (12/24, two-sided $p=0.065$).
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test (G1, G2 failed) & wins/losses & $p$ & median diff. & verdict\\\hline
+B1 more paralogs than uniform & 22/20 & $0.439$ & +0.014 & FALSIFIED \\
+B2 more paralogs than expression-matched & 17/24 & $0.894$ & -0.044 & FALSIFIED \\
+B3 LOEUF higher than paralog-matched & 43/0 & $1.1\times10^{-13}$ & +0.187 & CONFIRMED \\
+\hline\end{tabular}\caption{Paralog counts of CNN top-200 sets, 43 miRNAs.}\label{tab:biomart}\end{table}
+CNN candidates have no paralog excess (B1, B2 falsified), and the LOEUF depletion stays at 43/0 against paralog-matched sets. With both gates failed we give these results little weight, but nothing here supports paralog buffering as the explanation.
