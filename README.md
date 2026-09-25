@@ -8,7 +8,7 @@ Code, data manifests, results and paper for item 18 of MEGA27.
 - `results/` - committed JSON outputs. Every number in the paper comes from these files.
 - `paper/main.tex`, `paper/main.pdf` - 32-page draft paper (Nimbus Roman in the current PDF, not embedded Times New Roman; numbered equations, figures, 28 documented negatives).
 - `docs/TOOLS.md` - audit-corrected ledger: at most 40 distinct science/data tools pending direct-use verification; 317 record-level entries, not independent studies, with the 120-dataset gate conditional on direct-use criteria.
-- `tests/` - hermetic pytest suite (`python3 -m pytest -q tests`).
+- `tests/` - 101 passing hermetic tests plus one skipped named-gene integration test when original TargetScan inputs are absent (`python3 -m pytest -q tests`).
 
 ## Shipped tool: `mirtarget-score`
 ```

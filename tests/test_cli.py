@@ -10,8 +10,18 @@ def run_cli(*args):
                           capture_output=True, text=True, env=ENV, timeout=600)
 
 
-def test_known_sponge_hit():
-    """miR-7-5p -> CDR1as must rank with strongly negative scores (paper discovery)."""
+def test_named_target_mode_reports_missing_original_inputs():
+    """Named target mode cannot run without its unbundled TargetScan inputs."""
+    r = run_cli("--mirna", "hsa-miR-7-5p", "--gene", "CDR1as", "--top", "5")
+    assert r.returncode != 0
+    assert "TargetScan miR_Family_Info.txt is absent" in r.stderr
+
+def test_known_sponge_hit_with_original_inputs():
+    """Integration test, only if original TargetScan inputs are mounted."""
+    data = REPO / "data"
+    if not all((data / name).is_file() for name in ("miR_Family_Info.txt", "human_utrs.tsv")):
+        import pytest
+        pytest.skip("original TargetScan files not bundled; no scientific fixture substituted")
     r = run_cli("--mirna", "hsa-miR-7-5p", "--gene", "CDR1as", "--top", "5")
     assert r.returncode == 0, r.stderr
     out = json.loads(r.stdout)
