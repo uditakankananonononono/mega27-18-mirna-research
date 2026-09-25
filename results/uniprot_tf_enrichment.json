@@ -1,0 +1,382 @@
+{
+ "tool": "UniProt REST API (rest.uniprot.org, KW-0805)",
+ "uniprot_release": "2026_03",
+ "n_tf": 2374,
+ "n_reviewed": 20190,
+ "K": 200,
+ "panel": [
+  "hsa-let-7a-5p",
+  "hsa-miR-1-3p",
+  "hsa-miR-122-5p",
+  "hsa-miR-125b-5p",
+  "hsa-miR-145-5p",
+  "hsa-miR-155-5p",
+  "hsa-miR-16-5p",
+  "hsa-miR-17-5p",
+  "hsa-miR-19a-3p",
+  "hsa-miR-200c-3p",
+  "hsa-miR-21-5p",
+  "hsa-miR-34a-5p",
+  "hsa-miR-92a-3p"
+ ],
+ "gates": {
+  "G1_targetscan_vs_random": {
+   "wins": 13,
+   "losses": 0,
+   "ties_excluded": true,
+   "p_one_sided": 0.0001220703125
+  },
+  "G1_n_eligible": 13,
+  "G1_pass": true,
+  "G2_kw0805_prevalence": 0.11758296186230807,
+  "G2_pass": true
+ },
+ "H1_cnn_vs_uniform": {
+  "wins": 6,
+  "losses": 7,
+  "ties_excluded": true,
+  "p_one_sided": 0.70947265625,
+  "verdict": "FALSIFIED"
+ },
+ "H2_cnn_vs_sitecount": {
+  "wins": 4,
+  "losses": 9,
+  "ties_excluded": true,
+  "p_one_sided": 0.953857421875,
+  "verdict": "FALSIFIED"
+ },
+ "H3_cnn_vs_exprmatched": {
+  "wins": 7,
+  "losses": 6,
+  "ties_excluded": true,
+  "p_one_sided": 0.5,
+  "verdict": "FALSIFIED"
+ },
+ "per_mirna": {
+  "hsa-let-7a-5p": {
+   "universe": 2165,
+   "universe_tf_frac": 0.1630484988452656,
+   "cnn": 0.175,
+   "sitecount": 0.215,
+   "matched": [
+    0.125,
+    0.1,
+    0.16
+   ],
+   "uniform": [
+    0.135,
+    0.15,
+    0.17
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.135,
+   "ts_rand": [
+    0.095,
+    0.1,
+    0.125
+   ],
+   "matched_mean": 0.12833333333333333,
+   "uniform_mean": 0.1516666666666667
+  },
+  "hsa-miR-1-3p": {
+   "universe": 3332,
+   "universe_tf_frac": 0.14765906362545017,
+   "cnn": 0.13,
+   "sitecount": 0.165,
+   "matched": [
+    0.105,
+    0.175,
+    0.11
+   ],
+   "uniform": [
+    0.12,
+    0.15,
+    0.14
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.155,
+   "ts_rand": [
+    0.11,
+    0.135,
+    0.115
+   ],
+   "matched_mean": 0.12999999999999998,
+   "uniform_mean": 0.1366666666666667
+  },
+  "hsa-miR-122-5p": {
+   "universe": 4449,
+   "universe_tf_frac": 0.14924702180265229,
+   "cnn": 0.11,
+   "sitecount": 0.215,
+   "matched": [
+    0.15,
+    0.11,
+    0.105
+   ],
+   "uniform": [
+    0.125,
+    0.11,
+    0.15
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.22,
+   "ts_rand": [
+    0.12,
+    0.11,
+    0.12
+   ],
+   "matched_mean": 0.12166666666666666,
+   "uniform_mean": 0.12833333333333333
+  },
+  "hsa-miR-125b-5p": {
+   "universe": 3646,
+   "universe_tf_frac": 0.13165112452002195,
+   "cnn": 0.095,
+   "sitecount": 0.115,
+   "matched": [
+    0.085,
+    0.145,
+    0.085
+   ],
+   "uniform": [
+    0.105,
+    0.14,
+    0.135
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.145,
+   "ts_rand": [
+    0.175,
+    0.085,
+    0.12
+   ],
+   "matched_mean": 0.105,
+   "uniform_mean": 0.12666666666666668
+  },
+  "hsa-miR-145-5p": {
+   "universe": 3489,
+   "universe_tf_frac": 0.15677844654628834,
+   "cnn": 0.145,
+   "sitecount": 0.19,
+   "matched": [
+    0.15,
+    0.185,
+    0.15
+   ],
+   "uniform": [
+    0.175,
+    0.16,
+    0.135
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.125,
+   "ts_rand": [
+    0.085,
+    0.105,
+    0.13
+   ],
+   "matched_mean": 0.16166666666666665,
+   "uniform_mean": 0.15666666666666665
+  },
+  "hsa-miR-155-5p": {
+   "universe": 2746,
+   "universe_tf_frac": 0.1605972323379461,
+   "cnn": 0.15,
+   "sitecount": 0.18,
+   "matched": [
+    0.135,
+    0.155,
+    0.12
+   ],
+   "uniform": [
+    0.16,
+    0.125,
+    0.135
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.275,
+   "ts_rand": [
+    0.11,
+    0.12,
+    0.145
+   ],
+   "matched_mean": 0.1366666666666667,
+   "uniform_mean": 0.14
+  },
+  "hsa-miR-16-5p": {
+   "universe": 3615,
+   "universe_tf_frac": 0.13278008298755187,
+   "cnn": 0.14,
+   "sitecount": 0.12,
+   "matched": [
+    0.135,
+    0.095,
+    0.15
+   ],
+   "uniform": [
+    0.11,
+    0.1,
+    0.14
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.15,
+   "ts_rand": [
+    0.115,
+    0.12,
+    0.18
+   ],
+   "matched_mean": 0.12666666666666668,
+   "uniform_mean": 0.11666666666666668
+  },
+  "hsa-miR-17-5p": {
+   "universe": 4376,
+   "universe_tf_frac": 0.14419561243144424,
+   "cnn": 0.12,
+   "sitecount": 0.11,
+   "matched": [
+    0.14,
+    0.13,
+    0.105
+   ],
+   "uniform": [
+    0.105,
+    0.165,
+    0.125
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.135,
+   "ts_rand": [
+    0.105,
+    0.145,
+    0.115
+   ],
+   "matched_mean": 0.125,
+   "uniform_mean": 0.13166666666666668
+  },
+  "hsa-miR-19a-3p": {
+   "universe": 2607,
+   "universe_tf_frac": 0.14537782892213272,
+   "cnn": 0.105,
+   "sitecount": 0.165,
+   "matched": [
+    0.16,
+    0.135,
+    0.115
+   ],
+   "uniform": [
+    0.12,
+    0.15,
+    0.13
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.14,
+   "ts_rand": [
+    0.135,
+    0.125,
+    0.145
+   ],
+   "matched_mean": 0.1366666666666667,
+   "uniform_mean": 0.13333333333333333
+  },
+  "hsa-miR-200c-3p": {
+   "universe": 3255,
+   "universe_tf_frac": 0.14715821812596006,
+   "cnn": 0.17,
+   "sitecount": 0.13,
+   "matched": [
+    0.155,
+    0.135,
+    0.105
+   ],
+   "uniform": [
+    0.11,
+    0.1,
+    0.14
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.175,
+   "ts_rand": [
+    0.135,
+    0.145,
+    0.125
+   ],
+   "matched_mean": 0.13166666666666668,
+   "uniform_mean": 0.11666666666666668
+  },
+  "hsa-miR-21-5p": {
+   "universe": 2246,
+   "universe_tf_frac": 0.1429207479964381,
+   "cnn": 0.17,
+   "sitecount": 0.15,
+   "matched": [
+    0.125,
+    0.115,
+    0.15
+   ],
+   "uniform": [
+    0.145,
+    0.105,
+    0.21
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.2,
+   "ts_rand": [
+    0.115,
+    0.12,
+    0.16
+   ],
+   "matched_mean": 0.13,
+   "uniform_mean": 0.15333333333333332
+  },
+  "hsa-miR-34a-5p": {
+   "universe": 3579,
+   "universe_tf_frac": 0.13970382788488406,
+   "cnn": 0.145,
+   "sitecount": 0.17,
+   "matched": [
+    0.135,
+    0.14,
+    0.155
+   ],
+   "uniform": [
+    0.14,
+    0.135,
+    0.125
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.15,
+   "ts_rand": [
+    0.115,
+    0.095,
+    0.13
+   ],
+   "matched_mean": 0.14333333333333334,
+   "uniform_mean": 0.13333333333333333
+  },
+  "hsa-miR-92a-3p": {
+   "universe": 2840,
+   "universe_tf_frac": 0.15352112676056337,
+   "cnn": 0.15,
+   "sitecount": 0.195,
+   "matched": [
+    0.17,
+    0.145,
+    0.165
+   ],
+   "uniform": [
+    0.165,
+    0.11,
+    0.19
+   ],
+   "ts_n": 200,
+   "ts_frac": 0.17,
+   "ts_rand": [
+    0.15,
+    0.125,
+    0.085
+   ],
+   "matched_mean": 0.16,
+   "uniform_mean": 0.155
+  }
+ }
+}

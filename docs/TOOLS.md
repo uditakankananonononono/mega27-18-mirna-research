@@ -25,7 +25,8 @@
 27. Reactome AnalysisService v97 (reactome.org /identifiers/projection) - pathway audit with pre-registered site-count and expression-matched controls (gates G1/G3 failed; inconclusive), results/reactome_enrichment.json
 28. RNAcentral REST API (rnacentral.org/api/v1/rna, external_id=MIMAT) - sequence/seed integrity audit of all 132 miRNAs used, results/rnacentral_seq_audit.json
 29. OmniPath web service (omnipathdb.org /interactions, datasets=mirnatarget) - independent non-miRTarBase curated labels, results/omnipath_independent.json
-Count: 28 (29 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+30. UniProt REST API (rest.uniprot.org, release 2026_03; KW-0805 + reviewed human stream) - transcription-regulator enrichment audit, results/uniprot_tf_enrichment.json
+Count: 29 (30 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -42,4 +43,6 @@ Count: 28 (29 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 (Enrichr TargetScan_microRNA_2017 GMT was also fetched but not used in any analysis - not counted.)
 168-299. RNAcentral records for 132 miRBase MIMAT accessions (one identifier-backed record each, fetched and compared; list in results/rnacentral_seq_audit.json)
 300. OmniPath mirnatarget human interactions export (11240 rows, bulk query, counted once; data/omnipath/mirnatarget_human.tsv)
-Count: 300. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+301. UniProtKB reviewed human KW-0805 stream (2,375 entries, bulk query, counted once)
+302. UniProtKB reviewed human proteome gene list (20,431 entries, bulk query, counted once)
+Count: 302. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
