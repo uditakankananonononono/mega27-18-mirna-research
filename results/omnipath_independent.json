@@ -1,0 +1,143 @@
+{
+ "tool": "OmniPath web service (omnipathdb.org /interactions, datasets=mirnatarget)",
+ "n_rows_all": 11240,
+ "n_rows_non_mirtarbase": 2795,
+ "gates": {
+  "G1_n_eligible": 13,
+  "G1_pass": true,
+  "G2_median_perm_mean": 0.5039188470973017,
+  "G2_pass": true
+ },
+ "median_auroc": {
+  "cnn": 0.5658906882591093,
+  "sitecount": 0.5723440360827043,
+  "expr": 0.6892778563570643
+ },
+ "H1_cnn_above_chance": {
+  "wins": 11,
+  "losses": 2,
+  "ties_excluded": true,
+  "p_one_sided": 0.01123046875,
+  "verdict": "CONFIRMED"
+ },
+ "H2_cnn_vs_sitecount": {
+  "wins": 8,
+  "losses": 5,
+  "ties_excluded": true,
+  "p_one_sided": 0.29052734375,
+  "verdict": "FALSIFIED"
+ },
+ "H3_cnn_vs_expr": {
+  "wins": 3,
+  "losses": 10,
+  "ties_excluded": true,
+  "p_one_sided": 0.98876953125,
+  "verdict": "FALSIFIED"
+ },
+ "per_mirna": {
+  "hsa-miR-1-3p": {
+   "n": 3706,
+   "n_pos": 29,
+   "auroc_cnn": 0.7728564328116061,
+   "auroc_sitecount": 0.5907505181322854,
+   "auroc_expr": 0.6749223973816736,
+   "perm_mean_cnn": 0.4975725854097699
+  },
+  "hsa-miR-125b-5p": {
+   "n": 4046,
+   "n_pos": 6,
+   "auroc_cnn": 0.5545379537953796,
+   "auroc_sitecount": 0.3786509900990099,
+   "auroc_expr": 0.7540429042904291,
+   "perm_mean_cnn": 0.5056015882838284
+  },
+  "hsa-miR-15a-5p": {
+   "n": 4013,
+   "n_pos": 13,
+   "auroc_cnn": 0.6622499999999999,
+   "auroc_sitecount": 0.6439038461538462,
+   "auroc_expr": 0.5983653846153846,
+   "perm_mean_cnn": 0.5084987019230769
+  },
+  "hsa-miR-16-5p": {
+   "n": 4013,
+   "n_pos": 14,
+   "auroc_cnn": 0.6427321115993284,
+   "auroc_sitecount": 0.5713571249955345,
+   "auroc_expr": 0.5989086557353624,
+   "perm_mean_cnn": 0.5078468277783732
+  },
+  "hsa-miR-181a-5p": {
+   "n": 3953,
+   "n_pos": 6,
+   "auroc_cnn": 0.4454015708132759,
+   "auroc_sitecount": 0.5558441010049827,
+   "auroc_expr": 0.5062072460096275,
+   "perm_mean_cnn": 0.49723703656785745
+  },
+  "hsa-miR-185-5p": {
+   "n": 5427,
+   "n_pos": 6,
+   "auroc_cnn": 0.5787677550267478,
+   "auroc_sitecount": 0.6508178072926274,
+   "auroc_expr": 0.6861587652954559,
+   "perm_mean_cnn": 0.5188947303695506
+  },
+  "hsa-miR-204-5p": {
+   "n": 4977,
+   "n_pos": 7,
+   "auroc_cnn": 0.5446967519402127,
+   "auroc_sitecount": 0.2578039666570854,
+   "auroc_expr": 0.7586375395228514,
+   "perm_mean_cnn": 0.5097308134521414
+  },
+  "hsa-miR-205-5p": {
+   "n": 4248,
+   "n_pos": 6,
+   "auroc_cnn": 0.5168945465975169,
+   "auroc_sitecount": 0.42202970297029707,
+   "auroc_expr": 0.6892778563570643,
+   "perm_mean_cnn": 0.5098265362250511
+  },
+  "hsa-miR-20a-5p": {
+   "n": 4897,
+   "n_pos": 5,
+   "auroc_cnn": 0.6832379394930499,
+   "auroc_sitecount": 0.8301717089125102,
+   "auroc_expr": 0.7066843826655764,
+   "perm_mean_cnn": 0.5039188470973017
+  },
+  "hsa-miR-21-5p": {
+   "n": 2476,
+   "n_pos": 6,
+   "auroc_cnn": 0.5658906882591093,
+   "auroc_sitecount": 0.7560728744939272,
+   "auroc_expr": 0.7291835357624832,
+   "perm_mean_cnn": 0.488851383265857
+  },
+  "hsa-miR-335-5p": {
+   "n": 4356,
+   "n_pos": 5,
+   "auroc_cnn": 0.4124109400137899,
+   "auroc_sitecount": 0.3293495748103884,
+   "auroc_expr": 0.7250976786945531,
+   "perm_mean_cnn": 0.49857458055619397
+  },
+  "hsa-miR-375": {
+   "n": 3206,
+   "n_pos": 7,
+   "auroc_cnn": 0.5595945161434377,
+   "auroc_sitecount": 0.5723440360827043,
+   "auroc_expr": 0.6576832045728576,
+   "perm_mean_cnn": 0.4944933684633591
+  },
+  "hsa-miR-378a-3p": {
+   "n": 3575,
+   "n_pos": 6,
+   "auroc_cnn": 0.7682824320537965,
+   "auroc_sitecount": 0.6176800224152423,
+   "auroc_expr": 0.8114084243952555,
+   "perm_mean_cnn": 0.49729814607266276
+  }
+ }
+}
