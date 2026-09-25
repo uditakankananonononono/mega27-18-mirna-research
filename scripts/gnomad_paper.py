@@ -32,7 +32,7 @@ S = [r"\subsection{Loss-of-function constraint (gnomAD): conserved targets are c
      f" in the opposite direction: the CNN top-200 has a higher median LOEUF than uniform random ({h1['losses']}/13), site count ({h2['losses']}/13) and"
      f" expression-matched sets ({h3['losses']}/13; Figure~\\ref{{fig:gnomad}}). Not pre-registered: the two-sided sign test of this reversal gives"
      f" $p={fmtp(PH['p_two_sided_uniform'])}$ against uniform and $p={fmtp(PH['p_two_sided_matched'])}$ against expression-matched sets.",
-     r"Site-count sets are slightly more constrained than random, as expected if they favour genes with long 3$'$ UTRs. The CNN's preference for genes with"
+     f"Site-count sets are more constrained than uniform random for {sum(P[m]['sitecount'] < P[m]['uniform_mean'] for m in ms)}/13 miRNAs, as expected if they favour genes with long 3$'$ UTRs. The CNN's preference for genes with"
      r" few, strong sites may select short-UTR, less constrained genes. This post-hoc finding needs a held-out, UTR-length-matched replication before it can be"
      r" read as biology, and we make no claim beyond the description.",
      r"\begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_gnomad.pdf}",
