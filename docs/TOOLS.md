@@ -26,7 +26,8 @@
 28. RNAcentral REST API (rnacentral.org/api/v1/rna, external_id=MIMAT) - sequence/seed integrity audit of all 132 miRNAs used, results/rnacentral_seq_audit.json
 29. OmniPath web service (omnipathdb.org /interactions, datasets=mirnatarget) - independent non-miRTarBase curated labels, results/omnipath_independent.json
 30. UniProt REST API (rest.uniprot.org, release 2026_03; KW-0805 + reviewed human stream) - transcription-regulator enrichment audit, results/uniprot_tf_enrichment.json
-Count: 29 (30 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+31. gnomAD v2.1.1 constraint table (LOEUF, gcp-public-data--gnomad bucket) - LoF-constraint audit, results/gnomad_constraint.json
+Count: 30 (31 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -45,4 +46,5 @@ Count: 29 (30 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 300. OmniPath mirnatarget human interactions export (11240 rows, bulk query, counted once; data/omnipath/mirnatarget_human.tsv)
 301. UniProtKB reviewed human KW-0805 stream (2,375 entries, bulk query, counted once)
 302. UniProtKB reviewed human proteome gene list (20,431 entries, bulk query, counted once)
-Count: 302. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+303. gnomAD v2.1.1 lof_metrics.by_gene (bulk file, counted once)
+Count: 303. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
