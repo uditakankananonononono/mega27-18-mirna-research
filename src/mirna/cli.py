@@ -71,6 +71,8 @@ def main(argv=None):
     from .data import load_mirnas, load_utrs
     data = pathlib.Path(a.data_dir)
     if a.mirna:
+        if not (data / "miR_Family_Info.txt").is_file():
+            sys.exit("TargetScan miR_Family_Info.txt is absent. Supply the original TargetScan file in --data-dir, or use --seq with --utr-fasta.")
         mirs = load_mirnas(data / "miR_Family_Info.txt")
         if a.mirna not in mirs:
             sys.exit(f"unknown human miRNA {a.mirna!r} (not in miR_Family_Info.txt)")
@@ -82,6 +84,8 @@ def main(argv=None):
 
     sites_by_name = {}
     if a.gene:
+        if not (data / "human_utrs.tsv").is_file():
+            sys.exit("TargetScan human_utrs.tsv is absent. Extract original UTR_Sequences.txt.zip with scripts/extract_human.py, or use --utr-fasta.")
         utrs = load_utrs(data / "human_utrs.tsv")
         gene2tid = {}
         with open(data / "human_utrs.tsv") as fh:

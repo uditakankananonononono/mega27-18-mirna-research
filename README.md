@@ -6,8 +6,8 @@ Code, data manifests, results and paper for item 18 of MEGA27.
 - `src/mirna/` - DuplexCNN (pairing-map 2D CNN plus Grimson context features), trained on TargetScan vert_80 context++ labels.
 - `scripts/` - one script per external tool or test. Each pre-registered test script was committed before its results; the commit history shows the order.
 - `results/` - committed JSON outputs. Every number in the paper comes from these files.
-- `paper/main.tex`, `paper/main.pdf` - full paper (Times, numbered equations, figures, 28 documented negatives).
-- `docs/TOOLS.md` - ledger of external tools (43, infrastructure excluded) and accession-level datasets (317).
+- `paper/main.tex`, `paper/main.pdf` - 32-page draft paper (Nimbus Roman in the current PDF, not embedded Times New Roman; numbered equations, figures, 28 documented negatives).
+- `docs/TOOLS.md` - audit-corrected ledger: at most 40 distinct science/data tools pending direct-use verification; 317 record-level entries, not independent studies, with the 120-dataset gate conditional on direct-use criteria.
 - `tests/` - hermetic pytest suite (`python3 -m pytest -q tests`).
 
 ## Shipped tool: `mirtarget-score`
@@ -16,7 +16,7 @@ pip install -e .
 mirtarget-score --mirna hsa-miR-7-5p --gene SP1 EGFR --top 5
 mirtarget-score --seq UGGAAGACUAGUGAUUUUGUUGU --utr-fasta my_utrs.fa --json out.json
 ```
-It scores 8mer/7mer-A1 seed-match sites in 3'UTRs with the frozen DuplexCNN and reports per-site scores on the context++ scale (lower = stronger predicted repression).
+The named-miRNA/gene mode requires the original TargetScan miR family and 3'UTR inputs in `data/` (not bundled in git); the raw sequence + FASTA mode works without them. It scores 8mer/7mer-A1 seed-match sites in 3'UTRs with the frozen DuplexCNN and reports per-site scores on the context++ scale (lower = stronger predicted repression).
 
 ## Main findings (honest summary)
 - Benchmarks broken against us: miRDB v6.0 beats the CNN on miRTarBase labels, and HEK293 expression alone beats all sequence models on CLIP labels. No state-of-the-art claim is made.
