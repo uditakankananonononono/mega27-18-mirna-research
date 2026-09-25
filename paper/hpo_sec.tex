@@ -1,0 +1,8 @@
+\subsection{Mendelian disease genes (HPO): depletion explained by UTR length}
+HPO gene--disease annotations give a fourth, curated label (4,886 genes with a Mendelian association; \texttt{hpo\_disease\_genes}, committed before running; same 43 miRNAs and controls). Gates passed: disease-gene prevalence in the pooled universe is 24.1\%, and TargetScan conserved top-200 sets hold more disease genes than random UTR genes (27/11, $p=0.007$).
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test & wins/losses & $p$ & pooled CNN / control (ratio) & verdict\\\hline
+M1 CNN fewer than uniform & 30/10 & $0.001$ & 1971 / 2175 (0.91) & CONFIRMED \\
+M2 fewer than expression-matched & 27/15 & $0.044$ & 1971 / 2070 (0.95) & CONFIRMED \\
+M3 fewer than UTR-length-matched & 22/21 & $0.500$ & 1971 / 2075 (0.95) & FALSIFIED \\
+\hline\end{tabular}\caption{HPO Mendelian disease genes in CNN top-200 sets, 43 miRNAs.}\label{tab:hpo}\end{table}
+CNN sets carry fewer disease genes than uniform and expression-matched sets, but against UTR-length-matched sets the per-miRNA split is 22/21 (M3 falsified), even though the pooled ratio stays at 0.95. This agrees with ClinGen: both curated labels support depletion relative to expression, and neither supports it beyond UTR length. The two population-derived scores (LOEUF, rCNV) do. We state the finding in its supported form: \emph{CNN top-ranked non-conserved candidates are depleted of dosage-sensitive and disease genes relative to expression-matched genes}; whether this goes beyond UTR length depends on the label and remains open.

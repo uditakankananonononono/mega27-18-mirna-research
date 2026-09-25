@@ -29,7 +29,8 @@
 31. gnomAD v2.1.1 constraint table (LOEUF, gcp-public-data--gnomad bucket) - LoF-constraint audit, results/gnomad_constraint.json
 32. ClinGen Dosage Sensitivity curation (ftp.clinicalgenome.org, 24 Sep 2026) - independent HI-gene test of the gnomAD finding, results/clingen_dosage.json
 33. Collins et al. 2022 rCNV dosage sensitivity scores (pHaplo/pTriplo, Zenodo record 6347673) - third dosage label, results/collins_dosage.json
-Count: 32 (33 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+34. Human Phenotype Ontology annotations (genes_to_disease.txt, obophenotype GitHub release) - Mendelian disease-gene test, results/hpo_disease_genes.json
+Count: 33 (34 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -51,4 +52,5 @@ Count: 32 (33 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 303. gnomAD v2.1.1 lof_metrics.by_gene (bulk file, counted once)
 304. ClinGen gene curation list GRCh38 (bulk file, counted once)
 305. Collins_rCNV_2022.dosage_sensitivity_scores.tsv.gz (bulk file, counted once)
-Count: 305. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+306. HPO genes_to_disease.txt (bulk file, counted once)
+Count: 306. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
