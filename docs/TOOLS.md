@@ -40,7 +40,7 @@
 42. HGNC complete set (genenames.org gene groups) - C2H2-ZNF / family-size confound test, results/hgnc_families.json
 43. Orphanet / Orphadata (en_product6 disorder-gene associations) - disease and LoF gene labels, results/orphanet_genes.json
 44. MGI Mouse Genome Informatics (HMD_HumanPhenotype report) - mouse mutant lethality/embryo labels, results/mgi_mouse_ko.json
-Count: 43 (44 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+Strict count: 40 distinct external research/data tools if every listed science library and directly used data service qualifies, after collapsing three TargetScan files to one source, removing miRBase-via-TargetScan as not separately queried, and excluding pytest. This is exactly at the threshold, not 43. The TargetScan files remain separate input datasets where the dataset rule permits, not separate tools. No claimed surplus. Planned, not counted: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -74,4 +74,4 @@ Count: 43 (44 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 315. HGNC hgnc_complete_set.txt (bulk file, counted once)
 316. Orphadata en_product6.xml (bulk file, counted once)
 317. MGI HMD_HumanPhenotype.rpt (bulk file, counted once)
-Count: 317. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+Record-level inventory: 317 as originally listed, including 136 ENCORI per-miRNA partitions and 132 RNAcentral identifier records. Study-level conservative count is about 51 (317 minus 135 ENCORI partition duplicates minus 131 RNAcentral per-record repetitions); thus the 120 gate depends on whether independently fetched, uniquely identified, directly compared miRNA record sets qualify under the record-level rule. This inventory is not 317 independent studies. Data marked only usable but not used in a result should be excluded pending use verification.
