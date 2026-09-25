@@ -37,3 +37,10 @@ def test_own_rank_helper():
     from enrichr_reverse_lookup import own_rank
     res = [[1, "a", 0.5, 0, 0, [], 0.9], [2, "b", 0.01, 0, 0, [], 0.1]]
     assert own_rank(res, "b")["rank"] == 1 and own_rank(res, "a")["rank"] == 2 and own_rank(res, "c")["rank"] == 3
+
+
+def test_heldout_replication_recorded():
+    R = json.load(open(os.path.join(os.path.dirname(__file__), "..", "results", "enrichr_replication.json")))
+    assert len(R["panel"]) == 30 and not set(R["panel"]) & set(J["panel"])
+    assert R["R1_cnn_vs_uniform"]["verdict"] == "CONFIRMED" and R["R3_cnn_vs_exprmatched"]["verdict"] == "CONFIRMED"
+    assert R["R2_cnn_vs_sitecount"]["verdict"] == "FALSIFIED" and R["discovery_replicates"] is False
