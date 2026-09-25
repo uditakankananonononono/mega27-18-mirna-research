@@ -1,0 +1,9 @@
+\subsection{ClinVar pathogenic-variant genes: the positive-control gate failed}
+The last label was ClinVar (gene summary dated September 23, 2026): genes with at least five Pathogenic/Likely pathogenic alleles (5,205 genes; \texttt{clinvar\_pathogenic}, committed before running). We noted in advance that allele counts grow with coding length and testing effort. Prevalence passed (21.8\%), but the positive-control gate failed: TargetScan conserved top-200 sets do not hold significantly more PLP genes than random UTR genes (21/15, $p=0.203$). Because the label does not recover the known conserved-target signal, we treat the CNN results below as uninterpretable and do not count them for or against the finding.
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test (gate G1 failed) & wins/losses & $p$ & pooled ratio & verdict\\\hline
+V1 fewer than uniform & 32/11 & $9.6\times10^{-4}$ & 0.91 & CONFIRMED \\
+V2 fewer than expression-matched & 29/13 & $0.010$ & 0.92 & CONFIRMED \\
+V3 fewer than UTR-length-matched & 24/18 & $0.220$ & 0.97 & FALSIFIED \\
+S3 ($\geq$1 PLP) vs UTR-length-matched & 23/19 & $0.322$ & 0.98 & FALSIFIED \\
+\hline\end{tabular}\caption{ClinVar PLP genes in CNN top-200 sets, 43 miRNAs. Reported for completeness only.}\label{tab:clinvar}\end{table}
+For completeness, the pattern matches ClinGen and HPO (depletion against uniform and expression-matched sets, none against UTR-length-matched sets).
