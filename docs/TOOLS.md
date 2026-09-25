@@ -20,7 +20,8 @@
 22. STRING v12.0 REST API (string-db.org; get_string_ids + network, score >= 0.7) - network-coherence audit of target sets with expression-matched control, results/string_coherence.json
 23. ENCODE portal REST search + microRNA-seq quantification downloads (encodeproject.org) - miRNA abundance across 12 cell lines, results/encode_mirna_abundance.json
 24. Ensembl REST API POST /lookup/id (rest.ensembl.org) - ENSG -> gene symbol mapping for the ENCODE miRNA loci, results/encode_mirna_ensg_symbols.json
-Count: 23 (24 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+25. GTEx Portal v8 bulk gene median TPM (adult-gtex public storage) - tissue target-avoidance audit, results/gtex_target_avoidance.json
+Count: 24 (25 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -32,4 +33,5 @@ Count: 23 (24 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 143. TarBase v9.0 Homo_sapiens_TarBase-v9.tsv.gz (bulk file, 4,724,537 records, counted once) - second validation
 144. HPA rna_celline.tsv.zip (bulk file, counted once; HEK293 subset committed as results/hpa_hek293_ntpm.tsv) - expression confound control
 145-165. ENCODE microRNA quantifications (GRCh38 TSV, one accession each, 21 files over 12 cell lines): ENCFF697HYA (GM12878), ENCFF652ODI (GM12878), ENCFF671ZNH (HepG2), ENCFF161OLK (HepG2), ENCFF445FDO (K562), ENCFF467CBW (K562), ENCFF025FWJ (HCT116), ENCFF572XTJ (HCT116), ENCFF493QIX (MCF-7), ENCFF806AZX (MCF-7), ENCFF221TXA (IMR-90), ENCFF851ANC (H1), ENCFF379DIZ (H1), ENCFF574EPF (HL-60), ENCFF596FVR (HL-60), ENCFF392ZGJ (A673), ENCFF420OMK (A673), ENCFF419EMB (Caco-2), ENCFF631TZS (Caco-2), ENCFF585ZQW (PC-3), ENCFF065WRR (Panc1)
-Count: 165. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+166. GTEx v8 GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz (bulk file, counted once) - tissue target avoidance
+Count: 166. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.

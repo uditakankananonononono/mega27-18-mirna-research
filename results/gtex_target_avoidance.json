@@ -1,0 +1,693 @@
+{
+ "tool": "GTEx Portal v8 bulk gene median TPM (adult-gtex storage)",
+ "file": "GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz",
+ "K": 200,
+ "pairs": {
+  "hsa-miR-1-3p": "Muscle - Skeletal",
+  "hsa-miR-133b": "Muscle - Skeletal",
+  "hsa-miR-206": "Muscle - Skeletal",
+  "hsa-miR-122-5p": "Liver",
+  "hsa-miR-9-5p": "Brain - Cortex",
+  "hsa-miR-128-3p": "Brain - Cortex",
+  "hsa-miR-223-3p": "Whole Blood",
+  "hsa-miR-375": "Pancreas"
+ },
+ "gates": {
+  "G1_ALB_liver": true,
+  "G2_ACTA1_muscle": true,
+  "G3_median_mapping": 0.9561077304600826,
+  "G3_pass": true
+ },
+ "H1_cnn_depletion": {
+  "wins": 1,
+  "losses": 7,
+  "ties_excluded": true,
+  "p_one_sided": 0.99609375,
+  "verdict": "FALSIFIED"
+ },
+ "H2_targetscan_depletion": {
+  "wins": 0,
+  "losses": 0,
+  "ties_excluded": true,
+  "p_one_sided": 1.0,
+  "verdict": "FALSIFIED"
+ },
+ "H3_cnn_tissue_specificity": {
+  "wins": 5,
+  "losses": 3,
+  "ties_excluded": true,
+  "p_one_sided": 0.36328125,
+  "verdict": "FALSIFIED"
+ },
+ "per_mirna": {
+  "hsa-miR-1-3p": {
+   "tissue": "Muscle - Skeletal",
+   "universe": 3558,
+   "targetscan_n": 0,
+   "cnn": {
+    "Brain - Cortex": {
+     "auc_dep": 0.5347156045265038,
+     "p_less": 0.04926886949600728,
+     "n_set": 200,
+     "n_rest": 3358
+    },
+    "Liver": {
+     "auc_dep": 0.4734715604526504,
+     "p_less": 0.8966085354363988,
+     "n_set": 200,
+     "n_rest": 3358
+    },
+    "Muscle - Skeletal": {
+     "auc_dep": 0.4814041095890411,
+     "p_less": 0.8119163723452393,
+     "n_set": 200,
+     "n_rest": 3358
+    },
+    "Pancreas": {
+     "auc_dep": 0.45206521739130434,
+     "p_less": 0.9887301268309434,
+     "n_set": 200,
+     "n_rest": 3358
+    },
+    "Whole Blood": {
+     "auc_dep": 0.5018374032162001,
+     "p_less": 0.46517545588673564,
+     "n_set": 200,
+     "n_rest": 3358
+    }
+   },
+   "cnn_matched": 0.4814041095890411,
+   "cnn_mismatched_mean": 0.49052244639666465,
+   "ts_matched": null
+  },
+  "hsa-miR-133b": {
+   "tissue": "Muscle - Skeletal",
+   "universe": 2392,
+   "targetscan_n": 0,
+   "cnn": {
+    "Brain - Cortex": {
+     "auc_dep": 0.4956238594890511,
+     "p_less": 0.5813085207899376,
+     "n_set": 200,
+     "n_rest": 2192
+    },
+    "Liver": {
+     "auc_dep": 0.46576186131386865,
+     "p_less": 0.945799678156166,
+     "n_set": 200,
+     "n_rest": 2192
+    },
+    "Muscle - Skeletal": {
+     "auc_dep": 0.4959717153284672,
+     "p_less": 0.5749283050493925,
+     "n_set": 200,
+     "n_rest": 2192
+    },
+    "Pancreas": {
+     "auc_dep": 0.47199589416058396,
+     "p_less": 0.9054285478220165,
+     "n_set": 200,
+     "n_rest": 2192
+    },
+    "Whole Blood": {
+     "auc_dep": 0.45913093065693433,
+     "p_less": 0.9723401449221591,
+     "n_set": 200,
+     "n_rest": 2192
+    }
+   },
+   "cnn_matched": 0.4959717153284672,
+   "cnn_mismatched_mean": 0.47312813640510953,
+   "ts_matched": null
+  },
+  "hsa-miR-206": {
+   "tissue": "Muscle - Skeletal",
+   "universe": 3558,
+   "targetscan_n": 0,
+   "cnn": {
+    "Brain - Cortex": {
+     "auc_dep": 0.5310273972602739,
+     "p_less": 0.06990851156517192,
+     "n_set": 200,
+     "n_rest": 3358
+    },
+    "Liver": {
+     "auc_dep": 0.4700759380583681,
+     "p_less": 0.9227841008446215,
+     "n_set": 200,
+     "n_rest": 3358
+    },
+    "Muscle - Skeletal": {
+     "auc_dep": 0.471789755807028,
+     "p_less": 0.9102846633547392,
+     "n_set": 200,
+     "n_rest": 3358
+    },
+    "Pancreas": {
+     "auc_dep": 0.4538661405598571,
+     "p_less": 0.9859341559705219,
+     "n_set": 200,
+     "n_rest": 3358
+    },
+    "Whole Blood": {
+     "auc_dep": 0.4860921679571173,
+     "p_less": 0.7459774032919937,
+     "n_set": 200,
+     "n_rest": 3358
+    }
+   },
+   "cnn_matched": 0.471789755807028,
+   "cnn_mismatched_mean": 0.4852654109589041,
+   "ts_matched": null
+  },
+  "hsa-miR-122-5p": {
+   "tissue": "Liver",
+   "universe": 4706,
+   "targetscan_n": 0,
+   "cnn": {
+    "Brain - Cortex": {
+     "auc_dep": 0.4764242121615624,
+     "p_less": 0.8707782672818165,
+     "n_set": 200,
+     "n_rest": 4506
+    },
+    "Liver": {
+     "auc_dep": 0.45906458055925436,
+     "p_less": 0.9751290695725601,
+     "n_set": 200,
+     "n_rest": 4506
+    },
+    "Muscle - Skeletal": {
+     "auc_dep": 0.45045605858854865,
+     "p_less": 0.9912212522802389,
+     "n_set": 200,
+     "n_rest": 4506
+    },
+    "Pancreas": {
+     "auc_dep": 0.4079216600088771,
+     "p_less": 0.9999949169348644,
+     "n_set": 200,
+     "n_rest": 4506
+    },
+    "Whole Blood": {
+     "auc_dep": 0.44512538837106086,
+     "p_less": 0.995734905420766,
+     "n_set": 200,
+     "n_rest": 4506
+    }
+   },
+   "cnn_matched": 0.45906458055925436,
+   "cnn_mismatched_mean": 0.4449818297825123,
+   "ts_matched": null
+  },
+  "hsa-miR-9-5p": {
+   "tissue": "Brain - Cortex",
+   "universe": 3252,
+   "targetscan_n": 0,
+   "cnn": {
+    "Brain - Cortex": {
+     "auc_dep": 0.5276114023591087,
+     "p_less": 0.09506233720754248,
+     "n_set": 200,
+     "n_rest": 3052
+    },
+    "Liver": {
+     "auc_dep": 0.40654161205766715,
+     "p_less": 0.9999953957864516,
+     "n_set": 200,
+     "n_rest": 3052
+    },
+    "Muscle - Skeletal": {
+     "auc_dep": 0.43775065530799473,
+     "p_less": 0.9984317161742772,
+     "n_set": 200,
+     "n_rest": 3052
+    },
+    "Pancreas": {
+     "auc_dep": 0.4091685779816514,
+     "p_less": 0.9999918494024637,
+     "n_set": 200,
+     "n_rest": 3052
+    },
+    "Whole Blood": {
+     "auc_dep": 0.43557667103538666,
+     "p_less": 0.998882872093424,
+     "n_set": 200,
+     "n_rest": 3052
+    }
+   },
+   "cnn_matched": 0.5276114023591087,
+   "cnn_mismatched_mean": 0.422259379095675,
+   "ts_matched": null
+  },
+  "hsa-miR-128-3p": {
+   "tissue": "Brain - Cortex",
+   "universe": 4539,
+   "targetscan_n": 0,
+   "cnn": {
+    "Brain - Cortex": {
+     "auc_dep": 0.49195263885687945,
+     "p_less": 0.6500456339210753,
+     "n_set": 200,
+     "n_rest": 4339
+    },
+    "Liver": {
+     "auc_dep": 0.44403779672735655,
+     "p_less": 0.9963218252335554,
+     "n_set": 200,
+     "n_rest": 4339
+    },
+    "Muscle - Skeletal": {
+     "auc_dep": 0.48009564415764006,
+     "p_less": 0.8297885599318389,
+     "n_set": 200,
+     "n_rest": 4339
+    },
+    "Pancreas": {
+     "auc_dep": 0.4587595067988016,
+     "p_less": 0.9758768319224215,
+     "n_set": 200,
+     "n_rest": 4339
+    },
+    "Whole Blood": {
+     "auc_dep": 0.4509109241760775,
+     "p_less": 0.9906410240933721,
+     "n_set": 200,
+     "n_rest": 4339
+    }
+   },
+   "cnn_matched": 0.49195263885687945,
+   "cnn_mismatched_mean": 0.45845096796496887,
+   "ts_matched": null
+  },
+  "hsa-miR-223-3p": {
+   "tissue": "Whole Blood",
+   "universe": 2903,
+   "targetscan_n": 0,
+   "cnn": {
+    "Brain - Cortex": {
+     "auc_dep": 0.4728042915279319,
+     "p_less": 0.9006809018043935,
+     "n_set": 200,
+     "n_rest": 2703
+    },
+    "Liver": {
+     "auc_dep": 0.4677302996670366,
+     "p_less": 0.936403717625959,
+     "n_set": 200,
+     "n_rest": 2703
+    },
+    "Muscle - Skeletal": {
+     "auc_dep": 0.4843747687754347,
+     "p_less": 0.7699169669809234,
+     "n_set": 200,
+     "n_rest": 2703
+    },
+    "Pancreas": {
+     "auc_dep": 0.4814585645578986,
+     "p_less": 0.8095944248568333,
+     "n_set": 200,
+     "n_rest": 2703
+    },
+    "Whole Blood": {
+     "auc_dep": 0.49088790233074364,
+     "p_less": 0.6666671203693798,
+     "n_set": 200,
+     "n_rest": 2703
+    }
+   },
+   "cnn_matched": 0.49088790233074364,
+   "cnn_mismatched_mean": 0.47659198113207546,
+   "ts_matched": null
+  },
+  "hsa-miR-375": {
+   "tissue": "Pancreas",
+   "universe": 3064,
+   "targetscan_n": 0,
+   "cnn": {
+    "Brain - Cortex": {
+     "auc_dep": 0.41362081005586593,
+     "p_less": 0.9999784921955899,
+     "n_set": 200,
+     "n_rest": 2864
+    },
+    "Liver": {
+     "auc_dep": 0.4316445530726257,
+     "p_less": 0.9993963038662091,
+     "n_set": 200,
+     "n_rest": 2864
+    },
+    "Muscle - Skeletal": {
+     "auc_dep": 0.4212081005586592,
+     "p_less": 0.9999047839925952,
+     "n_set": 200,
+     "n_rest": 2864
+    },
+    "Pancreas": {
+     "auc_dep": 0.4298708100558659,
+     "p_less": 0.9995517257157863,
+     "n_set": 200,
+     "n_rest": 2864
+    },
+    "Whole Blood": {
+     "auc_dep": 0.46565991620111735,
+     "p_less": 0.9480554579152718,
+     "n_set": 200,
+     "n_rest": 2864
+    }
+   },
+   "cnn_matched": 0.4298708100558659,
+   "cnn_mismatched_mean": 0.433033344972067,
+   "ts_matched": null
+  }
+ },
+ "posthoc_targetscan_reference": {
+  "note": "post-hoc, not pre-registered; replaces structurally empty H2",
+  "per_mirna": {
+   "hsa-miR-1-3p": {
+    "tissue": "Muscle - Skeletal",
+    "n_set": 200,
+    "universe": 18390,
+    "by_tissue": {
+     "Brain - Cortex": {
+      "auc_dep": 0.5850514018691588,
+      "p_less": 1.7016204077996206e-05,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Liver": {
+      "auc_dep": 0.6275200659703133,
+      "p_less": 2.571741501776376e-10,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Muscle - Skeletal": {
+      "auc_dep": 0.6870274876305662,
+      "p_less": 3.9201327576240535e-20,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Pancreas": {
+      "auc_dep": 0.6182487630566245,
+      "p_less": 4.136504263108897e-09,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Whole Blood": {
+      "auc_dep": 0.6216613523914238,
+      "p_less": 1.521227155697721e-09,
+      "n_set": 200,
+      "n_rest": 18190
+     }
+    },
+    "matched": 0.6870274876305662,
+    "mismatched_mean": 0.61312039582188
+   },
+   "hsa-miR-133b": {
+    "tissue": "Muscle - Skeletal",
+    "n_set": 200,
+    "universe": 18390,
+    "by_tissue": {
+     "Brain - Cortex": {
+      "auc_dep": 0.5537578339747113,
+      "p_less": 0.004400605278967332,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Liver": {
+      "auc_dep": 0.5740834249587685,
+      "p_less": 0.0001528406925891947,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Muscle - Skeletal": {
+      "auc_dep": 0.6614447498625619,
+      "p_less": 1.7943908322378073e-15,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Pancreas": {
+      "auc_dep": 0.5982424409015943,
+      "p_less": 8.431006088018034e-07,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Whole Blood": {
+      "auc_dep": 0.5671429356789445,
+      "p_less": 0.0005334250451861386,
+      "n_set": 200,
+      "n_rest": 18190
+     }
+    },
+    "matched": 0.6614447498625619,
+    "mismatched_mean": 0.5733066588785046
+   },
+   "hsa-miR-206": {
+    "tissue": "Muscle - Skeletal",
+    "n_set": 200,
+    "universe": 18390,
+    "by_tissue": {
+     "Brain - Cortex": {
+      "auc_dep": 0.5779414513468939,
+      "p_less": 7.288147210737398e-05,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Liver": {
+      "auc_dep": 0.6216346893897746,
+      "p_less": 1.5347231745126833e-09,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Muscle - Skeletal": {
+      "auc_dep": 0.6776564046179219,
+      "p_less": 2.3871221708452227e-18,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Pancreas": {
+      "auc_dep": 0.6190857614073667,
+      "p_less": 3.245490073085162e-09,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Whole Blood": {
+      "auc_dep": 0.6154180868609126,
+      "p_less": 9.274392651775802e-09,
+      "n_set": 200,
+      "n_rest": 18190
+     }
+    },
+    "matched": 0.6776564046179219,
+    "mismatched_mean": 0.608519997251237
+   },
+   "hsa-miR-122-5p": {
+    "tissue": "Liver",
+    "n_set": 200,
+    "universe": 18390,
+    "by_tissue": {
+     "Brain - Cortex": {
+      "auc_dep": 0.5235802638812534,
+      "p_less": 0.12525953958321728,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Liver": {
+      "auc_dep": 0.6667093183067619,
+      "p_less": 2.245214945867218e-16,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Muscle - Skeletal": {
+      "auc_dep": 0.5056432105552502,
+      "p_less": 0.39164543264080015,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Pancreas": {
+      "auc_dep": 0.6043320505772403,
+      "p_less": 1.8422602397065103e-07,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Whole Blood": {
+      "auc_dep": 0.5694538207806488,
+      "p_less": 0.00035602036128286286,
+      "n_set": 200,
+      "n_rest": 18190
+     }
+    },
+    "matched": 0.6667093183067619,
+    "mismatched_mean": 0.5507523364485982
+   },
+   "hsa-miR-9-5p": {
+    "tissue": "Brain - Cortex",
+    "n_set": 200,
+    "universe": 18390,
+    "by_tissue": {
+     "Brain - Cortex": {
+      "auc_dep": 0.6086786695986806,
+      "p_less": 5.9169543986028225e-08,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Liver": {
+      "auc_dep": 0.5727352941176471,
+      "p_less": 0.00019650310517174986,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Muscle - Skeletal": {
+      "auc_dep": 0.5594978009895547,
+      "p_less": 0.001866962967529831,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Pancreas": {
+      "auc_dep": 0.5478938977460143,
+      "p_less": 0.009795681906181977,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Whole Blood": {
+      "auc_dep": 0.5543911489829576,
+      "p_less": 0.004015011366545952,
+      "n_set": 200,
+      "n_rest": 18190
+     }
+    },
+    "matched": 0.6086786695986806,
+    "mismatched_mean": 0.5586295354590434
+   },
+   "hsa-miR-128-3p": {
+    "tissue": "Brain - Cortex",
+    "n_set": 200,
+    "universe": 18390,
+    "by_tissue": {
+     "Brain - Cortex": {
+      "auc_dep": 0.5301833424958768,
+      "p_less": 0.0706636931697098,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Liver": {
+      "auc_dep": 0.5761603903243541,
+      "p_less": 0.0001029531555004213,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Muscle - Skeletal": {
+      "auc_dep": 0.5949936778449698,
+      "p_less": 1.8299999677635382e-06,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Pancreas": {
+      "auc_dep": 0.6115783397471137,
+      "p_less": 2.698349435258247e-08,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Whole Blood": {
+      "auc_dep": 0.6047795492028587,
+      "p_less": 1.6405726134810634e-07,
+      "n_set": 200,
+      "n_rest": 18190
+     }
+    },
+    "matched": 0.5301833424958768,
+    "mismatched_mean": 0.5968779892798242
+   },
+   "hsa-miR-223-3p": {
+    "tissue": "Whole Blood",
+    "n_set": 200,
+    "universe": 18390,
+    "by_tissue": {
+     "Brain - Cortex": {
+      "auc_dep": 0.5533864760857614,
+      "p_less": 0.0046397161051010575,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Liver": {
+      "auc_dep": 0.6210542880703683,
+      "p_less": 1.822420547097931e-09,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Muscle - Skeletal": {
+      "auc_dep": 0.5663862012094558,
+      "p_less": 0.0006070752124482612,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Pancreas": {
+      "auc_dep": 0.649999175371083,
+      "p_less": 1.334290451427793e-13,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Whole Blood": {
+      "auc_dep": 0.6248100604727873,
+      "p_less": 5.907044722319877e-10,
+      "n_set": 200,
+      "n_rest": 18190
+     }
+    },
+    "matched": 0.6248100604727873,
+    "mismatched_mean": 0.597706535184167
+   },
+   "hsa-miR-375": {
+    "tissue": "Pancreas",
+    "n_set": 200,
+    "universe": 18390,
+    "by_tissue": {
+     "Brain - Cortex": {
+      "auc_dep": 0.5202014843320506,
+      "p_less": 0.1624502779721832,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Liver": {
+      "auc_dep": 0.5704355415063221,
+      "p_less": 0.0002988476232284809,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Muscle - Skeletal": {
+      "auc_dep": 0.5340700934579439,
+      "p_less": 0.048406238194795725,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Pancreas": {
+      "auc_dep": 0.5981129741616273,
+      "p_less": 8.700040562596877e-07,
+      "n_set": 200,
+      "n_rest": 18190
+     },
+     "Whole Blood": {
+      "auc_dep": 0.59832572842221,
+      "p_less": 8.256175117867297e-07,
+      "n_set": 200,
+      "n_rest": 18190
+     }
+    },
+    "matched": 0.5981129741616273,
+    "mismatched_mean": 0.5557582119296317
+   }
+  },
+  "depletion": {
+   "wins": 8,
+   "losses": 0,
+   "ties_excluded": true,
+   "p_one_sided": 0.00390625
+  },
+  "specificity": {
+   "wins": 7,
+   "losses": 1,
+   "ties_excluded": true,
+   "p_one_sided": 0.03515625
+  }
+ }
+}
