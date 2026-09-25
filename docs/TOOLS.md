@@ -31,7 +31,8 @@
 33. Collins et al. 2022 rCNV dosage sensitivity scores (pHaplo/pTriplo, Zenodo record 6347673) - third dosage label, results/collins_dosage.json
 34. Human Phenotype Ontology annotations (genes_to_disease.txt, obophenotype GitHub release) - Mendelian disease-gene test, results/hpo_disease_genes.json
 35. ClinVar gene_specific_summary.txt (NCBI FTP, dated September 23, 2026) - PLP-gene test (positive-control gate failed), results/clinvar_pathogenic.json
-Count: 34 (35 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+36. DepMap 24Q4 Public (figshare; CRISPRInferredCommonEssentials) - cell-essential gene test, results/depmap_essential.json
+Count: 35 (36 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -55,4 +56,5 @@ Count: 34 (35 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 305. Collins_rCNV_2022.dosage_sensitivity_scores.tsv.gz (bulk file, counted once)
 306. HPO genes_to_disease.txt (bulk file, counted once)
 307. ClinVar gene_specific_summary.txt (bulk file, counted once)
-Count: 307. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+308. DepMap 24Q4 CRISPRInferredCommonEssentials.csv (bulk file, counted once)
+Count: 308. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.

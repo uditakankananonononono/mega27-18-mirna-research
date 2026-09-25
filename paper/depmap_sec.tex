@@ -1,0 +1,8 @@
+\subsection{Cell-essential genes (DepMap): no depletion, and the label is uninformative for conserved targets}
+To ask whether the dosage depletion extends to cell fitness, we used the DepMap 24Q4 inferred common-essential genes (1,523 genes; \texttt{depmap\_essential}, committed before running; same 43 miRNAs and controls). Prevalence passed (7.3\%). The positive-control gate, which only asked for a difference in either direction, failed: conserved top-200 sets and random UTR genes split 20/17 (two-sided $p=0.743$).
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test & wins/losses & $p$ & pooled CNN / control (ratio) & verdict\\\hline
+E1 fewer than uniform & 19/21 & $0.682$ & 662 / 634 (1.04) & FALSIFIED \\
+E2 fewer than expression-matched & 14/29 & $0.993$ & 662 / 603 (1.10) & FALSIFIED \\
+E3 fewer than UTR-length-matched & 18/24 & $0.860$ & 662 / 627 (1.06) & FALSIFIED \\
+\hline\end{tabular}\caption{DepMap common-essential genes in CNN top-200 sets, 43 miRNAs.}\label{tab:depmap}\end{table}
+All three hypotheses are falsified. CNN sets hold slightly more essential genes than every control, not fewer (pooled ratios 1.04--1.10). Whatever drives the depletion of dosage-sensitive and disease genes, it does not extend to genes needed for cell growth in culture. That fits a dosage reading better than a general avoidance of important genes, but with the positive-control gate failed we do not lean on it.
