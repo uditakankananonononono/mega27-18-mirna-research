@@ -1,0 +1,9 @@
+\subsection{Mouse mutant phenotypes (MGI): weak, mixed support}
+Mouse knockouts give an experimental label that owes nothing to human population data or clinical curation. From the MGI \texttt{HMD\_HumanPhenotype} report~\cite{mgi} we marked human genes whose mouse orthologue mutants show mortality/aging (MP:0010768) or embryo (MP:0005380) phenotypes (6603 and 2429 of 14268 phenotyped genes); genes never phenotyped were dropped (\texttt{mgi\_mouse\_ko}, committed before running; 43 miRNAs). Both gates passed: conserved TargetScan targets are more often lethal than random genes (37/1, $p=1.4\times10^{-10}$), and 85.4\% of universe symbols have an MGI row (bar 80\%).
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test (CNN lower) & wins/losses & $p$ & median diff. & verdict\\\hline
+M1 mortality, vs expression-matched & 28/14 & $0.022$ & -0.013 & CONFIRMED \\
+M2 mortality, vs publication-matched & 26/16 & $0.082$ & -0.022 & FALSIFIED \\
+M3 mortality, vs UTR-length-matched & 26/17 & $0.111$ & -0.013 & FALSIFIED \\
+M4 embryo phenotype, vs publication-matched & 29/14 & $0.016$ & -0.012 & CONFIRMED \\
+\hline\end{tabular}\caption{Mouse mutant phenotype fractions in CNN top-200 sets, 43 miRNAs.}\label{tab:mgi}\end{table}
+All four comparisons point the same way (CNN sets less often lethal), but only M1 and M4 reach $p<0.05$; mortality is not significantly depleted against publication- or UTR-length-matched sets. The plan set no multiple-testing correction; after the fact we note that with Bonferroni over the four tests ($\alpha=0.0125$) none would pass. We read this as weak support from an independent experimental label, not as a replication.

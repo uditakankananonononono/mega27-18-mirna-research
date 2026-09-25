@@ -39,7 +39,8 @@
 41. Ensembl BioMart martservice (XML query API, separate service from Ensembl REST) - human paralogue counts, results/biomart_paralogs.json
 42. HGNC complete set (genenames.org gene groups) - C2H2-ZNF / family-size confound test, results/hgnc_families.json
 43. Orphanet / Orphadata (en_product6 disorder-gene associations) - disease and LoF gene labels, results/orphanet_genes.json
-Count: 42 (43 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+44. MGI Mouse Genome Informatics (HMD_HumanPhenotype report) - mouse mutant lethality/embryo labels, results/mgi_mouse_ko.json
+Count: 43 (44 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -72,4 +73,5 @@ Count: 42 (43 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 314. BioMart hsapiens_gene_ensembl paralogue export (bulk query, counted once)
 315. HGNC hgnc_complete_set.txt (bulk file, counted once)
 316. Orphadata en_product6.xml (bulk file, counted once)
-Count: 316. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+317. MGI HMD_HumanPhenotype.rpt (bulk file, counted once)
+Count: 317. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
