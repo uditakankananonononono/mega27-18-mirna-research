@@ -1,0 +1,9 @@
+\subsection{DECIPHER haploinsufficiency predictions: depletion beyond expression and study bias, not beyond UTR length}
+DECIPHER's haploinsufficiency predictions (version 3; 19,124 genes) come from a model of genomic, evolutionary and network features that does not use gnomAD LOEUF (\texttt{decipher\_hi}, committed before running; 43 miRNAs; publication-matched control added). Gates passed: 95.9\% coverage, and conserved top-200 sets score higher than random UTR genes (38/0, $p=3.6\times10^{-12}$).
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test & wins/losses & $p$ & median diff. & verdict\\\hline
+H1 lower than uniform & 42/1 & $5.0\times10^{-12}$ & -0.0554 & CONFIRMED \\
+H2 lower than expression-matched & 41/2 & $1.1\times10^{-10}$ & -0.0448 & CONFIRMED \\
+H3 lower than UTR-length-matched & 25/18 & $0.180$ & -0.0039 & FALSIFIED \\
+H4 lower than publication-matched & 39/4 & $1.6\times10^{-8}$ & -0.0400 & CONFIRMED \\
+\hline\end{tabular}\caption{DECIPHER HI scores of CNN top-200 sets, 43 miRNAs.}\label{tab:decipher}\end{table}
+The CNN depletion holds against expression-matched and publication-matched sets but not against UTR-length-matched sets (H3 falsified; median difference -0.0039). The tally for ``beyond UTR length'' is now: supported by LOEUF and the rCNV scores, not supported by DECIPHER, ClinGen or HPO (ClinVar and DepMap uninformative). We therefore do not claim the depletion goes beyond UTR length. The claim that survives every informative label is the weaker one: CNN top-ranked non-conserved candidates are less dosage-sensitive than expression-matched genes.

@@ -33,7 +33,8 @@ S = [r"\paragraph{Pre-registered held-out replication.} We committed a replicati
      r" genes, beyond what HEK293 expression or 3$'$ UTR length explain.} It would be falsified by (i) a finer length control (for example exact length bins or"
      r" site-density matching) that removes the gap, or (ii) the same depletion appearing for a random-weight CNN, which would show it comes from the input encoding"
      r" rather than the learned model. Neither test has been run. One reading is purifying selection against strong non-conserved sites in dosage-sensitive genes,"
-     r" but we have not tested it and do not claim it.",
+     r" but we have not tested it and do not claim it. Later pre-registered tests with other dosage labels (DECIPHER, ClinGen, HPO)"
+     r" did not support the clause about UTR length, and we withdraw it (Table~\ref{tab:decipher} and the negatives list).",
      r"\begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_gnomad_rep.pdf}",
      r"\caption{Pre-registered replication on 30 held-out miRNAs. Left: CNN top-200 median LOEUF minus each control (positive = CNN less constrained)."
      r" Right: CNN top-200 median UTR length relative to its universe.}\label{fig:gnomadrep}\end{figure}"]
