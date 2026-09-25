@@ -1,0 +1,9 @@
+\subsection{Orphanet rare-disease genes: depletion vs expression-matched only; gone against publication-matched sets}
+Orphanet curates disorder--gene links by hand and records the mechanism, so it gives a further disease label and an explicit loss-of-function label~\cite{orphanet}. From Orphadata \texttt{en\_product6} we took assessed germline disease-causing links (4195 genes) and the loss-of-function subset (1047 genes); statistic = fraction of the top-200 (\texttt{orphanet\_genes}, committed before running; 43 miRNAs). Both gates passed: conserved TargetScan targets carry more disease genes than random UTR genes (27/11, $p=0.007$), and the parse counts met the bars.
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test (CNN lower) & wins/losses & $p$ & median diff. & verdict\\\hline
+O1 disease genes, vs expression-matched & 30/13 & $0.007$ & -0.018 & CONFIRMED \\
+O2 disease genes, vs publication-matched & 21/21 & $0.561$ & +0.000 & FALSIFIED \\
+O3 LoF genes, vs publication-matched & 20/23 & $0.729$ & +0.000 & FALSIFIED \\
+O4 LoF genes, vs UTR-length-matched & 20/23 & $0.729$ & +0.002 & FALSIFIED \\
+\hline\end{tabular}\caption{Orphanet disease-gene fractions in CNN top-200 sets, 43 miRNAs.}\label{tab:orphanet}\end{table}
+CNN candidates carry fewer disease genes than expression-matched sets (O1), but the gap disappears against publication-matched sets (O2), and the explicit loss-of-function label shows no depletion against publication- or UTR-length-matched sets (O3, O4). This repeats the HPO pattern: on curated labels the depletion is explained by study bias, while the LoF-count labels (LOEUF, $s_\mathrm{het}$) keep it.

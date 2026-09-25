@@ -38,7 +38,8 @@
 40. GeneBayes s_het estimates (Zeng et al. 2024, Zenodo record 10403680) - population-based selection label, results/genebayes_shet.json
 41. Ensembl BioMart martservice (XML query API, separate service from Ensembl REST) - human paralogue counts, results/biomart_paralogs.json
 42. HGNC complete set (genenames.org gene groups) - C2H2-ZNF / family-size confound test, results/hgnc_families.json
-Count: 41 (42 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+43. Orphanet / Orphadata (en_product6 disorder-gene associations) - disease and LoF gene labels, results/orphanet_genes.json
+Count: 42 (43 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -70,4 +71,5 @@ Count: 41 (42 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 313. GeneBayes s_het_estimates.genebayes.tsv (bulk file, counted once)
 314. BioMart hsapiens_gene_ensembl paralogue export (bulk query, counted once)
 315. HGNC hgnc_complete_set.txt (bulk file, counted once)
-Count: 315. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+316. Orphadata en_product6.xml (bulk file, counted once)
+Count: 316. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
