@@ -1,0 +1,9 @@
+\subsection{GeneBayes $s_\mathrm{het}$: population-based labels agree with each other, curated and model-based labels do not}
+GeneBayes $s_\mathrm{het}$ (Zenodo 10403680; 19,068 genes) estimates selection against heterozygous loss of function from gnomAD LoF counts plus a gene-feature prior, so it is a second population-based label and not independent of LOEUF (\texttt{genebayes\_shet}, committed before running; statistic median $\log_{10} s_\mathrm{het}$). Gates passed: 96.8\% coverage, and the positive control scores higher than random (38/0, $p=3.6\times10^{-12}$).
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test & wins/losses & $p$ & median diff. & verdict\\\hline
+H1 lower than uniform & 43/0 & $1.1\times10^{-13}$ & -0.416 & CONFIRMED \\
+H2 lower than expression-matched & 43/0 & $1.1\times10^{-13}$ & -0.389 & CONFIRMED \\
+H3 lower than UTR-length-matched & 39/4 & $1.6\times10^{-8}$ & -0.169 & CONFIRMED \\
+H4 lower than publication-matched & 43/0 & $1.1\times10^{-13}$ & -0.367 & CONFIRMED \\
+\hline\end{tabular}\caption{GeneBayes $s_\mathrm{het}$ of CNN top-200 sets, 43 miRNAs (differences in $\log_{10}$ units).}\label{tab:genebayes}\end{table}
+All four hypotheses are confirmed, including H3 against UTR-length-matched sets. The split is now clean: the three labels built from gnomAD loss-of-function counts (LOEUF, rCNV, $s_\mathrm{het}$) support depletion beyond UTR length, while DECIPHER, ClinGen and HPO do not. A plausible explanation, not tested here, is that labels built from LoF counts are less informative for genes with few expected LoF variants (short coding sequences), and the CNN may favour such genes. Because the split follows label construction, the clause about UTR length stays withdrawn; the surviving claim (depletion relative to expression-matched and publication-matched genes) is confirmed here too.

@@ -35,7 +35,8 @@
 37. EBI Complex Portal (complextab 9606.tsv, EBI FTP) - protein-complex subunit (dosage-balance) test, results/complexportal_subunits.json
 38. NCBI Gene FTP (Homo_sapiens.gene_info + gene2pubmed) - study-bias test with publication-matched control, results/ncbi_pubmed_bias.json + ncbi_pubmed_posthoc.json
 39. DECIPHER haploinsufficiency predictions v3 (deciphergenomics.org downloads) - dosage label with publication-matched control, results/decipher_hi.json
-Count: 38 (39 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+40. GeneBayes s_het estimates (Zeng et al. 2024, Zenodo record 10403680) - population-based selection label, results/genebayes_shet.json
+Count: 39 (40 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -64,4 +65,5 @@ Count: 38 (39 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 310. NCBI Homo_sapiens.gene_info.gz (bulk file, counted once)
 311. NCBI gene2pubmed.gz reduced to human counts (bulk file, counted once)
 312. DECIPHER HI_Predictions_Version3.bed.gz (bulk file, counted once)
-Count: 312. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+313. GeneBayes s_het_estimates.genebayes.tsv (bulk file, counted once)
+Count: 313. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
