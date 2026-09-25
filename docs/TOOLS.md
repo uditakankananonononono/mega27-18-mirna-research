@@ -32,7 +32,8 @@
 34. Human Phenotype Ontology annotations (genes_to_disease.txt, obophenotype GitHub release) - Mendelian disease-gene test, results/hpo_disease_genes.json
 35. ClinVar gene_specific_summary.txt (NCBI FTP, dated September 23, 2026) - PLP-gene test (positive-control gate failed), results/clinvar_pathogenic.json
 36. DepMap 24Q4 Public (figshare; CRISPRInferredCommonEssentials) - cell-essential gene test, results/depmap_essential.json
-Count: 35 (36 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+37. EBI Complex Portal (complextab 9606.tsv, EBI FTP) - protein-complex subunit (dosage-balance) test, results/complexportal_subunits.json
+Count: 36 (37 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
@@ -57,4 +58,5 @@ Count: 35 (36 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB 
 306. HPO genes_to_disease.txt (bulk file, counted once)
 307. ClinVar gene_specific_summary.txt (bulk file, counted once)
 308. DepMap 24Q4 CRISPRInferredCommonEssentials.csv (bulk file, counted once)
-Count: 308. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.
+309. Complex Portal human complextab 9606.tsv (bulk file, counted once)
+Count: 309. Past the 120 bar honestly - every set fetched, thresholded, and usable for the extended falsification rerun.

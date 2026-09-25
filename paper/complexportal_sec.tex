@@ -1,0 +1,8 @@
+\subsection{Protein-complex subunits (Complex Portal): the dosage-balance prediction fails}
+The dosage-balance hypothesis holds that subunits of protein complexes are dosage-sensitive, so the dosage finding predicts that CNN sets carry fewer subunit genes. We used EBI Complex Portal (2,498 human complexes, 3,686 subunit genes after mapping UniProt accessions; \texttt{complexportal\_subunits}, committed before running; same 43 miRNAs and controls). Gates passed: 99.9\% of accessions mapped, prevalence 17.9\%, and conserved top-200 sets differ from random UTR genes (27/9 more subunits, two-sided $p=0.004$).
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test & wins/losses & $p$ & pooled CNN / control (ratio) & verdict\\\hline
+X1 fewer than uniform & 29/12 & $0.006$ & 1497 / 1572 (0.95) & CONFIRMED \\
+X2 fewer than expression-matched & 19/23 & $0.780$ & 1497 / 1467 (1.02) & FALSIFIED \\
+X3 fewer than UTR-length-matched & 19/24 & $0.820$ & 1497 / 1503 (1.00) & FALSIFIED \\
+\hline\end{tabular}\caption{Complex Portal subunit genes in CNN top-200 sets, 43 miRNAs.}\label{tab:complexportal}\end{table}
+The depletion against uniform sets disappears once expression or UTR length is matched (X2, X3 falsified; pooled ratios 1.02 and 1.00). So the CNN does not avoid complex subunits beyond what expression explains, and the dosage-balance route does not account for the LOEUF and rCNV depletion.
