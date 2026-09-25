@@ -1,0 +1,8 @@
+\subsection{Gene families (HGNC): the depletion is not a zinc-finger artefact; coverage gate failed}
+Large, dosage-tolerant families such as the C2H2 zinc fingers (many with long 3$'$UTRs) could make a candidate set look unconstrained. We used HGNC gene groups~\cite{hgnc} (19297 approved protein-coding symbols, 763 C2H2-ZNF; \texttt{hgnc\_families}, committed before running; 43 miRNAs; family size $=\log_2(1+\text{largest group size})$). The parse gate passed (C2H2-ZNF genes are 7.1$\times$ more frequent on chr19, bar 3$\times$), but the coverage gate failed: 88.7\% of universe symbols matched current HGNC protein-coding symbols (bar 90\%). A post-hoc audit (not pre-registered) found that 1311 of the 1974 unmatched symbols are previous HGNC symbols and 195 are approved non-protein-coding loci.
+\begin{table}[h]\centering\small\begin{tabular}{lcccc}\hline Pre-registered test (G1 failed) & wins/losses & $p$ & median diff. & verdict\\\hline
+F1 C2H2-ZNF fraction above expression-matched & 21/22 & $0.620$ & +0.000 & FALSIFIED \\
+F2 family size above expression-matched & 21/22 & $0.620$ & -0.025 & FALSIFIED \\
+F3 LOEUF above expression-matched, ZNFs removed & 43/0 & $1.1\times10^{-13}$ & +0.152 & CONFIRMED \\
+\hline\end{tabular}\caption{HGNC family composition of CNN top-200 sets, 43 miRNAs.}\label{tab:hgnc}\end{table}
+CNN candidates are not enriched for zinc fingers or large families (F1, F2 falsified), and with every C2H2-ZNF gene removed the LOEUF depletion against expression-matched sets stays at 43/0. Because the coverage gate failed, this rules out the family explanation only for the matched genes.
