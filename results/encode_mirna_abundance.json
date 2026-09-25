@@ -1,0 +1,1652 @@
+{
+ "tool": "ENCODE portal microRNA-seq quantifications + Ensembl REST lookup/id",
+ "files": [
+  {
+   "line": "GM12878",
+   "acc": "ENCFF697HYA",
+   "exp": "/experiments/ENCSR466AZX/"
+  },
+  {
+   "line": "GM12878",
+   "acc": "ENCFF652ODI",
+   "exp": "/experiments/ENCSR770HBF/"
+  },
+  {
+   "line": "HepG2",
+   "acc": "ENCFF671ZNH",
+   "exp": "/experiments/ENCSR730NEO/"
+  },
+  {
+   "line": "HepG2",
+   "acc": "ENCFF161OLK",
+   "exp": "/experiments/ENCSR730NEO/"
+  },
+  {
+   "line": "K562",
+   "acc": "ENCFF445FDO",
+   "exp": "/experiments/ENCSR638BGL/"
+  },
+  {
+   "line": "K562",
+   "acc": "ENCFF467CBW",
+   "exp": "/experiments/ENCSR569QVM/"
+  },
+  {
+   "line": "HCT116",
+   "acc": "ENCFF025FWJ",
+   "exp": "/experiments/ENCSR436ZRS/"
+  },
+  {
+   "line": "HCT116",
+   "acc": "ENCFF572XTJ",
+   "exp": "/experiments/ENCSR650SEP/"
+  },
+  {
+   "line": "MCF-7",
+   "acc": "ENCFF493QIX",
+   "exp": "/experiments/ENCSR155IQU/"
+  },
+  {
+   "line": "MCF-7",
+   "acc": "ENCFF806AZX",
+   "exp": "/experiments/ENCSR343HIX/"
+  },
+  {
+   "line": "IMR-90",
+   "acc": "ENCFF221TXA",
+   "exp": "/experiments/ENCSR123QKC/"
+  },
+  {
+   "line": "H1",
+   "acc": "ENCFF851ANC",
+   "exp": "/experiments/ENCSR588ZRK/"
+  },
+  {
+   "line": "H1",
+   "acc": "ENCFF379DIZ",
+   "exp": "/experiments/ENCSR588ZRK/"
+  },
+  {
+   "line": "HL-60",
+   "acc": "ENCFF574EPF",
+   "exp": "/experiments/ENCSR350OBF/"
+  },
+  {
+   "line": "HL-60",
+   "acc": "ENCFF596FVR",
+   "exp": "/experiments/ENCSR350OBF/"
+  },
+  {
+   "line": "A673",
+   "acc": "ENCFF392ZGJ",
+   "exp": "/experiments/ENCSR982DED/"
+  },
+  {
+   "line": "A673",
+   "acc": "ENCFF420OMK",
+   "exp": "/experiments/ENCSR982DED/"
+  },
+  {
+   "line": "Caco-2",
+   "acc": "ENCFF419EMB",
+   "exp": "/experiments/ENCSR638OIX/"
+  },
+  {
+   "line": "Caco-2",
+   "acc": "ENCFF631TZS",
+   "exp": "/experiments/ENCSR638OIX/"
+  },
+  {
+   "line": "PC-3",
+   "acc": "ENCFF585ZQW",
+   "exp": "/experiments/ENCSR387TQN/"
+  },
+  {
+   "line": "Panc1",
+   "acc": "ENCFF065WRR",
+   "exp": "/experiments/ENCSR086DQY/"
+  }
+ ],
+ "n_files": 21,
+ "n_lines": 12,
+ "n_panel": 131,
+ "n_mapped": 131,
+ "gates": {
+  "G0_rows_ok": true,
+  "G1_miR21_top_decile": true,
+  "G1_miR21_abundance": 17.82496855338171,
+  "G1_top_decile_threshold": 12.32149314163286,
+  "G2_miR122_max_line": "GM12878",
+  "G2_miR122_per_line": {
+   "GM12878": 0.0,
+   "HepG2": 0.0,
+   "K562": 0.0,
+   "HCT116": 0.0,
+   "MCF-7": 0.0,
+   "IMR-90": 0.0,
+   "H1": 0.0,
+   "HL-60": 0.0,
+   "A673": 0.0,
+   "Caco-2": 0.0,
+   "PC-3": 0.0,
+   "Panc1": 0.0
+  },
+  "G2_pass": false,
+  "G3_mapped_frac": 1.0,
+  "G3_pass": true
+ },
+ "H1_abundance_vs_cnn_auroc": {
+  "rho": 0.07565840450306718,
+  "p_one_sided": 0.19520266152942634,
+  "n": 131,
+  "verdict": "FALSIFIED"
+ },
+ "H2_abundance_vs_delta": {
+  "rho": 0.09900752295165516,
+  "p_one_sided": 0.13027353037650657,
+  "n": 131,
+  "verdict": "FALSIFIED"
+ },
+ "H3_partial_given_log_npos": {
+  "rho": 0.05046154458016887,
+  "p_one_sided": 0.284285705005472,
+  "n": 131,
+  "verdict": "FALSIFIED"
+ },
+ "descriptive": {
+  "abundance_vs_base_auroc": {
+   "rho": 0.01049068657859274,
+   "p_two_sided": 0.9053356609779541
+  },
+  "abundance_vs_n_pos": {
+   "rho": 0.06524101029246597,
+   "p_two_sided": 0.45908758913650016
+  }
+ },
+ "posthoc_G2b_tissue_controls": {
+  "note": "post-hoc, chosen after pre-registered G2 (miR-122 in HepG2) failed; not pre-registered",
+  "MIR142_top3": [
+   "GM12878",
+   "HL-60",
+   "K562"
+  ],
+  "MIR142_pass": true,
+  "MIR302A_max_line": "H1",
+  "MIR302A_pass": true,
+  "MIR302B_max_line": "H1",
+  "MIR302B_pass": true,
+  "MIR367_max_line": "H1",
+  "MIR367_pass": true,
+  "MIR122_all_zero": true,
+  "all_pass": true
+ },
+ "unmapped": [],
+ "per_mirna": [
+  {
+   "mirna": "hsa-let-7a-5p",
+   "precursors": [
+    "MIRLET7A1",
+    "MIRLET7A2",
+    "MIRLET7A3"
+   ],
+   "abundance": 18.592729143509864,
+   "cnn_auroc": 0.5947933819493454,
+   "base_auroc": 0.5849688028587111,
+   "delta": 0.009824579090634278,
+   "n_pos": 455
+  },
+  {
+   "mirna": "hsa-miR-1-3p",
+   "precursors": [
+    "MIR1-1",
+    "MIR1-2"
+   ],
+   "abundance": 0.7137400181497511,
+   "cnn_auroc": 0.5597747539471366,
+   "base_auroc": 0.5427062707775915,
+   "delta": 0.017068483169545123,
+   "n_pos": 557
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "precursors": [
+    "MIR103A1",
+    "MIR103A2"
+   ],
+   "abundance": 0.055727423946621286,
+   "cnn_auroc": 0.5460273191649877,
+   "base_auroc": 0.5410370078276231,
+   "delta": 0.004990311337364606,
+   "n_pos": 1003
+  },
+  {
+   "mirna": "hsa-miR-106a-5p",
+   "precursors": [
+    "MIR106A"
+   ],
+   "abundance": 6.145880854159316,
+   "cnn_auroc": 0.634671209424108,
+   "base_auroc": 0.5775190471550801,
+   "delta": 0.05715216226902797,
+   "n_pos": 994
+  },
+  {
+   "mirna": "hsa-miR-106b-5p",
+   "precursors": [
+    "MIR106B"
+   ],
+   "abundance": 12.266622752252683,
+   "cnn_auroc": 0.6400115824226394,
+   "base_auroc": 0.5734419961064445,
+   "delta": 0.06656958631619492,
+   "n_pos": 990
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "precursors": [
+    "MIR107"
+   ],
+   "abundance": 10.154636293188192,
+   "cnn_auroc": 0.5353688670536675,
+   "base_auroc": 0.5295202885047923,
+   "delta": 0.005848578548875216,
+   "n_pos": 999
+  },
+  {
+   "mirna": "hsa-miR-10a-5p",
+   "precursors": [
+    "MIR10A"
+   ],
+   "abundance": 11.541004574306633,
+   "cnn_auroc": 0.5493423096407883,
+   "base_auroc": 0.5549717185379189,
+   "delta": -0.0056294088971305944,
+   "n_pos": 544
+  },
+  {
+   "mirna": "hsa-miR-10b-5p",
+   "precursors": [
+    "MIR10B"
+   ],
+   "abundance": 6.181494993700465,
+   "cnn_auroc": 0.5448148435356295,
+   "base_auroc": 0.550246358311163,
+   "delta": -0.005431514775533497,
+   "n_pos": 545
+  },
+  {
+   "mirna": "hsa-miR-122-5p",
+   "precursors": [
+    "MIR122"
+   ],
+   "abundance": 0.0,
+   "cnn_auroc": 0.5992964412168412,
+   "base_auroc": 0.5471664500349218,
+   "delta": 0.05212999118191941,
+   "n_pos": 701
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "precursors": [
+    "MIR125B1",
+    "MIR125B2"
+   ],
+   "abundance": 8.57643361072552,
+   "cnn_auroc": 0.5468325780759573,
+   "base_auroc": 0.5494176180947897,
+   "delta": -0.0025850400188324185,
+   "n_pos": 590
+  },
+  {
+   "mirna": "hsa-miR-128-3p",
+   "precursors": [
+    "MIR128-1",
+    "MIR128-2"
+   ],
+   "abundance": 8.768067424029184,
+   "cnn_auroc": 0.5743310330366999,
+   "base_auroc": 0.5732892096809267,
+   "delta": 0.001041823355773186,
+   "n_pos": 989
+  },
+  {
+   "mirna": "hsa-miR-129-5p",
+   "precursors": [
+    "MIR129-1",
+    "MIR129-2"
+   ],
+   "abundance": 1.9788505214532186,
+   "cnn_auroc": 0.6141500507077683,
+   "base_auroc": 0.6054126399160654,
+   "delta": 0.008737410791702871,
+   "n_pos": 1363
+  },
+  {
+   "mirna": "hsa-miR-130a-3p",
+   "precursors": [
+    "MIR130A"
+   ],
+   "abundance": 11.013800591990574,
+   "cnn_auroc": 0.5877538072925367,
+   "base_auroc": 0.5260679026997566,
+   "delta": 0.061685904592780116,
+   "n_pos": 594
+  },
+  {
+   "mirna": "hsa-miR-130b-3p",
+   "precursors": [
+    "MIR130B"
+   ],
+   "abundance": 10.50657443107294,
+   "cnn_auroc": 0.5864821853861266,
+   "base_auroc": 0.5360232382025514,
+   "delta": 0.05045894718357524,
+   "n_pos": 595
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "precursors": [
+    "MIR132"
+   ],
+   "abundance": 8.398656388751212,
+   "cnn_auroc": 0.5836687867575217,
+   "base_auroc": 0.5871613685407093,
+   "delta": -0.003492581783187676,
+   "n_pos": 865
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "precursors": [
+    "MIR133B"
+   ],
+   "abundance": 0.0,
+   "cnn_auroc": 0.505440271893923,
+   "base_auroc": 0.502412579880807,
+   "delta": 0.0030276920131160345,
+   "n_pos": 285
+  },
+  {
+   "mirna": "hsa-miR-134-5p",
+   "precursors": [
+    "MIR134"
+   ],
+   "abundance": 2.108167726414351,
+   "cnn_auroc": 0.5637610687466773,
+   "base_auroc": 0.5574035482290005,
+   "delta": 0.006357520517676796,
+   "n_pos": 608
+  },
+  {
+   "mirna": "hsa-miR-135b-5p",
+   "precursors": [
+    "MIR135B"
+   ],
+   "abundance": 7.140113573395009,
+   "cnn_auroc": 0.5100079323109465,
+   "base_auroc": 0.5185876814148892,
+   "delta": -0.008579749103942658,
+   "n_pos": 488
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "precursors": [
+    "MIR137"
+   ],
+   "abundance": 0.7723875484765379,
+   "cnn_auroc": 0.5424713108852287,
+   "base_auroc": 0.5350079202315985,
+   "delta": 0.00746339065363022,
+   "n_pos": 364
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "precursors": [
+    "MIR138-1",
+    "MIR138-2"
+   ],
+   "abundance": 5.569488687751876,
+   "cnn_auroc": 0.5312568654912946,
+   "base_auroc": 0.5334967320261438,
+   "delta": -0.0022398665348491997,
+   "n_pos": 544
+  },
+  {
+   "mirna": "hsa-miR-139-5p",
+   "precursors": [
+    "MIR139"
+   ],
+   "abundance": 7.443812392550703,
+   "cnn_auroc": 0.5795726549702764,
+   "base_auroc": 0.5788682001668785,
+   "delta": 0.0007044548033979803,
+   "n_pos": 661
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "precursors": [
+    "MIR140"
+   ],
+   "abundance": 9.960721790792007,
+   "cnn_auroc": 0.5570122828061758,
+   "base_auroc": 0.5458813968147076,
+   "delta": 0.011130885991468165,
+   "n_pos": 399
+  },
+  {
+   "mirna": "hsa-miR-141-3p",
+   "precursors": [
+    "MIR141"
+   ],
+   "abundance": 5.658424445803569,
+   "cnn_auroc": 0.5854127732264524,
+   "base_auroc": 0.5808550810945644,
+   "delta": 0.004557692131887947,
+   "n_pos": 894
+  },
+  {
+   "mirna": "hsa-miR-143-3p",
+   "precursors": [
+    "MIR143"
+   ],
+   "abundance": 7.789703132890647,
+   "cnn_auroc": 0.5802000308232816,
+   "base_auroc": 0.5816228798764886,
+   "delta": -0.0014228490532069982,
+   "n_pos": 744
+  },
+  {
+   "mirna": "hsa-miR-144-3p",
+   "precursors": [
+    "MIR144"
+   ],
+   "abundance": 0.5788080567700251,
+   "cnn_auroc": 0.5570183321351546,
+   "base_auroc": 0.552904245740649,
+   "delta": 0.004114086394505612,
+   "n_pos": 856
+  },
+  {
+   "mirna": "hsa-miR-145-5p",
+   "precursors": [
+    "MIR145"
+   ],
+   "abundance": 4.06306681901737,
+   "cnn_auroc": 0.5509948381777693,
+   "base_auroc": 0.5464202740425761,
+   "delta": 0.004574564135193193,
+   "n_pos": 536
+  },
+  {
+   "mirna": "hsa-miR-146a-5p",
+   "precursors": [
+    "MIR146A"
+   ],
+   "abundance": 7.236729403774806,
+   "cnn_auroc": 0.5614733970112066,
+   "base_auroc": 0.5583642170404348,
+   "delta": 0.0031091799707717582,
+   "n_pos": 652
+  },
+  {
+   "mirna": "hsa-miR-146b-5p",
+   "precursors": [
+    "MIR146B"
+   ],
+   "abundance": 8.430407285143694,
+   "cnn_auroc": 0.5708731773247903,
+   "base_auroc": 0.5681511004091648,
+   "delta": 0.0027220769156254265,
+   "n_pos": 651
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "precursors": [
+    "MIR148A"
+   ],
+   "abundance": 8.043576238149843,
+   "cnn_auroc": 0.5623165177318935,
+   "base_auroc": 0.554457895333775,
+   "delta": 0.00785862239811852,
+   "n_pos": 570
+  },
+  {
+   "mirna": "hsa-miR-149-5p",
+   "precursors": [
+    "MIR149"
+   ],
+   "abundance": 9.10627673778328,
+   "cnn_auroc": 0.5637207917005775,
+   "base_auroc": 0.5661583915946775,
+   "delta": -0.0024375998940999732,
+   "n_pos": 857
+  },
+  {
+   "mirna": "hsa-miR-150-5p",
+   "precursors": [
+    "MIR150"
+   ],
+   "abundance": 1.7420750029091103,
+   "cnn_auroc": 0.582115867542971,
+   "base_auroc": 0.5822046329865362,
+   "delta": -8.876544356528626e-05,
+   "n_pos": 1159
+  },
+  {
+   "mirna": "hsa-miR-152-3p",
+   "precursors": [
+    "MIR152"
+   ],
+   "abundance": 5.779242136730314,
+   "cnn_auroc": 0.5633367705983877,
+   "base_auroc": 0.548131427412371,
+   "delta": 0.01520534318601674,
+   "n_pos": 558
+  },
+  {
+   "mirna": "hsa-miR-153-3p",
+   "precursors": [
+    "MIR153-1",
+    "MIR153-2"
+   ],
+   "abundance": 0.07978719393478,
+   "cnn_auroc": 0.5466454051500118,
+   "base_auroc": 0.5494754418744497,
+   "delta": -0.0028300367244379343,
+   "n_pos": 415
+  },
+  {
+   "mirna": "hsa-miR-155-5p",
+   "precursors": [
+    "MIR155"
+   ],
+   "abundance": 7.0064496122386135,
+   "cnn_auroc": 0.5925857625573049,
+   "base_auroc": 0.5746517155131865,
+   "delta": 0.017934047044118384,
+   "n_pos": 643
+  },
+  {
+   "mirna": "hsa-miR-15a-5p",
+   "precursors": [
+    "MIR15A"
+   ],
+   "abundance": 11.401479667275115,
+   "cnn_auroc": 0.5821154951913554,
+   "base_auroc": 0.5692865606729429,
+   "delta": 0.012828934518412494,
+   "n_pos": 954
+  },
+  {
+   "mirna": "hsa-miR-15b-5p",
+   "precursors": [
+    "MIR15B"
+   ],
+   "abundance": 10.647001394470024,
+   "cnn_auroc": 0.5795808575558054,
+   "base_auroc": 0.5705691412483044,
+   "delta": 0.009011716307500972,
+   "n_pos": 958
+  },
+  {
+   "mirna": "hsa-miR-16-5p",
+   "precursors": [
+    "MIR16-1",
+    "MIR16-2"
+   ],
+   "abundance": 17.77276905522524,
+   "cnn_auroc": 0.5821324936377688,
+   "base_auroc": 0.5723744986397042,
+   "delta": 0.009757994998064512,
+   "n_pos": 952
+  },
+  {
+   "mirna": "hsa-miR-17-5p",
+   "precursors": [
+    "MIR17"
+   ],
+   "abundance": 13.908096327403303,
+   "cnn_auroc": 0.6330501347268719,
+   "base_auroc": 0.5698421382107183,
+   "delta": 0.06320799651615361,
+   "n_pos": 925
+  },
+  {
+   "mirna": "hsa-miR-181a-5p",
+   "precursors": [
+    "MIR181A1",
+    "MIR181A2"
+   ],
+   "abundance": 14.695887281371743,
+   "cnn_auroc": 0.5795250089960418,
+   "base_auroc": 0.5805190310857817,
+   "delta": -0.0009940220897399765,
+   "n_pos": 777
+  },
+  {
+   "mirna": "hsa-miR-182-5p",
+   "precursors": [
+    "MIR182"
+   ],
+   "abundance": 11.455131096813929,
+   "cnn_auroc": 0.5822828622374496,
+   "base_auroc": 0.5605269998006798,
+   "delta": 0.021755862436769857,
+   "n_pos": 516
+  },
+  {
+   "mirna": "hsa-miR-184",
+   "precursors": [
+    "MIR184"
+   ],
+   "abundance": 1.9925209673635023,
+   "cnn_auroc": 0.5899528178798372,
+   "base_auroc": 0.5874597118293827,
+   "delta": 0.0024931060504544966,
+   "n_pos": 169
+  },
+  {
+   "mirna": "hsa-miR-185-5p",
+   "precursors": [
+    "MIR185"
+   ],
+   "abundance": 9.464806946878905,
+   "cnn_auroc": 0.5901577559331034,
+   "base_auroc": 0.5909142741301979,
+   "delta": -0.0007565181970945467,
+   "n_pos": 1273
+  },
+  {
+   "mirna": "hsa-miR-186-5p",
+   "precursors": [
+    "MIR186"
+   ],
+   "abundance": 7.91166529115258,
+   "cnn_auroc": 0.6139161654251281,
+   "base_auroc": 0.6152642795706399,
+   "delta": -0.0013481141455118362,
+   "n_pos": 1774
+  },
+  {
+   "mirna": "hsa-miR-187-3p",
+   "precursors": [
+    "MIR187"
+   ],
+   "abundance": 3.2917792214722956,
+   "cnn_auroc": 0.4749937907832644,
+   "base_auroc": 0.45746686536160225,
+   "delta": 0.017526925421662176,
+   "n_pos": 111
+  },
+  {
+   "mirna": "hsa-miR-18a-5p",
+   "precursors": [
+    "MIR18A"
+   ],
+   "abundance": 11.378355955955435,
+   "cnn_auroc": 0.5716215276436271,
+   "base_auroc": 0.5596573040219449,
+   "delta": 0.011964223621682146,
+   "n_pos": 550
+  },
+  {
+   "mirna": "hsa-miR-190a-5p",
+   "precursors": [
+    "MIR190A"
+   ],
+   "abundance": 4.871742526492597,
+   "cnn_auroc": 0.5620401532499071,
+   "base_auroc": 0.5621499342977063,
+   "delta": -0.00010978104779924003,
+   "n_pos": 415
+  },
+  {
+   "mirna": "hsa-miR-191-5p",
+   "precursors": [
+    "MIR191"
+   ],
+   "abundance": 12.904705750582185,
+   "cnn_auroc": 0.5409128209136025,
+   "base_auroc": 0.5198018834746592,
+   "delta": 0.021110937438943322,
+   "n_pos": 157
+  },
+  {
+   "mirna": "hsa-miR-192-5p",
+   "precursors": [
+    "MIR192"
+   ],
+   "abundance": 5.387197360415614,
+   "cnn_auroc": 0.5581101054513224,
+   "base_auroc": 0.5477955663953,
+   "delta": 0.01031453905602242,
+   "n_pos": 339
+  },
+  {
+   "mirna": "hsa-miR-193a-5p",
+   "precursors": [
+    "MIR193A"
+   ],
+   "abundance": 6.437556359272488,
+   "cnn_auroc": 0.5667994358625287,
+   "base_auroc": 0.5492660843142303,
+   "delta": 0.01753335154829838,
+   "n_pos": 401
+  },
+  {
+   "mirna": "hsa-miR-194-5p",
+   "precursors": [
+    "MIR194-1",
+    "MIR194-2"
+   ],
+   "abundance": 5.6666441772918095,
+   "cnn_auroc": 0.5931553600562811,
+   "base_auroc": 0.5852538573986577,
+   "delta": 0.00790150265762346,
+   "n_pos": 828
+  },
+  {
+   "mirna": "hsa-miR-195-5p",
+   "precursors": [
+    "MIR195"
+   ],
+   "abundance": 7.484795517041441,
+   "cnn_auroc": 0.5773024066262918,
+   "base_auroc": 0.5699054774136016,
+   "delta": 0.007396929212690195,
+   "n_pos": 957
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "precursors": [
+    "MIR196A1",
+    "MIR196A2"
+   ],
+   "abundance": 7.279870481191695,
+   "cnn_auroc": 0.5746095841836365,
+   "base_auroc": 0.5646599510804279,
+   "delta": 0.009949633103208622,
+   "n_pos": 405
+  },
+  {
+   "mirna": "hsa-miR-197-3p",
+   "precursors": [
+    "MIR197"
+   ],
+   "abundance": 8.662594479605644,
+   "cnn_auroc": 0.5705460531963782,
+   "base_auroc": 0.567351695022245,
+   "delta": 0.0031943581741331606,
+   "n_pos": 894
+  },
+  {
+   "mirna": "hsa-miR-199a-5p",
+   "precursors": [
+    "MIR199A1",
+    "MIR199A2"
+   ],
+   "abundance": 0.39172072021219384,
+   "cnn_auroc": 0.5624958491067278,
+   "base_auroc": 0.5701926880751694,
+   "delta": -0.007696838968441644,
+   "n_pos": 621
+  },
+  {
+   "mirna": "hsa-miR-19a-3p",
+   "precursors": [
+    "MIR19A"
+   ],
+   "abundance": 4.0398576608021015,
+   "cnn_auroc": 0.5811234001081869,
+   "base_auroc": 0.5600403689083406,
+   "delta": 0.021083031199846225,
+   "n_pos": 579
+  },
+  {
+   "mirna": "hsa-miR-19b-3p",
+   "precursors": [
+    "MIR19B1",
+    "MIR19B2"
+   ],
+   "abundance": 5.124180425833746,
+   "cnn_auroc": 0.584131371007003,
+   "base_auroc": 0.5680938471332808,
+   "delta": 0.016037523873722148,
+   "n_pos": 575
+  },
+  {
+   "mirna": "hsa-miR-200a-3p",
+   "precursors": [
+    "MIR200A"
+   ],
+   "abundance": 4.613465411282672,
+   "cnn_auroc": 0.584445945450019,
+   "base_auroc": 0.5817497559212851,
+   "delta": 0.002696189528733961,
+   "n_pos": 879
+  },
+  {
+   "mirna": "hsa-miR-200b-3p",
+   "precursors": [
+    "MIR200B"
+   ],
+   "abundance": 7.87476229073068,
+   "cnn_auroc": 0.5815101811675364,
+   "base_auroc": 0.584498297838213,
+   "delta": -0.002988116670676666,
+   "n_pos": 771
+  },
+  {
+   "mirna": "hsa-miR-200c-3p",
+   "precursors": [
+    "MIR200C"
+   ],
+   "abundance": 9.363137608762115,
+   "cnn_auroc": 0.588221151433475,
+   "base_auroc": 0.587621456003022,
+   "delta": 0.0005996954304530178,
+   "n_pos": 782
+  },
+  {
+   "mirna": "hsa-miR-204-5p",
+   "precursors": [
+    "MIR204"
+   ],
+   "abundance": 0.751917519853607,
+   "cnn_auroc": 0.5455556556664091,
+   "base_auroc": 0.5532129230790557,
+   "delta": -0.007657267412646607,
+   "n_pos": 670
+  },
+  {
+   "mirna": "hsa-miR-205-5p",
+   "precursors": [
+    "MIR205"
+   ],
+   "abundance": 3.870372766255786,
+   "cnn_auroc": 0.5910147424540416,
+   "base_auroc": 0.5923067224694258,
+   "delta": -0.0012919800153842198,
+   "n_pos": 629
+  },
+  {
+   "mirna": "hsa-miR-206",
+   "precursors": [
+    "MIR206"
+   ],
+   "abundance": 0.0,
+   "cnn_auroc": 0.5595230033722931,
+   "base_auroc": 0.5342609960679153,
+   "delta": 0.025262007304377776,
+   "n_pos": 564
+  },
+  {
+   "mirna": "hsa-miR-20a-5p",
+   "precursors": [
+    "MIR20A"
+   ],
+   "abundance": 13.278017938061904,
+   "cnn_auroc": 0.6360496601665223,
+   "base_auroc": 0.5657215576416363,
+   "delta": 0.07032810252488597,
+   "n_pos": 982
+  },
+  {
+   "mirna": "hsa-miR-21-5p",
+   "precursors": [
+    "MIR21"
+   ],
+   "abundance": 17.82496855338171,
+   "cnn_auroc": 0.5621416714327562,
+   "base_auroc": 0.5557771980972841,
+   "delta": 0.006364473335472076,
+   "n_pos": 418
+  },
+  {
+   "mirna": "hsa-miR-210-3p",
+   "precursors": [
+    "MIR210"
+   ],
+   "abundance": 8.601815630803278,
+   "cnn_auroc": 0.5633340416489587,
+   "base_auroc": 0.5422120696982575,
+   "delta": 0.0211219719507012,
+   "n_pos": 130
+  },
+  {
+   "mirna": "hsa-miR-214-3p",
+   "precursors": [
+    "MIR214"
+   ],
+   "abundance": 0.0,
+   "cnn_auroc": 0.5924486859326159,
+   "base_auroc": 0.5943205229258902,
+   "delta": -0.0018718369932743117,
+   "n_pos": 1812
+  },
+  {
+   "mirna": "hsa-miR-215-5p",
+   "precursors": [
+    "MIR215"
+   ],
+   "abundance": 1.072715513670443,
+   "cnn_auroc": 0.5622853217311655,
+   "base_auroc": 0.5544862987558202,
+   "delta": 0.007799022975345293,
+   "n_pos": 330
+  },
+  {
+   "mirna": "hsa-miR-216a-5p",
+   "precursors": [
+    "MIR216A"
+   ],
+   "abundance": 0.08161143926480993,
+   "cnn_auroc": 0.5972426855828588,
+   "base_auroc": 0.5833587559455753,
+   "delta": 0.013883929637283465,
+   "n_pos": 535
+  },
+  {
+   "mirna": "hsa-miR-218-5p",
+   "precursors": [
+    "MIR218-1",
+    "MIR218-2"
+   ],
+   "abundance": 3.120487424460967,
+   "cnn_auroc": 0.5570749017268541,
+   "base_auroc": 0.5468254332430903,
+   "delta": 0.010249468483763846,
+   "n_pos": 465
+  },
+  {
+   "mirna": "hsa-miR-22-3p",
+   "precursors": [
+    "MIR22"
+   ],
+   "abundance": 13.249862387273083,
+   "cnn_auroc": 0.5671974174698593,
+   "base_auroc": 0.5733163389528831,
+   "delta": -0.0061189214830238425,
+   "n_pos": 704
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "precursors": [
+    "MIR221"
+   ],
+   "abundance": 12.409031286233914,
+   "cnn_auroc": 0.5587629110674204,
+   "base_auroc": 0.5483541479585581,
+   "delta": 0.010408763108862296,
+   "n_pos": 563
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "precursors": [
+    "MIR222"
+   ],
+   "abundance": 10.199176387106695,
+   "cnn_auroc": 0.5642245635003118,
+   "base_auroc": 0.5537091106318852,
+   "delta": 0.010515452868426589,
+   "n_pos": 544
+  },
+  {
+   "mirna": "hsa-miR-223-3p",
+   "precursors": [
+    "MIR223"
+   ],
+   "abundance": 1.5508863666893933,
+   "cnn_auroc": 0.5346706624774027,
+   "base_auroc": 0.5311755788588925,
+   "delta": 0.003495083618510142,
+   "n_pos": 467
+  },
+  {
+   "mirna": "hsa-miR-224-5p",
+   "precursors": [
+    "MIR224"
+   ],
+   "abundance": 4.20971282879935,
+   "cnn_auroc": 0.58299409001087,
+   "base_auroc": 0.5846630301406401,
+   "delta": -0.0016689401297701467,
+   "n_pos": 818
+  },
+  {
+   "mirna": "hsa-miR-23a-3p",
+   "precursors": [
+    "MIR23A"
+   ],
+   "abundance": 15.20894196980962,
+   "cnn_auroc": 0.5899396701935848,
+   "base_auroc": 0.5901067193148186,
+   "delta": -0.00016704912123377547,
+   "n_pos": 837
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "precursors": [
+    "MIR24-1",
+    "MIR24-2"
+   ],
+   "abundance": 6.671848302271492,
+   "cnn_auroc": 0.5859159917561765,
+   "base_auroc": 0.584193094860225,
+   "delta": 0.001722896895951509,
+   "n_pos": 926
+  },
+  {
+   "mirna": "hsa-miR-25-3p",
+   "precursors": [
+    "MIR25"
+   ],
+   "abundance": 9.277971691968952,
+   "cnn_auroc": 0.5866101085390392,
+   "base_auroc": 0.5547877024237736,
+   "delta": 0.031822406115265545,
+   "n_pos": 479
+  },
+  {
+   "mirna": "hsa-miR-26a-5p",
+   "precursors": [
+    "MIR26A1",
+    "MIR26A2"
+   ],
+   "abundance": 9.219998761816342,
+   "cnn_auroc": 0.6036118736125534,
+   "base_auroc": 0.587868296010483,
+   "delta": 0.015743577602070458,
+   "n_pos": 635
+  },
+  {
+   "mirna": "hsa-miR-27a-3p",
+   "precursors": [
+    "MIR27A"
+   ],
+   "abundance": 11.064596244031867,
+   "cnn_auroc": 0.5834054851076378,
+   "base_auroc": 0.5835892067236803,
+   "delta": -0.00018372161604252035,
+   "n_pos": 1000
+  },
+  {
+   "mirna": "hsa-miR-28-5p",
+   "precursors": [
+    "MIR28"
+   ],
+   "abundance": 11.823671546619797,
+   "cnn_auroc": 0.5790568139986249,
+   "base_auroc": 0.5579004225282198,
+   "delta": 0.021156391470405045,
+   "n_pos": 683
+  },
+  {
+   "mirna": "hsa-miR-296-5p",
+   "precursors": [
+    "MIR296"
+   ],
+   "abundance": 5.300042076491843,
+   "cnn_auroc": 0.6066937196867367,
+   "base_auroc": 0.5880420956306908,
+   "delta": 0.018651624056045923,
+   "n_pos": 758
+  },
+  {
+   "mirna": "hsa-miR-29a-3p",
+   "precursors": [
+    "MIR29A"
+   ],
+   "abundance": 12.56394887469586,
+   "cnn_auroc": 0.5551472436575429,
+   "base_auroc": 0.5392490075459706,
+   "delta": 0.01589823611157226,
+   "n_pos": 515
+  },
+  {
+   "mirna": "hsa-miR-302a-3p",
+   "precursors": [
+    "MIR302A"
+   ],
+   "abundance": 2.4541162348623997,
+   "cnn_auroc": 0.6324973727656212,
+   "base_auroc": 0.5539182270225607,
+   "delta": 0.07857914574306057,
+   "n_pos": 783
+  },
+  {
+   "mirna": "hsa-miR-30a-5p",
+   "precursors": [
+    "MIR30A"
+   ],
+   "abundance": 7.2601149576428945,
+   "cnn_auroc": 0.5937856266574141,
+   "base_auroc": 0.5864205897296091,
+   "delta": 0.007365036927804991,
+   "n_pos": 514
+  },
+  {
+   "mirna": "hsa-miR-31-5p",
+   "precursors": [
+    "MIR31"
+   ],
+   "abundance": 6.439574782119784,
+   "cnn_auroc": 0.5681836082623908,
+   "base_auroc": 0.5730816569192825,
+   "delta": -0.004898048656891696,
+   "n_pos": 658
+  },
+  {
+   "mirna": "hsa-miR-32-5p",
+   "precursors": [
+    "MIR32"
+   ],
+   "abundance": 8.5006584875046,
+   "cnn_auroc": 0.5932248390849404,
+   "base_auroc": 0.5455220032351831,
+   "delta": 0.04770283584975732,
+   "n_pos": 494
+  },
+  {
+   "mirna": "hsa-miR-320a",
+   "precursors": [
+    "MIR320A"
+   ],
+   "abundance": 11.392061651657055,
+   "cnn_auroc": 0.5907175984218921,
+   "base_auroc": 0.5921140508268278,
+   "delta": -0.0013964524049356886,
+   "n_pos": 1045
+  },
+  {
+   "mirna": "hsa-miR-324-5p",
+   "precursors": [
+    "MIR324"
+   ],
+   "abundance": 11.221582914918585,
+   "cnn_auroc": 0.5402164053136915,
+   "base_auroc": 0.5476141221900428,
+   "delta": -0.007397716876351268,
+   "n_pos": 426
+  },
+  {
+   "mirna": "hsa-miR-328-3p",
+   "precursors": [
+    "MIR328"
+   ],
+   "abundance": 4.49073200099102,
+   "cnn_auroc": 0.5708119658119658,
+   "base_auroc": 0.5416933028919331,
+   "delta": 0.029118662920032734,
+   "n_pos": 584
+  },
+  {
+   "mirna": "hsa-miR-335-5p",
+   "precursors": [
+    "MIR335"
+   ],
+   "abundance": 10.076315996572276,
+   "cnn_auroc": 0.5513554547829296,
+   "base_auroc": 0.5369106425383645,
+   "delta": 0.014444812244565064,
+   "n_pos": 818
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "precursors": [
+    "MIR338"
+   ],
+   "abundance": 0.0,
+   "cnn_auroc": 0.5782732803966576,
+   "base_auroc": 0.5822770757358662,
+   "delta": -0.004003795339208582,
+   "n_pos": 1026
+  },
+  {
+   "mirna": "hsa-miR-339-5p",
+   "precursors": [
+    "MIR339"
+   ],
+   "abundance": 9.995297065415762,
+   "cnn_auroc": 0.5340872150342396,
+   "base_auroc": 0.537265851309634,
+   "delta": -0.0031786362753943864,
+   "n_pos": 670
+  },
+  {
+   "mirna": "hsa-miR-342-3p",
+   "precursors": [
+    "MIR342"
+   ],
+   "abundance": 9.495522124413007,
+   "cnn_auroc": 0.5905829509216769,
+   "base_auroc": 0.5913292827436645,
+   "delta": -0.0007463318219875781,
+   "n_pos": 884
+  },
+  {
+   "mirna": "hsa-miR-345-5p",
+   "precursors": [
+    "MIR345"
+   ],
+   "abundance": 7.505814407157565,
+   "cnn_auroc": 0.5567863500777629,
+   "base_auroc": 0.557521798474161,
+   "delta": -0.0007354483963980529,
+   "n_pos": 558
+  },
+  {
+   "mirna": "hsa-miR-34a-5p",
+   "precursors": [
+    "MIR34A"
+   ],
+   "abundance": 9.694367169261692,
+   "cnn_auroc": 0.5367360835130556,
+   "base_auroc": 0.5422048633917035,
+   "delta": -0.005468779878647911,
+   "n_pos": 742
+  },
+  {
+   "mirna": "hsa-miR-361-5p",
+   "precursors": [
+    "MIR361"
+   ],
+   "abundance": 11.509124179496151,
+   "cnn_auroc": 0.5696230436178852,
+   "base_auroc": 0.5663407842032105,
+   "delta": 0.0032822594146746376,
+   "n_pos": 611
+  },
+  {
+   "mirna": "hsa-miR-363-3p",
+   "precursors": [
+    "MIR363"
+   ],
+   "abundance": 4.189967713234779,
+   "cnn_auroc": 0.5847047797120003,
+   "base_auroc": 0.5461252140134257,
+   "delta": 0.03857956569857457,
+   "n_pos": 478
+  },
+  {
+   "mirna": "hsa-miR-375",
+   "precursors": [
+    "MIR375"
+   ],
+   "abundance": 5.057089148133198,
+   "cnn_auroc": 0.5577393766767131,
+   "base_auroc": 0.5637163415361177,
+   "delta": -0.0059769648594045766,
+   "n_pos": 436
+  },
+  {
+   "mirna": "hsa-miR-376a-3p",
+   "precursors": [
+    "MIR376A1",
+    "MIR376A2"
+   ],
+   "abundance": 0.1660926286242322,
+   "cnn_auroc": 0.5509492419935645,
+   "base_auroc": 0.544033490678369,
+   "delta": 0.006915751315195506,
+   "n_pos": 457
+  },
+  {
+   "mirna": "hsa-miR-378a-3p",
+   "precursors": [
+    "MIR378A"
+   ],
+   "abundance": 5.281363052058476,
+   "cnn_auroc": 0.5561169347518025,
+   "base_auroc": 0.556077943504119,
+   "delta": 3.899124768347306e-05,
+   "n_pos": 541
+  },
+  {
+   "mirna": "hsa-miR-409-3p",
+   "precursors": [
+    "MIR409"
+   ],
+   "abundance": 4.143654784364491,
+   "cnn_auroc": 0.5904881214109329,
+   "base_auroc": 0.5904521914151484,
+   "delta": 3.592999578450051e-05,
+   "n_pos": 867
+  },
+  {
+   "mirna": "hsa-miR-424-5p",
+   "precursors": [
+    "MIR424"
+   ],
+   "abundance": 11.713163397914991,
+   "cnn_auroc": 0.5755835334988939,
+   "base_auroc": 0.5734604215011738,
+   "delta": 0.002123111997720084,
+   "n_pos": 968
+  },
+  {
+   "mirna": "hsa-miR-425-5p",
+   "precursors": [
+    "MIR425"
+   ],
+   "abundance": 12.32149314163286,
+   "cnn_auroc": 0.5700605572159352,
+   "base_auroc": 0.5725588222125212,
+   "delta": -0.002498264996586008,
+   "n_pos": 776
+  },
+  {
+   "mirna": "hsa-miR-429",
+   "precursors": [
+    "MIR429"
+   ],
+   "abundance": 5.086549866124389,
+   "cnn_auroc": 0.5811734284699636,
+   "base_auroc": 0.5853116629867222,
+   "delta": -0.004138234516758654,
+   "n_pos": 787
+  },
+  {
+   "mirna": "hsa-miR-451a",
+   "precursors": [
+    "MIR451A"
+   ],
+   "abundance": 0.0,
+   "cnn_auroc": 0.5249090909090909,
+   "base_auroc": 0.5316363636363636,
+   "delta": -0.006727272727272693,
+   "n_pos": 77
+  },
+  {
+   "mirna": "hsa-miR-486-5p",
+   "precursors": [
+    "MIR486-1",
+    "MIR486-2"
+   ],
+   "abundance": 0.0,
+   "cnn_auroc": 0.5609817531053436,
+   "base_auroc": 0.5637264318294526,
+   "delta": -0.0027446787241089954,
+   "n_pos": 418
+  },
+  {
+   "mirna": "hsa-miR-494-3p",
+   "precursors": [
+    "MIR494"
+   ],
+   "abundance": 2.5877588378033645,
+   "cnn_auroc": 0.5957221167421255,
+   "base_auroc": 0.5982023270532106,
+   "delta": -0.0024802103110851403,
+   "n_pos": 1230
+  },
+  {
+   "mirna": "hsa-miR-495-3p",
+   "precursors": [
+    "MIR495"
+   ],
+   "abundance": 1.274433046954814,
+   "cnn_auroc": 0.6119220097598735,
+   "base_auroc": 0.6144574444612902,
+   "delta": -0.0025354347014167056,
+   "n_pos": 1986
+  },
+  {
+   "mirna": "hsa-miR-500a-3p",
+   "precursors": [
+    "MIR500A"
+   ],
+   "abundance": 3.849309365184179,
+   "cnn_auroc": 0.6667040604682701,
+   "base_auroc": 0.5830011517290894,
+   "delta": 0.08370290873918074,
+   "n_pos": 274
+  },
+  {
+   "mirna": "hsa-miR-503-5p",
+   "precursors": [
+    "MIR503"
+   ],
+   "abundance": 6.853675814049472,
+   "cnn_auroc": 0.5489278752436648,
+   "base_auroc": 0.5404290429042904,
+   "delta": 0.00849883233937443,
+   "n_pos": 606
+  },
+  {
+   "mirna": "hsa-miR-532-5p",
+   "precursors": [
+    "MIR532"
+   ],
+   "abundance": 9.642003287197406,
+   "cnn_auroc": 0.5644362366618941,
+   "base_auroc": 0.5581904319446602,
+   "delta": 0.006245804717233905,
+   "n_pos": 418
+  },
+  {
+   "mirna": "hsa-miR-545-3p",
+   "precursors": [
+    "MIR545"
+   ],
+   "abundance": 2.3456697680445995,
+   "cnn_auroc": 0.5930026428193277,
+   "base_auroc": 0.5907678383236369,
+   "delta": 0.002234804495690801,
+   "n_pos": 1274
+  },
+  {
+   "mirna": "hsa-miR-574-5p",
+   "precursors": [
+    "MIR574"
+   ],
+   "abundance": 5.961041965056566,
+   "cnn_auroc": 0.5486109299041629,
+   "base_auroc": 0.5425529203514046,
+   "delta": 0.00605800955275837,
+   "n_pos": 563
+  },
+  {
+   "mirna": "hsa-miR-590-5p",
+   "precursors": [
+    "MIR590"
+   ],
+   "abundance": 9.051925282822879,
+   "cnn_auroc": 0.5530383438626285,
+   "base_auroc": 0.5532598513131238,
+   "delta": -0.0002215074504953174,
+   "n_pos": 422
+  },
+  {
+   "mirna": "hsa-miR-615-3p",
+   "precursors": [
+    "MIR615"
+   ],
+   "abundance": 6.148604053267418,
+   "cnn_auroc": 0.5562839848158407,
+   "base_auroc": 0.5703088129680927,
+   "delta": -0.014024828152251922,
+   "n_pos": 135
+  },
+  {
+   "mirna": "hsa-miR-625-5p",
+   "precursors": [
+    "MIR625"
+   ],
+   "abundance": 2.0481746287779323,
+   "cnn_auroc": 0.5936592910725822,
+   "base_auroc": 0.5860977108689825,
+   "delta": 0.007561580203599649,
+   "n_pos": 1089
+  },
+  {
+   "mirna": "hsa-miR-629-5p",
+   "precursors": [
+    "MIR629"
+   ],
+   "abundance": 8.855451288616422,
+   "cnn_auroc": 0.5728592596374669,
+   "base_auroc": 0.5732799564304913,
+   "delta": -0.0004206967930244776,
+   "n_pos": 534
+  },
+  {
+   "mirna": "hsa-miR-652-3p",
+   "precursors": [
+    "MIR652"
+   ],
+   "abundance": 10.944404162986718,
+   "cnn_auroc": 0.41690039095699477,
+   "base_auroc": 0.430467023627401,
+   "delta": -0.013566632670406253,
+   "n_pos": 74
+  },
+  {
+   "mirna": "hsa-miR-660-5p",
+   "precursors": [
+    "MIR660"
+   ],
+   "abundance": 8.273903738199182,
+   "cnn_auroc": 0.5663508611389076,
+   "base_auroc": 0.5491640100046177,
+   "delta": 0.01718685113428997,
+   "n_pos": 379
+  },
+  {
+   "mirna": "hsa-miR-671-5p",
+   "precursors": [
+    "MIR671"
+   ],
+   "abundance": 10.176426544529019,
+   "cnn_auroc": 0.5792693707365226,
+   "base_auroc": 0.5810860295453764,
+   "delta": -0.0018166588088537328,
+   "n_pos": 897
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "precursors": [
+    "MIR7-1",
+    "MIR7-2",
+    "MIR7-3"
+   ],
+   "abundance": 7.8785308346148195,
+   "cnn_auroc": 0.593722838201476,
+   "base_auroc": 0.5941596988134069,
+   "delta": -0.00043686061193093373,
+   "n_pos": 1002
+  },
+  {
+   "mirna": "hsa-miR-708-5p",
+   "precursors": [
+    "MIR708"
+   ],
+   "abundance": 3.204786979155781,
+   "cnn_auroc": 0.5769823737355204,
+   "base_auroc": 0.5540104950277054,
+   "delta": 0.02297187870781503,
+   "n_pos": 687
+  },
+  {
+   "mirna": "hsa-miR-744-5p",
+   "precursors": [
+    "MIR744"
+   ],
+   "abundance": 11.719014246814602,
+   "cnn_auroc": 0.5818282487546906,
+   "base_auroc": 0.5818386776872041,
+   "delta": -1.0428932513462108e-05,
+   "n_pos": 367
+  },
+  {
+   "mirna": "hsa-miR-885-5p",
+   "precursors": [
+    "MIR885"
+   ],
+   "abundance": 0.0,
+   "cnn_auroc": 0.5989551317641927,
+   "base_auroc": 0.582682898415657,
+   "delta": 0.01627223334853567,
+   "n_pos": 592
+  },
+  {
+   "mirna": "hsa-miR-9-5p",
+   "precursors": [
+    "MIR9-1",
+    "MIR9-2",
+    "MIR9-3"
+   ],
+   "abundance": 0.9707232795554906,
+   "cnn_auroc": 0.5890409089668598,
+   "base_auroc": 0.5855419960519254,
+   "delta": 0.0034989129149344267,
+   "n_pos": 444
+  },
+  {
+   "mirna": "hsa-miR-92a-3p",
+   "precursors": [
+    "MIR92A1",
+    "MIR92A2"
+   ],
+   "abundance": 13.332419465258907,
+   "cnn_auroc": 0.589631834772113,
+   "base_auroc": 0.5537237952828664,
+   "delta": 0.03590803948924659,
+   "n_pos": 501
+  },
+  {
+   "mirna": "hsa-miR-92b-3p",
+   "precursors": [
+    "MIR92B"
+   ],
+   "abundance": 9.626881006721074,
+   "cnn_auroc": 0.5931715984271217,
+   "base_auroc": 0.5595813626727517,
+   "delta": 0.033590235754370035,
+   "n_pos": 491
+  },
+  {
+   "mirna": "hsa-miR-93-5p",
+   "precursors": [
+    "MIR93"
+   ],
+   "abundance": 12.988986879511696,
+   "cnn_auroc": 0.6401928815957455,
+   "base_auroc": 0.5681166668021933,
+   "delta": 0.0720762147935522,
+   "n_pos": 930
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "precursors": [
+    "MIR96"
+   ],
+   "abundance": 8.721040787519549,
+   "cnn_auroc": 0.5384594881006998,
+   "base_auroc": 0.5369740948713144,
+   "delta": 0.0014853932293853456,
+   "n_pos": 472
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "precursors": [
+    "MIR98"
+   ],
+   "abundance": 12.288212722872249,
+   "cnn_auroc": 0.5966710579070966,
+   "base_auroc": 0.5828214674379977,
+   "delta": 0.013849590469098949,
+   "n_pos": 442
+  },
+  {
+   "mirna": "hsa-miR-99a-5p",
+   "precursors": [
+    "MIR99A"
+   ],
+   "abundance": 8.535568446285232,
+   "cnn_auroc": 0.4182781456953642,
+   "base_auroc": 0.4211920529801325,
+   "delta": -0.0029139072847683134,
+   "n_pos": 50
+  }
+ ]
+}
