@@ -1,0 +1,1895 @@
+{
+ "tool": "RNAcentral REST API (rnacentral.org/api/v1/rna)",
+ "n_used_mirnas": 132,
+ "n_with_targetscan_accession": 132,
+ "n_resolved": 132,
+ "gates": {
+  "G1_let7a_exact": true,
+  "G2_resolved_frac": 1.0,
+  "G2_pass": true,
+  "G3_deranged_seed_identity": 0.007575757575757576,
+  "G3_pass": true
+ },
+ "H1_seed_identity": {
+  "frac": 1.0,
+  "verdict": "CONFIRMED"
+ },
+ "H2_full_identity": {
+  "frac": 1.0,
+  "verdict": "CONFIRMED"
+ },
+ "seed_mismatches": [],
+ "full_mismatches": [],
+ "unresolved": [],
+ "not_in_targetscan_human": [],
+ "rows": [
+  {
+   "mirna": "hsa-let-7a-5p",
+   "mimat": "MIMAT0000062",
+   "targetscan_seq": "UGAGGUAGUAGGUUGUAUAGUU",
+   "rnacentral": [
+    [
+     "URS0000416056",
+     "UGAGGUAGUAGGUUGUAUAGUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-1-3p",
+   "mimat": "MIMAT0000416",
+   "targetscan_seq": "UGGAAUGUAAAGAAGUAUGUAU",
+   "rnacentral": [
+    [
+     "URS00001DC04F",
+     "UGGAAUGUAAAGAAGUAUGUAU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-100-5p",
+   "mimat": "MIMAT0000098",
+   "targetscan_seq": "AACCCGUAGAUCCGAACUUGUG",
+   "rnacentral": [
+    [
+     "URS000040D674",
+     "AACCCGUAGAUCCGAACUUGUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-103a-3p",
+   "mimat": "MIMAT0000101",
+   "targetscan_seq": "AGCAGCAUUGUACAGGGCUAUGA",
+   "rnacentral": [
+    [
+     "URS0000476BE1",
+     "AGCAGCAUUGUACAGGGCUAUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-106a-5p",
+   "mimat": "MIMAT0000103",
+   "targetscan_seq": "AAAAGUGCUUACAGUGCAGGUAG",
+   "rnacentral": [
+    [
+     "URS00003FE4D4",
+     "AAAAGUGCUUACAGUGCAGGUAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-106b-5p",
+   "mimat": "MIMAT0000680",
+   "targetscan_seq": "UAAAGUGCUGACAGUGCAGAU",
+   "rnacentral": [
+    [
+     "URS00004449AE",
+     "UAAAGUGCUGACAGUGCAGAU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-107",
+   "mimat": "MIMAT0000104",
+   "targetscan_seq": "AGCAGCAUUGUACAGGGCUAUCA",
+   "rnacentral": [
+    [
+     "URS00005743AE",
+     "AGCAGCAUUGUACAGGGCUAUCA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-10a-5p",
+   "mimat": "MIMAT0000253",
+   "targetscan_seq": "UACCCUGUAGAUCCGAAUUUGUG",
+   "rnacentral": [
+    [
+     "URS000016D2D4",
+     "UACCCUGUAGAUCCGAAUUUGUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-10b-5p",
+   "mimat": "MIMAT0000254",
+   "targetscan_seq": "UACCCUGUAGAACCGAAUUUGUG",
+   "rnacentral": [
+    [
+     "URS000058760A",
+     "UACCCUGUAGAACCGAAUUUGUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-122-5p",
+   "mimat": "MIMAT0000421",
+   "targetscan_seq": "UGGAGUGUGACAAUGGUGUUUG",
+   "rnacentral": [
+    [
+     "URS00003380CC",
+     "UGGAGUGUGACAAUGGUGUUUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-125b-5p",
+   "mimat": "MIMAT0000423",
+   "targetscan_seq": "UCCCUGAGACCCUAACUUGUGA",
+   "rnacentral": [
+    [
+     "URS0000209905",
+     "UCCCUGAGACCCUAACUUGUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-128-3p",
+   "mimat": "MIMAT0000424",
+   "targetscan_seq": "UCACAGUGAACCGGUCUCUUU",
+   "rnacentral": [
+    [
+     "URS000024A59E",
+     "UCACAGUGAACCGGUCUCUUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-129-5p",
+   "mimat": "MIMAT0000242",
+   "targetscan_seq": "CUUUUUGCGGUCUGGGCUUGC",
+   "rnacentral": [
+    [
+     "URS00004E1410",
+     "CUUUUUGCGGUCUGGGCUUGC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-130a-3p",
+   "mimat": "MIMAT0000425",
+   "targetscan_seq": "CAGUGCAAUGUUAAAAGGGCAU",
+   "rnacentral": [
+    [
+     "URS0000315338",
+     "CAGUGCAAUGUUAAAAGGGCAU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-130b-3p",
+   "mimat": "MIMAT0000691",
+   "targetscan_seq": "CAGUGCAAUGAUGAAAGGGCAU",
+   "rnacentral": [
+    [
+     "URS00002C0FCB",
+     "CAGUGCAAUGAUGAAAGGGCAU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-132-3p",
+   "mimat": "MIMAT0000426",
+   "targetscan_seq": "UAACAGUCUACAGCCAUGGUCG",
+   "rnacentral": [
+    [
+     "URS00006054DA",
+     "UAACAGUCUACAGCCAUGGUCG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-133b",
+   "mimat": "MIMAT0000770",
+   "targetscan_seq": "UUUGGUCCCCUUCAACCAGCUA",
+   "rnacentral": [
+    [
+     "URS000032BD73",
+     "UUUGGUCCCCUUCAACCAGCUA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-134-5p",
+   "mimat": "MIMAT0000447",
+   "targetscan_seq": "UGUGACUGGUUGACCAGAGGGG",
+   "rnacentral": [
+    [
+     "URS0000272A92",
+     "UGUGACUGGUUGACCAGAGGGG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-135b-5p",
+   "mimat": "MIMAT0000758",
+   "targetscan_seq": "UAUGGCUUUUCAUUCCUAUGUGA",
+   "rnacentral": [
+    [
+     "URS000001C659",
+     "UAUGGCUUUUCAUUCCUAUGUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-137",
+   "mimat": "MIMAT0000429",
+   "targetscan_seq": "UUAUUGCUUAAGAAUACGCGUAG",
+   "rnacentral": [
+    [
+     "URS00001E3523",
+     "UUAUUGCUUAAGAAUACGCGUAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-138-5p",
+   "mimat": "MIMAT0000430",
+   "targetscan_seq": "AGCUGGUGUUGUGAAUCAGGCCG",
+   "rnacentral": [
+    [
+     "URS000040780F",
+     "AGCUGGUGUUGUGAAUCAGGCCG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-139-5p",
+   "mimat": "MIMAT0000250",
+   "targetscan_seq": "UCUACAGUGCACGUGUCUCCAGU",
+   "rnacentral": [
+    [
+     "URS000025D232",
+     "UCUACAGUGCACGUGUCUCCAGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-140-5p",
+   "mimat": "MIMAT0000431",
+   "targetscan_seq": "CAGUGGUUUUACCCUAUGGUAG",
+   "rnacentral": [
+    [
+     "URS000026261D",
+     "CAGUGGUUUUACCCUAUGGUAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-141-3p",
+   "mimat": "MIMAT0000432",
+   "targetscan_seq": "UAACACUGUCUGGUAAAGAUGG",
+   "rnacentral": [
+    [
+     "URS000003E1A9",
+     "UAACACUGUCUGGUAAAGAUGG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-143-3p",
+   "mimat": "MIMAT0000435",
+   "targetscan_seq": "UGAGAUGAAGCACUGUAGCUC",
+   "rnacentral": [
+    [
+     "URS00005C2A6D",
+     "UGAGAUGAAGCACUGUAGCUC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-144-3p",
+   "mimat": "MIMAT0000436",
+   "targetscan_seq": "UACAGUAUAGAUGAUGUACU",
+   "rnacentral": [
+    [
+     "URS000037C5A8",
+     "UACAGUAUAGAUGAUGUACU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-145-5p",
+   "mimat": "MIMAT0000437",
+   "targetscan_seq": "GUCCAGUUUUCCCAGGAAUCCCU",
+   "rnacentral": [
+    [
+     "URS0000527F89",
+     "GUCCAGUUUUCCCAGGAAUCCCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-146a-5p",
+   "mimat": "MIMAT0000449",
+   "targetscan_seq": "UGAGAACUGAAUUCCAUGGGUU",
+   "rnacentral": [
+    [
+     "URS000050B527",
+     "UGAGAACUGAAUUCCAUGGGUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-146b-5p",
+   "mimat": "MIMAT0002809",
+   "targetscan_seq": "UGAGAACUGAAUUCCAUAGGCU",
+   "rnacentral": [
+    [
+     "URS000075DF95",
+     "UGAGAACUGAAUUCCAUAGGCUG"
+    ],
+    [
+     "URS000061B694",
+     "UGAGAACUGAAUUCCAUAGGCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-148a-3p",
+   "mimat": "MIMAT0000243",
+   "targetscan_seq": "UCAGUGCACUACAGAACUUUGU",
+   "rnacentral": [
+    [
+     "URS00003BBF48",
+     "UCAGUGCACUACAGAACUUUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-149-5p",
+   "mimat": "MIMAT0000450",
+   "targetscan_seq": "UCUGGCUCCGUGUCUUCACUCCC",
+   "rnacentral": [
+    [
+     "URS00001C770D",
+     "UCUGGCUCCGUGUCUUCACUCCC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-150-5p",
+   "mimat": "MIMAT0000451",
+   "targetscan_seq": "UCUCCCAACCCUUGUACCAGUG",
+   "rnacentral": [
+    [
+     "URS000016FD1A",
+     "UCUCCCAACCCUUGUACCAGUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-152-3p",
+   "mimat": "MIMAT0000438",
+   "targetscan_seq": "UCAGUGCAUGACAGAACUUGG",
+   "rnacentral": [
+    [
+     "URS00003AFD9B",
+     "UCAGUGCAUGACAGAACUUGG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-153-3p",
+   "mimat": "MIMAT0000439",
+   "targetscan_seq": "UUGCAUAGUCACAAAAGUGAUC",
+   "rnacentral": [
+    [
+     "URS0000068B85",
+     "UUGCAUAGUCACAAAAGUGAUC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-155-5p",
+   "mimat": "MIMAT0000646",
+   "targetscan_seq": "UUAAUGCUAAUCGUGAUAGGGGU",
+   "rnacentral": [
+    [
+     "URS0000D54CAD",
+     "UUAAUGCUAAUCGUGAUAGGGGUU"
+    ],
+    [
+     "URS0000338542",
+     "UUAAUGCUAAUCGUGAUAGGGGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-15a-5p",
+   "mimat": "MIMAT0000068",
+   "targetscan_seq": "UAGCAGCACAUAAUGGUUUGUG",
+   "rnacentral": [
+    [
+     "URS00003D1AE3",
+     "UAGCAGCACAUAAUGGUUUGUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-15b-5p",
+   "mimat": "MIMAT0000417",
+   "targetscan_seq": "UAGCAGCACAUCAUGGUUUACA",
+   "rnacentral": [
+    [
+     "URS00004AD914",
+     "UAGCAGCACAUCAUGGUUUACA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-16-5p",
+   "mimat": "MIMAT0000069",
+   "targetscan_seq": "UAGCAGCACGUAAAUAUUGGCG",
+   "rnacentral": [
+    [
+     "URS00004BCD9C",
+     "UAGCAGCACGUAAAUAUUGGCG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-17-5p",
+   "mimat": "MIMAT0000070",
+   "targetscan_seq": "CAAAGUGCUUACAGUGCAGGUAG",
+   "rnacentral": [
+    [
+     "URS00002075FA",
+     "CAAAGUGCUUACAGUGCAGGUAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-181a-5p",
+   "mimat": "MIMAT0000256",
+   "targetscan_seq": "AACAUUCAACGCUGUCGGUGAGU",
+   "rnacentral": [
+    [
+     "URS00003DA300",
+     "AACAUUCAACGCUGUCGGUGAGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-182-5p",
+   "mimat": "MIMAT0000259",
+   "targetscan_seq": "UUUGGCAAUGGUAGAACUCACACU",
+   "rnacentral": [
+    [
+     "URS00001CC379",
+     "UUUGGCAAUGGUAGAACUCACACU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-184",
+   "mimat": "MIMAT0000454",
+   "targetscan_seq": "UGGACGGAGAACUGAUAAGGGU",
+   "rnacentral": [
+    [
+     "URS0000543D82",
+     "UGGACGGAGAACUGAUAAGGGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-185-5p",
+   "mimat": "MIMAT0000455",
+   "targetscan_seq": "UGGAGAGAAAGGCAGUUCCUGA",
+   "rnacentral": [
+    [
+     "URS00004176D4",
+     "UGGAGAGAAAGGCAGUUCCUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-186-5p",
+   "mimat": "MIMAT0000456",
+   "targetscan_seq": "CAAAGAAUUCUCCUUUUGGGCU",
+   "rnacentral": [
+    [
+     "URS000040DCFF",
+     "CAAAGAAUUCUCCUUUUGGGCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-187-3p",
+   "mimat": "MIMAT0000262",
+   "targetscan_seq": "UCGUGUCUUGUGUUGCAGCCGG",
+   "rnacentral": [
+    [
+     "URS00001EB9FC",
+     "UCGUGUCUUGUGUUGCAGCCGG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-18a-5p",
+   "mimat": "MIMAT0000072",
+   "targetscan_seq": "UAAGGUGCAUCUAGUGCAGAUAG",
+   "rnacentral": [
+    [
+     "URS000035CC3E",
+     "UAAGGUGCAUCUAGUGCAGAUAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-190a-5p",
+   "mimat": "MIMAT0000458",
+   "targetscan_seq": "UGAUAUGUUUGAUAUAUUAGGU",
+   "rnacentral": [
+    [
+     "URS0000520927",
+     "UGAUAUGUUUGAUAUAUUAGGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-191-5p",
+   "mimat": "MIMAT0000440",
+   "targetscan_seq": "CAACGGAAUCCCAAAAGCAGCUG",
+   "rnacentral": [
+    [
+     "URS00005C2E31",
+     "CAACGGAAUCCCAAAAGCAGCUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-192-5p",
+   "mimat": "MIMAT0000222",
+   "targetscan_seq": "CUGACCUAUGAAUUGACAGCC",
+   "rnacentral": [
+    [
+     "URS0000155642",
+     "CUGACCUAUGAAUUGACAGCC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-193a-5p",
+   "mimat": "MIMAT0004614",
+   "targetscan_seq": "UGGGUCUUUGCGGGCGAGAUGA",
+   "rnacentral": [
+    [
+     "URS0000367985",
+     "UGGGUCUUUGCGGGCGAGAUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-194-5p",
+   "mimat": "MIMAT0000460",
+   "targetscan_seq": "UGUAACAGCAACUCCAUGUGGA",
+   "rnacentral": [
+    [
+     "URS000029C2DC",
+     "UGUAACAGCAACUCCAUGUGGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-195-5p",
+   "mimat": "MIMAT0000461",
+   "targetscan_seq": "UAGCAGCACAGAAAUAUUGGC",
+   "rnacentral": [
+    [
+     "URS00005B3525",
+     "UAGCAGCACAGAAAUAUUGGC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-196a-5p",
+   "mimat": "MIMAT0000226",
+   "targetscan_seq": "UAGGUAGUUUCAUGUUGUUGGG",
+   "rnacentral": [
+    [
+     "URS00000DA6A7",
+     "UAGGUAGUUUCAUGUUGUUGGG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-197-3p",
+   "mimat": "MIMAT0000227",
+   "targetscan_seq": "UUCACCACCUUCUCCACCCAGC",
+   "rnacentral": [
+    [
+     "URS000061E740",
+     "UUCACCACCUUCUCCACCCAGC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-199a-5p",
+   "mimat": "MIMAT0000231",
+   "targetscan_seq": "CCCAGUGUUCAGACUACCUGUUC",
+   "rnacentral": [
+    [
+     "URS0000554A4F",
+     "CCCAGUGUUCAGACUACCUGUUC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-19a-3p",
+   "mimat": "MIMAT0000073",
+   "targetscan_seq": "UGUGCAAAUCUAUGCAAAACUGA",
+   "rnacentral": [
+    [
+     "URS000006FDD4",
+     "UGUGCAAAUCUAUGCAAAACUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-19b-3p",
+   "mimat": "MIMAT0000074",
+   "targetscan_seq": "UGUGCAAAUCCAUGCAAAACUGA",
+   "rnacentral": [
+    [
+     "URS000013D17D",
+     "UGUGCAAAUCCAUGCAAAACUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-200a-3p",
+   "mimat": "MIMAT0000682",
+   "targetscan_seq": "UAACACUGUCUGGUAACGAUGU",
+   "rnacentral": [
+    [
+     "URS000008DA94",
+     "UAACACUGUCUGGUAACGAUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-200b-3p",
+   "mimat": "MIMAT0000318",
+   "targetscan_seq": "UAAUACUGCCUGGUAAUGAUGA",
+   "rnacentral": [
+    [
+     "URS000014D9C1",
+     "UAAUACUGCCUGGUAAUGAUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-200c-3p",
+   "mimat": "MIMAT0000617",
+   "targetscan_seq": "UAAUACUGCCGGGUAAUGAUGGA",
+   "rnacentral": [
+    [
+     "URS0000192F9C",
+     "UAAUACUGCCGGGUAAUGAUGGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-204-5p",
+   "mimat": "MIMAT0000265",
+   "targetscan_seq": "UUCCCUUUGUCAUCCUAUGCCU",
+   "rnacentral": [
+    [
+     "URS000029D9F1",
+     "UUCCCUUUGUCAUCCUAUGCCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-205-5p",
+   "mimat": "MIMAT0000266",
+   "targetscan_seq": "UCCUUCAUUCCACCGGAGUCUG",
+   "rnacentral": [
+    [
+     "URS0000446722",
+     "UCCUUCAUUCCACCGGAGUCUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-206",
+   "mimat": "MIMAT0000462",
+   "targetscan_seq": "UGGAAUGUAAGGAAGUGUGUGG",
+   "rnacentral": [
+    [
+     "URS000034B6F5",
+     "UGGAAUGUAAGGAAGUGUGUGG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-20a-5p",
+   "mimat": "MIMAT0000075",
+   "targetscan_seq": "UAAAGUGCUUAUAGUGCAGGUAG",
+   "rnacentral": [
+    [
+     "URS0000574A2C",
+     "UAAAGUGCUUAUAGUGCAGGUAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-21-5p",
+   "mimat": "MIMAT0000076",
+   "targetscan_seq": "UAGCUUAUCAGACUGAUGUUGA",
+   "rnacentral": [
+    [
+     "URS000039ED8D",
+     "UAGCUUAUCAGACUGAUGUUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-210-3p",
+   "mimat": "MIMAT0000267",
+   "targetscan_seq": "CUGUGCGUGUGACAGCGGCUGA",
+   "rnacentral": [
+    [
+     "URS000055128B",
+     "CUGUGCGUGUGACAGCGGCUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-214-3p",
+   "mimat": "MIMAT0000271",
+   "targetscan_seq": "ACAGCAGGCACAGACAGGCAGU",
+   "rnacentral": [
+    [
+     "URS00002C11C3",
+     "ACAGCAGGCACAGACAGGCAGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-215-5p",
+   "mimat": "MIMAT0000272",
+   "targetscan_seq": "AUGACCUAUGAAUUGACAGAC",
+   "rnacentral": [
+    [
+     "URS0000315B13",
+     "AUGACCUAUGAAUUGACAGAC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-216a-5p",
+   "mimat": "MIMAT0000273",
+   "targetscan_seq": "UAAUCUCAGCUGGCAACUGUGA",
+   "rnacentral": [
+    [
+     "URS0000318E24",
+     "UAAUCUCAGCUGGCAACUGUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-218-5p",
+   "mimat": "MIMAT0000275",
+   "targetscan_seq": "UUGUGCUUGAUCUAACCAUGU",
+   "rnacentral": [
+    [
+     "URS000020D84A",
+     "UUGUGCUUGAUCUAACCAUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-22-3p",
+   "mimat": "MIMAT0000077",
+   "targetscan_seq": "AAGCUGCCAGUUGAAGAACUGU",
+   "rnacentral": [
+    [
+     "URS0000096022",
+     "AAGCUGCCAGUUGAAGAACUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-221-3p",
+   "mimat": "MIMAT0000278",
+   "targetscan_seq": "AGCUACAUUGUCUGCUGGGUUUC",
+   "rnacentral": [
+    [
+     "URS0000170CF4",
+     "AGCUACAUUGUCUGCUGGGUUUC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-222-3p",
+   "mimat": "MIMAT0000279",
+   "targetscan_seq": "AGCUACAUCUGGCUACUGGGU",
+   "rnacentral": [
+    [
+     "URS00002C6949",
+     "AGCUACAUCUGGCUACUGGGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-223-3p",
+   "mimat": "MIMAT0000280",
+   "targetscan_seq": "UGUCAGUUUGUCAAAUACCCCA",
+   "rnacentral": [
+    [
+     "URS00000B7E30",
+     "UGUCAGUUUGUCAAAUACCCCA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-224-5p",
+   "mimat": "MIMAT0000281",
+   "targetscan_seq": "CAAGUCACUAGUGGUUCCGUU",
+   "rnacentral": [
+    [
+     "URS0000D55DFB",
+     "UCAAGUCACUAGUGGUUCCGUUUAG"
+    ],
+    [
+     "URS00002BBD4E",
+     "CAAGUCACUAGUGGUUCCGUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-23a-3p",
+   "mimat": "MIMAT0000078",
+   "targetscan_seq": "AUCACAUUGCCAGGGAUUUCC",
+   "rnacentral": [
+    [
+     "URS00005540D2",
+     "AUCACAUUGCCAGGGAUUUCC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-24-3p",
+   "mimat": "MIMAT0000080",
+   "targetscan_seq": "UGGCUCAGUUCAGCAGGAACAG",
+   "rnacentral": [
+    [
+     "URS000059273E",
+     "UGGCUCAGUUCAGCAGGAACAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-25-3p",
+   "mimat": "MIMAT0000081",
+   "targetscan_seq": "CAUUGCACUUGUCUCGGUCUGA",
+   "rnacentral": [
+    [
+     "URS00004F9744",
+     "CAUUGCACUUGUCUCGGUCUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-26a-5p",
+   "mimat": "MIMAT0000082",
+   "targetscan_seq": "UUCAAGUAAUCCAGGAUAGGCU",
+   "rnacentral": [
+    [
+     "URS000019B0F7",
+     "UUCAAGUAAUCCAGGAUAGGCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-27a-3p",
+   "mimat": "MIMAT0000084",
+   "targetscan_seq": "UUCACAGUGGCUAAGUUCCGC",
+   "rnacentral": [
+    [
+     "URS00003B95DA",
+     "UUCACAGUGGCUAAGUUCCGC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-28-5p",
+   "mimat": "MIMAT0000085",
+   "targetscan_seq": "AAGGAGCUCACAGUCUAUUGAG",
+   "rnacentral": [
+    [
+     "URS00003E47B1",
+     "AAGGAGCUCACAGUCUAUUGAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-296-5p",
+   "mimat": "MIMAT0000690",
+   "targetscan_seq": "AGGGCCCCCCCUCAAUCCUGU",
+   "rnacentral": [
+    [
+     "URS00001C3AC1",
+     "AGGGCCCCCCCUCAAUCCUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-29a-3p",
+   "mimat": "MIMAT0000086",
+   "targetscan_seq": "UAGCACCAUCUGAAAUCGGUUA",
+   "rnacentral": [
+    [
+     "URS00002F4D78",
+     "UAGCACCAUCUGAAAUCGGUUA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-302a-3p",
+   "mimat": "MIMAT0000684",
+   "targetscan_seq": "UAAGUGCUUCCAUGUUUUGGUGA",
+   "rnacentral": [
+    [
+     "URS0000070CD2",
+     "UAAGUGCUUCCAUGUUUUGGUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-30a-5p",
+   "mimat": "MIMAT0000087",
+   "targetscan_seq": "UGUAAACAUCCUCGACUGGAAG",
+   "rnacentral": [
+    [
+     "URS000043D1A9",
+     "UGUAAACAUCCUCGACUGGAAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-31-5p",
+   "mimat": "MIMAT0000089",
+   "targetscan_seq": "AGGCAAGAUGCUGGCAUAGCU",
+   "rnacentral": [
+    [
+     "URS00005416E3",
+     "AGGCAAGAUGCUGGCAUAGCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-32-5p",
+   "mimat": "MIMAT0000090",
+   "targetscan_seq": "UAUUGCACAUUACUAAGUUGCA",
+   "rnacentral": [
+    [
+     "URS00004C47FB",
+     "UAUUGCACAUUACUAAGUUGCA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-320a",
+   "mimat": "MIMAT0000510",
+   "targetscan_seq": "AAAAGCUGGGUUGAGAGGGCGA",
+   "rnacentral": [
+    [
+     "URS00003CF1AD",
+     "AAAAGCUGGGUUGAGAGGGCGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-324-5p",
+   "mimat": "MIMAT0000761",
+   "targetscan_seq": "CGCAUCCCCUAGGGCAUUGGUGU",
+   "rnacentral": [
+    [
+     "URS000075BEBE",
+     "CGCAUCCCCUAGGGCAUUGGUG"
+    ],
+    [
+     "URS000005481D",
+     "CGCAUCCCCUAGGGCAUUGGUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-328-3p",
+   "mimat": "MIMAT0000752",
+   "targetscan_seq": "CUGGCCCUCUCUGCCCUUCCGU",
+   "rnacentral": [
+    [
+     "URS00005FDE70",
+     "CUGGCCCUCUCUGCCCUUCCGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-335-5p",
+   "mimat": "MIMAT0000765",
+   "targetscan_seq": "UCAAGAGCAAUAACGAAAAAUGU",
+   "rnacentral": [
+    [
+     "URS0000237AF9",
+     "UCAAGAGCAAUAACGAAAAAUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-338-3p",
+   "mimat": "MIMAT0000763",
+   "targetscan_seq": "UCCAGCAUCAGUGAUUUUGUUG",
+   "rnacentral": [
+    [
+     "URS00000254A6",
+     "UCCAGCAUCAGUGAUUUUGUUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-339-5p",
+   "mimat": "MIMAT0000764",
+   "targetscan_seq": "UCCCUGUCCUCCAGGAGCUCACG",
+   "rnacentral": [
+    [
+     "URS000003FD55",
+     "UCCCUGUCCUCCAGGAGCUCACG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-342-3p",
+   "mimat": "MIMAT0000753",
+   "targetscan_seq": "UCUCACACAGAAAUCGCACCCGU",
+   "rnacentral": [
+    [
+     "URS0000148B91",
+     "UCUCACACAGAAAUCGCACCCGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-345-5p",
+   "mimat": "MIMAT0000772",
+   "targetscan_seq": "GCUGACUCCUAGUCCAGGGCUC",
+   "rnacentral": [
+    [
+     "URS000005D4F5",
+     "GCUGACUCCUAGUCCAGGGCUC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-34a-5p",
+   "mimat": "MIMAT0000255",
+   "targetscan_seq": "UGGCAGUGUCUUAGCUGGUUGU",
+   "rnacentral": [
+    [
+     "URS000030BD69",
+     "UGGCAGUGUCUUAGCUGGUUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-361-5p",
+   "mimat": "MIMAT0000703",
+   "targetscan_seq": "UUAUCAGAAUCUCCAGGGGUAC",
+   "rnacentral": [
+    [
+     "URS00000CF1D2",
+     "UUAUCAGAAUCUCCAGGGGUAC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-363-3p",
+   "mimat": "MIMAT0000707",
+   "targetscan_seq": "AAUUGCACGGUAUCCAUCUGUA",
+   "rnacentral": [
+    [
+     "URS000038B599",
+     "AAUUGCACGGUAUCCAUCUGUA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-375",
+   "mimat": "MIMAT0000728",
+   "targetscan_seq": "UUUGUUCGUUCGGCUCGCGUGA",
+   "rnacentral": [
+    [
+     "URS00000ED600",
+     "UUUGUUCGUUCGGCUCGCGUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-376a-3p",
+   "mimat": "MIMAT0000729",
+   "targetscan_seq": "AUCAUAGAGGAAAAUCCACGU",
+   "rnacentral": [
+    [
+     "URS000041E11D",
+     "AUCAUAGAGGAAAAUCCACGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-378a-3p",
+   "mimat": "MIMAT0000732",
+   "targetscan_seq": "ACUGGACUUGGAGUCAGAAGGC",
+   "rnacentral": [
+    [
+     "URS00000451A1",
+     "ACUGGACUUGGAGUCAGAAGGC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-409-3p",
+   "mimat": "MIMAT0001639",
+   "targetscan_seq": "GAAUGUUGCUCGGUGAACCCCU",
+   "rnacentral": [
+    [
+     "URS00002915C8",
+     "GAAUGUUGCUCGGUGAACCCCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-424-5p",
+   "mimat": "MIMAT0001341",
+   "targetscan_seq": "CAGCAGCAAUUCAUGUUUUGAA",
+   "rnacentral": [
+    [
+     "URS00000F0F49",
+     "CAGCAGCAAUUCAUGUUUUGAA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-425-5p",
+   "mimat": "MIMAT0003393",
+   "targetscan_seq": "AAUGACACGAUCACUCCCGUUGA",
+   "rnacentral": [
+    [
+     "URS000048BA36",
+     "AAUGACACGAUCACUCCCGUUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-429",
+   "mimat": "MIMAT0001536",
+   "targetscan_seq": "UAAUACUGUCUGGUAAAACCGU",
+   "rnacentral": [
+    [
+     "URS000055BBE5",
+     "UAAUACUGUCUGGUAAAACCGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-451a",
+   "mimat": "MIMAT0001631",
+   "targetscan_seq": "AAACCGUUACCAUUACUGAGUU",
+   "rnacentral": [
+    [
+     "URS00002E857A",
+     "AAACCGUUACCAUUACUGAGUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-486-5p",
+   "mimat": "MIMAT0002177",
+   "targetscan_seq": "UCCUGUACUGAGCUGCCCCGAG",
+   "rnacentral": [
+    [
+     "URS00004BF1DC",
+     "UCCUGUACUGAGCUGCCCCGAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-494-3p",
+   "mimat": "MIMAT0002816",
+   "targetscan_seq": "UGAAACAUACACGGGAAACCUC",
+   "rnacentral": [
+    [
+     "URS0000535FDD",
+     "UGAAACAUACACGGGAAACCUC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-495-3p",
+   "mimat": "MIMAT0002817",
+   "targetscan_seq": "AAACAAACAUGGUGCACUUCUU",
+   "rnacentral": [
+    [
+     "URS000005A8ED",
+     "AAACAAACAUGGUGCACUUCUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-500a-3p",
+   "mimat": "MIMAT0002871",
+   "targetscan_seq": "AUGCACCUGGGCAAGGAUUCUG",
+   "rnacentral": [
+    [
+     "URS00003F659E",
+     "AUGCACCUGGGCAAGGAUUCUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-503-5p",
+   "mimat": "MIMAT0002874",
+   "targetscan_seq": "UAGCAGCGGGAACAGUUCUGCAG",
+   "rnacentral": [
+    [
+     "URS00000F6E49",
+     "UAGCAGCGGGAACAGUUCUGCAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-532-5p",
+   "mimat": "MIMAT0002888",
+   "targetscan_seq": "CAUGCCUUGAGUGUAGGACCGU",
+   "rnacentral": [
+    [
+     "URS00004E8341",
+     "CAUGCCUUGAGUGUAGGACCGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-545-3p",
+   "mimat": "MIMAT0003165",
+   "targetscan_seq": "UCAGCAAACAUUUAUUGUGUGC",
+   "rnacentral": [
+    [
+     "URS00002E1509",
+     "UCAGCAAACAUUUAUUGUGUGC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-574-5p",
+   "mimat": "MIMAT0004795",
+   "targetscan_seq": "UGAGUGUGUGUGUGUGAGUGUGU",
+   "rnacentral": [
+    [
+     "URS000057466C",
+     "UGAGUGUGUGUGUGUGAGUGUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-590-5p",
+   "mimat": "MIMAT0003258",
+   "targetscan_seq": "GAGCUUAUUCAUAAAAGUGCAG",
+   "rnacentral": [
+    [
+     "URS00005CACA0",
+     "GAGCUUAUUCAUAAAAGUGCAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-615-3p",
+   "mimat": "MIMAT0003283",
+   "targetscan_seq": "UCCGAGCCUGGGUCUCCCUCUU",
+   "rnacentral": [
+    [
+     "URS00003D5391",
+     "UCCGAGCCUGGGUCUCCCUCUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-625-5p",
+   "mimat": "MIMAT0003294",
+   "targetscan_seq": "AGGGGGAAAGUUCUAUAGUCC",
+   "rnacentral": [
+    [
+     "URS00001F9866",
+     "AGGGGGAAAGUUCUAUAGUCC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-629-5p",
+   "mimat": "MIMAT0004810",
+   "targetscan_seq": "UGGGUUUACGUUGGGAGAACU",
+   "rnacentral": [
+    [
+     "URS00002F3336",
+     "UGGGUUUACGUUGGGAGAACU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-652-3p",
+   "mimat": "MIMAT0003322",
+   "targetscan_seq": "AAUGGCGCCACUAGGGUUGUG",
+   "rnacentral": [
+    [
+     "URS0000013DD8",
+     "AAUGGCGCCACUAGGGUUGUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-660-5p",
+   "mimat": "MIMAT0003338",
+   "targetscan_seq": "UACCCAUUGCAUAUCGGAGUUG",
+   "rnacentral": [
+    [
+     "URS0000116A70",
+     "UACCCAUUGCAUAUCGGAGUUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-671-5p",
+   "mimat": "MIMAT0003880",
+   "targetscan_seq": "AGGAAGCCCUGGAGGGGCUGGAG",
+   "rnacentral": [
+    [
+     "URS00002FB368",
+     "AGGAAGCCCUGGAGGGGCUGGAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-7-5p",
+   "mimat": "MIMAT0000252",
+   "targetscan_seq": "UGGAAGACUAGUGAUUUUGUUGU",
+   "rnacentral": [
+    [
+     "URS0000591950",
+     "UGGAAGACUAGUGAUUUUGUUGU"
+    ],
+    [
+     "URS0000161522",
+     "UGGAAGACUAGUGAUUUUGUUGUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-708-5p",
+   "mimat": "MIMAT0004926",
+   "targetscan_seq": "AAGGAGCUUACAAUCUAGCUGGG",
+   "rnacentral": [
+    [
+     "URS000019D79B",
+     "AAGGAGCUUACAAUCUAGCUGGG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-744-5p",
+   "mimat": "MIMAT0004945",
+   "targetscan_seq": "UGCGGGGCUAGGGCUAACAGCA",
+   "rnacentral": [
+    [
+     "URS00002ED61F",
+     "UGCGGGGCUAGGGCUAACAGCA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-885-5p",
+   "mimat": "MIMAT0004947",
+   "targetscan_seq": "UCCAUUACACUACCCUGCCUCU",
+   "rnacentral": [
+    [
+     "URS0000246356",
+     "UCCAUUACACUACCCUGCCUCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-9-5p",
+   "mimat": "MIMAT0000441",
+   "targetscan_seq": "UCUUUGGUUAUCUAGCUGUAUGA",
+   "rnacentral": [
+    [
+     "URS00004208C5",
+     "UCUUUGGUUAUCUAGCUGUAUGA"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-92a-3p",
+   "mimat": "MIMAT0000092",
+   "targetscan_seq": "UAUUGCACUUGUCCCGGCCUGU",
+   "rnacentral": [
+    [
+     "URS00003768C5",
+     "UAUUGCACUUGUCCCGGCCUGU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-92b-3p",
+   "mimat": "MIMAT0003218",
+   "targetscan_seq": "UAUUGCACUCGUCCCGGCCUCC",
+   "rnacentral": [
+    [
+     "URS000025576D",
+     "UAUUGCACUCGUCCCGGCCUCC"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-93-5p",
+   "mimat": "MIMAT0000093",
+   "targetscan_seq": "CAAAGUGCUGUUCGUGCAGGUAG",
+   "rnacentral": [
+    [
+     "URS0000149452",
+     "CAAAGUGCUGUUCGUGCAGGUAG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-96-5p",
+   "mimat": "MIMAT0000095",
+   "targetscan_seq": "UUUGGCACUAGCACAUUUUUGCU",
+   "rnacentral": [
+    [
+     "URS000016FF9C",
+     "UUUGGCACUAGCACAUUUUUGCU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-98-5p",
+   "mimat": "MIMAT0000096",
+   "targetscan_seq": "UGAGGUAGUAAGUUGUAUUGUU",
+   "rnacentral": [
+    [
+     "URS00004E0808",
+     "UGAGGUAGUAAGUUGUAUUGUU"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  },
+  {
+   "mirna": "hsa-miR-99a-5p",
+   "mimat": "MIMAT0000097",
+   "targetscan_seq": "AACCCGUAGAUCCGAUCUUGUG",
+   "rnacentral": [
+    [
+     "URS0000157026",
+     "AACCCGUAGAUCCGAUCUUGUG"
+    ]
+   ],
+   "resolved": true,
+   "seed_match": true,
+   "full_match": true
+  }
+ ]
+}

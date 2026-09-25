@@ -1,0 +1,24 @@
+{
+"n_used_mirnas": 132,
+"n_with_targetscan_accession": 132,
+"n_resolved": 132,
+"gates": {
+"G1_let7a_exact": true,
+"G2_resolved_frac": 1.0,
+"G2_pass": true,
+"G3_deranged_seed_identity": 0.007575757575757576,
+"G3_pass": true
+},
+"H1_seed_identity": {
+"frac": 1.0,
+"verdict": "CONFIRMED"
+},
+"H2_full_identity": {
+"frac": 1.0,
+"verdict": "CONFIRMED"
+},
+"seed_mismatches": [],
+"full_mismatches": [],
+"unresolved": [],
+"not_in_targetscan_human": []
+}

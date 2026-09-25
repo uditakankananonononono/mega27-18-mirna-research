@@ -1,0 +1,11 @@
+\subsection{Input integrity: every miRNA sequence and seed used here matches RNAcentral}
+All scorers in this paper key on the miRNA seed (nt 2--8) taken from TargetScan's \texttt{miR\_Family\_Info}. A wrong sequence would silently corrupt every benchmark, so we checked each miRNA used in the CLIP and miRTarBase analyses against RNAcentral by miRBase accession via the RNAcentral REST API (script and results: \texttt{rnacentral\_seq\_audit}; hermetic tests).
+\begin{table}[h]\centering\small\begin{tabular}{lr}\hline Quantity & Value\\\hline
+miRNAs used / with MIMAT accession & 132 / 132\\
+Resolved in RNAcentral & 132 (100.0\%)\\
+G1: let-7a-5p exact sequence & pass\\
+G3: seed identity under deranged map (control) & 0.8\%\\
+H1: seed identity, resolved miRNAs & 100.0\%\\
+H2: full-length identity, resolved miRNAs & 100.0\%\\\hline\end{tabular}
+\caption{RNAcentral sequence audit. The derangement control shows the identity test can fail.}\label{tab:rnacentral}\end{table}
+Both hypotheses are confirmed (Table~\ref{tab:rnacentral}). One transport note: for a few accessions the endpoint served an HTML page to Python \texttt{requests} but JSON to curl, so the fetcher falls back to curl when the body is not JSON; an earlier run without the fallback left one or two accessions unresolved and was discarded (it was also overwritten by a duplicate process). No analysis choice changed. This rules out sequence errors as an explanation for the negatives above.
