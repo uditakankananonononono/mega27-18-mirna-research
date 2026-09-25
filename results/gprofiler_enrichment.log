@@ -1,0 +1,70 @@
+hsa-let-7a-5p 0 0 47 [0, 0, 0] 0.0
+hsa-miR-1-3p 0 0 58 [0, 0, 0] 0.0
+hsa-miR-122-5p 0 0 115 [0, 0, 0] 0.0
+hsa-miR-125b-5p 0 0 67 [0, 0, 0] 0.0
+hsa-miR-145-5p 0 0 86 [0, 0, 0] 0.0
+hsa-miR-155-5p 0 2 47 [0, 0, 0] 0.0
+hsa-miR-16-5p 0 0 88 [0, 0, 0] 0.0
+hsa-miR-17-5p 0 0 95 [0, 0, 0] 0.0
+hsa-miR-19a-3p 0 0 84 [0, 0, 0] 0.0
+hsa-miR-200c-3p 0 0 80 [0, 0, 0] 0.0
+hsa-miR-21-5p 0 0 47 [0, 0, 0] 0.0
+hsa-miR-34a-5p 0 0 74 [0, 0, 0] 0.0
+hsa-miR-92a-3p 0 0 90 [0, 0, 0] 0.0
+{
+ "gates": {
+  "G1_cellcycle_GO0007049": true,
+  "G1_top": [
+   [
+    "KEGG:04110",
+    "Cell cycle",
+    3.471922758371239e-31
+   ],
+   [
+    "GO:1903047",
+    "mitotic cell cycle process",
+    1.31805589701548e-26
+   ],
+   [
+    "GO:0044772",
+    "mitotic cell cycle phase transition",
+    6.938516837487985e-26
+   ],
+   [
+    "GO:1901990",
+    "regulation of mitotic cell cycle phase transition",
+    2.142413890396732e-25
+   ],
+   [
+    "GO:0000278",
+    "mitotic cell cycle",
+    4.885453859012686e-25
+   ]
+  ],
+  "G2_median_random_nsig": 0.0,
+  "G2_pass": true,
+  "G3_median_unmapped": 0.0675,
+  "G3_pass": true
+ },
+ "H1_cnn_vs_random": {
+  "wins": 0,
+  "losses": 0,
+  "ties_excluded": true,
+  "p_one_sided": 1.0,
+  "verdict": "FALSIFIED"
+ },
+ "H2_termJaccard_cnn_vs_random": {
+  "wins": 0,
+  "losses": 0,
+  "ties_excluded": true,
+  "p_one_sided": 1.0,
+  "verdict": "FALSIFIED"
+ },
+ "H3_cnn_vs_expression": {
+  "wins": 0,
+  "losses": 13,
+  "ties_excluded": true,
+  "p_one_sided": 1.0,
+  "verdict": "FALSIFIED"
+ }
+}

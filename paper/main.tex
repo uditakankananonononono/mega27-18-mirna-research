@@ -194,9 +194,10 @@ three on identical rows, $n=7{,}914$). Right: miRanda versus DuplexCNN per
 miRNA; orange points are miRNAs where miRanda wins.}
 \label{fig:miranda}\end{figure}
 
+\input{gprofiler_sec}
 
 \section{Documented negatives}
-(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation). (5) miRDB v6.0 beats our CNN on miRTarBase rows (pooled AUROC 0.787 vs 0.685, 74/84 miRNAs, $p=2.4\times10^{-12}$). (6) On TarBase v9.0 labels the CNN loses to miRDB on 73/83 miRNAs and to the plain seed-site count per miRNA (CNN better on only 32/83, $p=0.0078$). (7) HEK293 expression alone (HPA nTPM, AUROC 0.682) beats all sequence models on CLIP labels and cuts the CNN's conditional pooled gain from $+0.0048$ to $+0.0008$.
+(1) Sequence-only DuplexCNN does not beat ridge. (2) CLIP effect size is small. (3) miR-125b-5p and miR-7-5p per-miRNA AUROCs (negated convention) are at/below chance --- reported per miRNA, not averaged away. (4) Pair-map branch contributes only $\Delta r=+0.0029$ (ablation). (5) miRDB v6.0 beats our CNN on miRTarBase rows (pooled AUROC 0.787 vs 0.685, 74/84 miRNAs, $p=2.4\times10^{-12}$). (6) On TarBase v9.0 labels the CNN loses to miRDB on 73/83 miRNAs and to the plain seed-site count per miRNA (CNN better on only 32/83, $p=0.0078$). (7) HEK293 expression alone (HPA nTPM, AUROC 0.682) beats all sequence models on CLIP labels and cuts the CNN's conditional pooled gain from $+0.0048$ to $+0.0008$. (8) g:Profiler finds no pathway coherence in CNN top-200 (13/13 miRNAs zero terms) or CLIP top-200 target sets; an expression top-200 control gives 47--115 terms.
 \section{Falsification paths}
 miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); remaining: library-matched CLIP/RNA-seq normalization.
 \begin{thebibliography}{9}
@@ -208,6 +209,7 @@ miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: l
 \bibitem[Chen and Wang(2020)]{mirdb} Chen Y, Wang X. miRDB: an online database for prediction of functional microRNA targets. \emph{Nucleic Acids Res} 2020.
 \bibitem[Xin et al.(2016)]{mygene} Xin J, et al. High-performance web services for querying gene and variant annotation. \emph{Genome Biol} 2016.
 \bibitem[Memczak et al.(2013)]{m} Memczak S, et al. Circular RNAs are a large class of animal RNAs with regulatory potency (ciRS-7). \emph{Nature} 2013.
+\bibitem[Kolberg et al.(2023)]{gprof} Kolberg L, et al. g:Profiler---interoperable web service for functional enrichment analysis and gene identifier mapping (2023 update). \emph{Nucleic Acids Res} 2023.
 \end{thebibliography}
 \input{derivations}
 \end{document}

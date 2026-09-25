@@ -1,0 +1,2292 @@
+{
+ "tool": "g:Profiler g:GOSt REST API (biit.cs.ut.ee/gprofiler)",
+ "gprofiler_version": "e114_eg62_p19_27110d83",
+ "K": 200,
+ "R": 3,
+ "panel": [
+  "hsa-let-7a-5p",
+  "hsa-miR-1-3p",
+  "hsa-miR-122-5p",
+  "hsa-miR-125b-5p",
+  "hsa-miR-145-5p",
+  "hsa-miR-155-5p",
+  "hsa-miR-16-5p",
+  "hsa-miR-17-5p",
+  "hsa-miR-19a-3p",
+  "hsa-miR-200c-3p",
+  "hsa-miR-21-5p",
+  "hsa-miR-34a-5p",
+  "hsa-miR-92a-3p"
+ ],
+ "gates": {
+  "G1_cellcycle_GO0007049": true,
+  "G1_top": [
+   [
+    "KEGG:04110",
+    "Cell cycle",
+    3.471922758371239e-31
+   ],
+   [
+    "GO:1903047",
+    "mitotic cell cycle process",
+    1.31805589701548e-26
+   ],
+   [
+    "GO:0044772",
+    "mitotic cell cycle phase transition",
+    6.938516837487985e-26
+   ],
+   [
+    "GO:1901990",
+    "regulation of mitotic cell cycle phase transition",
+    2.142413890396732e-25
+   ],
+   [
+    "GO:0000278",
+    "mitotic cell cycle",
+    4.885453859012686e-25
+   ]
+  ],
+  "G2_median_random_nsig": 0.0,
+  "G2_pass": true,
+  "G3_median_unmapped": 0.0675,
+  "G3_pass": true
+ },
+ "H1_cnn_vs_random": {
+  "wins": 0,
+  "losses": 0,
+  "ties_excluded": true,
+  "p_one_sided": 1.0,
+  "verdict": "FALSIFIED"
+ },
+ "H2_termJaccard_cnn_vs_random": {
+  "wins": 0,
+  "losses": 0,
+  "ties_excluded": true,
+  "p_one_sided": 1.0,
+  "verdict": "FALSIFIED"
+ },
+ "H3_cnn_vs_expression": {
+  "wins": 0,
+  "losses": 13,
+  "ties_excluded": true,
+  "p_one_sided": 1.0,
+  "verdict": "FALSIFIED"
+ },
+ "per_mirna": {
+  "hsa-let-7a-5p": {
+   "universe": 2417,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.105,
+    "n_ambiguous": 11
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 4
+   },
+   "expr": {
+    "n_sig": 47,
+    "terms": [
+     "GO:0002181",
+     "GO:0006412",
+     "GO:0022613",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:00190",
+     "KEGG:03010",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-162587",
+     "REAC:R-HSA-162906",
+     "REAC:R-HSA-1640170",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-69278",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-8953854",
+      "Metabolism of RNA",
+      2.0518082341393773e-13
+     ],
+     [
+      "REAC:R-HSA-9824446",
+      "Viral Infection Pathways",
+      1.7212734641694886e-09
+     ],
+     [
+      "REAC:R-HSA-392499",
+      "Metabolism of proteins",
+      1.900141382931572e-08
+     ],
+     [
+      "REAC:R-HSA-5663205",
+      "Infectious disease",
+      4.24472176720744e-08
+     ],
+     [
+      "REAC:R-HSA-168273",
+      "Influenza Viral RNA Transcription and Replication",
+      9.679187307155603e-08
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 6
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.05,
+     "n_ambiguous": 3
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.11,
+     "n_ambiguous": 6
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.115,
+     "n_ambiguous": 6
+    }
+   ],
+   "cnn_clip_overlap_genes": 52,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-1-3p": {
+   "universe": 3706,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.105,
+    "n_ambiguous": 7
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.005,
+    "n_ambiguous": 1
+   },
+   "expr": {
+    "n_sig": 58,
+    "terms": [
+     "GO:0000245",
+     "GO:0002181",
+     "GO:0006412",
+     "GO:0006417",
+     "GO:0010608",
+     "GO:0022613",
+     "GO:0022618",
+     "GO:0042254",
+     "GO:0071826",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:03010",
+     "KEGG:05012",
+     "KEGG:05016",
+     "REAC:R-HSA-1430728",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-162906",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-3700989",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-453279",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-69206",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72165",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72649",
+     "REAC:R-HSA-72662",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-72766",
+      "Translation",
+      3.5530397333032856e-16
+     ],
+     [
+      "GO:0006412",
+      "translation",
+      4.393925700583845e-16
+     ],
+     [
+      "GO:0160307",
+      "protein biosynthetic process",
+      4.393925700583845e-16
+     ],
+     [
+      "REAC:R-HSA-168255",
+      "Influenza Infection",
+      5.156886360439045e-13
+     ],
+     [
+      "REAC:R-HSA-8953854",
+      "Metabolism of RNA",
+      2.73341452409544e-12
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 1
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.09,
+     "n_ambiguous": 2
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.075,
+     "n_ambiguous": 1
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.06,
+     "n_ambiguous": 1
+    }
+   ],
+   "cnn_clip_overlap_genes": 28,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-122-5p": {
+   "universe": 4933,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.11,
+    "n_ambiguous": 3
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.01,
+    "n_ambiguous": 2
+   },
+   "expr": {
+    "n_sig": 115,
+    "terms": [
+     "GO:0000278",
+     "GO:0000375",
+     "GO:0000377",
+     "GO:0000398",
+     "GO:0002181",
+     "GO:0006091",
+     "GO:0006119",
+     "GO:0006139",
+     "GO:0006396",
+     "GO:0006397",
+     "GO:0006412",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0009058",
+     "GO:0009059",
+     "GO:0009060",
+     "GO:0010467",
+     "GO:0015980",
+     "GO:0016071",
+     "GO:0019538",
+     "GO:0019646",
+     "GO:0022613",
+     "GO:0022618",
+     "GO:0022900",
+     "GO:0022904",
+     "GO:0033365",
+     "GO:0034654",
+     "GO:0042773",
+     "GO:0042775",
+     "GO:0042776",
+     "GO:0043170",
+     "GO:0043933",
+     "GO:0044238",
+     "GO:0045333",
+     "GO:0046034",
+     "GO:0048024",
+     "GO:0050684",
+     "GO:0065003",
+     "GO:0071826",
+     "GO:0072522",
+     "GO:0160307",
+     "GO:1902600",
+     "KEGG:00000",
+     "KEGG:00190",
+     "KEGG:03010",
+     "KEGG:03040",
+     "KEGG:04714",
+     "KEGG:04932",
+     "KEGG:05010",
+     "KEGG:05012",
+     "KEGG:05014",
+     "KEGG:05016",
+     "KEGG:05020",
+     "KEGG:05022",
+     "KEGG:05171",
+     "KEGG:05415",
+     "REAC:0000000",
+     "REAC:R-HSA-1428517",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1640170",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-3700989",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-422475",
+     "REAC:R-HSA-453279",
+     "REAC:R-HSA-5628897",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-611105",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-69206",
+     "REAC:R-HSA-69278",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72165",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72649",
+     "REAC:R-HSA-72662",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72695",
+     "REAC:R-HSA-72702",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9678108",
+     "REAC:R-HSA-9679506",
+     "REAC:R-HSA-9692914",
+     "REAC:R-HSA-9694516",
+     "REAC:R-HSA-9705683",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-9735869",
+     "REAC:R-HSA-9754678",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-72766",
+      "Translation",
+      1.1438176441059202e-18
+     ],
+     [
+      "REAC:R-HSA-72689",
+      "Formation of a pool of free 40S subunits",
+      5.347402525011393e-17
+     ],
+     [
+      "KEGG:03010",
+      "Ribosome",
+      1.5565731215301996e-16
+     ],
+     [
+      "REAC:R-HSA-72737",
+      "Cap-dependent Translation Initiation",
+      6.605929829947716e-16
+     ],
+     [
+      "REAC:R-HSA-72613",
+      "Eukaryotic Translation Initiation",
+      6.605929829947716e-16
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 6
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.065,
+     "n_ambiguous": 2
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.09,
+     "n_ambiguous": 2
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.09,
+     "n_ambiguous": 3
+    }
+   ],
+   "cnn_clip_overlap_genes": 25,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-125b-5p": {
+   "universe": 4046,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.1,
+    "n_ambiguous": 4
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 0
+   },
+   "expr": {
+    "n_sig": 67,
+    "terms": [
+     "GO:0000375",
+     "GO:0000377",
+     "GO:0000398",
+     "GO:0002181",
+     "GO:0006396",
+     "GO:0006397",
+     "GO:0006412",
+     "GO:0007052",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0009058",
+     "GO:0009059",
+     "GO:0010467",
+     "GO:0016071",
+     "GO:0022613",
+     "GO:0043170",
+     "GO:0044238",
+     "GO:0051276",
+     "GO:0160307",
+     "KEGG:03010",
+     "KEGG:05012",
+     "KEGG:05014",
+     "REAC:0000000",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1640170",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-2555396",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-450531",
+     "REAC:R-HSA-5368286",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-68882",
+     "REAC:R-HSA-68886",
+     "REAC:R-HSA-69278",
+     "REAC:R-HSA-69620",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-8953854",
+      "Metabolism of RNA",
+      2.274050958960277e-15
+     ],
+     [
+      "REAC:R-HSA-72766",
+      "Translation",
+      7.433825195724629e-14
+     ],
+     [
+      "GO:0006412",
+      "translation",
+      1.4515037242143964e-11
+     ],
+     [
+      "GO:0160307",
+      "protein biosynthetic process",
+      1.4515037242143964e-11
+     ],
+     [
+      "KEGG:03010",
+      "Ribosome",
+      2.292434131796862e-11
+     ]
+    ],
+    "unmapped_frac": 0.005,
+    "n_ambiguous": 3
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.075,
+     "n_ambiguous": 2
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.125,
+     "n_ambiguous": 2
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.06,
+     "n_ambiguous": 1
+    }
+   ],
+   "cnn_clip_overlap_genes": 23,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-145-5p": {
+   "universe": 3867,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.115,
+    "n_ambiguous": 4
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.015,
+    "n_ambiguous": 1
+   },
+   "expr": {
+    "n_sig": 86,
+    "terms": [
+     "GO:0002181",
+     "GO:0006091",
+     "GO:0006119",
+     "GO:0006164",
+     "GO:0006396",
+     "GO:0006412",
+     "GO:0008152",
+     "GO:0009058",
+     "GO:0009060",
+     "GO:0009141",
+     "GO:0009144",
+     "GO:0009150",
+     "GO:0009152",
+     "GO:0009205",
+     "GO:0009259",
+     "GO:0009260",
+     "GO:0015980",
+     "GO:0019538",
+     "GO:0019646",
+     "GO:0019693",
+     "GO:0022613",
+     "GO:0022900",
+     "GO:0022904",
+     "GO:0042254",
+     "GO:0042773",
+     "GO:0042775",
+     "GO:0044238",
+     "GO:0045333",
+     "GO:0046034",
+     "GO:0046390",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:00190",
+     "KEGG:03010",
+     "KEGG:05012",
+     "KEGG:05171",
+     "REAC:0000000",
+     "REAC:R-HSA-1428517",
+     "REAC:R-HSA-1430728",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1640170",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-422475",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-611105",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72649",
+     "REAC:R-HSA-72662",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72695",
+     "REAC:R-HSA-72702",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9678108",
+     "REAC:R-HSA-9679506",
+     "REAC:R-HSA-9692914",
+     "REAC:R-HSA-9705683",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-9735869",
+     "REAC:R-HSA-9754678",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-72689",
+      "Formation of a pool of free 40S subunits",
+      2.4972221551155646e-15
+     ],
+     [
+      "REAC:R-HSA-156842",
+      "Eukaryotic Translation Elongation",
+      3.066628075855756e-15
+     ],
+     [
+      "REAC:R-HSA-975956",
+      "Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC)",
+      3.066628075855756e-15
+     ],
+     [
+      "REAC:R-HSA-156902",
+      "Peptide chain elongation",
+      3.066628075855756e-15
+     ],
+     [
+      "REAC:R-HSA-72766",
+      "Translation",
+      5.0719894129575215e-15
+     ]
+    ],
+    "unmapped_frac": 0.005,
+    "n_ambiguous": 5
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.06,
+     "n_ambiguous": 4
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.07,
+     "n_ambiguous": 3
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.1,
+     "n_ambiguous": 2
+    }
+   ],
+   "cnn_clip_overlap_genes": 25,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-155-5p": {
+   "universe": 3017,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.125,
+    "n_ambiguous": 1
+   },
+   "clip": {
+    "n_sig": 2,
+    "terms": [
+     "GO:0007156",
+     "KEGG:04519"
+    ],
+    "top": [
+     [
+      "GO:0007156",
+      "homophilic cell-cell adhesion",
+      8.882618951078318e-05
+     ],
+     [
+      "KEGG:04519",
+      "Cadherin signaling",
+      0.01417725774017474
+     ]
+    ],
+    "unmapped_frac": 0.01,
+    "n_ambiguous": 2
+   },
+   "expr": {
+    "n_sig": 47,
+    "terms": [
+     "GO:0000375",
+     "GO:0000377",
+     "GO:0000398",
+     "GO:0002181",
+     "GO:0006259",
+     "GO:0006396",
+     "GO:0006412",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0016071",
+     "GO:0022613",
+     "GO:0022904",
+     "GO:0043933",
+     "GO:0051052",
+     "GO:0065003",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:03010",
+     "KEGG:04110",
+     "REAC:0000000",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1640170",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9754678",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-8953854",
+      "Metabolism of RNA",
+      1.4843979878321112e-08
+     ],
+     [
+      "REAC:R-HSA-72766",
+      "Translation",
+      1.5549808981940373e-08
+     ],
+     [
+      "GO:0160307",
+      "protein biosynthetic process",
+      3.454484947447857e-08
+     ],
+     [
+      "GO:0006412",
+      "translation",
+      3.454484947447857e-08
+     ],
+     [
+      "KEGG:03010",
+      "Ribosome",
+      6.559241833111901e-08
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 4
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.1,
+     "n_ambiguous": 1
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.08,
+     "n_ambiguous": 1
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.08,
+     "n_ambiguous": 3
+    }
+   ],
+   "cnn_clip_overlap_genes": 47,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-16-5p": {
+   "universe": 4013,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.1,
+    "n_ambiguous": 4
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 2
+   },
+   "expr": {
+    "n_sig": 88,
+    "terms": [
+     "GO:0000375",
+     "GO:0000377",
+     "GO:0000398",
+     "GO:0002181",
+     "GO:0006163",
+     "GO:0006164",
+     "GO:0006396",
+     "GO:0006397",
+     "GO:0006412",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0009058",
+     "GO:0009059",
+     "GO:0009117",
+     "GO:0009152",
+     "GO:0009165",
+     "GO:0010467",
+     "GO:0016071",
+     "GO:0019646",
+     "GO:0022613",
+     "GO:0022618",
+     "GO:0032543",
+     "GO:0043933",
+     "GO:0044238",
+     "GO:0046390",
+     "GO:0065003",
+     "GO:0071826",
+     "GO:0072521",
+     "GO:0072522",
+     "GO:0140053",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:00190",
+     "KEGG:03010",
+     "KEGG:03040",
+     "REAC:0000000",
+     "REAC:R-HSA-1428517",
+     "REAC:R-HSA-1430728",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-422475",
+     "REAC:R-HSA-5368286",
+     "REAC:R-HSA-5368287",
+     "REAC:R-HSA-5389840",
+     "REAC:R-HSA-5419276",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-611105",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72649",
+     "REAC:R-HSA-72662",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72695",
+     "REAC:R-HSA-72702",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9678108",
+     "REAC:R-HSA-9692914",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-9754678",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-72766",
+      "Translation",
+      2.295707264357262e-19
+     ],
+     [
+      "KEGG:03010",
+      "Ribosome",
+      2.6469115610463192e-17
+     ],
+     [
+      "REAC:R-HSA-8953854",
+      "Metabolism of RNA",
+      3.551422248967849e-17
+     ],
+     [
+      "REAC:R-HSA-156827",
+      "L13a-mediated translational silencing of Ceruloplasmin expression",
+      1.8204446633961164e-15
+     ],
+     [
+      "REAC:R-HSA-72689",
+      "Formation of a pool of free 40S subunits",
+      2.276818797765017e-15
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 3
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.08,
+     "n_ambiguous": 2
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.105,
+     "n_ambiguous": 4
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.08,
+     "n_ambiguous": 4
+    }
+   ],
+   "cnn_clip_overlap_genes": 54,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-17-5p": {
+   "universe": 4897,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.1,
+    "n_ambiguous": 5
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.02,
+    "n_ambiguous": 0
+   },
+   "expr": {
+    "n_sig": 95,
+    "terms": [
+     "GO:0000375",
+     "GO:0000377",
+     "GO:0000398",
+     "GO:0002181",
+     "GO:0006119",
+     "GO:0006123",
+     "GO:0006396",
+     "GO:0006397",
+     "GO:0006412",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0009060",
+     "GO:0015980",
+     "GO:0019538",
+     "GO:0019646",
+     "GO:0022613",
+     "GO:0022618",
+     "GO:0022900",
+     "GO:0022904",
+     "GO:0032543",
+     "GO:0042773",
+     "GO:0042775",
+     "GO:0045333",
+     "GO:0071826",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:00190",
+     "KEGG:03010",
+     "KEGG:03040",
+     "KEGG:04260",
+     "KEGG:05012",
+     "KEGG:05014",
+     "KEGG:05016",
+     "KEGG:05020",
+     "KEGG:05022",
+     "KEGG:05171",
+     "KEGG:05415",
+     "REAC:0000000",
+     "REAC:R-HSA-1266738",
+     "REAC:R-HSA-1428517",
+     "REAC:R-HSA-1430728",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-422475",
+     "REAC:R-HSA-5205647",
+     "REAC:R-HSA-5205685",
+     "REAC:R-HSA-5368286",
+     "REAC:R-HSA-5389840",
+     "REAC:R-HSA-5419276",
+     "REAC:R-HSA-5628897",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72165",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72649",
+     "REAC:R-HSA-72662",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72695",
+     "REAC:R-HSA-72702",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9679506",
+     "REAC:R-HSA-9692914",
+     "REAC:R-HSA-9694516",
+     "REAC:R-HSA-9705683",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-9735869",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-72766",
+      "Translation",
+      3.364858855876714e-24
+     ],
+     [
+      "REAC:R-HSA-156827",
+      "L13a-mediated translational silencing of Ceruloplasmin expression",
+      1.0028715259413977e-19
+     ],
+     [
+      "REAC:R-HSA-72737",
+      "Cap-dependent Translation Initiation",
+      1.0150364926210041e-19
+     ],
+     [
+      "REAC:R-HSA-72613",
+      "Eukaryotic Translation Initiation",
+      1.0150364926210041e-19
+     ],
+     [
+      "REAC:R-HSA-168255",
+      "Influenza Infection",
+      1.2943548565446683e-19
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 5
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.06,
+     "n_ambiguous": 5
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.05,
+     "n_ambiguous": 0
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.075,
+     "n_ambiguous": 3
+    }
+   ],
+   "cnn_clip_overlap_genes": 53,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-19a-3p": {
+   "universe": 2897,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.07,
+    "n_ambiguous": 0
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.01,
+    "n_ambiguous": 1
+   },
+   "expr": {
+    "n_sig": 84,
+    "terms": [
+     "GO:0000375",
+     "GO:0000377",
+     "GO:0000398",
+     "GO:0002181",
+     "GO:0006396",
+     "GO:0006397",
+     "GO:0006412",
+     "GO:0006417",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0009058",
+     "GO:0009117",
+     "GO:0009150",
+     "GO:0009259",
+     "GO:0010467",
+     "GO:0010608",
+     "GO:0016071",
+     "GO:0019538",
+     "GO:0019693",
+     "GO:0022613",
+     "GO:0044238",
+     "GO:0065003",
+     "GO:0160307",
+     "GO:1903311",
+     "KEGG:00000",
+     "KEGG:03010",
+     "KEGG:03040",
+     "KEGG:05171",
+     "REAC:R-HSA-1266738",
+     "REAC:R-HSA-1430728",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-162906",
+     "REAC:R-HSA-1640170",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-2555396",
+     "REAC:R-HSA-2995410",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-422475",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-5696398",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-68882",
+     "REAC:R-HSA-68886",
+     "REAC:R-HSA-69278",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72649",
+     "REAC:R-HSA-72662",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72695",
+     "REAC:R-HSA-72702",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9679506",
+     "REAC:R-HSA-9692914",
+     "REAC:R-HSA-9694516",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-9735869",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-8953854",
+      "Metabolism of RNA",
+      2.1893548172317203e-20
+     ],
+     [
+      "REAC:R-HSA-975957",
+      "Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC)",
+      9.841766488862967e-14
+     ],
+     [
+      "REAC:R-HSA-927802",
+      "Nonsense-Mediated Decay (NMD)",
+      9.841766488862967e-14
+     ],
+     [
+      "REAC:R-HSA-72706",
+      "GTP hydrolysis and joining of the 60S ribosomal subunit",
+      2.0029552913226166e-13
+     ],
+     [
+      "REAC:R-HSA-156827",
+      "L13a-mediated translational silencing of Ceruloplasmin expression",
+      2.0029552913226166e-13
+     ]
+    ],
+    "unmapped_frac": 0.005,
+    "n_ambiguous": 3
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.095,
+     "n_ambiguous": 4
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.06,
+     "n_ambiguous": 0
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.13,
+     "n_ambiguous": 3
+    }
+   ],
+   "cnn_clip_overlap_genes": 52,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-200c-3p": {
+   "universe": 3585,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.125,
+    "n_ambiguous": 1
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 2
+   },
+   "expr": {
+    "n_sig": 80,
+    "terms": [
+     "GO:0000375",
+     "GO:0000377",
+     "GO:0000398",
+     "GO:0002181",
+     "GO:0006396",
+     "GO:0006397",
+     "GO:0006412",
+     "GO:0006413",
+     "GO:0006417",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0009058",
+     "GO:0009059",
+     "GO:0010467",
+     "GO:0010608",
+     "GO:0016071",
+     "GO:0022607",
+     "GO:0022613",
+     "GO:0022618",
+     "GO:0042254",
+     "GO:0042255",
+     "GO:0043933",
+     "GO:0044085",
+     "GO:0065003",
+     "GO:0071826",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:03010",
+     "KEGG:03040",
+     "KEGG:05171",
+     "REAC:0000000",
+     "REAC:R-HSA-1266738",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-422475",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72649",
+     "REAC:R-HSA-72662",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72695",
+     "REAC:R-HSA-72702",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9678108",
+     "REAC:R-HSA-9679506",
+     "REAC:R-HSA-9692914",
+     "REAC:R-HSA-9705683",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-9735869",
+     "REAC:R-HSA-9754678",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "GO:0006412",
+      "translation",
+      4.625010331633474e-21
+     ],
+     [
+      "GO:0160307",
+      "protein biosynthetic process",
+      4.625010331633474e-21
+     ],
+     [
+      "REAC:R-HSA-72766",
+      "Translation",
+      1.3742945524277472e-20
+     ],
+     [
+      "REAC:R-HSA-72613",
+      "Eukaryotic Translation Initiation",
+      1.8464927995337954e-19
+     ],
+     [
+      "REAC:R-HSA-72737",
+      "Cap-dependent Translation Initiation",
+      1.8464927995337954e-19
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 3
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.095,
+     "n_ambiguous": 3
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.04,
+     "n_ambiguous": 4
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.07,
+     "n_ambiguous": 4
+    }
+   ],
+   "cnn_clip_overlap_genes": 36,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-21-5p": {
+   "universe": 2476,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.1,
+    "n_ambiguous": 5
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.015,
+    "n_ambiguous": 1
+   },
+   "expr": {
+    "n_sig": 47,
+    "terms": [
+     "GO:0000375",
+     "GO:0000377",
+     "GO:0000398",
+     "GO:0002181",
+     "GO:0006139",
+     "GO:0006259",
+     "GO:0006396",
+     "GO:0006397",
+     "GO:0006403",
+     "GO:0006412",
+     "GO:0006417",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0010608",
+     "GO:0016071",
+     "GO:0022402",
+     "GO:0022613",
+     "GO:0022904",
+     "GO:0050657",
+     "GO:0050658",
+     "GO:0051028",
+     "GO:0051236",
+     "GO:0160307",
+     "KEGG:05014",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-1640170",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2995410",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-68886",
+     "REAC:R-HSA-69278",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-8953854",
+      "Metabolism of RNA",
+      1.088505360203711e-17
+     ],
+     [
+      "REAC:R-HSA-72203",
+      "Processing of Capped Intron-Containing Pre-mRNA",
+      1.3214535418192983e-08
+     ],
+     [
+      "GO:0016071",
+      "mRNA metabolic process",
+      1.0900502484925856e-07
+     ],
+     [
+      "GO:0006412",
+      "translation",
+      1.7008947559777253e-06
+     ],
+     [
+      "GO:0160307",
+      "protein biosynthetic process",
+      1.7008947559777253e-06
+     ]
+    ],
+    "unmapped_frac": 0.005,
+    "n_ambiguous": 3
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.06,
+     "n_ambiguous": 1
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.095,
+     "n_ambiguous": 3
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.06,
+     "n_ambiguous": 0
+    }
+   ],
+   "cnn_clip_overlap_genes": 28,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-34a-5p": {
+   "universe": 3984,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.13,
+    "n_ambiguous": 2
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.005,
+    "n_ambiguous": 2
+   },
+   "expr": {
+    "n_sig": 74,
+    "terms": [
+     "GO:0002181",
+     "GO:0006119",
+     "GO:0006396",
+     "GO:0006412",
+     "GO:0008152",
+     "GO:0008380",
+     "GO:0009058",
+     "GO:0019538",
+     "GO:0022613",
+     "GO:0022618",
+     "GO:0022904",
+     "GO:0042254",
+     "GO:0042255",
+     "GO:0042773",
+     "GO:0042775",
+     "GO:0044238",
+     "GO:0071826",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:00190",
+     "KEGG:03010",
+     "KEGG:05012",
+     "KEGG:05014",
+     "KEGG:05016",
+     "KEGG:05020",
+     "KEGG:05022",
+     "KEGG:05171",
+     "REAC:0000000",
+     "REAC:R-HSA-1430728",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1640170",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-174143",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-2467813",
+     "REAC:R-HSA-2555396",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-422475",
+     "REAC:R-HSA-453276",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-68882",
+     "REAC:R-HSA-68886",
+     "REAC:R-HSA-69278",
+     "REAC:R-HSA-69620",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9692914",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-72689",
+      "Formation of a pool of free 40S subunits",
+      4.3492670687004324e-23
+     ],
+     [
+      "REAC:R-HSA-156842",
+      "Eukaryotic Translation Elongation",
+      8.898893631576959e-22
+     ],
+     [
+      "REAC:R-HSA-156902",
+      "Peptide chain elongation",
+      8.898893631576959e-22
+     ],
+     [
+      "REAC:R-HSA-72706",
+      "GTP hydrolysis and joining of the 60S ribosomal subunit",
+      9.124382451048693e-22
+     ],
+     [
+      "REAC:R-HSA-156827",
+      "L13a-mediated translational silencing of Ceruloplasmin expression",
+      9.124382451048693e-22
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 2
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.105,
+     "n_ambiguous": 1
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.095,
+     "n_ambiguous": 1
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.09,
+     "n_ambiguous": 3
+    }
+   ],
+   "cnn_clip_overlap_genes": 28,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  },
+  "hsa-miR-92a-3p": {
+   "universe": 3132,
+   "cnn": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.095,
+    "n_ambiguous": 3
+   },
+   "clip": {
+    "n_sig": 0,
+    "terms": [],
+    "top": [],
+    "unmapped_frac": 0.015,
+    "n_ambiguous": 3
+   },
+   "expr": {
+    "n_sig": 90,
+    "terms": [
+     "GO:0002181",
+     "GO:0006091",
+     "GO:0006119",
+     "GO:0006259",
+     "GO:0006281",
+     "GO:0006396",
+     "GO:0006412",
+     "GO:0006974",
+     "GO:0008152",
+     "GO:0009058",
+     "GO:0009060",
+     "GO:0010467",
+     "GO:0015980",
+     "GO:0019646",
+     "GO:0022613",
+     "GO:0022900",
+     "GO:0022904",
+     "GO:0034728",
+     "GO:0042254",
+     "GO:0042274",
+     "GO:0042773",
+     "GO:0042775",
+     "GO:0043170",
+     "GO:0043933",
+     "GO:0044238",
+     "GO:0045333",
+     "GO:0065003",
+     "GO:0065004",
+     "GO:0071824",
+     "GO:0160307",
+     "KEGG:00000",
+     "KEGG:00190",
+     "KEGG:03010",
+     "KEGG:04932",
+     "KEGG:05012",
+     "KEGG:05014",
+     "KEGG:05016",
+     "KEGG:05020",
+     "KEGG:05171",
+     "KEGG:05208",
+     "KEGG:05415",
+     "REAC:0000000",
+     "REAC:R-HSA-1428517",
+     "REAC:R-HSA-1430728",
+     "REAC:R-HSA-156827",
+     "REAC:R-HSA-156842",
+     "REAC:R-HSA-156902",
+     "REAC:R-HSA-1643685",
+     "REAC:R-HSA-168255",
+     "REAC:R-HSA-168273",
+     "REAC:R-HSA-1799339",
+     "REAC:R-HSA-192823",
+     "REAC:R-HSA-2262752",
+     "REAC:R-HSA-2408522",
+     "REAC:R-HSA-2408557",
+     "REAC:R-HSA-3700989",
+     "REAC:R-HSA-376176",
+     "REAC:R-HSA-392499",
+     "REAC:R-HSA-422475",
+     "REAC:R-HSA-5663205",
+     "REAC:R-HSA-611105",
+     "REAC:R-HSA-6791226",
+     "REAC:R-HSA-69206",
+     "REAC:R-HSA-71291",
+     "REAC:R-HSA-72163",
+     "REAC:R-HSA-72172",
+     "REAC:R-HSA-72203",
+     "REAC:R-HSA-72312",
+     "REAC:R-HSA-72613",
+     "REAC:R-HSA-72649",
+     "REAC:R-HSA-72662",
+     "REAC:R-HSA-72689",
+     "REAC:R-HSA-72695",
+     "REAC:R-HSA-72706",
+     "REAC:R-HSA-72737",
+     "REAC:R-HSA-72764",
+     "REAC:R-HSA-72766",
+     "REAC:R-HSA-8868773",
+     "REAC:R-HSA-8953854",
+     "REAC:R-HSA-8953897",
+     "REAC:R-HSA-9010553",
+     "REAC:R-HSA-927802",
+     "REAC:R-HSA-9633012",
+     "REAC:R-HSA-9675108",
+     "REAC:R-HSA-9692914",
+     "REAC:R-HSA-9711097",
+     "REAC:R-HSA-9735869",
+     "REAC:R-HSA-975956",
+     "REAC:R-HSA-975957",
+     "REAC:R-HSA-9824446"
+    ],
+    "top": [
+     [
+      "REAC:R-HSA-8953854",
+      "Metabolism of RNA",
+      8.26414154891983e-15
+     ],
+     [
+      "GO:0006412",
+      "translation",
+      2.4027843784776663e-14
+     ],
+     [
+      "GO:0160307",
+      "protein biosynthetic process",
+      2.4027843784776663e-14
+     ],
+     [
+      "REAC:R-HSA-72737",
+      "Cap-dependent Translation Initiation",
+      1.0213727695029306e-12
+     ],
+     [
+      "REAC:R-HSA-72613",
+      "Eukaryotic Translation Initiation",
+      1.0213727695029306e-12
+     ]
+    ],
+    "unmapped_frac": 0.0,
+    "n_ambiguous": 7
+   },
+   "random": [
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.1,
+     "n_ambiguous": 4
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.065,
+     "n_ambiguous": 3
+    },
+    {
+     "n_sig": 0,
+     "terms": [],
+     "top": [],
+     "unmapped_frac": 0.065,
+     "n_ambiguous": 1
+    }
+   ],
+   "cnn_clip_overlap_genes": 30,
+   "J_cnn_clip": 0.0,
+   "J_rand_clip": 0.0,
+   "rand_mean_nsig": 0.0
+  }
+ },
+ "posthoc_genome_background": {
+  "note": "exploratory, not pre-registered",
+  "per_mirna": {
+   "hsa-let-7a-5p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 0,
+    "cnn_top": [],
+    "rand_top": []
+   },
+   "hsa-miR-1-3p": {
+    "cnn_nsig": 1,
+    "rand_nsig": 1,
+    "cnn_top": [
+     [
+      "REAC:R-HSA-5661231",
+      "Metallothioneins bind metals",
+      0.03754817958740672
+     ]
+    ],
+    "rand_top": [
+     [
+      "REAC:R-HSA-5633231",
+      "Defective ALG14 causes ALG14-CMS",
+      0.049782460089823434
+     ]
+    ]
+   },
+   "hsa-miR-122-5p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 20,
+    "cnn_top": [],
+    "rand_top": [
+     [
+      "GO:0048518",
+      "positive regulation of biological process",
+      1.677351896441907e-05
+     ],
+     [
+      "GO:0048522",
+      "positive regulation of cellular process",
+      0.0015245752789130292
+     ],
+     [
+      "GO:0006366",
+      "transcription by RNA polymerase II",
+      0.005217165418039071
+     ]
+    ]
+   },
+   "hsa-miR-125b-5p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 0,
+    "cnn_top": [],
+    "rand_top": []
+   },
+   "hsa-miR-145-5p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 1,
+    "cnn_top": [],
+    "rand_top": [
+     [
+      "GO:0065007",
+      "biological regulation",
+      0.0018793088153681724
+     ]
+    ]
+   },
+   "hsa-miR-155-5p": {
+    "cnn_nsig": 1,
+    "rand_nsig": 2,
+    "cnn_top": [
+     [
+      "GO:0048008",
+      "platelet-derived growth factor receptor signaling pathway",
+      0.042629438329514616
+     ]
+    ],
+    "rand_top": [
+     [
+      "KEGG:04215",
+      "Apoptosis - multiple species",
+      0.008671383907853783
+     ],
+     [
+      "REAC:R-HSA-111452",
+      "Activation and oligomerization of BAK protein",
+      0.0497153678255514
+     ]
+    ]
+   },
+   "hsa-miR-16-5p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 0,
+    "cnn_top": [],
+    "rand_top": []
+   },
+   "hsa-miR-17-5p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 2,
+    "cnn_top": [],
+    "rand_top": [
+     [
+      "GO:0012501",
+      "programmed cell death",
+      0.03288312226722586
+     ],
+     [
+      "GO:0008219",
+      "cell death",
+      0.034281000061412964
+     ]
+    ]
+   },
+   "hsa-miR-19a-3p": {
+    "cnn_nsig": 2,
+    "rand_nsig": 2,
+    "cnn_top": [
+     [
+      "GO:2000780",
+      "negative regulation of double-strand break repair",
+      0.019428649669921427
+     ],
+     [
+      "GO:0045738",
+      "negative regulation of DNA repair",
+      0.025152146794719794
+     ]
+    ],
+    "rand_top": [
+     [
+      "GO:0080090",
+      "regulation of primary metabolic process",
+      0.0021940704743987883
+     ],
+     [
+      "GO:0033036",
+      "macromolecule localization",
+      0.011251538508159695
+     ]
+    ]
+   },
+   "hsa-miR-200c-3p": {
+    "cnn_nsig": 1,
+    "rand_nsig": 8,
+    "cnn_top": [
+     [
+      "REAC:R-HSA-727802",
+      "Transport of nucleotide sugars",
+      0.029631176799998486
+     ]
+    ],
+    "rand_top": [
+     [
+      "GO:0048518",
+      "positive regulation of biological process",
+      0.0045546142482216865
+     ],
+     [
+      "GO:0009605",
+      "response to external stimulus",
+      0.005064852295586386
+     ],
+     [
+      "KEGG:04022",
+      "cGMP-PKG signaling pathway",
+      0.014017205829230845
+     ]
+    ]
+   },
+   "hsa-miR-21-5p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 2,
+    "cnn_top": [],
+    "rand_top": [
+     [
+      "REAC:R-HSA-109606",
+      "Intrinsic Pathway for Apoptosis",
+      0.006570119604127095
+     ],
+     [
+      "GO:0033554",
+      "cellular response to stress",
+      0.043639443205908145
+     ]
+    ]
+   },
+   "hsa-miR-34a-5p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 0,
+    "cnn_top": [],
+    "rand_top": []
+   },
+   "hsa-miR-92a-3p": {
+    "cnn_nsig": 0,
+    "rand_nsig": 0,
+    "cnn_top": [],
+    "rand_top": []
+   }
+  },
+  "cnn_vs_random": {
+   "wins": 0,
+   "losses": 6,
+   "ties_excluded": true,
+   "p_one_sided": 1.0
+  },
+  "median_cnn_nsig": 0.0,
+  "median_rand_nsig": 1.0
+ }
+}

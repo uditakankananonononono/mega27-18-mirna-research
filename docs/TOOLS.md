@@ -16,7 +16,8 @@
 18. Human Protein Atlas cell-line RNA atlas (rna_celline.tsv.zip, HEK293 nTPM) - expression confound control, results/expression_confound.json
 19. RNAhybrid 2.1.2 (Debian jammy .deb, -s 3utr_human) - pure-thermodynamics benchmark arm on miRTarBase rows, results/rnahybrid_benchmark.json
 20. miRanda 3.3a (aug2010 release; canonical cbio.mskcc.org source via Wayback capture, built with gcc -fcommon; default cutoffs) - alignment-based biophysics benchmark arm on miRTarBase rows, results/miranda_benchmark.json
-Count: 19 (20 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+21. g:Profiler g:GOSt REST API (biit.cs.ut.ee/gprofiler, version e114_eg62_p19_27110d83) - functional-enrichment coherence audit of target sets, results/gprofiler_enrichment.json
+Count: 20 (21 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
