@@ -17,7 +17,8 @@
 19. RNAhybrid 2.1.2 (Debian jammy .deb, -s 3utr_human) - pure-thermodynamics benchmark arm on miRTarBase rows, results/rnahybrid_benchmark.json
 20. miRanda 3.3a (aug2010 release; canonical cbio.mskcc.org source via Wayback capture, built with gcc -fcommon; default cutoffs) - alignment-based biophysics benchmark arm on miRTarBase rows, results/miranda_benchmark.json
 21. g:Profiler g:GOSt REST API (biit.cs.ut.ee/gprofiler, version e114_eg62_p19_27110d83) - functional-enrichment coherence audit of target sets, results/gprofiler_enrichment.json
-Count: 20 (21 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
+22. STRING v12.0 REST API (string-db.org; get_string_ids + network, score >= 0.7) - network-coherence audit of target sets with expression-matched control, results/string_coherence.json
+Count: 21 (22 raw entries minus pytest infrastructure). Planned: miRWalk (6.8GB download, deferred).
 ## Datasets (accession-level)
 1. TargetScan conserved sites (264,563 human rows)
 2. TargetScan 3'UTR sequences
