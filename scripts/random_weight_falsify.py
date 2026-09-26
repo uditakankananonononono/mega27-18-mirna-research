@@ -170,7 +170,7 @@ def main():
          "null_B_permutation": {"L1": b1, "L2": b2},
          "verdict": {
            "L1_survives": bool(t_l1 > np.percentile(a1, 99) and t_l1 > np.percentile(b1, 99)),
-           "L2_survives": bool(t_l2 < np.percentile(a2, 1) and t_l2 < np.percentile(b2, 1))},
+           "L2_survives": bool(t_l2 > np.percentile(a2, 99) and t_l2 > np.percentile(b2, 99))},
          "alpha": 0.01, "K": K, "n_candidates": len(cands)}
     json.dump(J, open(ROOT / "results/random_weight_falsify.json", "w"), indent=1)
     print(json.dumps(J["verdict"]), flush=True)
