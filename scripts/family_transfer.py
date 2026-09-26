@@ -48,12 +48,14 @@ def main():
     top = [f for f, _ in sorted(((f, int((fams == f).sum())) for f in np.unique(fams)),
                                 key=lambda kv: -kv[1])[:5]]
     print("held-out families:", top, flush=True)
-    mu, sd = F.mean(0), F.std(0) + 1e-6
-    Fn = ((F - mu) / sd).astype(np.float32)
-    Xr = np.concatenate([U.reshape(len(y), -1), M.reshape(len(y), -1), np.eye(4)[ST], Fn], 1)
     out = {"held_out_families": top, "families": {}}
     for f in top:
         te = np.where(fams == f)[0]; tr = np.where(fams != f)[0]
+        # Pre-outcome leakage fix: fit normalization on TRAIN families only.
+        # Do not allow held-out family context distributions into preprocessing.
+        mu, sd = F[tr].mean(0), F[tr].std(0) + 1e-6
+        Fn = ((F - mu) / sd).astype(np.float32)
+        Xr = np.concatenate([U.reshape(len(y), -1), M.reshape(len(y), -1), np.eye(4)[ST], Fn], 1)
         rg = Ridge(alpha=10.0).fit(Xr[tr], y[tr])
         r_ridge = float(pearsonr(y[te], rg.predict(Xr[te]))[0])
         net = fit_cnn(U, M, ST, y, tr, epochs=6, log=lambda s: None, F=Fn)
