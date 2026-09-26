@@ -4,3 +4,6 @@ data/human_*.tsv
 *.log
 __pycache__/
 results/*.pt
+data/human_utrs.tsv
+data/human_sites.tsv
+data/miR_Family_Info.txt
