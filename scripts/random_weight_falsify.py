@@ -95,7 +95,9 @@ def features(cands, utrs, mirs, mu, sd):
     Xf = ((np.stack([site_features(utrs[t], p + 1, p + 7) for _, t, p, _ in cands]) - mu) / sd).astype(np.float32)
     return cands, Xu, Xm, Xs, Xf
 
-def score(net, Xu, Xm, Xs, Xf, bs=4096):
+def score(net, Xu, Xm, Xs, Xf, bs=512):
+    # Pre-outcome memory safety: smaller inference batches on a 1.9GB/no-swap
+    # box after three OOM kills. This changes neither candidates nor statistics.
     net.eval(); out = np.zeros(len(Xs), dtype=np.float32)
     with torch.no_grad():
         for lo in range(0, len(Xs), bs):
