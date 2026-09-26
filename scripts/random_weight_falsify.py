@@ -140,6 +140,11 @@ def main():
     cands, utrs, mirs, tid2gene = enumerate_candidates()
     print("candidates:", len(cands), flush=True)
     cands, Xu, Xm, Xs, Xf = features(cands, utrs, mirs, mu, sd)
+    # memory-only fix (no statistic changes): free the full UTR table after
+    # feature extraction; the locked design, seeds, subsample and statistics
+    # are unchanged. Two OOM kills (pids 4087, 4247) forced this.
+    del utrs, mirs
+    import gc; gc.collect()
     print("scored feature arrays ready", flush=True)
     net = DuplexCNN(n_feat=4)
     net.load_state_dict(torch.load(ROOT / "results/duplex_cnn.pt", weights_only=True))
