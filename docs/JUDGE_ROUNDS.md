@@ -688,3 +688,366 @@ variant-aware miRNA disruption, because those have a cleaner FAIR benchmark stru
    disruption scoring. Declared before G1 outcomes.
 4. Paper: full architecture ablation table (sequence-only / pairing-only /
    Grimson-only / full) required in the next revision.
+
+
+## Round 2/10 - 2026-09-26 17:45 IST
+
+Surface: https://chatgpt.com/c/6ab7a508-19fc-83ee-ad1f-d4e1477186a6 (user account, Free tier). ChatGPT is external, untrusted critique - never empirical evidence, never authority over locked gates.
+
+### Verbatim prompt and response
+```
+Adversarial ISEF judge round 2 for the miRNA target-prediction methodology project (retrospective validation on public data only). State since round 1: the DuplexCNN retraining from the documented TargetScan recipe reproduced on held-out genes (pearson 0.8139 vs ridge+context 0.7790, 80k sites, gene-held-out split); committed. The preregistered random-weight falsifier for the non-conserved candidate depletion finding is now running: 200k non-conserved seed-match candidates (seed 0 subsample), CLIP universe, 13 discovery + 30 held-out miRNAs, K=200, expression-matched comparators, one-sided panel counts L1 (LOEUF depletion) and L2 (s_het depletion); verdict survives only if trained counts exceed the 99th percentile of BOTH 100 random-weight nulls and 100 score-permutation nulls, alpha 0.01; up to 5 label-permutation retrains as spot check if nulls are beaten. Memory fixes were implementation-only. Attack this falsifier design and propose ONE concrete novelty-improving analysis I can preregister NOW before the verdict exists, feasible on CPU with public data, that would strengthen a NEW methodological or biological discovery rather than just defend the old one. Include the control, the refuting outcome, and the smallest implementation. Do not move locked thresholds and do not suggest therapeutic claims.
+Show more
+Round 2 adversarial judge review
+
+The project has improved substantially since round 1. The held-out-gene retraining result (Pearson 0.8139 vs 0.7790 ridge+context on 80k sites) is a methodology validation, not a biological discovery, but it establishes that the implementation is not obviously broken and that the pairing-map representation carries signal beyond the comparator.
+
+The candidate depletion analysis remains the high-risk claim. Your falsifier design is much stronger than before, but I would still attack it.
+
+A) Attack the random-weight falsifier design
+1. The nulls test the scorer, but not necessarily the candidate-generation pipeline
+
+Your random-weight CNN and score-permutation nulls answer:
+
+"Does the trained ranking function matter?"
+
+Good.
+
+But they do not fully answer:
+
+"Is the entire candidate-generation process producing a biased gene universe?"
+
+The pipeline has multiple stages:
+
+choose non-conserved seed matches
+
+filter to CLIP universe
+
+rank with model
+
+select top K
+
+compare constraint metrics
+
+A depletion could arise before stage 3.
+
+Example:
+
+non-conserved CLIP-supported seed matches disproportionately occur in long-UTR, low-constraint genes
+
+every scoring method inherits that bias
+
+random CNN may not reproduce it if ranking noise changes the top-K subset distribution
+
+You need a candidate-universe null.
+
+2. K=200 creates instability risk
+
+A top-200 gene list is very sensitive.
+
+A few gene families can dominate.
+
+Questions a judge asks:
+
+Does the result survive K=50?
+
+K=100?
+
+K=500?
+
+K proportional to number of candidates per miRNA?
+
+If only K=200 works, the result may be a threshold artifact.
+
+I would not change the locked primary endpoint, but I would add a secondary stability curve.
+
+3. Seed-0 subsampling may create sampling variance
+
+The phrase "seed 0 subsample" concerns me.
+
+If candidate generation is stochastic, a single subsample can accidentally enrich/deplete certain gene classes.
+
+You should report:
+
+total candidate universe size
+
+number of independent candidate subsamples
+
+overlap between subsamples
+
+Otherwise the result may be:
+
+"This particular random draw found low-constraint genes."
+
+4. Expression matching may not be enough
+
+Expression is helpful, but CLIP studies have additional biases:
+
+transcript abundance
+
+transcript length
+
+UTR length
+
+number of annotated miRNA sites
+
+AGO accessibility
+
+GC content
+
+A hostile judge will ask:
+
+"Why should a gene with 15 possible CLIP peaks be compared to a gene with 1?"
+
+You need site opportunity matching.
+
+5. Random-weight CNN is not equivalent to "no biological information"
+
+A random network has:
+
+same architecture
+
+same input representation
+
+but no learned signal.
+
+However, the trained CNN is optimized on TargetScan labels.
+
+A stronger null is:
+
+Label permutation retraining
+
+Keep:
+
+architecture
+
+optimizer
+
+training data
+
+split
+
+Randomize:
+
+TargetScan labels
+
+Train from scratch.
+
+This tests:
+
+"Does any learned mapping from labels matter?"
+
+Your spot-check is good, but if random-weight wins are close, I would want more than five.
+
+Overall verdict on falsifier
+
+Passable, but not fully adversarial.
+
+The current null asks:
+
+"Is the final CNN score better than noise?"
+
+The stronger scientific question is:
+
+"Is learned miRNA regulatory information, independent of candidate-universe structure, responsible for the constraint depletion?"
+
+Your design addresses the first. It partially addresses the second.
+
+B) One concrete novelty analysis to preregister now
+
+I would not add another generic model improvement.
+
+The best addition is:
+
+"Constraint-aware cross-miRNA transfer: does DuplexCNN learn transferable regulatory grammar?"
+Scientific question
+
+Current claim:
+
+DuplexCNN ranks candidate targets.
+
+Stronger claim:
+
+DuplexCNN learns miRNA-target interaction rules that generalize to unseen miRNAs.
+
+This converts the project from a target-ranking tool into a representation-learning study.
+
+Experiment
+Setup
+
+You already have:
+
+13 discovery miRNAs
+
+30 held-out miRNAs
+
+Extend the held-out framework.
+
+Training:
+
+Train DuplexCNN on:
+
+13 discovery miRNAs
+
+Test:
+
+Evaluate only:
+
+30 unseen miRNAs
+
+No retraining.
+
+Compare against:
+
+TargetScan context++ score
+
+Ridge + context features
+
+Pairing-map ablation without Grimson features
+
+Grimson-only model
+
+Primary endpoint
+
+Not Pearson across all sites.
+
+Use:
+
+Per-miRNA held-out correlation
+
+For each unseen miRNA:
+
+Pearson(predicted repression, measured repression)
+
+Then summarize:
+
+median Pearson
+
+bootstrap CI over miRNAs
+
+Why?
+
+A model can win overall by dominating large miRNA datasets.
+
+The biological unit is the miRNA.
+
+Control
+
+The critical control:
+
+miRNA-family holdout
+
+Do not randomly split miRNAs.
+
+Hold out entire families.
+
+Example:
+
+Training:
+
+let-7 family absent
+
+Testing:
+
+let-7 members only
+
+This prevents the model from memorizing family-specific sequence patterns.
+
+Refuting outcome
+
+Pre-register:
+
+The hypothesis fails if:
+
+DuplexCNN does not exceed ridge+context on held-out miRNA families, or
+
+performance collapses to the same level as random-weight architecture, or
+
+improvement disappears after controlling for site abundance/UTR features.
+
+A negative result is still informative:
+
+pairing maps improve interpolation but not transfer.
+
+That is a publishable methodological boundary.
+
+Smallest implementation
+
+CPU feasible.
+
+You already have most pieces.
+
+Data
+
+Use existing:
+
+CLIP repression dataset
+
+TargetScan-derived features
+
+Code changes
+
+Approximately:
+
+Add miRNA-family metadata table.
+
+Modify split function:
+
+Python
+Run
+train_miRNAs = families_except(test_family)
+test_miRNAs = selected_family
+
+Train existing model unchanged.
+
+Run inference on held-out family.
+
+Compute per-miRNA Pearson.
+
+No new architecture.
+No GPU requirement.
+
+Why this is better than another falsifier
+
+The falsifier protects the existing discovery.
+
+This creates a new scientific contribution:
+
+Possible positive result:
+
+DuplexCNN learns transferable structural rules beyond TargetScan features.
+
+Possible negative result:
+
+DuplexCNN captures within-family patterns but fails cross-family generalization.
+
+Both are scientifically valuable.
+
+What I would want to see before calling this ISEF-level
+
+Current strongest package:
+
+Locked discovery:
+
+depletion audit with nulls
+
+Method:
+
+held-out gene Pearson improvement
+
+New analysis:
+
+family-level miRNA transfer
+
+Biological interpretation:
+
+explain what sequence/pairing features transfer
+
+The missing ingredient is not more candidate lists. It is demonstrating that the model learned a generalizable regulatory principle rather than reproducing a database-specific scoring function.
+```
+
+### Independent assessment and novelty foldback (adopted on this lane's own judgment)
+- ADOPTED (committed BEFORE the random-weight falsifier verdict and before this new test's outcome, commit 1229253): `scripts/family_transfer.py`, a miRNA-family-held-out transfer test. DuplexCNN+context, ridge+context and an untrained random-weight architecture null are each trained without one of the 5 largest TargetScan miRNA families and scored on that family. Locked verdict: transfer supported only if CNN mean pearson beats ridge+context AND exceeds the random-weight null by >0.05; otherwise the honest boundary (interpolation, not transfer) is reported. This is a NEW methodological claim direction, not a defense of the depletion finding.
+- NOT ADOPTED as gate changes: no thresholds of the running falsifier were touched; the falsifier verdict rule (99th percentile of both nulls, alpha 0.01) stands as committed at 46137d0.
+- NOT ADOPTED: biological interpretation of transferring features is deferred until the transfer result exists; no claim is pre-written.
+This concrete novelty change (family-held-out transfer test) is why this round counts toward the 10-round minimum under the 5:00:38 PM user rule.
