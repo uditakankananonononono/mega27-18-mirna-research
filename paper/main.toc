@@ -31,13 +31,13 @@
 \contentsline {subsection}{\numberline {4.24}Loss-of-function constraint (gnomAD): conserved targets are constrained, CNN candidates are the least constrained set}{19}{}%
 \contentsline {paragraph}{Pre-registered held-out replication.}{20}{}%
 \contentsline {subsection}{\numberline {4.25}Independent dosage label (ClinGen): the depletion beyond UTR length does not replicate}{20}{}%
-\contentsline {subsection}{\numberline {4.26}Third dosage label (Collins et al.\ 2022 rCNV scores): the depletion survives UTR-length matching}{22}{}%
+\contentsline {subsection}{\numberline {4.26}Third dosage label (Collins et al.\ 2022 rCNV scores): the depletion survives UTR-length matching}{21}{}%
 \contentsline {subsection}{\numberline {4.27}Mendelian disease genes (HPO): depletion explained by UTR length}{22}{}%
 \contentsline {subsection}{\numberline {4.28}ClinVar pathogenic-variant genes: the positive-control gate failed}{23}{}%
 \contentsline {subsection}{\numberline {4.29}Cell-essential genes (DepMap): no depletion, and the label is uninformative for conserved targets}{23}{}%
-\contentsline {subsection}{\numberline {4.30}Protein-complex subunits (Complex Portal): the dosage-balance prediction fails}{24}{}%
+\contentsline {subsection}{\numberline {4.30}Protein-complex subunits (Complex Portal): the dosage-balance prediction fails}{23}{}%
 \contentsline {subsection}{\numberline {4.31}Study bias (NCBI Gene, PubMed counts): it explains the curated-label depletion but not the LOEUF depletion}{24}{}%
-\contentsline {subsection}{\numberline {4.32}DECIPHER haploinsufficiency predictions: depletion beyond expression and study bias, not beyond UTR length}{25}{}%
+\contentsline {subsection}{\numberline {4.32}DECIPHER haploinsufficiency predictions: depletion beyond expression and study bias, not beyond UTR length}{24}{}%
 \contentsline {subsection}{\numberline {4.33}GeneBayes $s_\mathrm {het}$: population-based labels agree with each other, curated and model-based labels do not}{25}{}%
 \contentsline {paragraph}{Pre-registered coding-length control.}{25}{}%
 \contentsline {subsection}{\numberline {4.34}Paralog buffering (Ensembl BioMart): no paralog excess; both gates failed}{26}{}%
@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {4.36}Orphanet rare-disease genes: depletion vs expression-matched only; gone against publication-matched sets}{26}{}%
 \contentsline {subsection}{\numberline {4.37}Mouse mutant phenotypes (MGI): weak, mixed support}{27}{}%
 \contentsline {section}{\numberline {5}Independent benchmark audit: every evaluated miRNA}{27}{}%
-\contentsline {subsection}{\numberline {5.1}Interpretation of the independent ranking}{30}{}%
+\contentsline {subsection}{\numberline {5.1}Interpretation of the independent ranking}{27}{}%
 \contentsline {section}{\numberline {6}Documented negatives}{30}{}%
 \contentsline {subsection}{\numberline {6.1}Locked random-weight and score-permutation falsifier}{31}{}%
 \contentsline {subsection}{\numberline {6.2}Family-held-out transfer test and the pair-map decision}{31}{}%
