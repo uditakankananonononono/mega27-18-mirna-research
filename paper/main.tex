@@ -320,6 +320,41 @@ for new training without changing the archived artifact. Exact family outcomes:
 \texttt{results/family\_transfer.json}; locked code:
 \texttt{scripts/family\_transfer.py}.
 
+\subsection{Fixed-width absolute UTR-length-bin sensitivity audit}
+A coarse UTR-length-decile control in the earlier 30-miRNA held-out panel
+left a median-LOEUF contrast in 25 of 30 miRNAs. After the random-weight
+falsifier failed, we tested finer \emph{absolute} UTR-length bins as a
+post-hoc sensitivity audit, not as a way to restore the trained-model claim.
+For each miRNA we selected the original 200 CNN-ranked candidates among
+LOEUF-mapped genes. A candidate was matchable only when its absolute length
+bin contained at least one non-candidate from the same miRNA universe;
+unmatchable candidates were excluded from both candidate and comparison
+medians. Three seeded control samples drew one gene per matchable candidate,
+with replacement inside its bin. Duplicate controls therefore reduce the
+effective comparison-set size, and there was no nearest-bin fallback.
+
+\begin{center}
+\begin{tabular}{lrrrr}
+Absolute bin width & Matchable/6{,}000 & Median unique controls & Panels $\uparrow$/\,$\downarrow$ & Descriptive $p$\\
+\hline
+25 nt & 5{,}803 & 174 & 21/9 & 0.0214\\
+50 nt & 5{,}884 & 175 & 24/6 & 0.00072\\
+100 nt & 5{,}948 & 177 & 23/7 & 0.00261\\
+\end{tabular}
+\end{center}
+An upward arrow means higher median LOEUF (less constraint) among the
+\emph{matchable subset} of CNN-selected genes than the average matched
+control median. The $p$ values are unadjusted one-sided sign tests, not
+pre-registered gates; the 25/50/100-nt audits reuse the same panel and
+cannot be counted as three independent replications. The loss of up to 197
+candidates at 25 nt and sampling with replacement limit the interpretation.
+The result describes how a selected-gene pattern responds to finer length
+matching; because untrained networks matched the earlier depletion under the
+locked falsifier, it supplies no evidence that learned weights produced the
+pattern. The exact per-miRNA exclusions and medians are in the result JSON files
+for each width (\texttt{results/exact\_length\_bin\_*bp.json}); the
+seeded drawing code is in \texttt{scripts/exact\_length\_bin\_control.py}.
+
 \section{Falsification paths}
 miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); remaining: library-matched CLIP/RNA-seq normalization.
 \begin{thebibliography}{9}

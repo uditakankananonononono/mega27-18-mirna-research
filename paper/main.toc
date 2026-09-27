@@ -49,14 +49,15 @@
 \contentsline {section}{\numberline {6}Documented negatives}{27}{}%
 \contentsline {subsection}{\numberline {6.1}Locked random-weight and score-permutation falsifier}{31}{}%
 \contentsline {subsection}{\numberline {6.2}Family-held-out transfer test and the pair-map decision}{31}{}%
+\contentsline {subsection}{\numberline {6.3}Fixed-width absolute UTR-length-bin sensitivity audit}{32}{}%
 \contentsline {section}{\numberline {7}Falsification paths}{32}{}%
 \contentsline {section}{\numberline {8}Mathematical derivations}{34}{}%
 \contentsline {subsection}{\numberline {8.1}Convolutional duplex scoring}{34}{}%
 \contentsline {subsection}{\numberline {8.2}Pearson and Spearman benchmarks}{34}{}%
-\contentsline {subsection}{\numberline {8.3}Fisher exact test for CLIP enrichment}{34}{}%
-\contentsline {subsection}{\numberline {8.4}Odds ratio}{34}{}%
+\contentsline {subsection}{\numberline {8.3}Fisher exact test for CLIP enrichment}{35}{}%
+\contentsline {subsection}{\numberline {8.4}Odds ratio}{35}{}%
 \contentsline {subsection}{\numberline {8.5}AUROC as a Mann--Whitney statistic}{35}{}%
 \contentsline {subsection}{\numberline {8.6}Bootstrap confidence interval for $\Delta $AUROC}{35}{}%
 \contentsline {subsection}{\numberline {8.7}Permutation null}{35}{}%
-\contentsline {subsection}{\numberline {8.8}Seed-match enumerator}{35}{}%
-\contentsline {subsection}{\numberline {8.9}Wilcoxon signed-rank for paired per-gene comparisons}{35}{}%
+\contentsline {subsection}{\numberline {8.8}Seed-match enumerator}{36}{}%
+\contentsline {subsection}{\numberline {8.9}Wilcoxon signed-rank for paired per-gene comparisons}{36}{}%

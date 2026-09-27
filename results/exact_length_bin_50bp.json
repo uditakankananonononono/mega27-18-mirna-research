@@ -1,0 +1,910 @@
+{
+ "status": "post-hoc descriptive after failed random-weight falsifier",
+ "bin_width_bp": 50,
+ "draws": 3,
+ "panel_source": "results/gnomad_replication.json",
+ "method": "sample with replacement from non-candidates within identical absolute 50-nt bin; exclude candidates in bins with zero pool",
+ "sign_test_descriptive": {
+  "wins": 24,
+  "losses": 6,
+  "ties": 0,
+  "p_one_sided": 0.0007154531776905061
+ },
+ "matching_coverage": {
+  "eligible": 5884,
+  "total": 6000
+ },
+ "per_mirna": {
+  "hsa-miR-214-3p": {
+   "universe_n": 6181,
+   "candidate_n": 200,
+   "matchable_n": 198,
+   "unmatched_n": 2,
+   "unmatched_genes": [
+    "PPOX",
+    "PAFAH1B3"
+   ],
+   "candidate_median_loeuf_matched_subset": 1.0705,
+   "control_median_loeuf": [
+    0.9375,
+    1.0074999999999998,
+    0.946
+   ],
+   "control_mean_loeuf": 0.9636666666666667,
+   "median_absolute_length_difference_bp": [
+    16.0,
+    14.0,
+    13.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    187,
+    181,
+    185
+   ]
+  },
+  "hsa-miR-345-5p": {
+   "universe_n": 3808,
+   "candidate_n": 200,
+   "matchable_n": 196,
+   "unmatched_n": 4,
+   "unmatched_genes": [
+    "ELP5",
+    "RTP3",
+    "PSG8",
+    "OR4D6"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.822,
+   "control_median_loeuf": [
+    0.866,
+    0.9775,
+    0.9755
+   ],
+   "control_mean_loeuf": 0.9396666666666667,
+   "median_absolute_length_difference_bp": [
+    16.0,
+    15.0,
+    16.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    177,
+    185,
+    182
+   ]
+  },
+  "hsa-miR-625-5p": {
+   "universe_n": 5366,
+   "candidate_n": 200,
+   "matchable_n": 197,
+   "unmatched_n": 3,
+   "unmatched_genes": [
+    "SLC16A11",
+    "SLC22A25",
+    "PGAM2"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.948,
+   "control_median_loeuf": [
+    0.781,
+    0.85,
+    0.943
+   ],
+   "control_mean_loeuf": 0.858,
+   "median_absolute_length_difference_bp": [
+    15.0,
+    16.0,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    182,
+    186,
+    182
+   ]
+  },
+  "hsa-miR-424-5p": {
+   "universe_n": 3924,
+   "candidate_n": 200,
+   "matchable_n": 198,
+   "unmatched_n": 2,
+   "unmatched_genes": [
+    "BNC2",
+    "TUT1"
+   ],
+   "candidate_median_loeuf_matched_subset": 1.0274999999999999,
+   "control_median_loeuf": [
+    0.924,
+    0.868,
+    0.861
+   ],
+   "control_mean_loeuf": 0.8843333333333333,
+   "median_absolute_length_difference_bp": [
+    14.0,
+    14.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    176,
+    182,
+    180
+   ]
+  },
+  "hsa-miR-302a-3p": {
+   "universe_n": 4565,
+   "candidate_n": 200,
+   "matchable_n": 200,
+   "unmatched_n": 0,
+   "unmatched_genes": [],
+   "candidate_median_loeuf_matched_subset": 1.0295,
+   "control_median_loeuf": [
+    1.01,
+    0.9984999999999999,
+    0.988
+   ],
+   "control_mean_loeuf": 0.9988333333333332,
+   "median_absolute_length_difference_bp": [
+    15.0,
+    16.0,
+    16.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    185,
+    177,
+    182
+   ]
+  },
+  "hsa-miR-10a-5p": {
+   "universe_n": 3529,
+   "candidate_n": 200,
+   "matchable_n": 197,
+   "unmatched_n": 3,
+   "unmatched_genes": [
+    "EIF2B4",
+    "C10orf120",
+    "PGAP1"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.896,
+   "control_median_loeuf": [
+    0.905,
+    0.941,
+    0.937
+   ],
+   "control_mean_loeuf": 0.9276666666666668,
+   "median_absolute_length_difference_bp": [
+    15.0,
+    16.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    180,
+    175,
+    183
+   ]
+  },
+  "hsa-miR-328-3p": {
+   "universe_n": 3440,
+   "candidate_n": 200,
+   "matchable_n": 198,
+   "unmatched_n": 2,
+   "unmatched_genes": [
+    "HIST1H4J",
+    "CENPM"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.937,
+   "control_median_loeuf": [
+    0.774,
+    0.8915,
+    0.941
+   ],
+   "control_mean_loeuf": 0.8688333333333333,
+   "median_absolute_length_difference_bp": [
+    14.0,
+    15.5,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    181,
+    181,
+    184
+   ]
+  },
+  "hsa-miR-25-3p": {
+   "universe_n": 3042,
+   "candidate_n": 200,
+   "matchable_n": 182,
+   "unmatched_n": 18,
+   "unmatched_genes": [
+    "SPEF2",
+    "SUSD4",
+    "PLBD1",
+    "TBC1D21",
+    "HIST1H4G",
+    "FBXO15",
+    "PROL1",
+    "GTSF1L",
+    "MYH3",
+    "ERICH2",
+    "RAB30",
+    "RP11-770J1.5",
+    "CHIA",
+    "CYBA",
+    "SUSD1",
+    "ZNRF4",
+    "PSMB6",
+    "SPAG5"
+   ],
+   "candidate_median_loeuf_matched_subset": 1.0325,
+   "control_median_loeuf": [
+    1.013,
+    0.9055,
+    0.992
+   ],
+   "control_mean_loeuf": 0.9701666666666666,
+   "median_absolute_length_difference_bp": [
+    15.5,
+    15.0,
+    13.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    156,
+    161,
+    158
+   ]
+  },
+  "hsa-miR-199a-5p": {
+   "universe_n": 3882,
+   "candidate_n": 200,
+   "matchable_n": 198,
+   "unmatched_n": 2,
+   "unmatched_genes": [
+    "HIPK2",
+    "OR1K1"
+   ],
+   "candidate_median_loeuf_matched_subset": 1.0565,
+   "control_median_loeuf": [
+    0.842,
+    0.905,
+    0.8945000000000001
+   ],
+   "control_mean_loeuf": 0.8805,
+   "median_absolute_length_difference_bp": [
+    14.0,
+    13.0,
+    13.5
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    183,
+    178,
+    178
+   ]
+  },
+  "hsa-miR-128-3p": {
+   "universe_n": 4647,
+   "candidate_n": 200,
+   "matchable_n": 195,
+   "unmatched_n": 5,
+   "unmatched_genes": [
+    "CACNA2D4",
+    "MS4A5",
+    "DFNB31",
+    "ACOT12",
+    "KIAA0125"
+   ],
+   "candidate_median_loeuf_matched_subset": 1.035,
+   "control_median_loeuf": [
+    1.004,
+    0.994,
+    1.004
+   ],
+   "control_mean_loeuf": 1.0006666666666666,
+   "median_absolute_length_difference_bp": [
+    16.0,
+    15.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    173,
+    174,
+    177
+   ]
+  },
+  "hsa-miR-28-5p": {
+   "universe_n": 3575,
+   "candidate_n": 200,
+   "matchable_n": 196,
+   "unmatched_n": 4,
+   "unmatched_genes": [
+    "TYMP",
+    "OR52B2",
+    "OR51I1",
+    "OR10AD1"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.9775,
+   "control_median_loeuf": [
+    0.878,
+    0.917,
+    0.8525
+   ],
+   "control_mean_loeuf": 0.8825,
+   "median_absolute_length_difference_bp": [
+    16.5,
+    17.0,
+    16.5
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    168,
+    173,
+    170
+   ]
+  },
+  "hsa-miR-20a-5p": {
+   "universe_n": 4778,
+   "candidate_n": 200,
+   "matchable_n": 197,
+   "unmatched_n": 3,
+   "unmatched_genes": [
+    "LIPK",
+    "GLI3",
+    "RP11-597K23.2"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.99,
+   "control_median_loeuf": [
+    1.03,
+    1.019,
+    0.848
+   ],
+   "control_mean_loeuf": 0.9656666666666666,
+   "median_absolute_length_difference_bp": [
+    15.0,
+    17.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    176,
+    177,
+    178
+   ]
+  },
+  "hsa-miR-133b": {
+   "universe_n": 2430,
+   "candidate_n": 200,
+   "matchable_n": 200,
+   "unmatched_n": 0,
+   "unmatched_genes": [],
+   "candidate_median_loeuf_matched_subset": 0.95,
+   "control_median_loeuf": [
+    1.1360000000000001,
+    0.985,
+    0.938
+   ],
+   "control_mean_loeuf": 1.0196666666666667,
+   "median_absolute_length_difference_bp": [
+    14.0,
+    14.0,
+    13.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    169,
+    170,
+    168
+   ]
+  },
+  "hsa-miR-152-3p": {
+   "universe_n": 3447,
+   "candidate_n": 200,
+   "matchable_n": 199,
+   "unmatched_n": 1,
+   "unmatched_genes": [
+    "GRM7"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.996,
+   "control_median_loeuf": [
+    0.927,
+    0.926,
+    0.926
+   ],
+   "control_mean_loeuf": 0.9263333333333335,
+   "median_absolute_length_difference_bp": [
+    18.0,
+    15.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    171,
+    183,
+    173
+   ]
+  },
+  "hsa-miR-223-3p": {
+   "universe_n": 2969,
+   "candidate_n": 200,
+   "matchable_n": 198,
+   "unmatched_n": 2,
+   "unmatched_genes": [
+    "FABP9",
+    "TFPT"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.889,
+   "control_median_loeuf": [
+    0.8785000000000001,
+    0.99,
+    0.9955
+   ],
+   "control_mean_loeuf": 0.9546666666666667,
+   "median_absolute_length_difference_bp": [
+    17.0,
+    14.0,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    180,
+    178,
+    184
+   ]
+  },
+  "hsa-miR-671-5p": {
+   "universe_n": 4444,
+   "candidate_n": 200,
+   "matchable_n": 197,
+   "unmatched_n": 3,
+   "unmatched_genes": [
+    "OR2AT4",
+    "OR2AG1",
+    "SLC25A48"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.94,
+   "control_median_loeuf": [
+    0.979,
+    0.783,
+    0.943
+   ],
+   "control_mean_loeuf": 0.9016666666666667,
+   "median_absolute_length_difference_bp": [
+    13.0,
+    15.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    182,
+    188,
+    184
+   ]
+  },
+  "hsa-miR-181a-5p": {
+   "universe_n": 3860,
+   "candidate_n": 200,
+   "matchable_n": 196,
+   "unmatched_n": 4,
+   "unmatched_genes": [
+    "STX7",
+    "KRTCAP2",
+    "SLC25A3",
+    "CACUL1"
+   ],
+   "candidate_median_loeuf_matched_subset": 1.0925,
+   "control_median_loeuf": [
+    0.9375,
+    0.9664999999999999,
+    0.8775
+   ],
+   "control_mean_loeuf": 0.9271666666666666,
+   "median_absolute_length_difference_bp": [
+    15.0,
+    15.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    183,
+    180,
+    183
+   ]
+  },
+  "hsa-miR-182-5p": {
+   "universe_n": 3325,
+   "candidate_n": 200,
+   "matchable_n": 200,
+   "unmatched_n": 0,
+   "unmatched_genes": [],
+   "candidate_median_loeuf_matched_subset": 1.003,
+   "control_median_loeuf": [
+    0.9484999999999999,
+    1.037,
+    0.9435
+   ],
+   "control_mean_loeuf": 0.9763333333333333,
+   "median_absolute_length_difference_bp": [
+    15.0,
+    16.0,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    170,
+    177,
+    175
+   ]
+  },
+  "hsa-miR-708-5p": {
+   "universe_n": 3575,
+   "candidate_n": 200,
+   "matchable_n": 196,
+   "unmatched_n": 4,
+   "unmatched_genes": [
+    "TYMP",
+    "OR52B2",
+    "OR51I1",
+    "OR10AD1"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.9835,
+   "control_median_loeuf": [
+    0.986,
+    0.9544999999999999,
+    0.8895
+   ],
+   "control_mean_loeuf": 0.9433333333333334,
+   "median_absolute_length_difference_bp": [
+    14.0,
+    15.5,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    169,
+    168,
+    169
+   ]
+  },
+  "hsa-miR-134-5p": {
+   "universe_n": 3686,
+   "candidate_n": 200,
+   "matchable_n": 194,
+   "unmatched_n": 6,
+   "unmatched_genes": [
+    "C1orf234",
+    "DPRX",
+    "OR51B5",
+    "CDC14A",
+    "CIB3",
+    "CHTF18"
+   ],
+   "candidate_median_loeuf_matched_subset": 1.0635,
+   "control_median_loeuf": [
+    1.0150000000000001,
+    0.9964999999999999,
+    1.021
+   ],
+   "control_mean_loeuf": 1.0108333333333333,
+   "median_absolute_length_difference_bp": [
+    14.5,
+    14.5,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    167,
+    178,
+    170
+   ]
+  },
+  "hsa-miR-885-5p": {
+   "universe_n": 3248,
+   "candidate_n": 200,
+   "matchable_n": 192,
+   "unmatched_n": 8,
+   "unmatched_genes": [
+    "LRRIQ4",
+    "OR52N2",
+    "CNNM2",
+    "AGBL3",
+    "NOX4",
+    "FOLH1",
+    "ECT2",
+    "OR3A2"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.861,
+   "control_median_loeuf": [
+    0.784,
+    0.761,
+    0.69
+   ],
+   "control_mean_loeuf": 0.745,
+   "median_absolute_length_difference_bp": [
+    15.0,
+    12.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    160,
+    167,
+    163
+   ]
+  },
+  "hsa-miR-222-3p": {
+   "universe_n": 2759,
+   "candidate_n": 200,
+   "matchable_n": 192,
+   "unmatched_n": 8,
+   "unmatched_genes": [
+    "DNAAF1",
+    "KIAA1731",
+    "OR2B11",
+    "PRAC1",
+    "MANSC4",
+    "PARP1",
+    "PGLYRP1",
+    "OR10H5"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.925,
+   "control_median_loeuf": [
+    1.0015,
+    0.99,
+    0.964
+   ],
+   "control_mean_loeuf": 0.9851666666666666,
+   "median_absolute_length_difference_bp": [
+    14.0,
+    16.5,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    163,
+    166,
+    162
+   ]
+  },
+  "hsa-miR-425-5p": {
+   "universe_n": 3487,
+   "candidate_n": 200,
+   "matchable_n": 188,
+   "unmatched_n": 12,
+   "unmatched_genes": [
+    "OR2J3",
+    "TBC1D29",
+    "OR1I1",
+    "MPHOSPH10",
+    "C20orf78",
+    "OR5AR1",
+    "BCL2L11",
+    "RPP38",
+    "OR4K1",
+    "OR5T2",
+    "ANO7",
+    "TIMM23B"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.936,
+   "control_median_loeuf": [
+    0.876,
+    0.915,
+    0.8565
+   ],
+   "control_mean_loeuf": 0.8825,
+   "median_absolute_length_difference_bp": [
+    16.5,
+    14.0,
+    16.5
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    156,
+    157,
+    158
+   ]
+  },
+  "hsa-miR-30a-5p": {
+   "universe_n": 2951,
+   "candidate_n": 200,
+   "matchable_n": 198,
+   "unmatched_n": 2,
+   "unmatched_genes": [
+    "PDCD2L",
+    "HSD17B12"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.986,
+   "control_median_loeuf": [
+    0.846,
+    0.985,
+    0.8135
+   ],
+   "control_mean_loeuf": 0.8815,
+   "median_absolute_length_difference_bp": [
+    13.5,
+    16.0,
+    16.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    161,
+    164,
+    164
+   ]
+  },
+  "hsa-miR-221-3p": {
+   "universe_n": 2759,
+   "candidate_n": 200,
+   "matchable_n": 192,
+   "unmatched_n": 8,
+   "unmatched_genes": [
+    "KIAA1731",
+    "DNAAF1",
+    "OR2B11",
+    "MANSC4",
+    "PRAC1",
+    "PGLYRP1",
+    "PARP1",
+    "OR10H5"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.9265000000000001,
+   "control_median_loeuf": [
+    1.0055,
+    0.952,
+    0.955
+   ],
+   "control_mean_loeuf": 0.9708333333333333,
+   "median_absolute_length_difference_bp": [
+    17.0,
+    14.0,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    171,
+    166,
+    164
+   ]
+  },
+  "hsa-miR-335-5p": {
+   "universe_n": 4274,
+   "candidate_n": 200,
+   "matchable_n": 198,
+   "unmatched_n": 2,
+   "unmatched_genes": [
+    "HIST1H2BL",
+    "PLEKHG6"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.994,
+   "control_median_loeuf": [
+    0.9025000000000001,
+    0.9444999999999999,
+    0.851
+   ],
+   "control_mean_loeuf": 0.8993333333333333,
+   "median_absolute_length_difference_bp": [
+    12.0,
+    14.0,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    173,
+    170,
+    175
+   ]
+  },
+  "hsa-miR-200a-3p": {
+   "universe_n": 4212,
+   "candidate_n": 200,
+   "matchable_n": 200,
+   "unmatched_n": 0,
+   "unmatched_genes": [],
+   "candidate_median_loeuf_matched_subset": 1.0725,
+   "control_median_loeuf": [
+    0.964,
+    0.9624999999999999,
+    1.065
+   ],
+   "control_mean_loeuf": 0.9971666666666666,
+   "median_absolute_length_difference_bp": [
+    14.0,
+    15.0,
+    16.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    160,
+    171,
+    168
+   ]
+  },
+  "hsa-miR-429": {
+   "universe_n": 3512,
+   "candidate_n": 200,
+   "matchable_n": 193,
+   "unmatched_n": 7,
+   "unmatched_genes": [
+    "FAM76A",
+    "C4orf27",
+    "ZNF264",
+    "NDUFS4",
+    "OPRM1",
+    "RP11-487E13.1",
+    "CD70"
+   ],
+   "candidate_median_loeuf_matched_subset": 0.949,
+   "control_median_loeuf": [
+    0.834,
+    0.922,
+    0.926
+   ],
+   "control_mean_loeuf": 0.894,
+   "median_absolute_length_difference_bp": [
+    16.0,
+    14.0,
+    15.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    158,
+    162,
+    160
+   ]
+  },
+  "hsa-miR-96-5p": {
+   "universe_n": 3030,
+   "candidate_n": 200,
+   "matchable_n": 200,
+   "unmatched_n": 0,
+   "unmatched_genes": [],
+   "candidate_median_loeuf_matched_subset": 1.0215,
+   "control_median_loeuf": [
+    1.0165,
+    0.947,
+    1.015
+   ],
+   "control_mean_loeuf": 0.9928333333333331,
+   "median_absolute_length_difference_bp": [
+    14.0,
+    14.0,
+    16.5
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    174,
+    174,
+    174
+   ]
+  },
+  "hsa-miR-7-5p": {
+   "universe_n": 4637,
+   "candidate_n": 200,
+   "matchable_n": 199,
+   "unmatched_n": 1,
+   "unmatched_genes": [
+    "PDK3"
+   ],
+   "candidate_median_loeuf_matched_subset": 1.016,
+   "control_median_loeuf": [
+    0.977,
+    0.917,
+    1.021
+   ],
+   "control_mean_loeuf": 0.9716666666666667,
+   "median_absolute_length_difference_bp": [
+    17.0,
+    12.0,
+    14.0
+   ],
+   "sampling_with_replacement": true,
+   "unique_control_genes_per_draw": [
+    188,
+    184,
+    188
+   ]
+  }
+ }
+}
