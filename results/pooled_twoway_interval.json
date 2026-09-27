@@ -1,0 +1,18 @@
+{
+ "type": "exploratory crossed-family-and-gene fixed-prediction weighted bootstrap",
+ "protocol": "docs/PREREG_POOLED_TWOWAY_CI_20260928.md",
+ "n_rows": 435394,
+ "n_genes": 16835,
+ "n_families": 104,
+ "seed": 20260928,
+ "bootstrap_replicates": 300,
+ "base_auroc": 0.6941699024462965,
+ "full_auroc": 0.6949380281289601,
+ "delta": 0.0007681256826636007,
+ "ci95": [
+  -0.0015680281768226001,
+  0.0027334023043778972
+ ],
+ "n_nonpositive": 70,
+ "limits": "fits fixed and global scaling from source retained; not refit uncertainty or an independent-library replication"
+}
