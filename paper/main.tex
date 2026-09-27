@@ -3,15 +3,34 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx,amsmath,amssymb,url}
 \setlength{\parskip}{4pt}\setlength{\parindent}{0pt}
-\title{Non-conserved microRNA target scoring at scale: a duplex-aware CNN, external controls, and bounded negative results}
+\title{Does a duplex-aware CNN add to CLIP prediction after expression control? A bounded benchmark of non-conserved microRNA targets}
 \date{September 2026}
 \begin{document}\maketitle
 \begin{abstract}
-We study sequence-based scoring of non-conserved human miRNA seed matches with a duplex-aware CNN trained on 264{,}563 TargetScan conserved sites. Held-out-gene Pearson correlation is $0.811$ versus $0.779$ for a ridge model with the same context features, but a pairing-map ablation changes correlation by only $+0.0029$. We score 400{,}000 non-conserved matches and recover the known miR-7-5p--CDR1as sponge as a positive control, not a new discovery. On an extended ENCORI AGO-CLIP panel (132 miRNAs, 476{,}369 pairs), adding CNN scores to site-count and UTR-length features yields pooled $\Delta$AUROC $+0.0060$; after controlling for HEK293 expression under gene-grouped cross-validation, the gain is only $+0.0008$. miRDB v6.0 beats the CNN on miRTarBase labels (pooled AUROC $0.787$ versus $0.685$), and TarBase v9.0 corroborates the gap. The strongest constraint-label pattern persists under several controls, but curated disease-label depletions disappear after matching for UTR length or publication bias. Candidate scores are hypotheses, not validated targets or a state-of-the-art ranking. The resource ledger has at most 40 distinct tools pending direct-use audit, while its 317 entries are record partitions rather than independent studies. Neither gate is declared met.
+\textbf{Primary question and endpoint:} does the CNN improve AGO-CLIP
+classification beyond seed-site counts, UTR length, and HEK293 expression?
+Under gene-grouped cross-validation on 435{,}394 expression-matched
+(miRNA,gene) rows, pooled AUROC rises from $0.69417$ to $0.69494$
+($\Delta=+0.00077$). Expression alone reaches $0.68212$, exceeding the
+site-count and CNN models without expression. This conditional estimate is
+small and does not establish practical utility; a miRNA-clustered confidence
+interval and independent-library replication remain outstanding. The earlier
+site-count/length-only result ($\Delta$AUROC $+0.0060$ on 476{,}369 rows)
+is a secondary, less controlled comparator, not the headline. The model was
+trained on 264{,}563 TargetScan conserved sites and scanned non-conserved seed
+matches, but neither the known miR-7-5p--CDR1as positive control nor the
+candidate list independently validates new targets. On literature labels,
+miRDB beats our CNN (miRTarBase pooled AUROC $0.787$ vs $0.685$), and
+TarBase reproduces the gap. \textbf{What this is not:} a clinical test, a
+validated target-discovery assay, or evidence that a pairing-map branch is
+worth its $20\times$ training cost. The resource ledger contains record
+partitions rather than 317 independent studies; the tool gate remains
+unverified. The random-weight falsifier is running, and its result must
+update the constraint claim before that claim is promoted.
 \end{abstract}
 \tableofcontents\newpage
 \section{Introduction}
-Most mammalian miRNA targeting is quantified through context++ scores on conserved sites. Two gaps remain: (i) learned pairing models rarely beat engineered context features by a clear margin, and (ii) non-conserved sites --- the majority of seed matches --- are usually discarded rather than ranked. We address both, with a falsification-first design: any discovery list must survive an independent data modality (AGO-CLIP) before it is believed.
+Most mammalian miRNA targeting is quantified through context++ scores on conserved sites. Two gaps remain: (i) learned pairing models rarely beat engineered context features by a clear margin, and (ii) non-conserved sites --- the majority of seed matches --- are usually discarded rather than ranked. The single primary question is whether the CNN adds CLIP discrimination conditional on expression, seed-site counts, and UTR length. Other tests are secondary stress tests and cannot rescue a failed primary endpoint.
 \section{Data}
 TargetScan vert\_80: 264{,}563 human conserved sites with context++ labels; 25{,}132 human 3'UTR sequences; miR family table (221 broadly conserved human miRNAs, Family Conservation $=2$). ENCORI/starBase miRNATarget API (hg38, clipExpNum$\ge1$): per-miRNA CLIP-supported gene sets for 23 panel miRNAs.
 \section{Methods}
@@ -37,9 +56,9 @@ Unit of analysis: (miRNA, gene). Genes carrying a conserved site for any miRNA s
 \subsection{CLIP falsification}
 \begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_clip_permirna.pdf}
 \caption{Per-miRNA AUROC of the negated CNN min-score against ENCORI CLIP support. Dashed: chance. Sign convention audited in the per-miRNA feature audit.}\end{figure}
-Pooled (23-miRNA panel): AUROC $0.5905$ (covariates) $\to 0.5979$ (+CNN); $\Delta=+0.0075$, CI $[0.0057,0.0093]$, permutation $p=0.048$. \textbf{Extended-panel replication (132 miRNAs, 476{,}369 (miRNA,gene) pairs):} AUROC $0.6047$ (covariates) $\to 0.6108$ (+CNN); $\Delta=+0.0060$, bootstrap CI $[+0.0053,+0.0067]$, within-miRNA permutation $p=0.048$ (20 shuffles); per-miRNA AUROC of the negated CNN-min score median $0.531$, $85\%$ of miRNAs above chance (sign convention audited below). The small effect replicates at six-fold scale under the identical null design, so the verdict strengthens from suggestive to supported. \textbf{Verdict: small conditional effect under this CLIP evaluation, with expression confounding assessed below.} The discovery list is CLIP-supported above chance but the CNN is not a stand-alone oracle for non-conserved targeting; candidates are released as ranked hypotheses, not validated targets.
+Pooled (23-miRNA panel): AUROC $0.5905$ (covariates) $\to 0.5979$ (+CNN); $\Delta=+0.0075$, CI $[0.0057,0.0093]$, permutation $p=0.048$. \textbf{Extended-panel replication (132 miRNAs, 476{,}369 (miRNA,gene) pairs):} AUROC $0.6047$ (covariates) $\to 0.6108$ (+CNN); $\Delta=+0.0060$, bootstrap CI $[+0.0053,+0.0067]$, within-miRNA permutation $p=0.048$ (20 shuffles); per-miRNA AUROC of the negated CNN-min score median $0.531$, $85\%$ of miRNAs above chance (sign convention audited below). This secondary no-expression comparison reproduces a small effect on a larger panel, but its positive verdict does not carry over to the expression-controlled primary endpoint. \textbf{Verdict: this is not the primary endpoint; expression confounding is assessed below.} The discovery list is CLIP-supported above chance but the CNN is not a stand-alone oracle for non-conserved targeting; candidates are released as ranked hypotheses, not validated targets.
 \subsection{Pair-map ablation (architecture honesty)}
-The explicit complementarity pair-map branch is ablated under the identical split, seed, and epochs: full DuplexCNN Pearson $0.8121$ / Spearman $0.7928$ vs no-pair-map $0.8092$ / $0.7898$ ($\Delta r=+0.0029$, RMSE $-0.0005$) --- but at $333.5$s vs $16.3$s train time ($20\times$ cheaper without it). Verdict: the pair-map is a minor contributor for context++ prediction; the sequence towers carry nearly all signal. The branch is retained for interpretability but is no longer claimed as load-bearing.
+The explicit complementarity pair-map branch is ablated under the identical split, seed, and epochs: full DuplexCNN Pearson $0.8121$ / Spearman $0.7928$ vs no-pair-map $0.8092$ / $0.7898$ ($\Delta r=+0.0029$, RMSE $-0.0005$) --- but at $333.5$s vs $16.3$s train time ($20\times$ cheaper without it). Verdict: the pair-map is a minor contributor for context++ prediction; the sequence towers carry nearly all signal. The branch is retained in the archived trained artifact to permit reproduction, but is deprecated as a default for new model training pending an independent family-held-out benefit at its $20\times$ cost.
 \subsection{Per-miRNA feature audit: the univariate CNN signal is site-count confounding}
 To ask where the pooled $\Delta$AUROC lives, we computed univariate AUROCs per miRNA for every feature in the CLIP model (132 miRNAs, 476{,}369 pairs, \texttt{results/per\_mirna\_feature\_auroc.json}). This audit surfaced a sign-convention finding: the per-miRNA AUROC in the falsification runs is computed on the \emph{negated} min-score (\texttt{roc\_auc\_score(y, -min)}), so the raw CNN min-score is univariately \emph{anticorrelated} with CLIP labels (raw median AUROC $0.469$ vs negated $0.531$; the two are exact complements, verified per miRNA). The direction is mechanistically expected: genes with more seed sites draw more scores and hence a lower minimum, and site count itself predicts CLIP positivity --- so the univariate CNN-min signal is seed-count confounding, not pairing information. Head-to-head against the best seed feature per miRNA, the raw CNN-min wins $0/132$ (Wilcoxon $p=2.1\times10^{-23}$). The honest reading of the pooled result is therefore narrow: conditioned on site counts and UTR length the CNN adds a small complementary signal ($\Delta$AUROC $+0.0060$), but it carries no usable standalone ranking signal within a miRNA. Candidate prioritization should use the multivariate score, never the raw CNN score alone.
 \begin{figure}[h]\centering
@@ -95,10 +114,7 @@ $+0.0008$, about a six-fold reduction. Per miRNA (130 miRNAs with $\ge50$
 positives and negatives, covariates now including expression) the gain survives
 in sign but is tiny: median $+0.0004$, IQR $[-0.0007,+0.0029]$, $60.8\%$
 positive, Wilcoxon $p=5.1\times10^{-4}$.
-\emph{Verdict:} the CNN still carries a detectable, non-zero signal beyond site
-counts and abundance, but the practical size of the CLIP ``falsification pass''
-is much smaller than the $+0.0060$ headline suggests once the dominant confound
-is controlled. Every earlier CLIP number in this paper should be read with this
+\emph{Primary-endpoint verdict:} the point estimate is positive but only $+0.0008$ AUROC. The per-miRNA signed-rank result does not substitute for a miRNA-clustered interval or independent-library replication; no practical-value or target-discovery pass is declared. The earlier $+0.0060$ comparison is secondary after controlling the dominant confound. Every earlier CLIP number in this paper should be read with this
 correction. The obvious next control, CLIP read depth normalized by RNA-seq in the
 same library, needs per-library data that ENCORI does not expose.
 \begin{figure}[h]\centering
