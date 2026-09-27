@@ -23,19 +23,19 @@
 \contentsline {subsection}{\numberline {4.16}Functional coherence audit: g:Profiler finds no pathway signal in predicted or CLIP target sets (negative)}{13}{}%
 \contentsline {subsection}{\numberline {4.17}Network coherence audit: STRING edges in CLIP target sets are explained by expression (negative)}{14}{}%
 \contentsline {subsection}{\numberline {4.18}miRNA abundance does not predict which miRNAs the CNN ranks well (ENCODE; negative)}{14}{}%
-\contentsline {subsection}{\numberline {4.19}Tissue target avoidance (GTEx): conserved targets avoid the miRNA's tissue, CNN non-conserved targets do not}{15}{}%
+\contentsline {subsection}{\numberline {4.19}Tissue target avoidance (GTEx): conserved targets avoid the miRNA's tissue, CNN non-conserved targets do not}{16}{}%
 \contentsline {subsection}{\numberline {4.20}Reverse lookup (Enrichr): CNN top-200 sets name their own miRNA beyond expression, but the site-count win does not replicate}{16}{}%
 \contentsline {subsection}{\numberline {4.21}Reactome pathway audit with controls fixed in advance: two gates failed, verdicts inconclusive}{17}{}%
 \contentsline {subsection}{\numberline {4.22}Input integrity: every miRNA sequence and seed used here matches RNAcentral}{18}{}%
-\contentsline {subsection}{\numberline {4.23}Independent curated labels (OmniPath, miRTarBase removed): CNN above chance, but not above site count or expression}{18}{}%
+\contentsline {subsection}{\numberline {4.23}Independent curated labels (OmniPath, miRTarBase removed): CNN above chance, but not above site count or expression}{19}{}%
 \contentsline {subsection}{\numberline {4.24}Transcription-regulator enrichment (UniProt): present in conserved targets, absent in CNN non-conserved targets}{19}{}%
-\contentsline {subsection}{\numberline {4.25}Loss-of-function constraint (gnomAD): conserved targets are constrained, CNN candidates are the least constrained set}{19}{}%
-\contentsline {paragraph}{Pre-registered held-out replication.}{20}{}%
+\contentsline {subsection}{\numberline {4.25}Loss-of-function constraint (gnomAD): conserved targets are constrained, CNN candidates are the least constrained set}{20}{}%
+\contentsline {paragraph}{Pre-registered held-out replication.}{21}{}%
 \contentsline {subsection}{\numberline {4.26}Independent dosage label (ClinGen): the depletion beyond UTR length does not replicate}{21}{}%
-\contentsline {subsection}{\numberline {4.27}Third dosage label (Collins et al.\ 2022 rCNV scores): the depletion survives UTR-length matching}{21}{}%
-\contentsline {subsection}{\numberline {4.28}Mendelian disease genes (HPO): depletion explained by UTR length}{23}{}%
+\contentsline {subsection}{\numberline {4.27}Third dosage label (Collins et al.\ 2022 rCNV scores): the depletion survives UTR-length matching}{22}{}%
+\contentsline {subsection}{\numberline {4.28}Mendelian disease genes (HPO): depletion explained by UTR length}{22}{}%
 \contentsline {subsection}{\numberline {4.29}ClinVar pathogenic-variant genes: the positive-control gate failed}{23}{}%
-\contentsline {subsection}{\numberline {4.30}Cell-essential genes (DepMap): no depletion, and the label is uninformative for conserved targets}{23}{}%
+\contentsline {subsection}{\numberline {4.30}Cell-essential genes (DepMap): no depletion, and the label is uninformative for conserved targets}{24}{}%
 \contentsline {subsection}{\numberline {4.31}Protein-complex subunits (Complex Portal): the dosage-balance prediction fails}{24}{}%
 \contentsline {subsection}{\numberline {4.32}Study bias (NCBI Gene, PubMed counts): it explains the curated-label depletion but not the LOEUF depletion}{24}{}%
 \contentsline {subsection}{\numberline {4.33}DECIPHER haploinsufficiency predictions: depletion beyond expression and study bias, not beyond UTR length}{25}{}%
@@ -47,17 +47,17 @@
 \contentsline {subsection}{\numberline {4.38}Mouse mutant phenotypes (MGI): weak, mixed support}{27}{}%
 \contentsline {section}{\numberline {5}Independent benchmark audit: every evaluated miRNA}{28}{}%
 \contentsline {subsection}{\numberline {5.1}Interpretation of the independent ranking}{28}{}%
-\contentsline {section}{\numberline {6}Documented negatives}{28}{}%
+\contentsline {section}{\numberline {6}Documented negatives}{30}{}%
 \contentsline {subsection}{\numberline {6.1}Locked random-weight and score-permutation falsifier}{31}{}%
-\contentsline {subsection}{\numberline {6.2}Family-held-out transfer test and the pair-map decision}{31}{}%
+\contentsline {subsection}{\numberline {6.2}Family-held-out transfer test and the pair-map decision}{32}{}%
 \contentsline {subsection}{\numberline {6.3}Fixed-width absolute UTR-length-bin sensitivity audit}{32}{}%
-\contentsline {section}{\numberline {7}Falsification paths}{32}{}%
-\contentsline {section}{\numberline {8}Mathematical derivations}{34}{}%
+\contentsline {section}{\numberline {7}Falsification paths}{33}{}%
+\contentsline {section}{\numberline {8}Mathematical derivations}{35}{}%
 \contentsline {subsection}{\numberline {8.1}Convolutional duplex scoring}{35}{}%
 \contentsline {subsection}{\numberline {8.2}Pearson and Spearman benchmarks}{35}{}%
 \contentsline {subsection}{\numberline {8.3}Fisher exact test for CLIP enrichment}{35}{}%
 \contentsline {subsection}{\numberline {8.4}Odds ratio}{35}{}%
-\contentsline {subsection}{\numberline {8.5}AUROC as a Mann--Whitney statistic}{35}{}%
+\contentsline {subsection}{\numberline {8.5}AUROC as a Mann--Whitney statistic}{36}{}%
 \contentsline {subsection}{\numberline {8.6}Bootstrap confidence interval for $\Delta $AUROC}{36}{}%
 \contentsline {subsection}{\numberline {8.7}Permutation null}{36}{}%
 \contentsline {subsection}{\numberline {8.8}Seed-match enumerator}{36}{}%

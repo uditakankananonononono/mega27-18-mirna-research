@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.9.27)  28 SEP 2026 02:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.9.27)  28 SEP 2026 02:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,7 +397,7 @@ Package pdftex.def Info: figs/fig_expression_confound.pdf  used on input line 1
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (6.40178pt too wide) in paragraph at lines 152--180
+Overfull \hbox (6.40178pt too wide) in paragraph at lines 152--192
 \OT1/ptm/m/n/10.95 val $\OT1/ztmcm/m/n/10.95 [+0\OML/ztmcm/m/it/10.95 :\OT1/ztm
 cm/m/n/10.95 000023\OML/ztmcm/m/it/10.95 ; \OT1/ztmcm/m/n/10.95 +0\OML/ztmcm/m/
 it/10.95 :\OT1/ztmcm/m/n/10.95 001218]$ \OT1/ptm/m/n/10.95 for the same me-dian
@@ -410,31 +410,31 @@ s/fig_expression_confound.pdf>]
 <figs/fig_rnafold.pdf, id=293, 317.98799pt x 231.26399pt>
 File: figs/fig_rnafold.pdf Graphic file (type pdf)
 <use figs/fig_rnafold.pdf>
-Package pdftex.def Info: figs/fig_rnafold.pdf  used on input line 183.
+Package pdftex.def Info: figs/fig_rnafold.pdf  used on input line 195.
 (pdftex.def)             Requested size: 234.8775pt x 170.8186pt.
  [10 <./figs/fig_rnafold.pdf>]
-Overfull \hbox (4.80171pt too wide) in paragraph at lines 193--194
+Overfull \hbox (4.80171pt too wide) in paragraph at lines 205--206
 \OT1/ptm/m/n/10.95 rows (84 miR-NAs, iden-ti-cal gene uni-verse and frozen CNN 
 scores) us-ing Tar-Base v9.0 [[]],
  []
 
 
-Overfull \hbox (123.6077pt too wide) in paragraph at lines 193--194
+Overfull \hbox (123.6077pt too wide) in paragraph at lines 205--206
 \OT1/ptm/m/n/10.95 the DI-ANA col-lec-tion of ex-per-i-men-tally sup-ported in-
 ter-ac-tions (4,724,537 hu-man records scanned; \OT1/cmtt/m/n/10.95 scripts/tar
 base[]benchmark.py\OT1/ptm/m/n/10.95 ,
  []
 
-<figs/fig_rnahybrid.pdf, id=335, 650.43pt x 238.49101pt>
+[11]
+<figs/fig_rnahybrid.pdf, id=338, 650.43pt x 238.49101pt>
 File: figs/fig_rnahybrid.pdf Graphic file (type pdf)
 <use figs/fig_rnahybrid.pdf>
-Package pdftex.def Info: figs/fig_rnahybrid.pdf  used on input line 235.
+Package pdftex.def Info: figs/fig_rnahybrid.pdf  used on input line 247.
 (pdftex.def)             Requested size: 446.26582pt x 163.63464pt.
-[11]
 <figs/fig_miranda.pdf, id=339, 650.43pt x 245.718pt>
 File: figs/fig_miranda.pdf Graphic file (type pdf)
 <use figs/fig_miranda.pdf>
-Package pdftex.def Info: figs/fig_miranda.pdf  used on input line 258.
+Package pdftex.def Info: figs/fig_miranda.pdf  used on input line 270.
 (pdftex.def)             Requested size: 446.26582pt x 168.59326pt.
  [12 <./figs/fig_rnahybrid.pdf>] (./gprofiler_sec.tex
 <figs/fig_gprofiler.pdf, id=399, 650.43pt x 238.49101pt>
@@ -443,15 +443,13 @@ File: figs/fig_gprofiler.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs/fig_gprofiler.pdf  used on input line 7.
 (pdftex.def)             Requested size: 446.26582pt x 163.63464pt.
 ) (./string_sec.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/fig_string.pdf, id=400, 679.33798pt x 245.718pt>
+[13 <./figs/fig_miranda.pdf>]
+<figs/fig_string.pdf, id=459, 679.33798pt x 245.718pt>
 File: figs/fig_string.pdf Graphic file (type pdf)
 <use figs/fig_string.pdf>
 Package pdftex.def Info: figs/fig_string.pdf  used on input line 5.
 (pdftex.def)             Requested size: 446.26582pt x 161.42075pt.
-) (./encode_mirna_sec.tex [13 <./figs/fig_miranda.pdf>]
+) (./encode_mirna_sec.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -492,17 +490,13 @@ l-y-sis-Ser-vice pro-jec-tion; \OT1/cmtt/m/n/10.95 scripts/reactome[]enrichment
 .py\OT1/ptm/m/n/10.95 ;
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./omnipath_sec.tex [17 <./figs/fig_enrichr.pdf>]
+[17 <./figs/fig_enrichr.pdf>]) (./omnipath_sec.tex
 <figs/fig_omnipath.pdf, id=774, 650.43pt x 231.26399pt>
 File: figs/fig_omnipath.pdf Graphic file (type pdf)
 <use figs/fig_omnipath.pdf>
 Package pdftex.def Info: figs/fig_omnipath.pdf  used on input line 4.
 (pdftex.def)             Requested size: 446.26582pt x 158.676pt.
-) (./uniprot_sec.tex
-[18 <./figs/fig_reactome.pdf>]
+) (./uniprot_sec.tex [18 <./figs/fig_reactome.pdf>]
 <figs/fig_uniprot.pdf, id=828, 650.43pt x 231.26399pt>
 File: figs/fig_uniprot.pdf Graphic file (type pdf)
 <use figs/fig_uniprot.pdf>
@@ -537,51 +531,60 @@ File: figs/fig_clingen.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs/fig_clingen.pdf  used on input line 9.
 (pdftex.def)             Requested size: 291.2458pt x 135.92055pt.
 ) (./collins_sec.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/fig_collins.pdf, id=1001, 462.52798pt x 209.58301pt>
+[21 <./figs/fig_gnomad_rep.pdf>]
+<figs/fig_collins.pdf, id=1056, 462.52798pt x 209.58301pt>
 File: figs/fig_collins.pdf Graphic file (type pdf)
 <use figs/fig_collins.pdf>
 Package pdftex.def Info: figs/fig_collins.pdf  used on input line 10.
 (pdftex.def)             Requested size: 310.04002pt x 140.49342pt.
-) (./hpo_sec.tex [21 <./figs/fig_gnomad_rep.pdf>]) (./clinvar_sec.tex [22 <./fi
-gs/fig_clingen.pdf> <./figs/fig_collins.pdf>]) (./depmap_sec.tex
+) (./hpo_sec.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./clinvar_sec.tex [22 <./figs/fig_clingen.pdf>]) (./depmap_sec.tex
 Overfull \hbox (15.44487pt too wide) in paragraph at lines 2--1
 \OT1/ptm/m/n/10.95 The last la-bel was Clin-Var (gene sum-mary dated Septem-ber
  23, 2026): genes with at least five Pathogenic/Likely
  []
 
-) (./complexportal_sec.tex
+) (./complexportal_sec.tex [23 <./figs/fig_collins.pdf>]) (./pubmed_sec.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+)
+(./decipher_sec.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23]) (./pubmed_sec.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-) (./decipher_sec.tex [24]) (./genebayes_sec.tex)
-(./explof_sec.tex [25]) (./biomart_sec.tex) (./hgnc_sec.tex
+[24]) (./genebayes_sec.tex) (./explof_sec.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25]) (./biomart_sec.tex) (./hgnc_sec.tex
 Overfull \hbox (8.94917pt too wide) in paragraph at lines 3--7
  [][] 
  []
 
-) (./orphanet_sec.tex [26]
+) (./orphanet_sec.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26]
 Overfull \hbox (37.19196pt too wide) in paragraph at lines 1--1
 []\OT1/ptm/b/n/12 Orphanet rare-disease genes: de-ple-tion vs expression-matche
 d only; gone against publication-
  []
 
-) (./mgi_sec.tex) (./benchmark_audit.tex [27]) [28] [29] [30]
-Overfull \hbox (4.70306pt too wide) in paragraph at lines 295--321
+) (./mgi_sec.tex) [27] (./benchmark_audit.tex) [28] [29] [30]
+Overfull \hbox (4.70306pt too wide) in paragraph at lines 307--333
 \OT1/ptm/m/n/10.95 The dosage-depletion in-ter-pre-ta-tion faced an in-de-pen-d
 ently locked test, sep-a-rate from the pri-mary expression-
  []
 
-[31] [32] [33] (./derivations.tex [34] [35]) [36] (./main.aux) ) 
+[31] [32] [33] [34] (./derivations.tex [35]) [36] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  3754 strings out of 480247
  57666 string characters out of 5896151
- 376499 words of memory out of 5000000
+ 376726 words of memory out of 5000000
  21514 multiletter control sequences out of 15000+600000
  534934 words of font info for 170 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -599,7 +602,7 @@ ve/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on main.pdf (36 pages, 540878 bytes).
+Output written on main.pdf (36 pages, 542037 bytes).
 PDF statistics:
  1253 PDF objects out of 1440 (max. 8388607)
  230 compressed objects within 3 object streams

@@ -14,9 +14,9 @@ Under gene-grouped cross-validation on 435{,}394 expression-matched
 ($\Delta=+0.00077$). Expression alone reaches $0.68212$, exceeding the
 site-count and CNN models without expression. This conditional estimate is
 small and does not establish practical utility; a pooled-effect confidence
-interval that respects both miRNA and gene dependence and an independent-library
-replication remain outstanding; a cluster bootstrap of the per-miRNA median
-is reported separately. The earlier
+crossed family-and-gene fixed-prediction bootstrap interval includes zero
+($[-0.00157,+0.00273]$); refit-aware uncertainty and independent-library
+replication remain outstanding. The earlier
 site-count/length-only result ($\Delta$AUROC $+0.0060$ on 476{,}369 rows)
 is a secondary, less controlled comparator, not the headline. The model was
 trained on 264{,}563 TargetScan conserved sites and scanned non-conserved seed
@@ -120,7 +120,7 @@ $+0.0008$, about a six-fold reduction. Per miRNA (130 miRNAs with $\ge50$
 positives and negatives, covariates now including expression) the gain survives
 in sign but is tiny: median $+0.0004$, IQR $[-0.0007,+0.0029]$, $60.8\%$
 positive, Wilcoxon $p=5.1\times10^{-4}$.
-\emph{Primary-endpoint verdict:} the point estimate is positive but only $+0.0008$ AUROC. The per-miRNA signed-rank result does not substitute for a miRNA-clustered interval or independent-library replication; no practical-value or target-discovery pass is declared. The earlier $+0.0060$ comparison is secondary after controlling the dominant confound. Every earlier CLIP number in this paper should be read with this
+\emph{Primary-endpoint verdict:} the point estimate is positive but only $+0.0008$ AUROC. The later crossed family-and-gene fixed-prediction interval includes zero, so no confident positive pooled effect, practical-value or target-discovery pass is declared. The earlier $+0.0060$ comparison is secondary after controlling the dominant confound. Every earlier CLIP number in this paper should be read with this
 correction. The obvious next control, CLIP read depth normalized by RNA-seq in the
 same library, needs per-library data that ENCORI does not expose.
 \begin{figure}[h]\centering
@@ -132,9 +132,9 @@ the CNN. Right: per-miRNA $\Delta$AUROC of adding the CNN to site counts$+$expre
 \label{fig:exprconf}\end{figure}
 \subsection{Decision rule for current and future use of the CNN score}
 The expression-controlled primary comparison gives a pooled $+0.00077$
-AUROC point estimate, but it has neither a joint gene-and-family
-refit-aware uncertainty interval nor an independent CLIP-library replication.
-The later fixed-prediction gene-cluster interval below does not fill that gap. The full CNN also failed the locked family-held-out ridge
+AUROC point estimate. A crossed family-and-gene fixed-prediction interval
+below includes zero, so even the sign is uncertain under that sensitivity
+test; refit-aware uncertainty and independent-library replication remain open. The full CNN also failed the locked family-held-out ridge
 comparison reported below. Our current rule is therefore \emph{do not
 assert practical added value}: use site counts, UTR length and measured
 HEK293 expression as the simpler comparator for this dataset, and do not
@@ -175,8 +175,20 @@ holds predictions fixed; it neither refits models nor accounts jointly for
 family and gene dependence. The original global scaling before folds can
 transmit test-distribution information into training. Thus the interval
 is a sensitivity check, not a full pooled uncertainty bound or a repair
-of preprocessing. None of these small positive intervals establishes
-practical value or substitutes for a separate CLIP-library replication.
+of preprocessing. A stronger crossed-cluster weighted bootstrap drew entire
+miRNA families and genes with replacement, assigning each row the product
+of its family and gene counts. It included 104 families across all matched
+rows (the earlier median analysis had 103 because it excluded miRNAs with
+few positive or negative labels), 16{,}835 genes and 300 seeded draws.
+The pooled-increment interval was $[-0.001568,+0.002733]$; 70 draws were
+nonpositive (\texttt{results/pooled\_twoway\_interval.json}). The
+family-by-gene product weighting is an exploratory crossed-dependence
+sensitivity analysis, not a formal model-refit interval. Crucially, its
+interval includes zero: the sign of the tiny primary pooled increment is
+uncertain once related miRNAs and genes are stressed together. The original
+global scaling still precedes fold assignment; no interval repairs that
+preprocessing weakness. Nor does any interval supply independent-library
+replication or practical value.
 \subsection{Biophysical sanity check: duplex MFE vs shuffled controls}
 As a sequence-level pipeline validation, the 20 top diverse candidate windows ($\pm25$ nt) were cofolded with their mature miRNA (ViennaRNA RNAcofold) against 10 mononucleotide-shuffled miRNA controls each (\texttt{results/rnafold\_validation.json}). Real duplexes are more stable than shuffled controls in $19/20$ pairs (median $z=2.33$; Wilcoxon $p<10^{-4}$); the exception, miR-7-5p$\to$REG3G ($z=-0.57$), is kept in the candidate table as a flagged row. Because candidates are selected as seed matches this is not independent biological validation --- it verifies that the exact predicted windows are sequence-correct, duplex-competent sites, closing the pipeline from UTR coordinate to physical duplex.
 \begin{figure}[h]\centering
