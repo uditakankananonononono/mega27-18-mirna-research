@@ -140,9 +140,15 @@ $[+0.00009,+0.00099]$; 79 of 130 miRNAs have positive increments. This
 interval describes the median within-miRNA increment, \emph{not} the pooled
 $+0.00077$ AUROC and not a confidence interval on the change for a new
 individual miRNA. Related miRNAs can share seeds and genes; miRNA-level
-resampling may understate dependence by family or common genes. Thus this
-small positive interval does not by itself make the CNN useful for a new
-family or resolve the need for a separate CLIP-library replication.
+resampling may understate dependence by family or common genes. In an
+exploratory family-cluster bootstrap, the 130 miRNAs map to 103 TargetScan
+human families; resampling entire families 10{,}000 times gives a 95\%
+percentile interval $[+0.000023,+0.001218]$ for the same median increment
+(\texttt{results/family\_cluster\_interval.json}). This accounts for
+within-family ties but not shared genes across families, and is still not
+an interval for the pooled $+0.00077$ AUROC. Neither small positive
+interval establishes practical value for a new family or resolves the need
+for a separate CLIP-library replication.
 \subsection{Biophysical sanity check: duplex MFE vs shuffled controls}
 As a sequence-level pipeline validation, the 20 top diverse candidate windows ($\pm25$ nt) were cofolded with their mature miRNA (ViennaRNA RNAcofold) against 10 mononucleotide-shuffled miRNA controls each (\texttt{results/rnafold\_validation.json}). Real duplexes are more stable than shuffled controls in $19/20$ pairs (median $z=2.33$; Wilcoxon $p<10^{-4}$); the exception, miR-7-5p$\to$REG3G ($z=-0.57$), is kept in the candidate table as a flagged row. Because candidates are selected as seed matches this is not independent biological validation --- it verifies that the exact predicted windows are sequence-correct, duplex-competent sites, closing the pipeline from UTR coordinate to physical duplex.
 \begin{figure}[h]\centering
