@@ -12,7 +12,10 @@ def run_cli(*args):
 
 def test_named_target_mode_reports_missing_original_inputs():
     """Named target mode cannot run without its unbundled TargetScan inputs."""
-    r = run_cli("--mirna", "hsa-miR-7-5p", "--gene", "CDR1as", "--top", "5")
+    import tempfile
+    with tempfile.TemporaryDirectory() as empty_data:
+        r = run_cli("--mirna", "hsa-miR-7-5p", "--gene", "CDR1as", "--top", "5",
+                    "--data-dir", empty_data)
     assert r.returncode != 0
     assert "TargetScan miR_Family_Info.txt is absent" in r.stderr
 
