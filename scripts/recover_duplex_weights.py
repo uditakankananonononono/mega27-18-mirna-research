@@ -8,8 +8,8 @@ import hashlib, json
 from pathlib import Path
 import numpy as np
 import torch
-from src.mirna.data import load_mirnas, load_utrs, build, gene_split
-from src.mirna.train import fit_cnn, predict, metrics
+from mirna.data import load_mirnas, load_utrs, build, gene_split
+from mirna.train import fit_cnn, predict, metrics
 ROOT = Path(__file__).resolve().parents[1]
 D = ROOT / 'data'
 mirs = load_mirnas(D / 'miR_Family_Info.txt')
