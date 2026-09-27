@@ -1,0 +1,5 @@
+# Exploratory two-way fixed-prediction CLIP interval, 2026-09-28
+
+Locked before outcome. This builds on the separate family-median and pooled gene-only sensitivity checks; neither is a full primary gate. Recompute the original expression-adjusted AE and AEC out-of-fold predictions exactly as in `expression_confound.py`, then hold fits fixed. Map each miRNA to its human TargetScan miR family, and jointly resample 103 families and all unique genes with replacement in 300 independently seeded draws (numpy RNG 20260928). A row's weight is the product of its sampled family count and sampled gene count, preserving the observed cross-classification of repeated genes and family members. Weighted pooled AUROC difference = AEC minus AE, with a 2.5/97.5 percentile interval and count of nonpositive draws. Save checkpoints every 25 draws.
+
+Interpretation is an exploratory two-way crossed-cluster sensitivity interval conditional on fixed predictions and the original globally scaled features. It is not model-refit uncertainty, a formal external-library replicate, or a cure for global-scaling transduction. Do not move or create a practical-value threshold after observing it.
