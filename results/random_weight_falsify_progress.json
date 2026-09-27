@@ -1,0 +1,33 @@
+{
+ "fingerprint": {
+  "data/miR_Family_Info.txt": "1d8ca5bf384be4e82c39c4b1d0d21762ecc2bb3f38198413c61d61882308f2fc",
+  "data/human_utrs.tsv": "b2057c9308ac202068dca7bbaf83db98ce5c90bb63062aac4c0b1f41f2a575ee",
+  "data/human_sites.tsv": "8eb219bea8c0d41d882d933d6764281544351db78134d99af9d804b3fbdc9e69",
+  "results/duplex_cnn.pt": "7a93559dc961b6f15c5e26aa9a6785ce159335673157c68fd95e59bbb5af1e5a"
+ },
+ "trained": {
+  "L1": 31,
+  "L2": 33
+ },
+ "null_A_random_weight": [
+  [
+   24,
+   19
+  ],
+  [
+   19,
+   15
+  ],
+  [
+   18,
+   17
+  ],
+  [
+   15,
+   14
+  ]
+ ],
+ "null_B_permutation": [],
+ "alpha": 0.01,
+ "K": 200
+}
