@@ -8,3 +8,5 @@ data/human_utrs.tsv
 data/human_sites.tsv
 data/miR_Family_Info.txt
 data/encode_eclip/Homo_sapiens_TarBase-v9.tsv.gz
+data/encode_eclip/gencode.v35.annotation.gtf.gz
+data/encode_eclip/gencode.v35.transcripts.fa.gz
