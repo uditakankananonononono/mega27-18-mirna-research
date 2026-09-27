@@ -1,0 +1,7 @@
+# Exploratory gene-cluster CI for pooled conditional CLIP AUROC, 2026-09-28
+
+Written before rerunning the expression-adjusted models or inspecting this interval. This is not a new primary gate or independent replication. It answers whether the pooled AUROC difference in the existing gene-grouped CV remains positive when genes (and all of their miRNA rows) are resampled as clusters.
+
+- Recreate the exact expression-constrained sample and AE vs AEC out-of-fold predictions from `scripts/expression_confound.py` with its GroupKFold(5), global scaling and logistic settings. Compare the two AUROCs to the committed `results/expression_confound.json` before any bootstrap. The original global scaling is replicated for comparability, not endorsed as leakage-free for a new study.
+- Hold fitted predictions fixed. Resample unique gene symbols with replacement, assigning each gene's observed multiplicity as a sample weight to *all* its rows across miRNAs. Draw 300 bootstrap replicates with `numpy.random.default_rng(20260928)`. For each, compute the weighted pooled AUROC difference AEC minus AE. Report the percentile 95% interval and how many resamples have nonpositive difference. Resume from a small checkpoint after each 25 draws.
+- This is a conditional fixed-prediction gene-cluster interval. It does not refit models, address family dependence, undo global-scaling transduction, or substitute for a second CLIP library. Do not call it a comprehensive two-way dependence-aware interval or practical added value.
