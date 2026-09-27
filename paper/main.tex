@@ -16,7 +16,11 @@ site-count and CNN models without expression. This conditional estimate is
 small and does not establish practical utility; a pooled-effect confidence
 crossed family-and-gene fixed-prediction bootstrap interval includes zero
 ($[-0.00157,+0.00273]$); refit-aware uncertainty and independent-library
-replication remain outstanding. The earlier
+replication remain outstanding. A second-resource TarBase AGO-CLIP label
+test passes its locked within-resource positive-delta rule ($+0.01615$,
+fixed-prediction gene-bootstrap 99\% CI $[+0.01459,+0.01773]$), but shared
+underlying CLIP libraries may link the resources and the median per-miRNA
+increment is uncertain. The earlier
 site-count/length-only result ($\Delta$AUROC $+0.0060$ on 476{,}369 rows)
 is a secondary, less controlled comparator, not the headline. The model was
 trained on 264{,}563 TargetScan conserved sites and scanned non-conserved seed
@@ -134,7 +138,11 @@ the CNN. Right: per-miRNA $\Delta$AUROC of adding the CNN to site counts$+$expre
 The expression-controlled primary comparison gives a pooled $+0.00077$
 AUROC point estimate. A crossed family-and-gene fixed-prediction interval
 below includes zero, so even the sign is uncertain under that sensitivity
-test; refit-aware uncertainty and independent-library replication remain open. The full CNN also failed the locked family-held-out ridge
+test; refit-aware uncertainty and independent-library replication remain open. A
+second-resource TarBase test passes its locked within-resource rule, but
+its source libraries can overlap ENCORI and its per-miRNA median interval
+includes zero; it does not establish the independent-library condition.
+The full CNN also failed the locked family-held-out ridge
 comparison reported below. Our current rule is therefore \emph{do not
 assert practical added value}: use site counts, UTR length and measured
 HEK293 expression as the simpler comparator for this dataset, and do not
@@ -189,6 +197,49 @@ uncertain once related miRNAs and genes are stressed together. The original
 global scaling still precedes fold assignment; no interval repairs that
 preprocessing weakness. Nor does any interval supply independent-library
 replication or practical value.
+\subsection{Pre-registered second-resource AGO-CLIP label test}
+The dated pre-registration (\texttt{docs/PREREG\_SECOND\_CLIP\_20260927.md})
+set a positive pooled AEC-minus-AE increment and a gene-cluster bootstrap
+interval excluding zero as its replication-support rule, before second-resource
+outcomes. It also required at least 50 miRNAs with at least 50 positives and
+50 negatives after gene filtering. An ENCODE K562 AGO2 eCLIP replicated-peak
+file (ENCSR048YXG, ENCFF111TWF; 12{,}307 peaks) yielded only 41 eligible
+miRNAs after site-to-gene mapping. It is attempted but ineligible, and its
+outcomes do not enter the inference.
+
+We next used DIANA TarBase v9.0~\cite{tarbase}, which re-analyses raw CLIP
+experiments rather than re-exporting ENCORI. Before eligibility or model
+outcomes, we restricted pair support to HITS-CLIP, PAR-CLIP, CLASH and qCLASH,
+and copied the original 476{,}369 non-conserved (miRNA, gene) feature rows
+verbatim, replacing only their support labels. There are 120 eligible miRNAs
+on the pre-specified 50/50 criterion. Matching HPA HEK293 expression retains
+435{,}394 rows (118{,}244 positives, 317{,}150 negatives; 1{,}891 gene symbols
+unmatched). Under the same gene-grouped five-fold logistic comparison, the
+pooled AUROC is $0.656177$ for site counts, UTR length and expression (AE),
+and $0.672323$ with CNN min/sum added (AEC), a $+0.016146$ increment. The
+pre-specified gene-cluster percentile bootstrap (1{,}000 draws, seed 0),
+resampling all rows for each gene while holding out-of-fold predictions fixed,
+gives a 95\% interval $[+0.014849,+0.017389]$ and a 99\% interval
+$[+0.014586,+0.017726]$; all 1{,}000 draws are positive. This passes the
+locked positive-delta and zero-exclusion rule, even at the specified
+one-sided $\alpha=0.01$. No cutoff was moved after seeing the result.
+
+A pre-specified secondary analysis fits each eligible miRNA separately:
+median increment $+0.000094$, interquartile range
+$[-0.001111,+0.002722]$, 61/120 positive. The 10{,}000-draw miRNA-cluster
+bootstrap 95\% interval for that median is $[-0.000330,+0.000520]$. Thus
+pooled discrimination improves on this resource's labels, but a typical
+individual-miRNA improvement is not established. TarBase and ENCORI can
+share underlying CLIP libraries; different processing and curation are
+\emph{not} independent-library validation. The bootstrap is conditional on
+fixed predictions, does not refit models or repair global scaling before
+fold assignment, and omits crossed miRNA-family/gene dependence. It cannot
+resolve the ENCORI crossed-dependence interval spanning zero, prove practical
+value, restore failed biological discovery gates, or validate candidate pairs.
+The committed label audit, analysis script, result JSON and source ledger
+record eligibility counts, exact outputs, input URLs and checksums. The
+ENCODE path and why it failed eligibility are recorded in the same ledger.
+
 \subsection{Biophysical sanity check: duplex MFE vs shuffled controls}
 As a sequence-level pipeline validation, the 20 top diverse candidate windows ($\pm25$ nt) were cofolded with their mature miRNA (ViennaRNA RNAcofold) against 10 mononucleotide-shuffled miRNA controls each (\texttt{results/rnafold\_validation.json}). Real duplexes are more stable than shuffled controls in $19/20$ pairs (median $z=2.33$; Wilcoxon $p<10^{-4}$); the exception, miR-7-5p$\to$REG3G ($z=-0.57$), is kept in the candidate table as a flagged row. Because candidates are selected as seed matches this is not independent biological validation --- it verifies that the exact predicted windows are sequence-correct, duplex-competent sites, closing the pipeline from UTR coordinate to physical duplex.
 \begin{figure}[h]\centering
@@ -328,8 +379,8 @@ extraction and deterministic weight rebuild reproduce the archived training
 metric triple exactly; original ignored-input byte hashes were unavailable
 after a workspace loss, so byte identity with that earlier environment cannot
 be claimed. This negative result does not alter the separately specified
-CLIP primary endpoint; its remaining external replication and dependence-aware
-interval are still open.
+CLIP primary endpoint; its independent-library replication and refit-aware
+dependence interval are still open.
 
 \subsection{Family-held-out transfer test and the pair-map decision}
 Before inspecting its outcome, we locked a transfer test over the five largest
@@ -402,7 +453,7 @@ for each width (\texttt{results/exact\_length\_bin\_*bp.json}); the
 seeded drawing code is in \texttt{scripts/exact\_length\_bin\_control.py}.
 
 \section{Falsification paths}
-miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); remaining: library-matched CLIP/RNA-seq normalization.
+miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); second-resource TarBase AGO-CLIP label test passes the locked within-resource rule but is not independent-library proof; remaining: library-matched CLIP/RNA-seq normalization and refit-aware dependence interval.
 \begin{thebibliography}{9}
 \bibitem[Grimson et al.(2007)]{g} Grimson A, et al. MicroRNA targeting specificity in mammals: determinants beyond seed pairing. \emph{Mol Cell} 2007.
 \bibitem[Agarwal et al.(2015)]{a} Agarwal V, et al. Predicting effective microRNA target sites in mammalian mRNAs. \emph{eLife} 2015.
