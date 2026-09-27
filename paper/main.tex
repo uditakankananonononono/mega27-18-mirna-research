@@ -30,6 +30,9 @@ partitions rather than 317 independent studies; the tool gate remains
 unverified. The locked random-weight falsifier failed its gate: untrained networks
 reproduce the apparent dosage depletion. The earlier depletion remains an
 observed property of the enumerated candidates, not a learned-model discovery.
+A five-family-held-out transfer test also fails the locked ridge-comparison
+criterion (mean Pearson $r=0.705$ for CNN vs $0.726$ for ridge+context);
+there is no independent justification for the pairing-map cost.
 \end{abstract}
 \tableofcontents\newpage
 \section{Introduction}
@@ -61,7 +64,7 @@ Unit of analysis: (miRNA, gene). Genes carrying a conserved site for any miRNA s
 \caption{Per-miRNA AUROC of the negated CNN min-score against ENCORI CLIP support. Dashed: chance. Sign convention audited in the per-miRNA feature audit.}\end{figure}
 Pooled (23-miRNA panel): AUROC $0.5905$ (covariates) $\to 0.5979$ (+CNN); $\Delta=+0.0075$, CI $[0.0057,0.0093]$, permutation $p=0.048$. \textbf{Extended-panel replication (132 miRNAs, 476{,}369 (miRNA,gene) pairs):} AUROC $0.6047$ (covariates) $\to 0.6108$ (+CNN); $\Delta=+0.0060$, bootstrap CI $[+0.0053,+0.0067]$, within-miRNA permutation $p=0.048$ (20 shuffles); per-miRNA AUROC of the negated CNN-min score median $0.531$, $85\%$ of miRNAs above chance (sign convention audited below). This secondary no-expression comparison reproduces a small effect on a larger panel, but its positive verdict does not carry over to the expression-controlled primary endpoint. \textbf{Verdict: this is not the primary endpoint; expression confounding is assessed below.} The discovery list is CLIP-supported above chance but the CNN is not a stand-alone oracle for non-conserved targeting; candidates are released as ranked hypotheses, not validated targets.
 \subsection{Pair-map ablation (architecture honesty)}
-The explicit complementarity pair-map branch is ablated under the identical split, seed, and epochs: full DuplexCNN Pearson $0.8121$ / Spearman $0.7928$ vs no-pair-map $0.8092$ / $0.7898$ ($\Delta r=+0.0029$, RMSE $-0.0005$) --- but at $333.5$s vs $16.3$s train time ($20\times$ cheaper without it). Verdict: the pair-map is a minor contributor for context++ prediction; the sequence towers carry nearly all signal. The branch is retained in the archived trained artifact to permit reproduction, but is deprecated as a default for new model training pending an independent family-held-out benefit at its $20\times$ cost.
+The explicit complementarity pair-map branch is ablated under the identical split, seed, and epochs: full DuplexCNN Pearson $0.8121$ / Spearman $0.7928$ vs no-pair-map $0.8092$ / $0.7898$ ($\Delta r=+0.0029$, RMSE $-0.0005$) --- but at $333.5$s vs $16.3$s train time ($20\times$ cheaper without it). Verdict: the pair-map is a minor contributor for context++ prediction; the sequence towers carry nearly all signal. The branch is retained in the archived trained artifact to permit reproduction, but is deprecated as a default for new model training. The family-held-out test below did not earn an exception at its $20\times$ cost.
 \subsection{Per-miRNA feature audit: the univariate CNN signal is site-count confounding}
 To ask where the pooled $\Delta$AUROC lives, we computed univariate AUROCs per miRNA for every feature in the CLIP model (132 miRNAs, 476{,}369 pairs, \texttt{results/per\_mirna\_feature\_auroc.json}). This audit surfaced a sign-convention finding: the per-miRNA AUROC in the falsification runs is computed on the \emph{negated} min-score (\texttt{roc\_auc\_score(y, -min)}), so the raw CNN min-score is univariately \emph{anticorrelated} with CLIP labels (raw median AUROC $0.469$ vs negated $0.531$; the two are exact complements, verified per miRNA). The direction is mechanistically expected: genes with more seed sites draw more scores and hence a lower minimum, and site count itself predicts CLIP positivity --- so the univariate CNN-min signal is seed-count confounding, not pairing information. Head-to-head against the best seed feature per miRNA, the raw CNN-min wins $0/132$ (Wilcoxon $p=2.1\times10^{-23}$). The honest reading of the pooled result is therefore narrow: conditioned on site counts and UTR length the CNN adds a small complementary signal ($\Delta$AUROC $+0.0060$), but it carries no usable standalone ranking signal within a miRNA. Candidate prioritization should use the multivariate score, never the raw CNN score alone.
 \begin{figure}[h]\centering
@@ -281,6 +284,41 @@ after a workspace loss, so byte identity with that earlier environment cannot
 be claimed. This negative result does not alter the separately specified
 CLIP primary endpoint; its remaining external replication and dependence-aware
 interval are still open.
+
+\subsection{Family-held-out transfer test and the pair-map decision}
+Before inspecting its outcome, we locked a transfer test over the five largest
+miRNA families in the deterministic 80{,}000-site TargetScan context++ build.
+For each family, we retrained the full DuplexCNN with context for six epochs on
+all other families, fit ridge+context ($\alpha=10$) on the same training sites,
+and scored Pearson correlation on the held-out family. A fresh untrained
+DuplexCNN provided a random-weight comparison. Context normalization was
+fit on training families only. The locked rule required the CNN's mean Pearson
+$r$ across the five held-out families to exceed ridge+context \emph{and} to
+exceed the random-weight mean by more than $0.05$.
+
+\begin{center}
+\begin{tabular}{lrrrr}
+Held-out family & $n$ & CNN $r$ & Ridge+context $r$ & Random-weight $r$\\
+\hline
+let-7-5p/98-5p & 4{,}645 & 0.7162 & 0.7275 & -0.1080\\
+miR-15-5p group & 4{,}143 & 0.7425 & 0.7949 & -0.0231\\
+miR-302-3p group & 4{,}094 & 0.7127 & 0.7249 & -0.1533\\
+miR-17-5p group & 4{,}029 & 0.7553 & 0.7396 & -0.1517\\
+miR-30-5p & 2{,}748 & 0.5969 & 0.6434 & -0.1195\\
+\hline
+Unweighted mean & & 0.7047 & 0.7261 & -0.1111\\
+\end{tabular}
+\end{center}
+The CNN beat ridge in only one of five families. Its unweighted mean exceeded
+the random-weight mean by $0.8159$, passing that clause, but trailed ridge by
+$0.0214$, failing the other. The joint locked verdict is \emph{no support for
+transferable advantage over ridge}. This is TargetScan context++ transfer across families, not external CLIP
+validation. The test compares the \emph{full} CNN with ridge, so it cannot
+isolate the pair-map branch. Its within-dataset gain was only $+0.0029$
+Pearson $r$ at $20\times$ training cost. We therefore deprecate the branch
+for new training without changing the archived artifact. Exact family outcomes:
+\texttt{results/family\_transfer.json}; locked code:
+\texttt{scripts/family\_transfer.py}.
 
 \section{Falsification paths}
 miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); remaining: library-matched CLIP/RNA-seq normalization.
