@@ -49,7 +49,16 @@ def main():
                                 key=lambda kv: -kv[1])[:5]]
     print("held-out families:", top, flush=True)
     out = {"held_out_families": top, "families": {}}
+    ck = ROOT / "results/family_transfer_checkpoint.json"
+    if ck.exists():
+        prior = json.loads(ck.read_text())
+        if prior["held_out_families"] != top or not set(prior["families"]).issubset(top):
+            raise ValueError("checkpoint families differ from this deterministic build")
+        out["families"] = prior["families"]
+        print("resuming", len(out["families"]), "completed families", flush=True)
     for f in top:
+        if f in out["families"]:
+            continue
         te = np.where(fams == f)[0]; tr = np.where(fams != f)[0]
         # Pre-outcome leakage fix: fit normalization on TRAIN families only.
         # Do not allow held-out family context distributions into preprocessing.
@@ -67,8 +76,10 @@ def main():
                               "ridge_context": r_ridge, "random_weight": r_null}
         print(f, "cnn", round(r_cnn, 4), "ridge", round(r_ridge, 4), "null", round(r_null, 4), flush=True)
         # crash-safe checkpoint after each family (does not alter computation)
-        json.dump({"held_out_families": top, "families": out["families"], "partial": True},
-                  open(ROOT / "results/family_transfer_checkpoint.json", "w"), indent=1)
+        temp = ck.with_suffix(".json.tmp")
+        with temp.open("w") as fh:
+            json.dump({"held_out_families": top, "families": out["families"], "partial": True}, fh, indent=1)
+        temp.replace(ck)
     mc = float(np.mean([v["cnn"] for v in out["families"].values()]))
     mr = float(np.mean([v["ridge_context"] for v in out["families"].values()]))
     mn = float(np.mean([v["random_weight"] for v in out["families"].values()]))
