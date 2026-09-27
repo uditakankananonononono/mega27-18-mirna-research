@@ -38,5 +38,10 @@
    "random_weight": -0.11950480192899704
   }
  },
- "partial": true
+ "mean": {
+  "cnn": 0.7047252178192138,
+  "ridge_context": 0.7260763249746919,
+  "random_weight": -0.11112530715763569
+ },
+ "verdict_transfer_supported": false
 }
