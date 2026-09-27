@@ -23,28 +23,28 @@
 \newlabel{fig:permirna_delta}{{5}{9}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Left: pooled AUROC of nested logistic models on CLIP labels under gene-grouped CV. HEK293 expression (HPA nTPM) alone outperforms site counts and the CNN. Right: per-miRNA $\Delta $AUROC of adding the CNN to site counts$+$expression (130 miRNAs; dotted line = median $+0.0004$).}}{9}{}\protected@file@percent }
 \newlabel{fig:exprconf}{{6}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.10}Biophysical sanity check: duplex MFE vs shuffled controls}{9}{}\protected@file@percent }
 \citation{mtb}
 \citation{mirdb}
 \citation{mygene}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.10}Biophysical sanity check: duplex MFE vs shuffled controls}{10}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces RNAcofold MFE for the 20 top candidate windows with the real miRNA vs shuffled-miRNA controls.}}{10}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.11}Independent literature benchmark: miRTarBase 10.0}{10}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.12}Head-to-head vs a public leader: miRDB v6.0 wins (negative)}{10}{}\protected@file@percent }
 \citation{tarbase}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.12}Head-to-head vs a public leader: miRDB v6.0 wins (negative)}{11}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.13}Second independent benchmark: TarBase v9.0 (negative for the CNN)}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.14}Third arm: pure duplex thermodynamics (RNAhybrid) is near chance}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.14}Third arm: pure duplex thermodynamics (RNAhybrid) is near chance}{12}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Per-miRNA AUROC on the committed miRTarBase rows (77 miRNAs present in both benchmarks). Left: distributions for RNAhybrid, DuplexCNN, miRDB. Right: RNAhybrid vs DuplexCNN per miRNA; the CNN wins 76/80.}}{12}{}\protected@file@percent }
 \newlabel{fig:rnahybrid}{{8}{12}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.15}Fourth arm: alignment-based biophysics (miRanda) sits between}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.16}Functional coherence audit: g:Profiler finds no pathway signal in predicted or CLIP target sets (negative)}{12}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Left: pooled AUROC on the committed miRTarBase rows for the four predictor arms (miRDB from \texttt  {results/mirdb\_benchmark.json}; the other three on identical rows, $n=7{,}914$). Right: miRanda versus DuplexCNN per miRNA; orange points are miRNAs where miRanda wins.}}{13}{}\protected@file@percent }
 \newlabel{fig:miranda}{{9}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.17}Network coherence audit: STRING edges in CLIP target sets are explained by expression (negative)}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.16}Functional coherence audit: g:Profiler finds no pathway signal in predicted or CLIP target sets (negative)}{13}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Significant g:GOSt terms per miRNA for four gene sets of 200 against each miRNA's scored-gene background. Expression top-200 (orange) is the confound control.}}{14}{}\protected@file@percent }
 \newlabel{fig:gprofiler}{{10}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Left: STRING edge density per miRNA for CNN top-200, CLIP+ top-200, seeded random and expression-matched random sets. Right: distribution across miRNAs with the expression top-200 control, which is several-fold denser.}}{14}{}\protected@file@percent }
-\newlabel{fig:string}{{11}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.17}Network coherence audit: STRING edges in CLIP target sets are explained by expression (negative)}{14}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.18}miRNA abundance does not predict which miRNAs the CNN ranks well (ENCODE; negative)}{14}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Left: STRING edge density per miRNA for CNN top-200, CLIP+ top-200, seeded random and expression-matched random sets. Right: distribution across miRNAs with the expression top-200 control, which is several-fold denser.}}{15}{}\protected@file@percent }
+\newlabel{fig:string}{{11}{15}}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Per-miRNA ENCODE abundance (median over 12 cell lines) versus CNN AUROC on CLIP labels (left) and versus the CNN's gain over site-count covariates (right).}}{15}{}\protected@file@percent }
 \newlabel{fig:encode}{{12}{15}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.19}Tissue target avoidance (GTEx): conserved targets avoid the miRNA's tissue, CNN non-conserved targets do not}{15}{}\protected@file@percent }
@@ -54,42 +54,42 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Rank of each miRNA's own miRTarBase\_2017 term when its target set is submitted to Enrichr plotted as $\qopname  \relax o{log}_{10}(3241/\mathrm  {rank})$, so taller bars mean better ranks. Site-count and expression-matched arms are post-hoc controls.}}{17}{}\protected@file@percent }
 \newlabel{fig:enrichr}{{14}{17}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.21}Reactome pathway audit with controls fixed in advance: two gates failed, verdicts inconclusive}{17}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.22}Input integrity: every miRNA sequence and seed used here matches RNAcentral}{17}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Significant Reactome pathways per miRNA for four arms of 200 genes. Gates G1 and G3 failed, so these counts are descriptive.}}{18}{}\protected@file@percent }
 \newlabel{fig:reactome}{{15}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.22}Input integrity: every miRNA sequence and seed used here matches RNAcentral}{18}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces RNAcentral sequence audit. The derangement control shows the identity test can fail.}}{18}{}\protected@file@percent }
 \newlabel{tab:rnacentral}{{1}{18}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.23}Independent curated labels (OmniPath, miRTarBase removed): CNN above chance, but not above site count or expression}{18}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.24}Transcription-regulator enrichment (UniProt): present in conserved targets, absent in CNN non-conserved targets}{18}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Per-miRNA AUROC on OmniPath interactions with miRTarBase-sourced rows removed, for the CNN, site count and HEK293 expression.}}{19}{}\protected@file@percent }
 \newlabel{fig:omnipath}{{16}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Transcription-regulator fraction of each 200-gene set minus its random baseline (percentage points). Red: TargetScan conserved targets against random UTR genes (positive control).}}{19}{}\protected@file@percent }
-\newlabel{fig:uniprot}{{17}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.24}Transcription-regulator enrichment (UniProt): present in conserved targets, absent in CNN non-conserved targets}{19}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.25}Loss-of-function constraint (gnomAD): conserved targets are constrained, CNN candidates are the least constrained set}{19}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Transcription-regulator fraction of each 200-gene set minus its random baseline (percentage points). Red: TargetScan conserved targets against random UTR genes (positive control).}}{20}{}\protected@file@percent }
+\newlabel{fig:uniprot}{{17}{20}}
 \@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Median LOEUF of each 200-gene set. Black dashes: random UTR genes, the comparator for the TargetScan positive control.}}{20}{}\protected@file@percent }
 \newlabel{fig:gnomad}{{18}{20}}
 \@writefile{toc}{\contentsline {paragraph}{Pre-registered held-out replication.}{20}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.26}Independent dosage label (ClinGen): the depletion beyond UTR length does not replicate}{20}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Pre-registered replication on 30 held-out miRNAs. Left: CNN top-200 median LOEUF minus each control (positive = CNN less constrained). Right: CNN top-200 median UTR length relative to its universe.}}{21}{}\protected@file@percent }
 \newlabel{fig:gnomadrep}{{19}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.26}Independent dosage label (ClinGen): the depletion beyond UTR length does not replicate}{21}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces ClinGen HI genes in CNN top-200 sets. Per-miRNA sign tests (ties excluded) and pooled counts over 43 miRNAs.}}{21}{}\protected@file@percent }
 \newlabel{tab:clingen}{{2}{21}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Pooled HI-gene count in each set divided by its control. Red: positive control.}}{21}{}\protected@file@percent }
-\newlabel{fig:clingen}{{20}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.27}Third dosage label (Collins et al.\ 2022 rCNV scores): the depletion survives UTR-length matching}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.27}Third dosage label (Collins et al.\ 2022 rCNV scores): the depletion survives UTR-length matching}{21}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Pooled HI-gene count in each set divided by its control. Red: positive control.}}{22}{}\protected@file@percent }
+\newlabel{fig:clingen}{{20}{22}}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Collins 2022 dosage scores of CNN top-200 sets, 43 miRNAs.}}{22}{}\protected@file@percent }
 \newlabel{tab:collins}{{3}{22}}
 \@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Per-miRNA difference between CNN top-200 and control median dosage score (negative = CNN less dosage-sensitive).}}{22}{}\protected@file@percent }
 \newlabel{fig:collins}{{21}{22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.28}Mendelian disease genes (HPO): depletion explained by UTR length}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.28}Mendelian disease genes (HPO): depletion explained by UTR length}{23}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces HPO Mendelian disease genes in CNN top-200 sets, 43 miRNAs.}}{23}{}\protected@file@percent }
 \newlabel{tab:hpo}{{4}{23}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.29}ClinVar pathogenic-variant genes: the positive-control gate failed}{23}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces ClinVar PLP genes in CNN top-200 sets, 43 miRNAs. Reported for completeness only.}}{23}{}\protected@file@percent }
 \newlabel{tab:clinvar}{{5}{23}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.30}Cell-essential genes (DepMap): no depletion, and the label is uninformative for conserved targets}{23}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces DepMap common-essential genes in CNN top-200 sets, 43 miRNAs.}}{23}{}\protected@file@percent }
-\newlabel{tab:depmap}{{6}{23}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces DepMap common-essential genes in CNN top-200 sets, 43 miRNAs.}}{24}{}\protected@file@percent }
+\newlabel{tab:depmap}{{6}{24}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.31}Protein-complex subunits (Complex Portal): the dosage-balance prediction fails}{24}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Complex Portal subunit genes in CNN top-200 sets, 43 miRNAs.}}{24}{}\protected@file@percent }
 \newlabel{tab:complexportal}{{7}{24}}
@@ -102,38 +102,38 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.34}GeneBayes $s_\mathrm  {het}$: population-based labels agree with each other, curated and model-based labels do not}{25}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces GeneBayes $s_\mathrm  {het}$ of CNN top-200 sets, 43 miRNAs (differences in $\qopname  \relax o{log}_{10}$ units).}}{25}{}\protected@file@percent }
 \newlabel{tab:genebayes}{{10}{25}}
-\@writefile{toc}{\contentsline {paragraph}{Pre-registered coding-length control.}{25}{}\protected@file@percent }
 \citation{hgnc}
-\citation{orphanet}
+\@writefile{toc}{\contentsline {paragraph}{Pre-registered coding-length control.}{26}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.35}Paralog buffering (Ensembl BioMart): no paralog excess; both gates failed}{26}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Paralog counts of CNN top-200 sets, 43 miRNAs.}}{26}{}\protected@file@percent }
 \newlabel{tab:biomart}{{11}{26}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.36}Gene families (HGNC): the depletion is not a zinc-finger artefact; coverage gate failed}{26}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces HGNC family composition of CNN top-200 sets, 43 miRNAs.}}{26}{}\protected@file@percent }
 \newlabel{tab:hgnc}{{12}{26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.37}Orphanet rare-disease genes: depletion vs expression-matched only; gone against publication-matched sets}{26}{}\protected@file@percent }
+\citation{orphanet}
 \citation{mgi}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.37}Orphanet rare-disease genes: depletion vs expression-matched only; gone against publication-matched sets}{27}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Orphanet disease-gene fractions in CNN top-200 sets, 43 miRNAs.}}{27}{}\protected@file@percent }
 \newlabel{tab:orphanet}{{13}{27}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.38}Mouse mutant phenotypes (MGI): weak, mixed support}{27}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Mouse mutant phenotype fractions in CNN top-200 sets, 43 miRNAs.}}{27}{}\protected@file@percent }
 \newlabel{tab:mgi}{{14}{27}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Independent benchmark audit: every evaluated miRNA}{27}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Independent benchmark audit: every evaluated miRNA}{28}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Independent miRTarBase label audit, miRNAs 1--21 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}}{28}{}\protected@file@percent }
 \newlabel{tab:mirna-audit-1}{{15}{28}}
-\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Independent miRTarBase label audit, miRNAs 22--42 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}}{28}{}\protected@file@percent }
-\newlabel{tab:mirna-audit-2}{{16}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Interpretation of the independent ranking}{28}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Documented negatives}{28}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Independent miRTarBase label audit, miRNAs 22--42 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}}{29}{}\protected@file@percent }
+\newlabel{tab:mirna-audit-2}{{16}{29}}
 \@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Independent miRTarBase label audit, miRNAs 43--63 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}}{29}{}\protected@file@percent }
 \newlabel{tab:mirna-audit-3}{{17}{29}}
-\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Independent miRTarBase label audit, miRNAs 64--84 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}}{29}{}\protected@file@percent }
-\newlabel{tab:mirna-audit-4}{{18}{29}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Interpretation of the independent ranking}{30}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Documented negatives}{30}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Independent miRTarBase label audit, miRNAs 64--84 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}}{30}{}\protected@file@percent }
+\newlabel{tab:mirna-audit-4}{{18}{30}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Locked random-weight and score-permutation falsifier}{31}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Family-held-out transfer test and the pair-map decision}{31}{}\protected@file@percent }
-\bibcite{g}{Grimson et al.(2007)}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Fixed-width absolute UTR-length-bin sensitivity audit}{32}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {7}Falsification paths}{32}{}\protected@file@percent }
+\bibcite{g}{Grimson et al.(2007)}
 \bibcite{a}{Agarwal et al.(2015)}
 \bibcite{z}{Zhou et al.(2026)}
 \bibcite{mtb}{Huang et al.(2022)}
