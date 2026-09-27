@@ -43,15 +43,17 @@
 \contentsline {subsection}{\numberline {4.34}Gene families (HGNC): the depletion is not a zinc-finger artefact; coverage gate failed}{26}{}%
 \contentsline {subsection}{\numberline {4.35}Orphanet rare-disease genes: depletion vs expression-matched only; gone against publication-matched sets}{26}{}%
 \contentsline {subsection}{\numberline {4.36}Mouse mutant phenotypes (MGI): weak, mixed support}{26}{}%
-\contentsline {section}{\numberline {5}Documented negatives}{27}{}%
-\contentsline {section}{\numberline {6}Falsification paths}{28}{}%
-\contentsline {section}{\numberline {7}Mathematical derivations}{30}{}%
-\contentsline {subsection}{\numberline {7.1}Convolutional duplex scoring}{30}{}%
-\contentsline {subsection}{\numberline {7.2}Pearson and Spearman benchmarks}{30}{}%
-\contentsline {subsection}{\numberline {7.3}Fisher exact test for CLIP enrichment}{31}{}%
-\contentsline {subsection}{\numberline {7.4}Odds ratio}{31}{}%
-\contentsline {subsection}{\numberline {7.5}AUROC as a Mann--Whitney statistic}{31}{}%
-\contentsline {subsection}{\numberline {7.6}Bootstrap confidence interval for $\Delta $AUROC}{31}{}%
-\contentsline {subsection}{\numberline {7.7}Permutation null}{31}{}%
-\contentsline {subsection}{\numberline {7.8}Seed-match enumerator}{32}{}%
-\contentsline {subsection}{\numberline {7.9}Wilcoxon signed-rank for paired per-gene comparisons}{32}{}%
+\contentsline {section}{\numberline {5}Independent benchmark audit: every evaluated miRNA}{27}{}%
+\contentsline {subsection}{\numberline {5.1}Interpretation of the independent ranking}{27}{}%
+\contentsline {section}{\numberline {6}Documented negatives}{29}{}%
+\contentsline {section}{\numberline {7}Falsification paths}{30}{}%
+\contentsline {section}{\numberline {8}Mathematical derivations}{32}{}%
+\contentsline {subsection}{\numberline {8.1}Convolutional duplex scoring}{32}{}%
+\contentsline {subsection}{\numberline {8.2}Pearson and Spearman benchmarks}{33}{}%
+\contentsline {subsection}{\numberline {8.3}Fisher exact test for CLIP enrichment}{33}{}%
+\contentsline {subsection}{\numberline {8.4}Odds ratio}{33}{}%
+\contentsline {subsection}{\numberline {8.5}AUROC as a Mann--Whitney statistic}{33}{}%
+\contentsline {subsection}{\numberline {8.6}Bootstrap confidence interval for $\Delta $AUROC}{33}{}%
+\contentsline {subsection}{\numberline {8.7}Permutation null}{34}{}%
+\contentsline {subsection}{\numberline {8.8}Seed-match enumerator}{34}{}%
+\contentsline {subsection}{\numberline {8.9}Wilcoxon signed-rank for paired per-gene comparisons}{34}{}%

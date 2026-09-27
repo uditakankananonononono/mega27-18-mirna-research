@@ -1,0 +1,113 @@
+\section{Independent benchmark audit: every evaluated miRNA}
+The independent miRTarBase 10.0 label benchmark is the clearest competitive boundary for this method. On 7,909 matched rows, miRDB v6.0 has pooled AUROC 0.7867 versus DuplexCNN 0.6847; miRDB wins on 74 of 84 miRNAs. The tables below preserve each per-miRNA sample count, positive count, and pair of AUROCs from \texttt{results/mirdb\_benchmark.json}. These are existing observations, not 84 independent studies or newly run experiments. The smaller miRNAs have unstable estimates. Winning individual rows cannot reverse the pooled or paired overall result.
+\smallskip
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lrrrrr}\hline
+miRNA & Pairs & Positive & CNN AUROC & miRDB AUROC & $\Delta$ (CNN$-$miRDB) \\ \hline
+hsa-let-7a-5p & 86 & 24 & 0.577 & 0.833 & -0.257 \\
+hsa-miR-1-3p & 176 & 49 & 0.746 & 0.898 & -0.152 \\
+hsa-miR-100-5p & 14 & 9 & 0.822 & 0.833 & -0.011 \\
+hsa-miR-103a-3p & 34 & 9 & 0.707 & 0.707 & +0.000 \\
+hsa-miR-106a-5p & 103 & 25 & 0.610 & 0.772 & -0.162 \\
+hsa-miR-106b-5p & 115 & 24 & 0.633 & 0.889 & -0.255 \\
+hsa-miR-107 & 70 & 20 & 0.702 & 0.782 & -0.080 \\
+hsa-miR-10b-5p & 52 & 15 & 0.802 & 0.751 & +0.050 \\
+hsa-miR-122-5p & 175 & 43 & 0.720 & 0.658 & +0.061 \\
+hsa-miR-125b-5p & 236 & 58 & 0.663 & 0.775 & -0.112 \\
+hsa-miR-128-3p & 89 & 18 & 0.703 & 0.897 & -0.194 \\
+hsa-miR-129-5p & 47 & 9 & 0.482 & 0.693 & -0.211 \\
+hsa-miR-130a-3p & 56 & 16 & 0.737 & 0.788 & -0.050 \\
+hsa-miR-130b-3p & 39 & 11 & 0.808 & 0.899 & -0.091 \\
+hsa-miR-132-3p & 28 & 10 & 0.750 & 0.800 & -0.050 \\
+hsa-miR-133b & 58 & 18 & 0.664 & 0.825 & -0.161 \\
+hsa-miR-135b-5p & 29 & 9 & 0.667 & 0.789 & -0.122 \\
+hsa-miR-138-5p & 82 & 23 & 0.730 & 0.809 & -0.079 \\
+hsa-miR-140-5p & 33 & 7 & 0.783 & 0.989 & -0.206 \\
+hsa-miR-141-3p & 148 & 34 & 0.555 & 0.721 & -0.166 \\
+hsa-miR-143-3p & 83 & 20 & 0.621 & 0.743 & -0.122 \\
+\hline\end{tabular}
+\caption{Independent miRTarBase label audit, miRNAs 1--21 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}\label{tab:mirna-audit-1}
+\end{table}
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lrrrrr}\hline
+miRNA & Pairs & Positive & CNN AUROC & miRDB AUROC & $\Delta$ (CNN$-$miRDB) \\ \hline
+hsa-miR-144-3p & 48 & 11 & 0.740 & 0.765 & -0.026 \\
+hsa-miR-145-5p & 345 & 79 & 0.683 & 0.748 & -0.065 \\
+hsa-miR-146a-5p & 76 & 16 & 0.658 & 0.660 & -0.002 \\
+hsa-miR-148a-3p & 77 & 22 & 0.707 & 0.819 & -0.112 \\
+hsa-miR-150-5p & 81 & 14 & 0.643 & 0.834 & -0.191 \\
+hsa-miR-152-3p & 33 & 9 & 0.708 & 0.884 & -0.176 \\
+hsa-miR-155-5p & 419 & 167 & 0.770 & 0.761 & +0.009 \\
+hsa-miR-15a-5p & 102 & 29 & 0.778 & 0.870 & -0.092 \\
+hsa-miR-15b-5p & 52 & 12 & 0.729 & 0.827 & -0.098 \\
+hsa-miR-16-5p & 148 & 36 & 0.677 & 0.867 & -0.191 \\
+hsa-miR-17-5p & 220 & 49 & 0.649 & 0.893 & -0.244 \\
+hsa-miR-181a-5p & 158 & 36 & 0.651 & 0.833 & -0.183 \\
+hsa-miR-182-5p & 116 & 29 & 0.731 & 0.791 & -0.060 \\
+hsa-miR-185-5p & 74 & 13 & 0.657 & 0.788 & -0.131 \\
+hsa-miR-18a-5p & 25 & 7 & 0.571 & 0.877 & -0.306 \\
+hsa-miR-191-5p & 20 & 12 & 0.750 & 0.792 & -0.042 \\
+hsa-miR-192-5p & 60 & 19 & 0.675 & 0.575 & +0.100 \\
+hsa-miR-194-5p & 44 & 15 & 0.676 & 0.736 & -0.060 \\
+hsa-miR-195-5p & 95 & 26 & 0.773 & 0.829 & -0.056 \\
+hsa-miR-196a-5p & 30 & 12 & 0.792 & 0.861 & -0.069 \\
+hsa-miR-199a-5p & 83 & 20 & 0.719 & 0.736 & -0.017 \\
+\hline\end{tabular}
+\caption{Independent miRTarBase label audit, miRNAs 22--42 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}\label{tab:mirna-audit-2}
+\end{table}
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lrrrrr}\hline
+miRNA & Pairs & Positive & CNN AUROC & miRDB AUROC & $\Delta$ (CNN$-$miRDB) \\ \hline
+hsa-miR-19a-3p & 91 & 27 & 0.716 & 0.897 & -0.181 \\
+hsa-miR-19b-3p & 61 & 18 & 0.583 & 0.848 & -0.266 \\
+hsa-miR-200a-3p & 109 & 21 & 0.575 & 0.721 & -0.146 \\
+hsa-miR-200b-3p & 137 & 37 & 0.625 & 0.652 & -0.027 \\
+hsa-miR-200c-3p & 178 & 46 & 0.712 & 0.797 & -0.085 \\
+hsa-miR-204-5p & 153 & 36 & 0.756 & 0.779 & -0.023 \\
+hsa-miR-205-5p & 108 & 26 & 0.744 & 0.821 & -0.077 \\
+hsa-miR-206 & 37 & 15 & 0.594 & 0.836 & -0.242 \\
+hsa-miR-20a-5p & 181 & 38 & 0.662 & 0.849 & -0.187 \\
+hsa-miR-21-5p & 162 & 54 & 0.693 & 0.742 & -0.049 \\
+hsa-miR-210-3p & 47 & 26 & 0.603 & 0.696 & -0.093 \\
+hsa-miR-214-3p & 128 & 25 & 0.662 & 0.819 & -0.157 \\
+hsa-miR-218-5p & 97 & 28 & 0.724 & 0.790 & -0.066 \\
+hsa-miR-22-3p & 75 & 21 & 0.738 & 0.809 & -0.071 \\
+hsa-miR-221-3p & 105 & 34 & 0.746 & 0.726 & +0.020 \\
+hsa-miR-222-3p & 68 & 19 & 0.802 & 0.760 & +0.042 \\
+hsa-miR-223-3p & 71 & 25 & 0.658 & 0.841 & -0.183 \\
+hsa-miR-224-5p & 58 & 17 & 0.690 & 0.537 & +0.153 \\
+hsa-miR-23a-3p & 91 & 27 & 0.748 & 0.837 & -0.090 \\
+hsa-miR-24-3p & 184 & 31 & 0.624 & 0.743 & -0.119 \\
+hsa-miR-25-3p & 41 & 14 & 0.833 & 0.770 & +0.063 \\
+\hline\end{tabular}
+\caption{Independent miRTarBase label audit, miRNAs 43--63 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}\label{tab:mirna-audit-3}
+\end{table}
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lrrrrr}\hline
+miRNA & Pairs & Positive & CNN AUROC & miRDB AUROC & $\Delta$ (CNN$-$miRDB) \\ \hline
+hsa-miR-26a-5p & 107 & 30 & 0.721 & 0.829 & -0.107 \\
+hsa-miR-27a-3p & 90 & 23 & 0.734 & 0.786 & -0.052 \\
+hsa-miR-28-5p & 29 & 10 & 0.600 & 0.784 & -0.184 \\
+hsa-miR-29a-3p & 182 & 53 & 0.731 & 0.874 & -0.143 \\
+hsa-miR-302a-3p & 54 & 9 & 0.793 & 0.804 & -0.011 \\
+hsa-miR-30a-5p & 84 & 21 & 0.668 & 0.815 & -0.147 \\
+hsa-miR-31-5p & 119 & 32 & 0.756 & 0.764 & -0.009 \\
+hsa-miR-335-5p & 59 & 16 & 0.590 & 0.703 & -0.113 \\
+hsa-miR-34a-5p & 203 & 50 & 0.768 & 0.855 & -0.087 \\
+hsa-miR-378a-3p & 36 & 8 & 0.638 & 0.576 & +0.062 \\
+hsa-miR-424-5p & 103 & 25 & 0.834 & 0.927 & -0.093 \\
+hsa-miR-429 & 54 & 16 & 0.590 & 0.673 & -0.082 \\
+hsa-miR-494-3p & 65 & 18 & 0.577 & 0.683 & -0.106 \\
+hsa-miR-503-5p & 48 & 18 & 0.637 & 0.708 & -0.071 \\
+hsa-miR-7-5p & 69 & 19 & 0.693 & 0.763 & -0.071 \\
+hsa-miR-9-5p & 126 & 31 & 0.571 & 0.796 & -0.224 \\
+hsa-miR-92a-3p & 81 & 18 & 0.675 & 0.783 & -0.108 \\
+hsa-miR-93-5p & 64 & 14 & 0.754 & 0.924 & -0.170 \\
+hsa-miR-96-5p & 49 & 14 & 0.673 & 0.894 & -0.220 \\
+hsa-miR-98-5p & 30 & 10 & 0.610 & 0.725 & -0.115 \\
+hsa-miR-99a-5p & 16 & 9 & 0.683 & 0.873 & -0.190 \\
+\hline\end{tabular}
+\caption{Independent miRTarBase label audit, miRNAs 64--84 of 84, in source-record order. Scores are unweighted per-miRNA AUROC and not a pooled estimate.}\label{tab:mirna-audit-4}
+\end{table}
+\subsection{Interpretation of the independent ranking}
+The source data include 2,113 positive rows out of 7,909, with miRDB scores present for 29.8\% of rows. The originally declared test labels, missing-score handling and benchmark construction determine the meaning of the comparison; the per-miRNA list must not be filtered after seeing scores. The Wilcoxon paired $p=2.45\times 10^{-12}$ supports the direction of miRDB advantage across the tested miRNAs, not biological validation of individual target pairs. Later transfer and random-weight controls are separate questions; they cannot rehabilitate a false state-of-the-art claim on this task.
