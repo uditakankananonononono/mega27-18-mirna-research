@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-27",
+  "source_archives": {
+    "https://www.targetscan.org/vert_80/vert_80_data_download/miR_Family_Info.txt.zip": "d91827b9c9524f2b970d85f61050ecfa9b8cb7ca395c5f7952b9c21cb3dc3b7a",
+    "https://www.targetscan.org/vert_80/vert_80_data_download/Conserved_Site_Context_Scores.txt.zip": "7909e680fd3c8feccfde586b3a0d1ba3df2fa4ea7736ce78410e4cefb9d9e500",
+    "https://www.targetscan.org/vert_80/vert_80_data_download/UTR_Sequences.txt.zip": "65efe0b468ec6deae87965d7215bf7f39f40faa6069d7f056ca298fd293bce26"
+  },
+  "extracted_sha256": {
+    "data/miR_Family_Info.txt": "1d8ca5bf384be4e82c39c4b1d0d21762ecc2bb3f38198413c61d61882308f2fc",
+    "data/human_sites.tsv": "8eb219bea8c0d41d882d933d6764281544351db78134d99af9d804b3fbdc9e69",
+    "data/human_utrs.tsv": "b2057c9308ac202068dca7bbaf83db98ce5c90bb63062aac4c0b1f41f2a575ee"
+  },
+  "weights_sha256": "7a93559dc961b6f15c5e26aa9a6785ce159335673157c68fd95e59bbb5af1e5a",
+  "recovery": "scripts/recover_duplex_weights.py, 80000 rows/6 epochs/seed 0; metric triple exactly matches archived results/context_pp_benchmark.json",
+  "note": "Fresh extraction has 28352 UTR rows, one above the count stated in data/TARGETSCAN_SOURCE.md; archived benchmark metric nevertheless matches exactly. Original ignored-file hashes were not recorded, so exact byte identity with wiped files cannot be asserted."
+}
