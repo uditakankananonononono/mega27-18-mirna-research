@@ -47,3 +47,13 @@ producing the same depletion would expose a site-enumeration artefact.
   exist yet at HEAD; created with round 1).
 - ISEF archetype: identify + verify biomarker-style discipline applied to
   predicted regulatory targets; independent verification is the headline.
+
+
+## Judge requirement amendment, 2026-09-27 10:00 IST
+The user changed the numeric requirement from ten ChatGPT checks to ONE
+round she provides (original WhatsApp wamid.HBgMOTE4MTM0MDk4NTcxFQIAEhgWM0VCMDJCMTZGRTVEMkQwMTFBQzc4MQA=). The older ten-round
+text above records the earlier protocol, not the current finish line. All
+previous judge transcripts remain intact, but prior agent-initiated rounds
+are not assumed to satisfy the new user-provided courier round without a
+verified project-specific handoff. Any supplementary Gemini or other LLM
+consult is separate and does not count as the user-provided ChatGPT verdict.
