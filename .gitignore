@@ -7,3 +7,4 @@ results/*.pt
 data/human_utrs.tsv
 data/human_sites.tsv
 data/miR_Family_Info.txt
+data/encode_eclip/Homo_sapiens_TarBase-v9.tsv.gz
