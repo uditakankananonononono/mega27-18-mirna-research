@@ -129,8 +129,8 @@ the CNN. Right: per-miRNA $\Delta$AUROC of adding the CNN to site counts$+$expre
 \subsection{Cluster-level uncertainty on the expression-adjusted effect}
 A 10{,}000-replicate percentile bootstrap resampled the 130 miRNAs as
 clusters, using the stored per-miRNA expression-adjusted conditional AUROC
-increments (\texttt{scripts/cluster\_interval.py},
-\texttt{results/expression\_cluster\_interval.json}; random seed 20260927).
+increments (the script and result are committed in the repository;
+random seed 20260927).
 The across-miRNA median is $+0.00042$, with a bootstrap 95\% interval
 $[+0.00009,+0.00099]$; 79 of 130 miRNAs have positive increments. This
 interval describes the median within-miRNA increment, \emph{not} the pooled
