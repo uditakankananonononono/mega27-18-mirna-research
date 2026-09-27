@@ -1,0 +1,977 @@
+{
+ "summary": {
+  "rows_written": 476369,
+  "mirnas_total": 132,
+  "mirnas_eligible_50_50": 41,
+  "eligible": [
+   "hsa-miR-103a-3p",
+   "hsa-miR-106a-5p",
+   "hsa-miR-106b-5p",
+   "hsa-miR-107",
+   "hsa-miR-128-3p",
+   "hsa-miR-130a-3p",
+   "hsa-miR-130b-3p",
+   "hsa-miR-148a-3p",
+   "hsa-miR-150-5p",
+   "hsa-miR-152-3p",
+   "hsa-miR-15a-5p",
+   "hsa-miR-15b-5p",
+   "hsa-miR-16-5p",
+   "hsa-miR-17-5p",
+   "hsa-miR-185-5p",
+   "hsa-miR-186-5p",
+   "hsa-miR-18a-5p",
+   "hsa-miR-195-5p",
+   "hsa-miR-19a-3p",
+   "hsa-miR-19b-3p",
+   "hsa-miR-20a-5p",
+   "hsa-miR-214-3p",
+   "hsa-miR-224-5p",
+   "hsa-miR-25-3p",
+   "hsa-miR-296-5p",
+   "hsa-miR-302a-3p",
+   "hsa-miR-32-5p",
+   "hsa-miR-320a",
+   "hsa-miR-342-3p",
+   "hsa-miR-363-3p",
+   "hsa-miR-424-5p",
+   "hsa-miR-451a",
+   "hsa-miR-494-3p",
+   "hsa-miR-495-3p",
+   "hsa-miR-545-3p",
+   "hsa-miR-625-5p",
+   "hsa-miR-671-5p",
+   "hsa-miR-7-5p",
+   "hsa-miR-92a-3p",
+   "hsa-miR-92b-3p",
+   "hsa-miR-93-5p"
+  ],
+  "seconds": 30.1
+ },
+ "per_mirna": {
+  "hsa-let-7a-5p": {
+   "rows": 2417,
+   "pos": 14,
+   "neg": 2403,
+   "candidate_sites": 3744,
+   "unmappable_sites": 1391
+  },
+  "hsa-miR-1-3p": {
+   "rows": 3706,
+   "pos": 26,
+   "neg": 3680,
+   "candidate_sites": 6227,
+   "unmappable_sites": 1925
+  },
+  "hsa-miR-100-5p": {
+   "rows": 352,
+   "pos": 3,
+   "neg": 349,
+   "candidate_sites": 430,
+   "unmappable_sites": 127
+  },
+  "hsa-miR-103a-3p": {
+   "rows": 4032,
+   "pos": 62,
+   "neg": 3970,
+   "candidate_sites": 6810,
+   "unmappable_sites": 1934
+  },
+  "hsa-miR-106a-5p": {
+   "rows": 4897,
+   "pos": 177,
+   "neg": 4720,
+   "candidate_sites": 9166,
+   "unmappable_sites": 3360
+  },
+  "hsa-miR-106b-5p": {
+   "rows": 4897,
+   "pos": 177,
+   "neg": 4720,
+   "candidate_sites": 9166,
+   "unmappable_sites": 3360
+  },
+  "hsa-miR-107": {
+   "rows": 4032,
+   "pos": 62,
+   "neg": 3970,
+   "candidate_sites": 6810,
+   "unmappable_sites": 1934
+  },
+  "hsa-miR-10a-5p": {
+   "rows": 3621,
+   "pos": 26,
+   "neg": 3595,
+   "candidate_sites": 5820,
+   "unmappable_sites": 2031
+  },
+  "hsa-miR-10b-5p": {
+   "rows": 3621,
+   "pos": 26,
+   "neg": 3595,
+   "candidate_sites": 5820,
+   "unmappable_sites": 2031
+  },
+  "hsa-miR-122-5p": {
+   "rows": 4933,
+   "pos": 37,
+   "neg": 4896,
+   "candidate_sites": 9092,
+   "unmappable_sites": 3225
+  },
+  "hsa-miR-125b-5p": {
+   "rows": 4046,
+   "pos": 32,
+   "neg": 4014,
+   "candidate_sites": 7328,
+   "unmappable_sites": 2286
+  },
+  "hsa-miR-128-3p": {
+   "rows": 4760,
+   "pos": 60,
+   "neg": 4700,
+   "candidate_sites": 8452,
+   "unmappable_sites": 2683
+  },
+  "hsa-miR-129-5p": {
+   "rows": 6830,
+   "pos": 43,
+   "neg": 6787,
+   "candidate_sites": 17377,
+   "unmappable_sites": 5990
+  },
+  "hsa-miR-130a-3p": {
+   "rows": 2892,
+   "pos": 102,
+   "neg": 2790,
+   "candidate_sites": 4392,
+   "unmappable_sites": 1421
+  },
+  "hsa-miR-130b-3p": {
+   "rows": 2892,
+   "pos": 102,
+   "neg": 2790,
+   "candidate_sites": 4392,
+   "unmappable_sites": 1421
+  },
+  "hsa-miR-132-3p": {
+   "rows": 3616,
+   "pos": 38,
+   "neg": 3578,
+   "candidate_sites": 5706,
+   "unmappable_sites": 1544
+  },
+  "hsa-miR-133b": {
+   "rows": 2484,
+   "pos": 14,
+   "neg": 2470,
+   "candidate_sites": 3696,
+   "unmappable_sites": 1078
+  },
+  "hsa-miR-134-5p": {
+   "rows": 3776,
+   "pos": 24,
+   "neg": 3752,
+   "candidate_sites": 6408,
+   "unmappable_sites": 1863
+  },
+  "hsa-miR-135b-5p": {
+   "rows": 3278,
+   "pos": 20,
+   "neg": 3258,
+   "candidate_sites": 5137,
+   "unmappable_sites": 1592
+  },
+  "hsa-miR-137": {
+   "rows": 2577,
+   "pos": 30,
+   "neg": 2547,
+   "candidate_sites": 4182,
+   "unmappable_sites": 1368
+  },
+  "hsa-miR-138-5p": {
+   "rows": 3757,
+   "pos": 24,
+   "neg": 3733,
+   "candidate_sites": 6496,
+   "unmappable_sites": 1945
+  },
+  "hsa-miR-139-5p": {
+   "rows": 3368,
+   "pos": 46,
+   "neg": 3322,
+   "candidate_sites": 5399,
+   "unmappable_sites": 1554
+  },
+  "hsa-miR-140-5p": {
+   "rows": 2900,
+   "pos": 12,
+   "neg": 2888,
+   "candidate_sites": 4392,
+   "unmappable_sites": 1436
+  },
+  "hsa-miR-141-3p": {
+   "rows": 4320,
+   "pos": 34,
+   "neg": 4286,
+   "candidate_sites": 7584,
+   "unmappable_sites": 2198
+  },
+  "hsa-miR-143-3p": {
+   "rows": 4686,
+   "pos": 23,
+   "neg": 4663,
+   "candidate_sites": 8411,
+   "unmappable_sites": 2669
+  },
+  "hsa-miR-144-3p": {
+   "rows": 3534,
+   "pos": 47,
+   "neg": 3487,
+   "candidate_sites": 6255,
+   "unmappable_sites": 2000
+  },
+  "hsa-miR-145-5p": {
+   "rows": 3867,
+   "pos": 15,
+   "neg": 3852,
+   "candidate_sites": 6848,
+   "unmappable_sites": 2106
+  },
+  "hsa-miR-146a-5p": {
+   "rows": 3981,
+   "pos": 48,
+   "neg": 3933,
+   "candidate_sites": 6871,
+   "unmappable_sites": 2036
+  },
+  "hsa-miR-146b-5p": {
+   "rows": 3981,
+   "pos": 48,
+   "neg": 3933,
+   "candidate_sites": 6871,
+   "unmappable_sites": 2036
+  },
+  "hsa-miR-148a-3p": {
+   "rows": 3509,
+   "pos": 52,
+   "neg": 3457,
+   "candidate_sites": 5722,
+   "unmappable_sites": 1711
+  },
+  "hsa-miR-149-5p": {
+   "rows": 4665,
+   "pos": 36,
+   "neg": 4629,
+   "candidate_sites": 8508,
+   "unmappable_sites": 2625
+  },
+  "hsa-miR-150-5p": {
+   "rows": 6612,
+   "pos": 67,
+   "neg": 6545,
+   "candidate_sites": 15339,
+   "unmappable_sites": 5298
+  },
+  "hsa-miR-152-3p": {
+   "rows": 3509,
+   "pos": 52,
+   "neg": 3457,
+   "candidate_sites": 5722,
+   "unmappable_sites": 1711
+  },
+  "hsa-miR-153-3p": {
+   "rows": 2659,
+   "pos": 22,
+   "neg": 2637,
+   "candidate_sites": 4056,
+   "unmappable_sites": 1324
+  },
+  "hsa-miR-155-5p": {
+   "rows": 3017,
+   "pos": 24,
+   "neg": 2993,
+   "candidate_sites": 5215,
+   "unmappable_sites": 1503
+  },
+  "hsa-miR-15a-5p": {
+   "rows": 4013,
+   "pos": 82,
+   "neg": 3931,
+   "candidate_sites": 7073,
+   "unmappable_sites": 2129
+  },
+  "hsa-miR-15b-5p": {
+   "rows": 4013,
+   "pos": 82,
+   "neg": 3931,
+   "candidate_sites": 7073,
+   "unmappable_sites": 2129
+  },
+  "hsa-miR-16-5p": {
+   "rows": 4013,
+   "pos": 82,
+   "neg": 3931,
+   "candidate_sites": 7073,
+   "unmappable_sites": 2129
+  },
+  "hsa-miR-17-5p": {
+   "rows": 4897,
+   "pos": 177,
+   "neg": 4720,
+   "candidate_sites": 9166,
+   "unmappable_sites": 3360
+  },
+  "hsa-miR-181a-5p": {
+   "rows": 3953,
+   "pos": 45,
+   "neg": 3908,
+   "candidate_sites": 7310,
+   "unmappable_sites": 2151
+  },
+  "hsa-miR-182-5p": {
+   "rows": 3394,
+   "pos": 15,
+   "neg": 3379,
+   "candidate_sites": 5723,
+   "unmappable_sites": 1791
+  },
+  "hsa-miR-184": {
+   "rows": 1008,
+   "pos": 14,
+   "neg": 994,
+   "candidate_sites": 1536,
+   "unmappable_sites": 451
+  },
+  "hsa-miR-185-5p": {
+   "rows": 5427,
+   "pos": 104,
+   "neg": 5323,
+   "candidate_sites": 10676,
+   "unmappable_sites": 2856
+  },
+  "hsa-miR-186-5p": {
+   "rows": 6380,
+   "pos": 100,
+   "neg": 6280,
+   "candidate_sites": 14541,
+   "unmappable_sites": 4330
+  },
+  "hsa-miR-187-3p": {
+   "rows": 909,
+   "pos": 3,
+   "neg": 906,
+   "candidate_sites": 1279,
+   "unmappable_sites": 379
+  },
+  "hsa-miR-18a-5p": {
+   "rows": 2903,
+   "pos": 77,
+   "neg": 2826,
+   "candidate_sites": 4250,
+   "unmappable_sites": 1260
+  },
+  "hsa-miR-190a-5p": {
+   "rows": 2588,
+   "pos": 15,
+   "neg": 2573,
+   "candidate_sites": 4180,
+   "unmappable_sites": 1244
+  },
+  "hsa-miR-191-5p": {
+   "rows": 809,
+   "pos": 21,
+   "neg": 788,
+   "candidate_sites": 1078,
+   "unmappable_sites": 331
+  },
+  "hsa-miR-192-5p": {
+   "rows": 2712,
+   "pos": 16,
+   "neg": 2696,
+   "candidate_sites": 3915,
+   "unmappable_sites": 1233
+  },
+  "hsa-miR-193a-5p": {
+   "rows": 3559,
+   "pos": 18,
+   "neg": 3541,
+   "candidate_sites": 5787,
+   "unmappable_sites": 1745
+  },
+  "hsa-miR-194-5p": {
+   "rows": 3561,
+   "pos": 34,
+   "neg": 3527,
+   "candidate_sites": 6017,
+   "unmappable_sites": 1711
+  },
+  "hsa-miR-195-5p": {
+   "rows": 4013,
+   "pos": 82,
+   "neg": 3931,
+   "candidate_sites": 7073,
+   "unmappable_sites": 2129
+  },
+  "hsa-miR-196a-5p": {
+   "rows": 2111,
+   "pos": 18,
+   "neg": 2093,
+   "candidate_sites": 3018,
+   "unmappable_sites": 956
+  },
+  "hsa-miR-197-3p": {
+   "rows": 5324,
+   "pos": 36,
+   "neg": 5288,
+   "candidate_sites": 9848,
+   "unmappable_sites": 3349
+  },
+  "hsa-miR-199a-5p": {
+   "rows": 3967,
+   "pos": 29,
+   "neg": 3938,
+   "candidate_sites": 6663,
+   "unmappable_sites": 2009
+  },
+  "hsa-miR-19a-3p": {
+   "rows": 2897,
+   "pos": 148,
+   "neg": 2749,
+   "candidate_sites": 4840,
+   "unmappable_sites": 1477
+  },
+  "hsa-miR-19b-3p": {
+   "rows": 2897,
+   "pos": 148,
+   "neg": 2749,
+   "candidate_sites": 4840,
+   "unmappable_sites": 1477
+  },
+  "hsa-miR-200a-3p": {
+   "rows": 4320,
+   "pos": 34,
+   "neg": 4286,
+   "candidate_sites": 7584,
+   "unmappable_sites": 2198
+  },
+  "hsa-miR-200b-3p": {
+   "rows": 3585,
+   "pos": 22,
+   "neg": 3563,
+   "candidate_sites": 6388,
+   "unmappable_sites": 1904
+  },
+  "hsa-miR-200c-3p": {
+   "rows": 3585,
+   "pos": 22,
+   "neg": 3563,
+   "candidate_sites": 6388,
+   "unmappable_sites": 1904
+  },
+  "hsa-miR-204-5p": {
+   "rows": 4977,
+   "pos": 24,
+   "neg": 4953,
+   "candidate_sites": 9734,
+   "unmappable_sites": 2910
+  },
+  "hsa-miR-205-5p": {
+   "rows": 4248,
+   "pos": 23,
+   "neg": 4225,
+   "candidate_sites": 7351,
+   "unmappable_sites": 2206
+  },
+  "hsa-miR-206": {
+   "rows": 3706,
+   "pos": 26,
+   "neg": 3680,
+   "candidate_sites": 6227,
+   "unmappable_sites": 1925
+  },
+  "hsa-miR-20a-5p": {
+   "rows": 4897,
+   "pos": 177,
+   "neg": 4720,
+   "candidate_sites": 9166,
+   "unmappable_sites": 3360
+  },
+  "hsa-miR-21-5p": {
+   "rows": 2476,
+   "pos": 19,
+   "neg": 2457,
+   "candidate_sites": 3828,
+   "unmappable_sites": 1150
+  },
+  "hsa-miR-210-3p": {
+   "rows": 854,
+   "pos": 23,
+   "neg": 831,
+   "candidate_sites": 1177,
+   "unmappable_sites": 329
+  },
+  "hsa-miR-214-3p": {
+   "rows": 6307,
+   "pos": 100,
+   "neg": 6207,
+   "candidate_sites": 12600,
+   "unmappable_sites": 3381
+  },
+  "hsa-miR-215-5p": {
+   "rows": 2712,
+   "pos": 16,
+   "neg": 2696,
+   "candidate_sites": 3915,
+   "unmappable_sites": 1233
+  },
+  "hsa-miR-216a-5p": {
+   "rows": 4058,
+   "pos": 21,
+   "neg": 4037,
+   "candidate_sites": 7400,
+   "unmappable_sites": 2481
+  },
+  "hsa-miR-218-5p": {
+   "rows": 3277,
+   "pos": 32,
+   "neg": 3245,
+   "candidate_sites": 5284,
+   "unmappable_sites": 1646
+  },
+  "hsa-miR-22-3p": {
+   "rows": 3411,
+   "pos": 30,
+   "neg": 3381,
+   "candidate_sites": 5372,
+   "unmappable_sites": 1598
+  },
+  "hsa-miR-221-3p": {
+   "rows": 2808,
+   "pos": 32,
+   "neg": 2776,
+   "candidate_sites": 4399,
+   "unmappable_sites": 1305
+  },
+  "hsa-miR-222-3p": {
+   "rows": 2808,
+   "pos": 32,
+   "neg": 2776,
+   "candidate_sites": 4399,
+   "unmappable_sites": 1305
+  },
+  "hsa-miR-223-3p": {
+   "rows": 3035,
+   "pos": 32,
+   "neg": 3003,
+   "candidate_sites": 4944,
+   "unmappable_sites": 1495
+  },
+  "hsa-miR-224-5p": {
+   "rows": 4030,
+   "pos": 52,
+   "neg": 3978,
+   "candidate_sites": 6604,
+   "unmappable_sites": 1888
+  },
+  "hsa-miR-23a-3p": {
+   "rows": 4506,
+   "pos": 39,
+   "neg": 4467,
+   "candidate_sites": 9093,
+   "unmappable_sites": 2714
+  },
+  "hsa-miR-24-3p": {
+   "rows": 5994,
+   "pos": 40,
+   "neg": 5954,
+   "candidate_sites": 12841,
+   "unmappable_sites": 4653
+  },
+  "hsa-miR-25-3p": {
+   "rows": 3132,
+   "pos": 91,
+   "neg": 3041,
+   "candidate_sites": 4858,
+   "unmappable_sites": 1738
+  },
+  "hsa-miR-26a-5p": {
+   "rows": 3994,
+   "pos": 26,
+   "neg": 3968,
+   "candidate_sites": 6943,
+   "unmappable_sites": 2276
+  },
+  "hsa-miR-27a-3p": {
+   "rows": 4391,
+   "pos": 47,
+   "neg": 4344,
+   "candidate_sites": 7583,
+   "unmappable_sites": 2271
+  },
+  "hsa-miR-28-5p": {
+   "rows": 3662,
+   "pos": 37,
+   "neg": 3625,
+   "candidate_sites": 5869,
+   "unmappable_sites": 1706
+  },
+  "hsa-miR-296-5p": {
+   "rows": 3774,
+   "pos": 76,
+   "neg": 3698,
+   "candidate_sites": 7217,
+   "unmappable_sites": 1871
+  },
+  "hsa-miR-29a-3p": {
+   "rows": 2562,
+   "pos": 18,
+   "neg": 2544,
+   "candidate_sites": 3856,
+   "unmappable_sites": 1245
+  },
+  "hsa-miR-302a-3p": {
+   "rows": 4678,
+   "pos": 87,
+   "neg": 4591,
+   "candidate_sites": 8637,
+   "unmappable_sites": 3165
+  },
+  "hsa-miR-30a-5p": {
+   "rows": 3026,
+   "pos": 48,
+   "neg": 2978,
+   "candidate_sites": 5133,
+   "unmappable_sites": 1563
+  },
+  "hsa-miR-31-5p": {
+   "rows": 3861,
+   "pos": 36,
+   "neg": 3825,
+   "candidate_sites": 6467,
+   "unmappable_sites": 1960
+  },
+  "hsa-miR-32-5p": {
+   "rows": 3132,
+   "pos": 91,
+   "neg": 3041,
+   "candidate_sites": 4858,
+   "unmappable_sites": 1738
+  },
+  "hsa-miR-320a": {
+   "rows": 4693,
+   "pos": 74,
+   "neg": 4619,
+   "candidate_sites": 8093,
+   "unmappable_sites": 2347
+  },
+  "hsa-miR-324-5p": {
+   "rows": 2843,
+   "pos": 31,
+   "neg": 2812,
+   "candidate_sites": 4549,
+   "unmappable_sites": 1347
+  },
+  "hsa-miR-328-3p": {
+   "rows": 3509,
+   "pos": 41,
+   "neg": 3468,
+   "candidate_sites": 5866,
+   "unmappable_sites": 1594
+  },
+  "hsa-miR-335-5p": {
+   "rows": 4356,
+   "pos": 46,
+   "neg": 4310,
+   "candidate_sites": 7196,
+   "unmappable_sites": 2171
+  },
+  "hsa-miR-338-3p": {
+   "rows": 4687,
+   "pos": 42,
+   "neg": 4645,
+   "candidate_sites": 8230,
+   "unmappable_sites": 2395
+  },
+  "hsa-miR-339-5p": {
+   "rows": 4591,
+   "pos": 36,
+   "neg": 4555,
+   "candidate_sites": 8373,
+   "unmappable_sites": 2594
+  },
+  "hsa-miR-342-3p": {
+   "rows": 4840,
+   "pos": 56,
+   "neg": 4784,
+   "candidate_sites": 8658,
+   "unmappable_sites": 2759
+  },
+  "hsa-miR-345-5p": {
+   "rows": 3872,
+   "pos": 32,
+   "neg": 3840,
+   "candidate_sites": 6574,
+   "unmappable_sites": 1990
+  },
+  "hsa-miR-34a-5p": {
+   "rows": 3984,
+   "pos": 38,
+   "neg": 3946,
+   "candidate_sites": 6877,
+   "unmappable_sites": 2008
+  },
+  "hsa-miR-361-5p": {
+   "rows": 3358,
+   "pos": 40,
+   "neg": 3318,
+   "candidate_sites": 5805,
+   "unmappable_sites": 1687
+  },
+  "hsa-miR-363-3p": {
+   "rows": 3132,
+   "pos": 91,
+   "neg": 3041,
+   "candidate_sites": 4858,
+   "unmappable_sites": 1738
+  },
+  "hsa-miR-375": {
+   "rows": 3206,
+   "pos": 19,
+   "neg": 3187,
+   "candidate_sites": 4707,
+   "unmappable_sites": 1412
+  },
+  "hsa-miR-376a-3p": {
+   "rows": 3186,
+   "pos": 24,
+   "neg": 3162,
+   "candidate_sites": 5499,
+   "unmappable_sites": 1633
+  },
+  "hsa-miR-378a-3p": {
+   "rows": 3575,
+   "pos": 24,
+   "neg": 3551,
+   "candidate_sites": 5807,
+   "unmappable_sites": 1677
+  },
+  "hsa-miR-409-3p": {
+   "rows": 4350,
+   "pos": 31,
+   "neg": 4319,
+   "candidate_sites": 7565,
+   "unmappable_sites": 2278
+  },
+  "hsa-miR-424-5p": {
+   "rows": 4013,
+   "pos": 82,
+   "neg": 3931,
+   "candidate_sites": 7073,
+   "unmappable_sites": 2129
+  },
+  "hsa-miR-425-5p": {
+   "rows": 3539,
+   "pos": 25,
+   "neg": 3514,
+   "candidate_sites": 5651,
+   "unmappable_sites": 1630
+  },
+  "hsa-miR-429": {
+   "rows": 3585,
+   "pos": 22,
+   "neg": 3563,
+   "candidate_sites": 6388,
+   "unmappable_sites": 1904
+  },
+  "hsa-miR-451a": {
+   "rows": 577,
+   "pos": 71,
+   "neg": 506,
+   "candidate_sites": 735,
+   "unmappable_sites": 200
+  },
+  "hsa-miR-486-5p": {
+   "rows": 2859,
+   "pos": 25,
+   "neg": 2834,
+   "candidate_sites": 4353,
+   "unmappable_sites": 1258
+  },
+  "hsa-miR-494-3p": {
+   "rows": 5405,
+   "pos": 76,
+   "neg": 5329,
+   "candidate_sites": 10484,
+   "unmappable_sites": 3008
+  },
+  "hsa-miR-495-3p": {
+   "rows": 6071,
+   "pos": 110,
+   "neg": 5961,
+   "candidate_sites": 13496,
+   "unmappable_sites": 3940
+  },
+  "hsa-miR-500a-3p": {
+   "rows": 3202,
+   "pos": 34,
+   "neg": 3168,
+   "candidate_sites": 5051,
+   "unmappable_sites": 1673
+  },
+  "hsa-miR-503-5p": {
+   "rows": 2316,
+   "pos": 46,
+   "neg": 2270,
+   "candidate_sites": 3099,
+   "unmappable_sites": 953
+  },
+  "hsa-miR-532-5p": {
+   "rows": 3312,
+   "pos": 19,
+   "neg": 3293,
+   "candidate_sites": 5334,
+   "unmappable_sites": 1659
+  },
+  "hsa-miR-545-3p": {
+   "rows": 5716,
+   "pos": 109,
+   "neg": 5607,
+   "candidate_sites": 11263,
+   "unmappable_sites": 3144
+  },
+  "hsa-miR-574-5p": {
+   "rows": 3490,
+   "pos": 39,
+   "neg": 3451,
+   "candidate_sites": 6010,
+   "unmappable_sites": 1671
+  },
+  "hsa-miR-590-5p": {
+   "rows": 2476,
+   "pos": 19,
+   "neg": 2457,
+   "candidate_sites": 3828,
+   "unmappable_sites": 1150
+  },
+  "hsa-miR-615-3p": {
+   "rows": 857,
+   "pos": 14,
+   "neg": 843,
+   "candidate_sites": 1230,
+   "unmappable_sites": 351
+  },
+  "hsa-miR-625-5p": {
+   "rows": 5461,
+   "pos": 124,
+   "neg": 5337,
+   "candidate_sites": 11268,
+   "unmappable_sites": 3108
+  },
+  "hsa-miR-629-5p": {
+   "rows": 4055,
+   "pos": 24,
+   "neg": 4031,
+   "candidate_sites": 6699,
+   "unmappable_sites": 1934
+  },
+  "hsa-miR-652-3p": {
+   "rows": 710,
+   "pos": 7,
+   "neg": 703,
+   "candidate_sites": 894,
+   "unmappable_sites": 311
+  },
+  "hsa-miR-660-5p": {
+   "rows": 2876,
+   "pos": 27,
+   "neg": 2849,
+   "candidate_sites": 4577,
+   "unmappable_sites": 1368
+  },
+  "hsa-miR-671-5p": {
+   "rows": 4529,
+   "pos": 81,
+   "neg": 4448,
+   "candidate_sites": 8166,
+   "unmappable_sites": 2358
+  },
+  "hsa-miR-7-5p": {
+   "rows": 4736,
+   "pos": 52,
+   "neg": 4684,
+   "candidate_sites": 8146,
+   "unmappable_sites": 2415
+  },
+  "hsa-miR-708-5p": {
+   "rows": 3662,
+   "pos": 37,
+   "neg": 3625,
+   "candidate_sites": 5869,
+   "unmappable_sites": 1706
+  },
+  "hsa-miR-744-5p": {
+   "rows": 1804,
+   "pos": 34,
+   "neg": 1770,
+   "candidate_sites": 2852,
+   "unmappable_sites": 729
+  },
+  "hsa-miR-885-5p": {
+   "rows": 3318,
+   "pos": 36,
+   "neg": 3282,
+   "candidate_sites": 5419,
+   "unmappable_sites": 1511
+  },
+  "hsa-miR-9-5p": {
+   "rows": 3415,
+   "pos": 13,
+   "neg": 3402,
+   "candidate_sites": 5587,
+   "unmappable_sites": 1781
+  },
+  "hsa-miR-92a-3p": {
+   "rows": 3132,
+   "pos": 91,
+   "neg": 3041,
+   "candidate_sites": 4858,
+   "unmappable_sites": 1738
+  },
+  "hsa-miR-92b-3p": {
+   "rows": 3132,
+   "pos": 91,
+   "neg": 3041,
+   "candidate_sites": 4858,
+   "unmappable_sites": 1738
+  },
+  "hsa-miR-93-5p": {
+   "rows": 4897,
+   "pos": 177,
+   "neg": 4720,
+   "candidate_sites": 9166,
+   "unmappable_sites": 3360
+  },
+  "hsa-miR-96-5p": {
+   "rows": 3095,
+   "pos": 18,
+   "neg": 3077,
+   "candidate_sites": 4778,
+   "unmappable_sites": 1531
+  },
+  "hsa-miR-98-5p": {
+   "rows": 2417,
+   "pos": 14,
+   "neg": 2403,
+   "candidate_sites": 3744,
+   "unmappable_sites": 1391
+  },
+  "hsa-miR-99a-5p": {
+   "rows": 352,
+   "pos": 3,
+   "neg": 349,
+   "candidate_sites": 430,
+   "unmappable_sites": 127
+  }
+ }
+}
