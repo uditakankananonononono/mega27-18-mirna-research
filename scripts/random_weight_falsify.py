@@ -27,7 +27,7 @@ Locked design (committed BEFORE running, 2026-09-26):
   not labels. Up to 5 label-permutation retrains may follow as a spot check
   if Null A/B are beaten; declared now, before outcomes.
 """
-import json, random, sys
+import json, random, sys, hashlib, os
 from pathlib import Path
 import numpy as np, pandas as pd, torch
 
@@ -153,14 +153,43 @@ def main():
     trained_scores = score(net, Xu, Xm, Xs, Xf)
     t_l1, t_l2 = depletion_counts(trained_scores, cands, tid2gene, universe, g, sh, "trained")
     print("trained counts L1 L2:", t_l1, t_l2, flush=True)
-    null_a = []
-    for seed in range(100):
+    # Atomic, seed-level progress file; no change to locked statistics or seeds.
+    # A restored workspace can replay setup and skip completed statistics only
+    # when the trained weights and three extracted TargetScan inputs match.
+    source_paths = [D / "miR_Family_Info.txt", D / "human_utrs.tsv", D / "human_sites.tsv", ROOT / "results/duplex_cnn.pt"]
+    def digest(path):
+        h = hashlib.sha256()
+        with open(path, "rb") as fh:
+            for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+                h.update(chunk)
+        return h.hexdigest()
+    fingerprint = {str(path.relative_to(ROOT)): digest(path) for path in source_paths}
+    progress_path = ROOT / "results/random_weight_falsify_progress.json"
+    if progress_path.exists():
+        progress = json.loads(progress_path.read_text())
+        if progress.get("fingerprint") != fingerprint or progress.get("trained") != {"L1": t_l1, "L2": t_l2}:
+            raise RuntimeError("Progress input fingerprint or trained counts mismatch; refusing to resume")
+        if len(progress["null_A_random_weight"]) > 100 or len(progress["null_B_permutation"]) > 100:
+            raise RuntimeError("Invalid progress lengths")
+    else:
+        progress = {"fingerprint": fingerprint, "trained": {"L1": t_l1, "L2": t_l2},
+                    "null_A_random_weight": [], "null_B_permutation": [], "alpha": 0.01, "K": K}
+    def checkpoint():
+        tmp = progress_path.with_suffix(".json.tmp")
+        with open(tmp, "w") as fh:
+            json.dump(progress, fh, indent=1)
+            fh.flush(); os.fsync(fh.fileno())
+        os.replace(tmp, progress_path)
+    checkpoint()
+    null_a = progress["null_A_random_weight"]
+    for seed in range(len(null_a), 100):
         torch.manual_seed(seed)
         rn = DuplexCNN(n_feat=4)
         s = score(rn, Xu, Xm, Xs, Xf)
         null_a.append(depletion_counts(s, cands, tid2gene, universe, g, sh, f"rw-{seed}"))
+        checkpoint()
         if seed % 10 == 9: print("null A seed", seed + 1, flush=True)
-    null_b = []
+    null_b = progress["null_B_permutation"]
     rng = np.random.default_rng(0)
     mi_idx = np.array([c[0] for c in cands])
     for p in range(100):
@@ -168,7 +197,10 @@ def main():
         for mi in np.unique(mi_idx):
             m = mi_idx == mi
             sp[m] = rng.permutation(sp[m])
+        if p < len(null_b):
+            continue  # RNG consumed exactly as in an uninterrupted run.
         null_b.append(depletion_counts(sp, cands, tid2gene, universe, g, sh, f"perm-{p}"))
+        checkpoint()
         if p % 10 == 9: print("null B perm", p + 1, flush=True)
     a1 = [x[0] for x in null_a]; a2 = [x[1] for x in null_a]
     b1 = [x[0] for x in null_b]; b2 = [x[1] for x in null_b]
