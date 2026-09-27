@@ -1,0 +1,16 @@
+{
+  "type": "exploratory percentile bootstrap over miRNA clusters (the rows in expression_confound.json)",
+  "estimand": "median within-miRNA delta AUROC (AEC minus AE); not pooled AUROC delta",
+  "source": "results/expression_confound.json",
+  "seed": 20260927,
+  "bootstrap_replicates": 10000,
+  "n_mirna": 130,
+  "median_delta": 0.0004234032337430138,
+  "mean_delta": 0.003539040541537511,
+  "median_ci95": [
+    8.692430227213999e-05,
+    0.00099439051629846
+  ],
+  "n_positive": 79,
+  "limits": "miRNAs may share seed families and genes; this is not a family- or gene-clustered interval and does not identify causal model value"
+}
