@@ -66,6 +66,9 @@ def main():
         out["families"][f] = {"n_test": int(len(te)), "cnn": r_cnn,
                               "ridge_context": r_ridge, "random_weight": r_null}
         print(f, "cnn", round(r_cnn, 4), "ridge", round(r_ridge, 4), "null", round(r_null, 4), flush=True)
+        # crash-safe checkpoint after each family (does not alter computation)
+        json.dump({"held_out_families": top, "families": out["families"], "partial": True},
+                  open(ROOT / "results/family_transfer_checkpoint.json", "w"), indent=1)
     mc = float(np.mean([v["cnn"] for v in out["families"].values()]))
     mr = float(np.mean([v["ridge_context"] for v in out["families"].values()]))
     mn = float(np.mean([v["random_weight"] for v in out["families"].values()]))
