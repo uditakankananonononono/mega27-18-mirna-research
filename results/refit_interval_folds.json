@@ -1,0 +1,31 @@
+{
+ "type": "fold-training-scaled refit-aware crossed family-and-gene weighted bootstrap (evaluator + training-only standardization refit per draw)",
+ "protocol": "docs/PREREG_REFIT_INTERVAL_FOLD_SCALING_20260928.md",
+ "n_rows": 435394,
+ "n_genes": 16835,
+ "n_families": 104,
+ "seed": 20260928,
+ "bootstrap_replicates": 300,
+ "n_skipped_degenerate": 0,
+ "base_auroc": 0.6941704971066511,
+ "full_auroc": 0.6949385694559599,
+ "delta": 0.0007680723493087571,
+ "ci95": [
+  -9.889532456384686e-05,
+  0.0029515261607202937
+ ],
+ "n_nonpositive": 14,
+ "old_global_baseline": {
+  "AE": 0.6941699024462965,
+  "AEC": 0.6949380281289601,
+  "delta": 0.0007681256826636007
+ },
+ "fixed_prediction_comparison": {
+  "ci95": [
+   -0.0015680281768226001,
+   0.0027334023043778972
+  ],
+  "commit": "719db2d"
+ },
+ "limits": "CNN feature extractor not retrained (declared cost bound); features TargetScan-trained, labels disjoint from CLIP; not an independent-library replication"
+}

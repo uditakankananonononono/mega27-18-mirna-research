@@ -15,10 +15,11 @@ Under gene-grouped cross-validation on 435{,}394 expression-matched
 site-count and CNN models without expression. This conditional estimate is
 small and does not establish practical utility; a pooled-effect confidence
 crossed family-and-gene fixed-prediction bootstrap interval includes zero
-($[-0.00157,+0.00273]$); refit-aware uncertainty and independent-library
-replication remain outstanding. A second-resource TarBase AGO-CLIP label
+($[-0.00157,+0.00273]$); a refit-aware crossed interval with
+fold-training-only scaling also includes zero ($[-0.00010,+0.00295]$);
+independent-library replication remains outstanding. A second-resource TarBase AGO-CLIP label
 test passes its locked within-resource positive-delta rule ($+0.01615$,
-fixed-prediction gene-bootstrap 99\% CI $[+0.01459,+0.01773]$), but shared
+fixed-prediction gene-bootstrap 99\% CI $[+0.01459,\allowbreak +0.01773]$), but shared
 underlying CLIP libraries may link the resources and the median per-miRNA
 increment is uncertain. The earlier
 site-count/length-only result ($\Delta$AUROC $+0.0060$ on 476{,}369 rows)
@@ -138,7 +139,8 @@ the CNN. Right: per-miRNA $\Delta$AUROC of adding the CNN to site counts$+$expre
 The expression-controlled primary comparison gives a pooled $+0.00077$
 AUROC point estimate. A crossed family-and-gene fixed-prediction interval
 below includes zero, so even the sign is uncertain under that sensitivity
-test; refit-aware uncertainty and independent-library replication remain open. A
+test; a refit-aware interval under fold-training-only scaling, reported
+below, also includes zero. Independent-library replication remains open. A
 second-resource TarBase test passes its locked within-resource rule, but
 its source libraries can overlap ENCORI and its per-miRNA median interval
 includes zero; it does not establish the independent-library condition.
@@ -197,6 +199,33 @@ uncertain once related miRNAs and genes are stressed together. The original
 global scaling still precedes fold assignment; no interval repairs that
 preprocessing weakness. Nor does any interval supply independent-library
 replication or practical value.
+\subsection{Refit-aware crossed interval with fold-training-only scaling}
+The crossed interval above still refits nothing: it holds the original
+out-of-fold predictions fixed and retains the source experiment's global
+scaling, which precedes fold assignment. To test whether that preprocessing
+transduction, rather than dependence alone, drives the uncertainty, a
+pre-registered evaluator-stack refit (CNN feature extractor frozen; declared
+cost bound) re-drew the same crossed family-and-gene weighted bootstrap with
+one change: inside each of the 300 seeded draws, the weighted standardization
+scalers were fit on the training folds of that draw only and then applied to
+the held-out fold, so fold-held-out genes never entered scaler statistics.
+An integrity gate ran the refit pipeline at uniform weights first and
+reproduced the original global-scaled zero-draw baselines
+($0.69416990$ / $0.69493803$) before any replacement draw was observed; an
+earlier attempt whose scalers had touched fold-held-out genes was stopped at
+its checkpoint, never read as an outcome, and is retained as an audit trail.
+The corrected zero-draw baselines are $0.69417050$ (expression-only) and
+$0.69493857$ (with conserved-site context), increment $+0.00077$. The
+refit-aware 95\% percentile interval over 300 draws (0 skipped) is
+$[-0.00010,+0.00295]$, with 14 nonpositive draws: the interval still
+includes zero, so the sign of the tiny pooled increment remains uncertain
+under the strongest dependence-and-refit sensitivity test we have run. This
+does not restore practical utility, and it is not an independent-library
+replication; features remain TargetScan-trained with labels disjoint from
+CLIP. What it establishes is that fold-training-only scaling does not rescue
+the sign: the uncertainty is dependence, not preprocessing transduction.
+(\texttt{results/refit\_interval\_folds.json}; protocol
+\texttt{docs/PREREG\_REFIT\_INTERVAL\_FOLD\_SCALING\_20260928.md}.)
 \subsection{Pre-registered second-resource AGO-CLIP label test}
 The dated pre-registration (\texttt{docs/PREREG\_SECOND\_CLIP\_20260927.md})
 set a positive pooled AEC-minus-AE increment and a gene-cluster bootstrap
@@ -379,8 +408,8 @@ extraction and deterministic weight rebuild reproduce the archived training
 metric triple exactly; original ignored-input byte hashes were unavailable
 after a workspace loss, so byte identity with that earlier environment cannot
 be claimed. This negative result does not alter the separately specified
-CLIP primary endpoint; its independent-library replication and refit-aware
-dependence interval are still open.
+CLIP primary endpoint; the refit-aware dependence interval is now computed
+and includes zero, and independent-library replication is still open.
 
 \subsection{Family-held-out transfer test and the pair-map decision}
 Before inspecting its outcome, we locked a transfer test over the five largest
@@ -453,7 +482,7 @@ for each width (\texttt{results/exact\_length\_bin\_*bp.json}); the
 seeded drawing code is in \texttt{scripts/exact\_length\_bin\_control.py}.
 
 \section{Falsification paths}
-miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); second-resource TarBase AGO-CLIP label test passes the locked within-resource rule but is not independent-library proof; remaining: library-matched CLIP/RNA-seq normalization and refit-aware dependence interval.
+miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); second-resource TarBase AGO-CLIP label test passes the locked within-resource rule but is not independent-library proof; remaining: library-matched CLIP/RNA-seq normalization and independent-library replication.
 \begin{thebibliography}{9}
 \bibitem[Grimson et al.(2007)]{g} Grimson A, et al. MicroRNA targeting specificity in mammals: determinants beyond seed pairing. \emph{Mol Cell} 2007.
 \bibitem[Agarwal et al.(2015)]{a} Agarwal V, et al. Predicting effective microRNA target sites in mammalian mRNAs. \emph{eLife} 2015.
