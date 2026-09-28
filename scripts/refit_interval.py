@@ -1,7 +1,7 @@
 """Refit-aware, leakage-free crossed family x gene interval (queue item 5 remainder).
-Protocol: docs/PREREG_REFIT_INTERVAL_20260928.md (committed pre-outcome).
+Protocol: docs/PREREG_REFIT_INTERVAL_FOLD_SCALING_20260928.md (committed pre-outcome).
 Per draw: resample family/gene cluster counts -> weighted restandardization ->
-refit both logistic arms on the SAME fixed GroupKFold(5) gene folds with
+refit fold-training-only scalers and both logistic arms on the SAME fixed GroupKFold(5) gene folds with
 sample weights -> weighted OOF AUROC delta. CNN feature columns fixed
 (declared in the prereg; TargetScan-trained, labels disjoint from CLIP)."""
 import csv, json, os
@@ -26,28 +26,40 @@ uf, ifam = np.unique(families, return_inverse=True)
 ug, igene = np.unique(genes, return_inverse=True)
 folds = list(GroupKFold(5).split(Xa, y, genes))  # deterministic, identical across draws
 
-def wstd(X, w):
-    W = w.sum()
-    mu = (X * w[:, None]).sum(0) / W
-    var = (w[:, None] * (X - mu) ** 2).sum(0) / W
+def wstd_train(Xtr, wtr):
+    W = wtr.sum()
+    mu = (Xtr * wtr[:, None]).sum(0) / W
+    var = (wtr[:, None] * (Xtr - mu) ** 2).sum(0) / W
     sd = np.sqrt(var); sd[sd == 0] = 1
-    return (X - mu) / sd
+    return mu, sd
 
-def arm_scores(X, w):
+def arm_scores(X, w, fold_scaling=True):
     p = np.zeros(len(y))
     for tr, te in folds:
-        m = LogisticRegression(max_iter=2000).fit(X[tr], y[tr], sample_weight=w[tr])
-        p[te] = m.predict_proba(X[te])[:, 1]
+        if fold_scaling:
+            mu, sd = wstd_train(X[tr], w[tr])
+        else:
+            mu, sd = wstd_train(X, w)
+        m = LogisticRegression(max_iter=2000).fit((X[tr] - mu) / sd, y[tr], sample_weight=w[tr])
+        p[te] = m.predict_proba((X[te] - mu) / sd)[:, 1]
     return p
 
 w1 = np.ones(len(y))
-pa0 = arm_scores(wstd(Xa, w1), w1); pc0 = arm_scores(wstd(Xc, w1), w1)
-base = float(roc_auc_score(y, pa0)); full = float(roc_auc_score(y, pc0))
 prior = json.loads((ROOT / 'results/expression_confound.json').read_text())['pooled_auroc_gene_grouped_cv']
-assert abs(base - prior['AE']) < 1e-8 and abs(full - prior['AEC']) < 1e-8, (base, full, prior)
-print('integrity gate passed: committed AUROCs reproduced at uniform weights', flush=True)
+pa_old = arm_scores(Xa, w1, False); pc_old = arm_scores(Xc, w1, False)
+assert abs(roc_auc_score(y, pa_old) - prior['AE']) < 1e-8 and abs(roc_auc_score(y, pc_old) - prior['AEC']) < 1e-8
+# Held-out rows must not enter a fold's scaler (both arms).
+tr, te = folds[0]
+for X in (Xa, Xc):
+    mu, sd = wstd_train(X[tr], w1[tr])
+    changed = X.copy(); changed[te] += 1000.0
+    mu2, sd2 = wstd_train(changed[tr], w1[tr])
+    assert np.array_equal(mu, mu2) and np.array_equal(sd, sd2)
+pa0 = arm_scores(Xa, w1); pc0 = arm_scores(Xc, w1)
+base = float(roc_auc_score(y, pa0)); full = float(roc_auc_score(y, pc0))
+print('integrity gate passed: old-global audit and held-out-scaler invariance; corrected baseline', base, full, flush=True)
 
-ck = ROOT / 'results/refit_interval_checkpoint.json'
+ck = ROOT / 'results/refit_interval_folds_checkpoint.json'
 recs = json.loads(ck.read_text())['draws'] if ck.exists() else []
 rng = np.random.default_rng(SEED)
 for b in range(B):
@@ -60,7 +72,7 @@ for b in range(B):
     if degenerate:
         recs.append({'b': b, 'skipped': True})
     else:
-        pa = arm_scores(wstd(Xa, w), w); pc = arm_scores(wstd(Xc, w), w)
+        pa = arm_scores(Xa, w); pc = arm_scores(Xc, w)
         recs.append({'b': b, 'skipped': False,
                      'delta': float(roc_auc_score(y, pc, sample_weight=w) - roc_auc_score(y, pa, sample_weight=w))})
     if (b + 1) % 25 == 0:
@@ -68,13 +80,14 @@ for b in range(B):
         print('checkpoint', b + 1, flush=True)
 assert len(recs) == B
 vals = [r['delta'] for r in recs if not r['skipped']]
-out = {'type': 'refit-aware crossed family-and-gene weighted bootstrap (evaluator + standardization refit per draw)',
-       'protocol': 'docs/PREREG_REFIT_INTERVAL_20260928.md', 'n_rows': len(y), 'n_genes': len(ug),
+out = {'type': 'fold-training-scaled refit-aware crossed family-and-gene weighted bootstrap (evaluator + training-only standardization refit per draw)',
+       'protocol': 'docs/PREREG_REFIT_INTERVAL_FOLD_SCALING_20260928.md', 'n_rows': len(y), 'n_genes': len(ug),
        'n_families': len(uf), 'seed': SEED, 'bootstrap_replicates': B, 'n_skipped_degenerate': int(B - len(vals)),
        'base_auroc': base, 'full_auroc': full, 'delta': full - base,
        'ci95': [float(x) for x in np.percentile(vals, [2.5, 97.5])],
        'n_nonpositive': int(sum(v <= 0 for v in vals)),
+       'old_global_baseline': {'AE': prior['AE'], 'AEC': prior['AEC'], 'delta': prior['AEC']-prior['AE']},
        'fixed_prediction_comparison': {'ci95': [-0.0015680281768226001, 0.0027334023043778972], 'commit': '719db2d'},
        'limits': 'CNN feature extractor not retrained (declared cost bound); features TargetScan-trained, labels disjoint from CLIP; not an independent-library replication'}
-(ROOT / 'results/refit_interval.json').write_text(json.dumps(out, indent=1) + '\n')
+(ROOT / 'results/refit_interval_folds.json').write_text(json.dumps(out, indent=1) + '\n')
 print(json.dumps(out), flush=True)
