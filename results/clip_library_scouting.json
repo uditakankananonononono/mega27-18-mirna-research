@@ -1,0 +1,121 @@
+{
+ "protocol": "docs/PREREG_THIRD_CLIP_LIBRARY_SCOUTING_20260928.md",
+ "date": "2026-09-28",
+ "scope": "metadata/header scouting only; no label construction, no model scoring",
+ "reference_set": {
+  "source": "ENCORI download table via rnasysu.com/encori/ajaxphp/datatables/RBPdownloadResult.php (table hg38_clipRef), fetched 2026-09-28 07:31 IST",
+  "rows_total": 1984,
+  "ago_datasets": 361,
+  "distinct_gse_series": 37,
+  "distinct_pmids": 41,
+  "already_used_resources": [
+   "ENCORI/starBase aggregated AGO CLIP (primary endpoint)",
+   "TarBase v9.0 (second-resource test)",
+   "ENCODE eCLIP ENCSR048YXG/ENCFF111TWF (attempted, ineligible on sufficiency)"
+  ]
+ },
+ "enumeration": "NCBI GEO DataSets eutils esearch, db=gds, four queries (argonaute CLIP; AGO CLIP-seq; AGO2 eCLIP; PAR-CLIP argonaute), Homo sapiens, 2026-09-28 07:30 IST; series-level records classified below",
+ "candidates": [
+  {
+   "accession": "GSE97056",
+   "title": "Argonaute CLIP defines a deregulated miR-122 bound transcriptome that correlates with patient survival in human liver cancer (Human CLIP-Seq)",
+   "pmid": "28735896",
+   "organism": "Homo sapiens",
+   "n_samples": 28,
+   "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE97056",
+   "processed_file": "GSE97056_HumanLiver_AgoCLIP_Matrix.txt.gz (series supplementary)",
+   "verdict": "ELIGIBLE at metadata level (primary candidate)",
+   "rationale": "Pan-AGO crosslinking IP in human liver tumors/cell lines; not in ENCORI AGO set by accession or PMID; not ENCSR048YXG; not TarBase/miRTarBase. miRNA resolution requires seed-assignment derivation (allowed by criterion 1). Sufficiency (>=50 miRNAs x >=50 positives) plausible from 28-sample pan-AGO scale but explicitly UNVERIFIED - checkable only under a follow-up designated-resource prereg."
+  },
+  {
+   "accession": "GSE98670",
+   "title": "Defining a microRNA-mRNA targetome for calcineurin inhibitor induced nephrotoxicity",
+   "pmid": "28925592",
+   "organism": "Homo sapiens",
+   "n_samples": 21,
+   "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98670",
+   "processed_file": "GSE98670_HK2_AGO2-PAR-CLIP_CsA.txt.gz (series supplementary)",
+   "verdict": "ELIGIBLE at metadata level (secondary candidate)",
+   "rationale": "Human HK2 AGO2 PAR-CLIP; independent by accession/PMID. Single cell line and drug-treatment context; miRNA breadth uncertain; sufficiency UNVERIFIED as above."
+  },
+  {
+   "accession": "GSE41437",
+   "title": "The viral and cellular microRNA targetome in lymphoblastoid cell lines",
+   "pmid": "22291592",
+   "organism": "Homo sapiens",
+   "n_samples": 11,
+   "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41437",
+   "processed_file": "GSE41437_RAW.tar (raw reads only)",
+   "verdict": "ELIGIBLE at metadata level (tertiary, with caveat)",
+   "rationale": "PAR-CLIP in EBV-transformed LCLs with a cellular human targetome fraction; independent by accession/PMID. Caveats: EBV viral miRNAs mixed in; raw-only files require full peak calling; smaller scale."
+  }
+ ],
+ "rejected": [
+  {
+   "group": "INELIGIBLE-overlap (accession in ENCORI AGO study list)",
+   "accessions": [
+    "GSE28859",
+    "GSE41357",
+    "GSE63797",
+    "GSE64675",
+    "GSE64676",
+    "GSE64678",
+    "GSE64679",
+    "GSE73057",
+    "GSE76967",
+    "GSE78059",
+    "GSE57855",
+    "GSE70851"
+   ]
+  },
+  {
+   "group": "INELIGIBLE-overlap-study (same underlying study as an ENCORI entry, different subseries)",
+   "accessions": [
+    "GSE21577 (Hafner 2010; ENCORI carries GSE21918)",
+    "GSE73059 (partner subseries of GSE73057)",
+    "GSE28864 (mRNA-seq partner of GSE28859)",
+    "GSE64677 (RNA-seq partner of GSE64675 series)"
+   ]
+  },
+  {
+   "group": "INELIGIBLE-universe (targets not human miRNA-gene)",
+   "accessions": [
+    "GSE201894 (AGO binding on SARS-CoV-2 RNAs)",
+    "GSE33584 (viral/host small-RNA profiling, not target calls)"
+   ]
+  },
+  {
+   "group": "INELIGIBLE-type (not AGO miRNA-target CLIP)",
+   "accessions": [
+    "GSE227405 (array SNP study)",
+    "GSE181004 (AGO Met-tRNAiMet)",
+    "GSE30730 (expression array)",
+    "GSE46611 (computational)",
+    "GSE97382 (computational circRNA)",
+    "GSE55331 (Dicer CLIP)",
+    "GSE43666 (snoRNA-core PAR-CLIP)",
+    "GSE77897 (La protein PAR-CLIP)",
+    "GSE161237 (ELAVL3 HITS-CLIP)",
+    "GSE154362 (figure subseries)",
+    "GSE62675-GSE62679 (MiR-CLIP single-miRNA pulldown)"
+   ]
+  },
+  {
+   "group": "INELIGIBLE-breadth (single-miRNA/family context)",
+   "accessions": [
+    "GSE254785",
+    "GSE254786 (miR-17/20a transgenic renal)"
+   ]
+  },
+  {
+   "group": "INELIGIBLE-scale (genuine AGO CLIP but 4-6 samples; >=50 miRNAs x >=50 positives implausible at metadata level)",
+   "accessions": [
+    "GSE104048 (human cortex AGO HITS-CLIP, 6 samples)",
+    "GSE184533 (AGO HITS-CLIP, 5 samples)",
+    "GSE261576 (Ago2 CLEAR-CLIP, 4 samples)"
+   ]
+  }
+ ],
+ "scouting_verdict": "POSITIVE: GSE97056 passes all five locked criteria at metadata level, with sufficiency explicitly deferred to a designated-resource prereg. No analysis run; no labels constructed; no model scored.",
+ "next_step": "NEW dated prereg designating GSE97056 (fallback GSE98670) for the independent-library replication question before any label construction."
+}
