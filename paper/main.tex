@@ -17,7 +17,7 @@ small and does not establish practical utility; a pooled-effect confidence
 crossed family-and-gene fixed-prediction bootstrap interval includes zero
 ($[-0.00157,+0.00273]$); a refit-aware crossed interval with
 fold-training-only scaling also includes zero ($[-0.00010,+0.00295]$);
-independent-library replication remains outstanding. A second-resource TarBase AGO-CLIP label
+an independent-library replication on GSE97056 (a non-ENCORI human-liver AGO-CLIP source) passes its locked pooled gene-level rule ($\Delta$AUROC $+0.008736$, gene-cluster bootstrap 95\% CI $[+0.005837,\allowbreak +0.011713]$, no nonpositive draws), though its per-miRNA median interval includes zero. A second-resource TarBase AGO-CLIP label
 test passes its locked within-resource positive-delta rule ($+0.01615$,
 fixed-prediction gene-bootstrap 99\% CI $[+0.01459,\allowbreak +0.01773]$), but shared
 underlying CLIP libraries may link the resources and the median per-miRNA
@@ -140,7 +140,7 @@ The expression-controlled primary comparison gives a pooled $+0.00077$
 AUROC point estimate. A crossed family-and-gene fixed-prediction interval
 below includes zero, so even the sign is uncertain under that sensitivity
 test; a refit-aware interval under fold-training-only scaling, reported
-below, also includes zero. Independent-library replication remains open. A
+below, also includes zero. An independent-library replication on GSE97056 (below) passes its locked pooled gene-level rule. A
 second-resource TarBase test passes its locked within-resource rule, but
 its source libraries can overlap ENCORI and its per-miRNA median interval
 includes zero; it does not establish the independent-library condition.
@@ -197,8 +197,9 @@ sensitivity analysis, not a formal model-refit interval. Crucially, its
 interval includes zero: the sign of the tiny primary pooled increment is
 uncertain once related miRNAs and genes are stressed together. The original
 global scaling still precedes fold assignment; no interval repairs that
-preprocessing weakness. Nor does any interval supply independent-library
-replication or practical value.
+preprocessing weakness. The independent-library condition is no longer missing - the
+GSE97056 test below passes its locked pooled gene-level rule - but no
+interval supplies practical value.
 \subsection{Refit-aware crossed interval with fold-training-only scaling}
 The crossed interval above still refits nothing: it holds the original
 out-of-fold predictions fixed and retains the source experiment's global
@@ -268,6 +269,46 @@ value, restore failed biological discovery gates, or validate candidate pairs.
 The committed label audit, analysis script, result JSON and source ledger
 record eligibility counts, exact outputs, input URLs and checksums. The
 ENCODE path and why it failed eligibility are recorded in the same ledger.
+
+\subsection{Independent-library replication on GSE97056: pooled gene-level positive}
+{\sloppy
+The within-resource TarBase test above cannot establish the
+independent-library condition because its source libraries may overlap
+ENCORI. Under a scouting preregistration
+(docs/PREREG\_THIRD\_CLIP\_LIBRARY\_SCOUTING\_20260928.md, committed before
+any candidate inspection) the ENCORI AGO reference set was archived (361
+datasets, 37 GEO series, 41 PMIDs) and every GEO series was classified with
+per-accession rejection reasons; GSE97056 (human liver pan-AGO CLIP, 28
+samples) passed all five locked metadata criteria and was designated, with
+GSE98670 and GSE41437 recorded as fallbacks. A designated-resource
+preregistration (docs/PREREG\_GSE97056\_REPLICATION\_20260928.md) then
+locked the label rules, the sufficiency gate and the analysis, which
+mirrors the expression-controlled ENCORI primary endpoint exactly (same row
+universe, features, gene filter and cluster seeds). The deposit was fetched
+with URL, byte count and SHA-256 recorded before parsing
+(docs/GSE97056\_FETCH\_LOG\_20260928.md), and the derived labels plus audit
+were committed before any AUROC. The sufficiency gate passed: 119 eligible
+miRNAs with at least 50 positives and 50 negatives each. Outcome
+(results/gse97056\_analysis.json): on 13{,}116 positives and 422{,}278
+negatives (435{,}394 of 476{,}369 rows expression-matched), pooled
+gene-grouped AUROCs are A $0.6007$, A$+$E $0.6497$, A$+$C $0.6134$ and
+A$+$E$+$C $0.6584$; the primary pooled delta (AEC $-$ AE) is $+0.008736$
+with gene-cluster bootstrap (B$=1000$, seed 0) 95\% CI
+$[+0.005837,+0.011713]$, 99\% CI $[+0.004709,+0.012569]$ and zero
+nonpositive draws: the interval excludes zero, so under the locked rule the
+independent-library replication is POSITIVE. Heterogeneity is reported
+plainly: per-miRNA deltas are mixed (median $+0.000106$; $51.3\%$
+positive), and the locked secondary miRNA-cluster bootstrap (B$=10000$,
+seed 20260928) interval for the median, $[-0.001544,+0.004729]$, includes
+zero. The replication is therefore a pooled gene-level effect, not a
+per-miRNA-uniform one. Two declared limits stand: features use HEK293
+expression while the labels derive from liver libraries (cross-tissue
+mismatch declared in the prereg), and the result does not by itself
+establish practical utility or resolve the ENCORI crossed family-and-gene
+dependence intervals, which remain the strongest uncertainty statement for
+the within-resource estimate.
+\par}
+
 
 \subsection{Biophysical sanity check: duplex MFE vs shuffled controls}
 As a sequence-level pipeline validation, the 20 top diverse candidate windows ($\pm25$ nt) were cofolded with their mature miRNA (ViennaRNA RNAcofold) against 10 mononucleotide-shuffled miRNA controls each (\texttt{results/rnafold\_validation.json}). Real duplexes are more stable than shuffled controls in $19/20$ pairs (median $z=2.33$; Wilcoxon $p<10^{-4}$); the exception, miR-7-5p$\to$REG3G ($z=-0.57$), is kept in the candidate table as a flagged row. Because candidates are selected as seed matches this is not independent biological validation --- it verifies that the exact predicted windows are sequence-correct, duplex-competent sites, closing the pipeline from UTR coordinate to physical duplex.
@@ -409,7 +450,7 @@ metric triple exactly; original ignored-input byte hashes were unavailable
 after a workspace loss, so byte identity with that earlier environment cannot
 be claimed. This negative result does not alter the separately specified
 CLIP primary endpoint; the refit-aware dependence interval is now computed
-and includes zero, and independent-library replication is still open.
+and includes zero; the GSE97056 independent-library replication is positive at the pooled gene level but does not resolve this within-resource dependence interval.
 
 \subsection{Family-held-out transfer test and the pair-map decision}
 Before inspecting its outcome, we locked a transfer test over the five largest
@@ -482,7 +523,7 @@ for each width (\texttt{results/exact\_length\_bin\_*bp.json}); the
 seeded drawing code is in \texttt{scripts/exact\_length\_bin\_control.py}.
 
 \section{Falsification paths}
-miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); second-resource TarBase AGO-CLIP label test passes the locked within-resource rule but is not independent-library proof; remaining: library-matched CLIP/RNA-seq normalization and independent-library replication.
+miRTarBase 10.0 and TarBase v9.0 benchmarks are now done (see above); wet-lab: luciferase reporters for the top 10 diverse pairs; extended-panel CLIP rerun over the 132-miRNA ENCORI panel completed (delta +0.0060, p=0.048); second-resource TarBase AGO-CLIP label test passes the locked within-resource rule but is not independent-library proof; independent-library replication is done (pooled gene-level positive on GSE97056; per-miRNA median interval includes zero); remaining: library-matched CLIP/RNA-seq normalization.
 \begin{thebibliography}{9}
 \bibitem[Grimson et al.(2007)]{g} Grimson A, et al. MicroRNA targeting specificity in mammals: determinants beyond seed pairing. \emph{Mol Cell} 2007.
 \bibitem[Agarwal et al.(2015)]{a} Agarwal V, et al. Predicting effective microRNA target sites in mammalian mRNAs. \emph{eLife} 2015.

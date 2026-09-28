@@ -13,54 +13,55 @@
 \contentsline {subsection}{\numberline {4.6}Breadth audit: the conditional CNN gain is distributed, not carried by a few miRNAs}{6}{}%
 \contentsline {subsection}{\numberline {4.7}Expression confound: HEK293 abundance explains most of the CLIP signal (negative)}{7}{}%
 \contentsline {subsection}{\numberline {4.8}Decision rule for current and future use of the CNN score}{8}{}%
-\contentsline {subsection}{\numberline {4.9}Cluster-level uncertainty on the expression-adjusted effect}{8}{}%
+\contentsline {subsection}{\numberline {4.9}Cluster-level uncertainty on the expression-adjusted effect}{9}{}%
 \contentsline {subsection}{\numberline {4.10}Refit-aware crossed interval with fold-training-only scaling}{10}{}%
 \contentsline {subsection}{\numberline {4.11}Pre-registered second-resource AGO-CLIP label test}{10}{}%
-\contentsline {subsection}{\numberline {4.12}Biophysical sanity check: duplex MFE vs shuffled controls}{11}{}%
-\contentsline {subsection}{\numberline {4.13}Independent literature benchmark: miRTarBase 10.0}{12}{}%
-\contentsline {subsection}{\numberline {4.14}Head-to-head vs a public leader: miRDB v6.0 wins (negative)}{12}{}%
-\contentsline {subsection}{\numberline {4.15}Second independent benchmark: TarBase v9.0 (negative for the CNN)}{12}{}%
-\contentsline {subsection}{\numberline {4.16}Third arm: pure duplex thermodynamics (RNAhybrid) is near chance}{13}{}%
-\contentsline {subsection}{\numberline {4.17}Fourth arm: alignment-based biophysics (miRanda) sits between}{13}{}%
-\contentsline {subsection}{\numberline {4.18}Functional coherence audit: g:Profiler finds no pathway signal in predicted or CLIP target sets (negative)}{14}{}%
-\contentsline {subsection}{\numberline {4.19}Network coherence audit: STRING edges in CLIP target sets are explained by expression (negative)}{15}{}%
-\contentsline {subsection}{\numberline {4.20}miRNA abundance does not predict which miRNAs the CNN ranks well (ENCODE; negative)}{16}{}%
-\contentsline {subsection}{\numberline {4.21}Tissue target avoidance (GTEx): conserved targets avoid the miRNA's tissue, CNN non-conserved targets do not}{16}{}%
-\contentsline {subsection}{\numberline {4.22}Reverse lookup (Enrichr): CNN top-200 sets name their own miRNA beyond expression, but the site-count win does not replicate}{18}{}%
-\contentsline {subsection}{\numberline {4.23}Reactome pathway audit with controls fixed in advance: two gates failed, verdicts inconclusive}{19}{}%
-\contentsline {subsection}{\numberline {4.24}Input integrity: every miRNA sequence and seed used here matches RNAcentral}{19}{}%
-\contentsline {subsection}{\numberline {4.25}Independent curated labels (OmniPath, miRTarBase removed): CNN above chance, but not above site count or expression}{20}{}%
-\contentsline {subsection}{\numberline {4.26}Transcription-regulator enrichment (UniProt): present in conserved targets, absent in CNN non-conserved targets}{20}{}%
-\contentsline {subsection}{\numberline {4.27}Loss-of-function constraint (gnomAD): conserved targets are constrained, CNN candidates are the least constrained set}{21}{}%
-\contentsline {paragraph}{Pre-registered held-out replication.}{21}{}%
-\contentsline {subsection}{\numberline {4.28}Independent dosage label (ClinGen): the depletion beyond UTR length does not replicate}{22}{}%
-\contentsline {subsection}{\numberline {4.29}Third dosage label (Collins et al.\ 2022 rCNV scores): the depletion survives UTR-length matching}{23}{}%
-\contentsline {subsection}{\numberline {4.30}Mendelian disease genes (HPO): depletion explained by UTR length}{24}{}%
-\contentsline {subsection}{\numberline {4.31}ClinVar pathogenic-variant genes: the positive-control gate failed}{24}{}%
-\contentsline {subsection}{\numberline {4.32}Cell-essential genes (DepMap): no depletion, and the label is uninformative for conserved targets}{25}{}%
-\contentsline {subsection}{\numberline {4.33}Protein-complex subunits (Complex Portal): the dosage-balance prediction fails}{25}{}%
-\contentsline {subsection}{\numberline {4.34}Study bias (NCBI Gene, PubMed counts): it explains the curated-label depletion but not the LOEUF depletion}{26}{}%
-\contentsline {subsection}{\numberline {4.35}DECIPHER haploinsufficiency predictions: depletion beyond expression and study bias, not beyond UTR length}{26}{}%
-\contentsline {subsection}{\numberline {4.36}GeneBayes $s_\mathrm {het}$: population-based labels agree with each other, curated and model-based labels do not}{27}{}%
-\contentsline {paragraph}{Pre-registered coding-length control.}{27}{}%
-\contentsline {subsection}{\numberline {4.37}Paralog buffering (Ensembl BioMart): no paralog excess; both gates failed}{27}{}%
-\contentsline {subsection}{\numberline {4.38}Gene families (HGNC): the depletion is not a zinc-finger artefact; coverage gate failed}{28}{}%
-\contentsline {subsection}{\numberline {4.39}Orphanet rare-disease genes: depletion vs expression-matched only; gone against publication-matched sets}{28}{}%
-\contentsline {subsection}{\numberline {4.40}Mouse mutant phenotypes (MGI): weak, mixed support}{28}{}%
-\contentsline {section}{\numberline {5}Independent benchmark audit: every evaluated miRNA}{29}{}%
-\contentsline {subsection}{\numberline {5.1}Interpretation of the independent ranking}{29}{}%
-\contentsline {section}{\numberline {6}Documented negatives}{31}{}%
-\contentsline {subsection}{\numberline {6.1}Locked random-weight and score-permutation falsifier}{32}{}%
+\contentsline {subsection}{\numberline {4.12}Independent-library replication on GSE97056: pooled gene-level positive}{11}{}%
+\contentsline {subsection}{\numberline {4.13}Biophysical sanity check: duplex MFE vs shuffled controls}{12}{}%
+\contentsline {subsection}{\numberline {4.14}Independent literature benchmark: miRTarBase 10.0}{12}{}%
+\contentsline {subsection}{\numberline {4.15}Head-to-head vs a public leader: miRDB v6.0 wins (negative)}{13}{}%
+\contentsline {subsection}{\numberline {4.16}Second independent benchmark: TarBase v9.0 (negative for the CNN)}{13}{}%
+\contentsline {subsection}{\numberline {4.17}Third arm: pure duplex thermodynamics (RNAhybrid) is near chance}{14}{}%
+\contentsline {subsection}{\numberline {4.18}Fourth arm: alignment-based biophysics (miRanda) sits between}{14}{}%
+\contentsline {subsection}{\numberline {4.19}Functional coherence audit: g:Profiler finds no pathway signal in predicted or CLIP target sets (negative)}{15}{}%
+\contentsline {subsection}{\numberline {4.20}Network coherence audit: STRING edges in CLIP target sets are explained by expression (negative)}{16}{}%
+\contentsline {subsection}{\numberline {4.21}miRNA abundance does not predict which miRNAs the CNN ranks well (ENCODE; negative)}{16}{}%
+\contentsline {subsection}{\numberline {4.22}Tissue target avoidance (GTEx): conserved targets avoid the miRNA's tissue, CNN non-conserved targets do not}{17}{}%
+\contentsline {subsection}{\numberline {4.23}Reverse lookup (Enrichr): CNN top-200 sets name their own miRNA beyond expression, but the site-count win does not replicate}{18}{}%
+\contentsline {subsection}{\numberline {4.24}Reactome pathway audit with controls fixed in advance: two gates failed, verdicts inconclusive}{19}{}%
+\contentsline {subsection}{\numberline {4.25}Input integrity: every miRNA sequence and seed used here matches RNAcentral}{20}{}%
+\contentsline {subsection}{\numberline {4.26}Independent curated labels (OmniPath, miRTarBase removed): CNN above chance, but not above site count or expression}{20}{}%
+\contentsline {subsection}{\numberline {4.27}Transcription-regulator enrichment (UniProt): present in conserved targets, absent in CNN non-conserved targets}{21}{}%
+\contentsline {subsection}{\numberline {4.28}Loss-of-function constraint (gnomAD): conserved targets are constrained, CNN candidates are the least constrained set}{21}{}%
+\contentsline {paragraph}{Pre-registered held-out replication.}{22}{}%
+\contentsline {subsection}{\numberline {4.29}Independent dosage label (ClinGen): the depletion beyond UTR length does not replicate}{23}{}%
+\contentsline {subsection}{\numberline {4.30}Third dosage label (Collins et al.\ 2022 rCNV scores): the depletion survives UTR-length matching}{23}{}%
+\contentsline {subsection}{\numberline {4.31}Mendelian disease genes (HPO): depletion explained by UTR length}{25}{}%
+\contentsline {subsection}{\numberline {4.32}ClinVar pathogenic-variant genes: the positive-control gate failed}{25}{}%
+\contentsline {subsection}{\numberline {4.33}Cell-essential genes (DepMap): no depletion, and the label is uninformative for conserved targets}{25}{}%
+\contentsline {subsection}{\numberline {4.34}Protein-complex subunits (Complex Portal): the dosage-balance prediction fails}{26}{}%
+\contentsline {subsection}{\numberline {4.35}Study bias (NCBI Gene, PubMed counts): it explains the curated-label depletion but not the LOEUF depletion}{26}{}%
+\contentsline {subsection}{\numberline {4.36}DECIPHER haploinsufficiency predictions: depletion beyond expression and study bias, not beyond UTR length}{27}{}%
+\contentsline {subsection}{\numberline {4.37}GeneBayes $s_\mathrm {het}$: population-based labels agree with each other, curated and model-based labels do not}{27}{}%
+\contentsline {paragraph}{Pre-registered coding-length control.}{28}{}%
+\contentsline {subsection}{\numberline {4.38}Paralog buffering (Ensembl BioMart): no paralog excess; both gates failed}{28}{}%
+\contentsline {subsection}{\numberline {4.39}Gene families (HGNC): the depletion is not a zinc-finger artefact; coverage gate failed}{28}{}%
+\contentsline {subsection}{\numberline {4.40}Orphanet rare-disease genes: depletion vs expression-matched only; gone against publication-matched sets}{29}{}%
+\contentsline {subsection}{\numberline {4.41}Mouse mutant phenotypes (MGI): weak, mixed support}{29}{}%
+\contentsline {section}{\numberline {5}Independent benchmark audit: every evaluated miRNA}{30}{}%
+\contentsline {subsection}{\numberline {5.1}Interpretation of the independent ranking}{30}{}%
+\contentsline {section}{\numberline {6}Documented negatives}{30}{}%
+\contentsline {subsection}{\numberline {6.1}Locked random-weight and score-permutation falsifier}{33}{}%
 \contentsline {subsection}{\numberline {6.2}Family-held-out transfer test and the pair-map decision}{33}{}%
-\contentsline {subsection}{\numberline {6.3}Fixed-width absolute UTR-length-bin sensitivity audit}{33}{}%
-\contentsline {section}{\numberline {7}Falsification paths}{34}{}%
-\contentsline {section}{\numberline {8}Mathematical derivations}{36}{}%
-\contentsline {subsection}{\numberline {8.1}Convolutional duplex scoring}{36}{}%
-\contentsline {subsection}{\numberline {8.2}Pearson and Spearman benchmarks}{36}{}%
-\contentsline {subsection}{\numberline {8.3}Fisher exact test for CLIP enrichment}{36}{}%
+\contentsline {subsection}{\numberline {6.3}Fixed-width absolute UTR-length-bin sensitivity audit}{34}{}%
+\contentsline {section}{\numberline {7}Falsification paths}{35}{}%
+\contentsline {section}{\numberline {8}Mathematical derivations}{37}{}%
+\contentsline {subsection}{\numberline {8.1}Convolutional duplex scoring}{37}{}%
+\contentsline {subsection}{\numberline {8.2}Pearson and Spearman benchmarks}{37}{}%
+\contentsline {subsection}{\numberline {8.3}Fisher exact test for CLIP enrichment}{37}{}%
 \contentsline {subsection}{\numberline {8.4}Odds ratio}{37}{}%
-\contentsline {subsection}{\numberline {8.5}AUROC as a Mann--Whitney statistic}{37}{}%
-\contentsline {subsection}{\numberline {8.6}Bootstrap confidence interval for $\Delta $AUROC}{37}{}%
-\contentsline {subsection}{\numberline {8.7}Permutation null}{37}{}%
-\contentsline {subsection}{\numberline {8.8}Seed-match enumerator}{37}{}%
+\contentsline {subsection}{\numberline {8.5}AUROC as a Mann--Whitney statistic}{38}{}%
+\contentsline {subsection}{\numberline {8.6}Bootstrap confidence interval for $\Delta $AUROC}{38}{}%
+\contentsline {subsection}{\numberline {8.7}Permutation null}{38}{}%
+\contentsline {subsection}{\numberline {8.8}Seed-match enumerator}{38}{}%
 \contentsline {subsection}{\numberline {8.9}Wilcoxon signed-rank for paired per-gene comparisons}{38}{}%
