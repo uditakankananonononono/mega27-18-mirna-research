@@ -6,9 +6,9 @@ Code, data manifests, results and paper for item 18 of MEGA27.
 - `src/mirna/` - DuplexCNN (pairing-map 2D CNN plus Grimson context features), trained on TargetScan vert_80 context++ labels.
 - `scripts/` - one script per external tool or test. Each pre-registered test script was committed before its results; the commit history shows the order.
 - `results/` - committed JSON outputs. Every number in the paper comes from these files.
-- `paper/main.tex`, `paper/main.pdf` - 32-page draft paper (Nimbus Roman in the current PDF, not embedded Times New Roman; numbered equations, figures, 28 documented negatives).
+- `paper/main.tex`, `paper/main.pdf` - 38-page draft paper (Nimbus Roman in the current PDF, not embedded Times New Roman; numbered equations, figures, 28 documented negatives).
 - `docs/TOOLS.md` - audit-corrected ledger: at most 40 distinct science/data tools pending direct-use verification; 317 record-level entries, not independent studies, with the 120-dataset gate conditional on direct-use criteria.
-- `tests/` - 101 passing hermetic tests plus one skipped named-gene integration test when original TargetScan inputs are absent (`python3 -m pytest -q tests`).
+- `tests/` - hermetic tests (`python3 -m pytest -q tests`). The earlier claim of 101 passing tests is unverified in the current audit: 87 tests were collected, with 4 collection errors from missing scipy/scikit-learn in the audit environment.
 
 ## Shipped tool: `mirtarget-score`
 ```
@@ -20,8 +20,8 @@ The named-miRNA/gene mode requires the original TargetScan miR family and 3'UTR 
 
 ## Main findings (honest summary)
 - Benchmarks broken against us: miRDB v6.0 beats the CNN on miRTarBase labels, and HEK293 expression alone beats all sequence models on CLIP labels. No state-of-the-art claim is made.
-- Named falsifiable finding: CNN top-ranked non-conserved candidates are less dosage-sensitive than expression- and publication-matched genes on LoF-count labels (gnomAD LOEUF, GeneBayes s_het). The finding survives controls for coding length, paralogs and C2H2-ZNF families. On curated labels (HPO, Orphanet, ClinGen, DECIPHER vs UTR length) the depletion is explained by study bias or UTR length. The earlier "beyond UTR length" clause was withdrawn.
-- Open falsifier: a random-weight CNN producing the same depletion would show it is a site-enumeration artefact.
+- Dosage-sensitivity depletion: CNN top-ranked non-conserved candidates were less dosage-sensitive than expression- and publication-matched genes on LoF-count labels (gnomAD LOEUF, GeneBayes s_het), and this survived controls for coding length, paralogs and C2H2-ZNF families. On curated labels (HPO, Orphanet, ClinGen, DECIPHER vs UTR length) the depletion is explained by study bias or UTR length. The "beyond UTR length" clause was withdrawn. The random-weight falsifier failed, so the trained-model claim is withdrawn (paper, negative 16).
+- GSE97056 independent-library replication (positive): pooled AEC-AE delta +0.008736, gene-cluster bootstrap CI95 [+0.005837, +0.011713], with per-miRNA heterogeneity (paper section 4.12).
 
 ## Reproduce
 Data sources and accession lists are in `docs/TOOLS.md`. Run a test with e.g. `python3 scripts/mgi_mouse_ko.py`, then rebuild its paper section with the matching `scripts/*_paper.py` and run `pdflatex` three times in `paper/`.
